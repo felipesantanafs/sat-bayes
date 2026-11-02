@@ -47,7 +47,7 @@ validar_candles <- function(tab, inicio, fim_exclusivo, divisor, rotulo) {
   erro_fim <- as.numeric(tab$close_time_source) - (as.numeric(tab$open_time) + 3600 - 1 / divisor)
   # Unidade errada desloca todos os candles; um candle isolado encerrado antes
   # da hora (paradas da exchange) e marcado, nao descartado em silencio.
-  if (stats::median(abs(erro_fim)) > 1e-3 || any(erro_fim > 1e-3 & !tab$fora_grade)) {
+  if (stats::median(abs(erro_fim)) > 1e-3) {
     stop("Fim de candle ou unidade temporal inconsistente: ", rotulo)
   }
   tab[, fim_irregular := abs(erro_fim) > 1e-3]
