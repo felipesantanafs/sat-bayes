@@ -17,3 +17,7 @@ referencias/livro_*.txt
 .Rhistory
 .RData
 .Rproj.user/
+
+# Binarios compilados pelo CmdStan
+modelos/*.exe
+modelos/*.hpp
