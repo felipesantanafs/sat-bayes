@@ -1,7 +1,8 @@
 # Protocolo v1: ver contexto/plano_execucao_R.md.
 # Parametros numericos sao escolhas do projeto, nao resultados estimados.
 cfg <- list(
-  protocol_version = "1.0.0",
+  # 1.1.0: so a etapa bayesiana mudou; as previsoes classicas seguem 1.0.0.
+  protocol_version = "1.1.0",
   seed = 20261102L,
   timezone = "UTC",
   interval = "1h",
@@ -37,6 +38,16 @@ cfg <- list(
   bootstrap_replicates = 2000L,
   bootstrap_mean_days = 7L,
   bayesian_refit_months = c(1L, 4L, 7L, 10L),
+  # Revisao 1.1 (antes do teste, so com dados ate jun/2024): priors e MCMC da
+  # etapa bayesiana; ver relatorios/registro_execucao.md.
+  bayes_mu_a_prior = c(media = -3, dp = 2),
+  bayes_sigma_v_prior_scale = 2,
+  bayes_coef_prior_scale = 0.5,
+  bayes_chains = 4L,
+  bayes_warmup = 1000L,
+  bayes_sampling = 2000L,
+  bayes_rhat_max = 1.01,
+  bayes_ess_min = 400,
   archive_base = "https://data.binance.vision/data/spot",
   market_data_api = "https://data-api.binance.vision/api/v3",
   packages_core = c(

@@ -18,14 +18,16 @@ calendario_bayes <- function(cfg, inicio = as.POSIXct("2022-01-01", tz = "UTC"))
                          treino_inicio = pmax(meses - cfg$training_window_days * 86400, cfg$analysis_start))
 }
 
-dados_stan <- function(treino, cols_x, cols_z, esc, mu_a_media = -3, escala_coef = 0.5) {
+dados_stan <- function(treino, cols_x, cols_z, esc, mu_a_media = -3, mu_a_dp = 2, escala_coef = 0.5,
+                       sigma_v_escala = 2) {
   dias <- seq(min(treino$data), max(treino$data), by = "day")
   ativos <- sort(unique(treino$symbol))
   zx <- aplicar_escala(as.matrix(treino[, ..cols_x]), esc$x)
   zz <- if (length(cols_z)) aplicar_escala(as.matrix(treino[, ..cols_z]), esc$z) else matrix(0, nrow(treino), 0)
   list(stan = list(N = nrow(treino), I = length(ativos), D = length(dias), Kx = ncol(zx), Kz = ncol(zz),
                    ativo = match(treino$symbol, ativos), dia = as.integer(treino$data - dias[1]) + 1L,
-                   X = zx, Z = zz, y = treino$y, mu_a_media = mu_a_media, escala_coef = escala_coef),
+                   X = zx, Z = zz, y = treino$y, mu_a_media = mu_a_media, mu_a_dp = mu_a_dp,
+                   escala_coef = escala_coef, sigma_v_escala = sigma_v_escala),
        ativos = ativos, dias = dias)
 }
 
@@ -61,6 +63,7 @@ prever_bayes <- function(draws, prev, cols_x, cols_z, esc, ativos, ultimo_dia, s
 
 diagnostico_bayes <- function(fit) {
   s <- posterior::summarise_draws(fit$draws(c("mu_a", "sigma_a", "gamma", "xi", "sigma_v", "phi")),
+                                  "mean", "sd", ~stats::quantile(.x, c(0.05, 0.95)),
                                   "rhat", "ess_bulk", "ess_tail", "mcse_mean")
   d <- fit$diagnostic_summary(quiet = TRUE)
   list(resumo = data.table::as.data.table(s),
