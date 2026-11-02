@@ -1,0 +1,1425 @@
+# Fonte: Networks 02 - Game Theory 1.pdf
+# Paginas: 104
+
+=== [pagina 1] ===
+Economics of Networks
+Introduction to Game Theory: Part 1
+Evan Sadler
+Massachusetts Institute of Technology
+April 3, 2018
+Evan Sadler
+Game Theory 1
+1/32
+
+=== [pagina 2] ===
+Agenda
+Decision theory:
+• Theory of rational choice
+• Choice under uncertainty
+Games
+• Deﬁnitions
+• Strategies and best responses
+Pure strategy Nash Equilibrium
+Examples
+Suggested reading: EK chapter 6; Osborne chapters 1-3
+Evan Sadler
+Game Theory 1
+2/32
+
+=== [pagina 3] ===
+Motivation
+Choice is a big part of economics
+• What choices do we observe and why?
+Evan Sadler
+Game Theory 1
+3/32
+
+=== [pagina 4] ===
+Motivation
+Choice is a big part of economics
+• What choices do we observe and why?
+• What information do I share?
+• What information sources do I trust?
+• Do I want to become friends?
+• From whom do I buy stuﬀ?
+• What websites do I visit?
+• How do I get to work in the morning?
+Evan Sadler
+Game Theory 1
+3/32
+
+=== [pagina 5] ===
+Motivation
+Choice is a big part of economics
+• What choices do we observe and why?
+• What information do I share?
+• What information sources do I trust?
+• Do I want to become friends?
+• From whom do I buy stuﬀ?
+• What websites do I visit?
+• How do I get to work in the morning?
+How do we model this?
+Evan Sadler
+Game Theory 1
+3/32
+
+=== [pagina 6] ===
+Rational Choice
+Primitive in microeconomic models: the economic agent
+• “[A] unit that responds to a scenario called a choice problem,”
+(Rubinstein, 2007)
+Evan Sadler
+Game Theory 1
+4/32
+
+=== [pagina 7] ===
+Rational Choice
+Primitive in microeconomic models: the economic agent
+• “[A] unit that responds to a scenario called a choice problem,”
+(Rubinstein, 2007)
+Typically think of an agent as a person
+• Sometimes a ﬁrm, a nation, a family
+Evan Sadler
+Game Theory 1
+4/32
+
+=== [pagina 8] ===
+Rational Choice
+Primitive in microeconomic models: the economic agent
+• “[A] unit that responds to a scenario called a choice problem,”
+(Rubinstein, 2007)
+Typically think of an agent as a person
+• Sometimes a ﬁrm, a nation, a family
+Three step process of rational choice:
+• What is desirable?
+• What is feasible?
+• Choose the most desirable of the feasible alternatives
+Evan Sadler
+Game Theory 1
+4/32
+
+=== [pagina 9] ===
+Rational Choice
+Primitive in microeconomic models: the economic agent
+• “[A] unit that responds to a scenario called a choice problem,”
+(Rubinstein, 2007)
+Typically think of an agent as a person
+• Sometimes a ﬁrm, a nation, a family
+Three step process of rational choice:
+• What is desirable?
+• What is feasible?
+• Choose the most desirable of the feasible alternatives
+Observations:
+• Note desires precede recognition of feasible alternatives
+• Economics says nothing about what agent should desire
+Evan Sadler
+Game Theory 1
+4/32
+
+=== [pagina 10] ===
+Preferences
+Let X denote set of all conceivable alternatives
+• e.g. set of all undergraduate institutions to which one could be
+admitted
+Evan Sadler
+Game Theory 1
+5/32
+
+=== [pagina 11] ===
+Preferences
+Let X denote set of all conceivable alternatives
+• e.g. set of all undergraduate institutions to which one could be
+admitted
+A rational agent has a preference ordering over X
+• For each x, y ∈X, either x ⪰y or x ⪯y
+• Ordering must be complete and transitive:
+x ⪰y and y ⪰z =⇒x ⪰z
+Evan Sadler
+Game Theory 1
+5/32
+
+=== [pagina 12] ===
+Preferences
+Let X denote set of all conceivable alternatives
+• e.g. set of all undergraduate institutions to which one could be
+admitted
+A rational agent has a preference ordering over X
+• For each x, y ∈X, either x ⪰y or x ⪯y
+• Ordering must be complete and transitive:
+x ⪰y and y ⪰z =⇒x ⪰z
+Choice problem C ⊆X
+• Choose ⪰-maximal element of C
+Evan Sadler
+Game Theory 1
+5/32
+
+=== [pagina 13] ===
+Utility Representation
+Associate a number u(x) to each x ∈X, utility of x
+• u(x) ≥u(y) if and only if x ⪰y
+• Easier to work with utility functions than directly with
+preferences
+Evan Sadler
+Game Theory 1
+6/32
+
+=== [pagina 14] ===
+Utility Representation
+Associate a number u(x) to each x ∈X, utility of x
+• u(x) ≥u(y) if and only if x ⪰y
+• Easier to work with utility functions than directly with
+preferences
+Deﬁnition of rational choice uses only ordinal information
+• Says nothing about preference intensity
+• All monotone transformations of u are equivalent
+Evan Sadler
+Game Theory 1
+6/32
+
+=== [pagina 15] ===
+Utility Representation
+Associate a number u(x) to each x ∈X, utility of x
+• u(x) ≥u(y) if and only if x ⪰y
+• Easier to work with utility functions than directly with
+preferences
+Deﬁnition of rational choice uses only ordinal information
+• Says nothing about preference intensity
+• All monotone transformations of u are equivalent
+With uncertainty, we need cardinal information
+• How do I compare outcomes with diﬀerent probabilities?
+Evan Sadler
+Game Theory 1
+6/32
+
+=== [pagina 16] ===
+Choice Under Uncertainty
+von Neumann and Morgenstern proposed a set of axioms for
+choice over “lotteries”
+Evan Sadler
+Game Theory 1
+7/32
+
+=== [pagina 17] ===
+Choice Under Uncertainty
+von Neumann and Morgenstern proposed a set of axioms for
+choice over “lotteries”
+Formally:
+• Let Y denote a set of possible outcomes
+• Let LY denote the set of lotteries over Y
+• Let L denote a particular lottery
+Evan Sadler
+Game Theory 1
+7/32
+
+=== [pagina 18] ===
+Choice Under Uncertainty
+von Neumann and Morgenstern proposed a set of axioms for
+choice over “lotteries”
+Formally:
+• Let Y denote a set of possible outcomes
+• Let LY denote the set of lotteries over Y
+• Let L denote a particular lottery
+Examples:
+• An even money gamble: with probability 1
+2 you lose $10, with
+probability 1
+2 you win $10
+• Getting to work: with probability
+9
+10 it takes you 20 minutes,
+with probability
+1
+10 there is road work and it takes an hour
+Evan Sadler
+Game Theory 1
+7/32
+
+=== [pagina 19] ===
+Choice Under Uncertainty
+A choice problem C ⊆LY is a collection of lotteries over Y
+• An action induces a lottery (e.g. place a bet or not, which
+route do I take to work?)
+Evan Sadler
+Game Theory 1
+8/32
+
+=== [pagina 20] ===
+Choice Under Uncertainty
+A choice problem C ⊆LY is a collection of lotteries over Y
+• An action induces a lottery (e.g. place a bet or not, which
+route do I take to work?)
+Need to deﬁne preferences over lotteries L, M, N ∈LY
+Evan Sadler
+Game Theory 1
+8/32
+
+=== [pagina 21] ===
+Choice Under Uncertainty
+A choice problem C ⊆LY is a collection of lotteries over Y
+• An action induces a lottery (e.g. place a bet or not, which
+route do I take to work?)
+Need to deﬁne preferences over lotteries L, M, N ∈LY
+The vNM axioms:
+• Completeness: L ⪰M or L ⪯M for all L, M
+• Transitivity: L ⪯M and M ⪯N implies L ⪯N
+Evan Sadler
+Game Theory 1
+8/32
+
+=== [pagina 22] ===
+Choice Under Uncertainty
+A choice problem C ⊆LY is a collection of lotteries over Y
+• An action induces a lottery (e.g. place a bet or not, which
+route do I take to work?)
+Need to deﬁne preferences over lotteries L, M, N ∈LY
+The vNM axioms:
+• Completeness: L ⪰M or L ⪯M for all L, M
+• Transitivity: L ⪯M and M ⪯N implies L ⪯N
+• Continuity: if L ⪯M ⪯N, there exists p ∈[0, 1] such that
+pL + (1 −p)N ∼M
+Evan Sadler
+Game Theory 1
+8/32
+
+=== [pagina 23] ===
+Choice Under Uncertainty
+A choice problem C ⊆LY is a collection of lotteries over Y
+• An action induces a lottery (e.g. place a bet or not, which
+route do I take to work?)
+Need to deﬁne preferences over lotteries L, M, N ∈LY
+The vNM axioms:
+• Completeness: L ⪰M or L ⪯M for all L, M
+• Transitivity: L ⪯M and M ⪯N implies L ⪯N
+• Continuity: if L ⪯M ⪯N, there exists p ∈[0, 1] such that
+pL + (1 −p)N ∼M
+• Independence: if L ≺M, then for any N and p ∈(0, 1], we
+have
+pL + (1 −p)N ≺pM + (1 −p)N
+Evan Sadler
+Game Theory 1
+8/32
+
+=== [pagina 24] ===
+Choice Under Uncertainty
+Theorem
+Suppose preferences ⪯satisfy the vNM axioms. There exists a
+utility function u on the set of outcomes Y such that L ⪯M if
+and only if
+E[u(L)] ≤E[u(M)].
+Evan Sadler
+Game Theory 1
+9/32
+
+=== [pagina 25] ===
+Choice Under Uncertainty
+Theorem
+Suppose preferences ⪯satisfy the vNM axioms. There exists a
+utility function u on the set of outcomes Y such that L ⪯M if
+and only if
+E[u(L)] ≤E[u(M)].
+Expected utility theory
+Evan Sadler
+Game Theory 1
+9/32
+
+=== [pagina 26] ===
+Choice Under Uncertainty
+Theorem
+Suppose preferences ⪯satisfy the vNM axioms. There exists a
+utility function u on the set of outcomes Y such that L ⪯M if
+and only if
+E[u(L)] ≤E[u(M)].
+Expected utility theory
+Suppose action a induces distribution F a(y) over consequences,
+expected utility
+U(a) =
+Z
+u(y)dF a(y)
+Evan Sadler
+Game Theory 1
+9/32
+
+=== [pagina 27] ===
+Choice Under Uncertainty
+Choose a over b if
+U(a) =
+Z
+u(y)dF a(y) >
+Z
+u(y)dF b(y) = U(b)
+Evan Sadler
+Game Theory 1
+10/32
+
+=== [pagina 28] ===
+Choice Under Uncertainty
+Choose a over b if
+U(a) =
+Z
+u(y)dF a(y) >
+Z
+u(y)dF b(y) = U(b)
+Model of rationality is conceptually simple
+• In practice, computation may be diﬃcult
+Evan Sadler
+Game Theory 1
+10/32
+
+=== [pagina 29] ===
+Choice Under Uncertainty
+Choose a over b if
+U(a) =
+Z
+u(y)dF a(y) >
+Z
+u(y)dF b(y) = U(b)
+Model of rationality is conceptually simple
+• In practice, computation may be diﬃcult
+Notes:
+• Objective versus Subjective uncertainty
+• Savage (1954) axiomatizes subjective probability and
+subjective expected utility
+Evan Sadler
+Game Theory 1
+10/32
+
+=== [pagina 30] ===
+From Single Agent to Multi-Agent Choice
+In most social situations, the outcome an agent cares about
+depends on actions of others
+Evan Sadler
+Game Theory 1
+11/32
+
+=== [pagina 31] ===
+From Single Agent to Multi-Agent Choice
+In most social situations, the outcome an agent cares about
+depends on actions of others
+• Beneﬁt from working hard on group work depends on others’
+eﬀorts
+• Time I spend stuck in traﬃc depends on others’ route choices
+• Disutility from a rumor spreading depends on others’ sharing
+Evan Sadler
+Game Theory 1
+11/32
+
+=== [pagina 32] ===
+From Single Agent to Multi-Agent Choice
+In most social situations, the outcome an agent cares about
+depends on actions of others
+• Beneﬁt from working hard on group work depends on others’
+eﬀorts
+• Time I spend stuck in traﬃc depends on others’ route choices
+• Disutility from a rumor spreading depends on others’ sharing
+• How hard should I work?
+• What route should I take?
+• Should I tell a friend a secret?
+Evan Sadler
+Game Theory 1
+11/32
+
+=== [pagina 33] ===
+Work or Shirk?
+You are paired with a friend for a group project
+• You can each work hard or shirk
+• Working has an eﬀort cost, but leads to better grades for both
+Evan Sadler
+Game Theory 1
+12/32
+
+=== [pagina 34] ===
+Work or Shirk?
+You are paired with a friend for a group project
+• You can each work hard or shirk
+• Working has an eﬀort cost, but leads to better grades for both
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Evan Sadler
+Game Theory 1
+12/32
+
+=== [pagina 35] ===
+Work or Shirk?
+You are paired with a friend for a group project
+• You can each work hard or shirk
+• Working has an eﬀort cost, but leads to better grades for both
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Matrix game, entries represent payoﬀs
+• Not necessarily monetary
+Evan Sadler
+Game Theory 1
+12/32
+
+=== [pagina 36] ===
+Work or Shirk?
+You are paired with a friend for a group project
+• You can each work hard or shirk
+• Working has an eﬀort cost, but leads to better grades for both
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Matrix game, entries represent payoﬀs
+• Not necessarily monetary
+Do you work or shirk?
+Evan Sadler
+Game Theory 1
+12/32
+
+=== [pagina 37] ===
+Bertrand Competition
+Two ﬁrms produce identical goods at a ﬁxed marginal cost c > 0
+Evan Sadler
+Game Theory 1
+13/32
+
+=== [pagina 38] ===
+Bertrand Competition
+Two ﬁrms produce identical goods at a ﬁxed marginal cost c > 0
+Consumers buy from the lowest priced ﬁrm, split evenly if they
+charge the same price
+Evan Sadler
+Game Theory 1
+13/32
+
+=== [pagina 39] ===
+Bertrand Competition
+Two ﬁrms produce identical goods at a ﬁxed marginal cost c > 0
+Consumers buy from the lowest priced ﬁrm, split evenly if they
+charge the same price
+Total demand at price p is D(p) = 1 −p
+Evan Sadler
+Game Theory 1
+13/32
+
+=== [pagina 40] ===
+Bertrand Competition
+Two ﬁrms produce identical goods at a ﬁxed marginal cost c > 0
+Consumers buy from the lowest priced ﬁrm, split evenly if they
+charge the same price
+Total demand at price p is D(p) = 1 −p
+Firms simultaneously set prices, consumers then make purchases
+Evan Sadler
+Game Theory 1
+13/32
+
+=== [pagina 41] ===
+Bertrand Competition
+Two ﬁrms produce identical goods at a ﬁxed marginal cost c > 0
+Consumers buy from the lowest priced ﬁrm, split evenly if they
+charge the same price
+Total demand at price p is D(p) = 1 −p
+Firms simultaneously set prices, consumers then make purchases
+What price do you set?
+Evan Sadler
+Game Theory 1
+13/32
+
+=== [pagina 42] ===
+Normal Form Games
+In a normal form game, players make one choice, simultaneously
+Evan Sadler
+Game Theory 1
+14/32
+
+=== [pagina 43] ===
+Normal Form Games
+In a normal form game, players make one choice, simultaneously
+Elements of a game
+• Set of players
+• Set of actions or strategies
+• Payoﬀs
+Evan Sadler
+Game Theory 1
+14/32
+
+=== [pagina 44] ===
+Normal Form Games
+In a normal form game, players make one choice, simultaneously
+Elements of a game
+• Set of players
+• Set of actions or strategies
+• Payoﬀs
+Player order, multiple moves, and information sets captured in
+extensive form games
+• To come later
+Evan Sadler
+Game Theory 1
+14/32
+
+=== [pagina 45] ===
+Normal Form Games
+Deﬁnition (Normal Form Game)
+A normal form game is a triple (N, {Si}i∈N, {ui}i∈N) such that
+• N = {1, 2, ..., n} is a set of players
+• Si is the set of actions available to player i
+• ui : S →R is the payoﬀof player i, where S =
+Q
+i∈N Si is the
+set of all action proﬁles
+Evan Sadler
+Game Theory 1
+15/32
+
+=== [pagina 46] ===
+Normal Form Games
+Deﬁnition (Normal Form Game)
+A normal form game is a triple (N, {Si}i∈N, {ui}i∈N) such that
+• N = {1, 2, ..., n} is a set of players
+• Si is the set of actions available to player i
+• ui : S →R is the payoﬀof player i, where S =
+Q
+i∈N Si is the
+set of all action proﬁles
+Some notation:
+• s−i: vector of actions for all players except i
+• S−i: set of action proﬁles for all players except i
+• s = (si, s−i) ∈S is an action proﬁle, or outcome
+Evan Sadler
+Game Theory 1
+15/32
+
+=== [pagina 47] ===
+Strategies versus Actions
+Often use strategy and action interchangably, though there is a
+formal distinction
+Evan Sadler
+Game Theory 1
+16/32
+
+=== [pagina 48] ===
+Strategies versus Actions
+Often use strategy and action interchangably, though there is a
+formal distinction
+In an extensive form game (i.e. with multiple moves in sequence,
+think chess), a strategy means a complete contingent plan of
+action at every possible realization of play
+Evan Sadler
+Game Theory 1
+16/32
+
+=== [pagina 49] ===
+Strategies versus Actions
+Often use strategy and action interchangably, though there is a
+formal distinction
+In an extensive form game (i.e. with multiple moves in sequence,
+think chess), a strategy means a complete contingent plan of
+action at every possible realization of play
+Extensive form game is equivalent in a sense to a normal form
+game
+• The action in the normal form game is the selection of a
+strategy in the extensive form
+Evan Sadler
+Game Theory 1
+16/32
+
+=== [pagina 50] ===
+Strategies versus Actions
+Often use strategy and action interchangably, though there is a
+formal distinction
+In an extensive form game (i.e. with multiple moves in sequence,
+think chess), a strategy means a complete contingent plan of
+action at every possible realization of play
+Extensive form game is equivalent in a sense to a normal form
+game
+• The action in the normal form game is the selection of a
+strategy in the extensive form
+Distinction also exists in normal form games when we talk about
+mixed strategies
+Evan Sadler
+Game Theory 1
+16/32
+
+=== [pagina 51] ===
+The “Solution” of a Game
+How do people play the game?
+Evan Sadler
+Game Theory 1
+17/32
+
+=== [pagina 52] ===
+The “Solution” of a Game
+How do people play the game?
+How should people play the game?
+Evan Sadler
+Game Theory 1
+17/32
+
+=== [pagina 53] ===
+The “Solution” of a Game
+How do people play the game?
+How should people play the game?
+Large number of “solution concepts” based on diﬀerent
+assumptions about
+• What players know about each others’ plans
+• How smart players are
+• How smart players think others are
+Evan Sadler
+Game Theory 1
+17/32
+
+=== [pagina 54] ===
+Dominant Strategies
+Example: The Prisoner’s Dilemma
+Confess
+Silence
+Confess
+(−3, −3)
+(0, −4)
+Silence
+(-4,0)
+(−1, −1)
+Evan Sadler
+Game Theory 1
+18/32
+
+=== [pagina 55] ===
+Dominant Strategies
+Example: The Prisoner’s Dilemma
+Confess
+Silence
+Confess
+(−3, −3)
+(0, −4)
+Silence
+(-4,0)
+(−1, −1)
+What should the outcome be?
+Evan Sadler
+Game Theory 1
+18/32
+
+=== [pagina 56] ===
+Dominant Strategies
+Example: The Prisoner’s Dilemma
+Confess
+Silence
+Confess
+(−3, −3)
+(0, −4)
+Silence
+(-4,0)
+(−1, −1)
+What should the outcome be?
+• “Confess” is always the better choice
+Evan Sadler
+Game Theory 1
+18/32
+
+=== [pagina 57] ===
+Dominant Strategies
+Example: The Prisoner’s Dilemma
+Confess
+Silence
+Confess
+(−3, −3)
+(0, −4)
+Silence
+(-4,0)
+(−1, −1)
+What should the outcome be?
+• “Confess” is always the better choice
+“Confess” dominates “silence”
+Evan Sadler
+Game Theory 1
+18/32
+
+=== [pagina 58] ===
+Dominant Strategy Equilibrium
+A fairly compelling solution concept: everyone plays a dominant
+strategy
+• Play a strategy that is obviously good
+Evan Sadler
+Game Theory 1
+19/32
+
+=== [pagina 59] ===
+Dominant Strategy Equilibrium
+A fairly compelling solution concept: everyone plays a dominant
+strategy
+• Play a strategy that is obviously good
+Deﬁnition
+A strategy s∗
+i ∈Si is dominant for player i if for all si ∈Si and
+all s−i ∈S−i
+ui(s∗
+i , s−i) ≥ui(si, s−i)
+A strategy proﬁle s∗is a dominant strategy equilibrium if s∗
+i is a
+dominant strategy for each i.
+Evan Sadler
+Game Theory 1
+19/32
+
+=== [pagina 60] ===
+Dominant Strategy Equilibrium
+A fairly compelling solution concept: everyone plays a dominant
+strategy
+• Play a strategy that is obviously good
+Deﬁnition
+A strategy s∗
+i ∈Si is dominant for player i if for all si ∈Si and
+all s−i ∈S−i
+ui(s∗
+i , s−i) ≥ui(si, s−i)
+A strategy proﬁle s∗is a dominant strategy equilibrium if s∗
+i is a
+dominant strategy for each i.
+Issue: this rarely exists
+Evan Sadler
+Game Theory 1
+19/32
+
+=== [pagina 61] ===
+Dominated Strategies
+Conversely, we might think to eliminate strategies that are
+dominated
+• Don’t play a strategy that is obviously bad
+Evan Sadler
+Game Theory 1
+20/32
+
+=== [pagina 62] ===
+Dominated Strategies
+Conversely, we might think to eliminate strategies that are
+dominated
+• Don’t play a strategy that is obviously bad
+Deﬁnition
+A strategy si ∈Si is strictly dominated if there exists s′
+i ∈Si
+such that for all s−i ∈S−i
+ui(s′
+i, s−i) > ui(si, s−i)
+A strategy si ∈Si is weakly dominated if there exists s′
+i ∈Si
+such that for all s−i ∈S−i
+ui(s′
+i, s−i) ≥ui(si, s−i)
+Evan Sadler
+Game Theory 1
+20/32
+
+=== [pagina 63] ===
+Iterated Deletion
+No one should play a dominated strategy
+• Common knowledge of payoﬀs and rationality implies iterated
+elimination of dominated strategies
+Evan Sadler
+Game Theory 1
+21/32
+
+=== [pagina 64] ===
+Iterated Deletion
+No one should play a dominated strategy
+• Common knowledge of payoﬀs and rationality implies iterated
+elimination of dominated strategies
+Example:
+Confess
+Silence
+Suicide
+Confess
+(−3, −3)
+(0, −4)
+(−3, −10)
+Silence
+(-4,0)
+(−1, −1)
+(−1, −10)
+Suicide
+(−10, −3)
+(−10, −1)
+(−10, −10)
+Evan Sadler
+Game Theory 1
+21/32
+
+=== [pagina 65] ===
+Iterated Deletion
+No one should play a dominated strategy
+• Common knowledge of payoﬀs and rationality implies iterated
+elimination of dominated strategies
+Example:
+Confess
+Silence
+Suicide
+Confess
+(−3, −3)
+(0, −4)
+(−3, −10)
+Silence
+(-4,0)
+(−1, −1)
+(−1, −10)
+Suicide
+(−10, −3)
+(−10, −1)
+(−10, −10)
+No dominant strategy
+• Still dominance solvable
+Evan Sadler
+Game Theory 1
+21/32
+
+=== [pagina 66] ===
+Iterated Deletion
+More formally, deﬁne the iterative procedure:
+• Step 0: Deﬁne S0
+i = Si for each i
+• Step k > 0: Deﬁne for each i
+Sk
+i =
+n
+si ∈Sk−1
+i
+| ∄s′
+i ∈Sk−1
+i
+that dominates si
+o
+• Step ∞: S∞
+i
+= T∞
+k=0 Sk
+i
+Evan Sadler
+Game Theory 1
+22/32
+
+=== [pagina 67] ===
+Iterated Deletion
+More formally, deﬁne the iterative procedure:
+• Step 0: Deﬁne S0
+i = Si for each i
+• Step k > 0: Deﬁne for each i
+Sk
+i =
+n
+si ∈Sk−1
+i
+| ∄s′
+i ∈Sk−1
+i
+that dominates si
+o
+• Step ∞: S∞
+i
+= T∞
+k=0 Sk
+i
+The set S∞of strategy proﬁles is what survives
+Evan Sadler
+Game Theory 1
+22/32
+
+=== [pagina 68] ===
+Iterated Deletion
+Theorem
+Suppose that either:
+• Si is ﬁnite for each i, or
+• ui(si, s−i) is continuous and Si is compact for each i.
+Then S∞
+i
+is nonempty for each i.
+Evan Sadler
+Game Theory 1
+23/32
+
+=== [pagina 69] ===
+Iterated Deletion
+Theorem
+Suppose that either:
+• Si is ﬁnite for each i, or
+• ui(si, s−i) is continuous and Si is compact for each i.
+Then S∞
+i
+is nonempty for each i.
+First part trivial, second part homework
+Evan Sadler
+Game Theory 1
+23/32
+
+=== [pagina 70] ===
+Iterated Deletion
+Theorem
+Suppose that either:
+• Si is ﬁnite for each i, or
+• ui(si, s−i) is continuous and Si is compact for each i.
+Then S∞
+i
+is nonempty for each i.
+First part trivial, second part homework
+May not yield a unique prediction
+Evan Sadler
+Game Theory 1
+23/32
+
+=== [pagina 71] ===
+Best Responses
+Another approach: suppose players make conjectures about each
+other
+• Beliefs about what other players will do
+Evan Sadler
+Game Theory 1
+24/32
+
+=== [pagina 72] ===
+Best Responses
+Another approach: suppose players make conjectures about each
+other
+• Beliefs about what other players will do
+Formally, a conjecture for player i is a lottery over S−i
+Evan Sadler
+Game Theory 1
+24/32
+
+=== [pagina 73] ===
+Best Responses
+Another approach: suppose players make conjectures about each
+other
+• Beliefs about what other players will do
+Formally, a conjecture for player i is a lottery over S−i
+Given a conjecture µ, choose
+si ∈BR(µ) = arg max
+si
+Z
+ui(si, s−i)dµ(s−i)
+Evan Sadler
+Game Theory 1
+24/32
+
+=== [pagina 74] ===
+Best Responses
+Another approach: suppose players make conjectures about each
+other
+• Beliefs about what other players will do
+Formally, a conjecture for player i is a lottery over S−i
+Given a conjecture µ, choose
+si ∈BR(µ) = arg max
+si
+Z
+ui(si, s−i)dµ(s−i)
+Should play a best reply to some conjecture
+• What conjectures should a player entertain?
+Evan Sadler
+Game Theory 1
+24/32
+
+=== [pagina 75] ===
+Pure Strategy Nash Equilibrium
+Nash Equilibrium: conjectures are correct
+Evan Sadler
+Game Theory 1
+25/32
+
+=== [pagina 76] ===
+Pure Strategy Nash Equilibrium
+Nash Equilibrium: conjectures are correct
+Deﬁnition
+A pure strategy Nash Equilibrium is a strategy proﬁle s∗∈S
+such that for all i ∈N we have
+ui(s∗
+i , s∗
+−i) ≥ui(si, s∗
+−i)
+for all si ∈Si.
+Evan Sadler
+Game Theory 1
+25/32
+
+=== [pagina 77] ===
+Pure Strategy Nash Equilibrium
+Nash Equilibrium: conjectures are correct
+Deﬁnition
+A pure strategy Nash Equilibrium is a strategy proﬁle s∗∈S
+such that for all i ∈N we have
+ui(s∗
+i , s∗
+−i) ≥ui(si, s∗
+−i)
+for all si ∈Si.
+Every player is playing a best response to what others actually do
+Evan Sadler
+Game Theory 1
+25/32
+
+=== [pagina 78] ===
+Pure Strategy Nash Equilibrium
+Nash Equilibrium: conjectures are correct
+Deﬁnition
+A pure strategy Nash Equilibrium is a strategy proﬁle s∗∈S
+such that for all i ∈N we have
+ui(s∗
+i , s∗
+−i) ≥ui(si, s∗
+−i)
+for all si ∈Si.
+Every player is playing a best response to what others actually do
+Why might this be reasonable?
+Evan Sadler
+Game Theory 1
+25/32
+
+=== [pagina 79] ===
+Interpretation of Nash Equilibrium
+Two main justiﬁcations:
+• Introspection: try to be consistent, assuming everyone else is
+also smart
+• Learning: can think of Nash Equilibrium as the steady state of
+a learning process
+Evan Sadler
+Game Theory 1
+26/32
+
+=== [pagina 80] ===
+Interpretation of Nash Equilibrium
+Two main justiﬁcations:
+• Introspection: try to be consistent, assuming everyone else is
+also smart
+• Learning: can think of Nash Equilibrium as the steady state of
+a learning process
+Another idea: ex-ante agreement among the players
+Evan Sadler
+Game Theory 1
+26/32
+
+=== [pagina 81] ===
+Interpretation of Nash Equilibrium
+Two main justiﬁcations:
+• Introspection: try to be consistent, assuming everyone else is
+also smart
+• Learning: can think of Nash Equilibrium as the steady state of
+a learning process
+Another idea: ex-ante agreement among the players
+Nash Equilibrium is a standard workhorse in economic models
+• Might not be reasonable in all contexts
+Evan Sadler
+Game Theory 1
+26/32
+
+=== [pagina 82] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 83] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Can p1 ≥p2 > c be an equilibrium?
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 84] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Can p1 ≥p2 > c be an equilibrium?
+• No. Firm 1 should charge p2 −ϵ and steal the market
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 85] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Can p1 ≥p2 > c be an equilibrium?
+• No. Firm 1 should charge p2 −ϵ and steal the market
+Would a ﬁrm ever charge less than c?
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 86] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Can p1 ≥p2 > c be an equilibrium?
+• No. Firm 1 should charge p2 −ϵ and steal the market
+Would a ﬁrm ever charge less than c?
+What about p1 = p2 = c?
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 87] ===
+Example: Bertrand Competition
+Recall our two competiting ﬁrms
+• Marginal cost c > 0
+• Total demand D(p) = 1 −p
+• Firms choose what prices to charge
+Can p1 ≥p2 > c be an equilibrium?
+• No. Firm 1 should charge p2 −ϵ and steal the market
+Would a ﬁrm ever charge less than c?
+What about p1 = p2 = c?
+• Yes! Both ﬁrms earn zero proﬁt, no way to improve.
+Evan Sadler
+Game Theory 1
+27/32
+
+=== [pagina 88] ===
+Example: Cournot Competition
+What if the ﬁrms choose what quantity to produce instead?
+• Both face the market price p = 1 −q1 −q2
+Evan Sadler
+Game Theory 1
+28/32
+
+=== [pagina 89] ===
+Example: Cournot Competition
+What if the ﬁrms choose what quantity to produce instead?
+• Both face the market price p = 1 −q1 −q2
+Given q1, ﬁrm 2 chooses q2 to maximize
+q2(1 −q1 −q2 −c)
+First order condition implies q∗
+2 = 1−q1−c
+2
+Evan Sadler
+Game Theory 1
+28/32
+
+=== [pagina 90] ===
+Example: Cournot Competition
+What if the ﬁrms choose what quantity to produce instead?
+• Both face the market price p = 1 −q1 −q2
+Given q1, ﬁrm 2 chooses q2 to maximize
+q2(1 −q1 −q2 −c)
+First order condition implies q∗
+2 = 1−q1−c
+2
+Similarly, q∗
+1 = 1−q2−c
+2
+Evan Sadler
+Game Theory 1
+28/32
+
+=== [pagina 91] ===
+Example: Cournot Competition
+What if the ﬁrms choose what quantity to produce instead?
+• Both face the market price p = 1 −q1 −q2
+Given q1, ﬁrm 2 chooses q2 to maximize
+q2(1 −q1 −q2 −c)
+First order condition implies q∗
+2 = 1−q1−c
+2
+Similarly, q∗
+1 = 1−q2−c
+2
+Unique Nash Equilibrium:
+q∗
+1 = q∗
+2 = 2(1 −c)
+3
+Evan Sadler
+Game Theory 1
+28/32
+
+=== [pagina 92] ===
+Example: Cournot Competition
+Evan Sadler
+Game Theory 1
+29/32
+
+=== [pagina 93] ===
+Example: The Partnership Game
+Recall our earlier choice to work or shirk:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Evan Sadler
+Game Theory 1
+30/32
+
+=== [pagina 94] ===
+Example: The Partnership Game
+Recall our earlier choice to work or shirk:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+No dominant or dominated strategies
+Evan Sadler
+Game Theory 1
+30/32
+
+=== [pagina 95] ===
+Example: The Partnership Game
+Recall our earlier choice to work or shirk:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+No dominant or dominated strategies
+Best reply to work is work, best reply to shirk is shirk
+• Two pure strategy Nash Equilibria
+• Outcome depends on conjectures
+Evan Sadler
+Game Theory 1
+30/32
+
+=== [pagina 96] ===
+Multiple Equilibria
+What do we do with multiple equilibria?
+• Model lacks a unique prediction
+Evan Sadler
+Game Theory 1
+31/32
+
+=== [pagina 97] ===
+Multiple Equilibria
+What do we do with multiple equilibria?
+• Model lacks a unique prediction
+Two approaches
+Evan Sadler
+Game Theory 1
+31/32
+
+=== [pagina 98] ===
+Multiple Equilibria
+What do we do with multiple equilibria?
+• Model lacks a unique prediction
+Two approaches
+• Acceptance: we make set valued predictions, certain outcomes
+are possible, and we still rule out a lot of alternatives
+Evan Sadler
+Game Theory 1
+31/32
+
+=== [pagina 99] ===
+Multiple Equilibria
+What do we do with multiple equilibria?
+• Model lacks a unique prediction
+Two approaches
+• Acceptance: we make set valued predictions, certain outcomes
+are possible, and we still rule out a lot of alternatives
+• Reﬁnement: come up with an argument why one equilibrium is
+more realistic than another
+Evan Sadler
+Game Theory 1
+31/32
+
+=== [pagina 100] ===
+Multiple Equilibria
+What do we do with multiple equilibria?
+• Model lacks a unique prediction
+Two approaches
+• Acceptance: we make set valued predictions, certain outcomes
+are possible, and we still rule out a lot of alternatives
+• Reﬁnement: come up with an argument why one equilibrium is
+more realistic than another
+Reﬁnement is hard
+Evan Sadler
+Game Theory 1
+31/32
+
+=== [pagina 101] ===
+Example: Matching Pennies
+Consider the following game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+Evan Sadler
+Game Theory 1
+32/32
+
+=== [pagina 102] ===
+Example: Matching Pennies
+Consider the following game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+What is the best response to heads?
+Evan Sadler
+Game Theory 1
+32/32
+
+=== [pagina 103] ===
+Example: Matching Pennies
+Consider the following game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+What is the best response to heads?
+What is the best response to tails?
+Evan Sadler
+Game Theory 1
+32/32
+
+=== [pagina 104] ===
+Example: Matching Pennies
+Consider the following game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+What is the best response to heads?
+What is the best response to tails?
+No pure strategy Nash Equilibrium exists
+• Next time: mixed strategy equilibrium
+Evan Sadler
+Game Theory 1
+32/32

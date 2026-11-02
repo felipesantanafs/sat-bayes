@@ -1,0 +1,1322 @@
+# Fonte: Networks 03 - Game Theory 2.pdf
+# Paginas: 102
+
+=== [pagina 1] ===
+Economics of Networks
+Introduction to Game Theory: Part 2
+Evan Sadler
+Massachusetts Institute of Technology
+April 5, 2018
+Evan Sadler
+Game Theory 2
+1/39
+
+=== [pagina 2] ===
+Agenda
+Recap of last time
+Mixed strategies and mixed strategy equilibrium
+Existence of Nash Equilibria
+Extensive form games and subgame perfection
+Reading: Osborne chapters 4-6
+Evan Sadler
+Game Theory 2
+2/39
+
+=== [pagina 3] ===
+Recap
+Rational choice:
+• Agents described by preferences, can represent as utility
+function
+• With uncertainty, maximize expected utility
+Evan Sadler
+Game Theory 2
+3/39
+
+=== [pagina 4] ===
+Recap
+Rational choice:
+• Agents described by preferences, can represent as utility
+function
+• With uncertainty, maximize expected utility
+Dominant and dominated strategies
+• Intuitive game solutions
+• Can’t always get a unique prediction
+Evan Sadler
+Game Theory 2
+3/39
+
+=== [pagina 5] ===
+Recap
+Rational choice:
+• Agents described by preferences, can represent as utility
+function
+• With uncertainty, maximize expected utility
+Dominant and dominated strategies
+• Intuitive game solutions
+• Can’t always get a unique prediction
+Pure strategy Nash Equilibrium
+• Everyone plays a best response
+• Doesn’t always exist...
+Evan Sadler
+Game Theory 2
+3/39
+
+=== [pagina 6] ===
+Nonexistence
+Recall the matching pennies game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+Evan Sadler
+Game Theory 2
+4/39
+
+=== [pagina 7] ===
+Nonexistence
+Recall the matching pennies game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+No pure strategy Nash Equilibrium
+Evan Sadler
+Game Theory 2
+4/39
+
+=== [pagina 8] ===
+Nonexistence
+Recall the matching pennies game:
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+No pure strategy Nash Equilibrium
+How would you play?
+Evan Sadler
+Game Theory 2
+4/39
+
+=== [pagina 9] ===
+Nonexistence
+Alternative interpretation: Penalty Kicker and Goalie
+Kicker / Goalie
+Left
+Right
+Left
+(−1, 1)
+(1, −1)
+Right
+(1,-1)
+(−1, 1)
+Evan Sadler
+Game Theory 2
+5/39
+
+=== [pagina 10] ===
+Nonexistence
+Alternative interpretation: Penalty Kicker and Goalie
+Kicker / Goalie
+Left
+Right
+Left
+(−1, 1)
+(1, −1)
+Right
+(1,-1)
+(−1, 1)
+Is it a good strategy for the kicker to always kick to the left side
+of the net?
+Evan Sadler
+Game Theory 2
+5/39
+
+=== [pagina 11] ===
+Nonexistence
+Alternative interpretation: Penalty Kicker and Goalie
+Kicker / Goalie
+Left
+Right
+Left
+(−1, 1)
+(1, −1)
+Right
+(1,-1)
+(−1, 1)
+Is it a good strategy for the kicker to always kick to the left side
+of the net?
+Empirical evidence suggests that most penalty kickers
+“randomize”
+• Mixed strategies
+Evan Sadler
+Game Theory 2
+5/39
+
+=== [pagina 12] ===
+Mixed Strategies
+Let Σi denote the set of all lotteries over pure strategies in Si
+• In our example, a mixed strategy is a probability of kicking (or
+diving) left
+Evan Sadler
+Game Theory 2
+6/39
+
+=== [pagina 13] ===
+Mixed Strategies
+Let Σi denote the set of all lotteries over pure strategies in Si
+• In our example, a mixed strategy is a probability of kicking (or
+diving) left
+Write σi ∈Σi for the strategy of i
+Evan Sadler
+Game Theory 2
+6/39
+
+=== [pagina 14] ===
+Mixed Strategies
+Let Σi denote the set of all lotteries over pure strategies in Si
+• In our example, a mixed strategy is a probability of kicking (or
+diving) left
+Write σi ∈Σi for the strategy of i
+Write σ ∈Σ = Q
+i∈N Σi for a strategy proﬁle
+• Implicitly assume players randomize independently
+• σ−i ∈Σ−i denotes strategies of other players
+Evan Sadler
+Game Theory 2
+6/39
+
+=== [pagina 15] ===
+Mixed Strategies
+Let Σi denote the set of all lotteries over pure strategies in Si
+• In our example, a mixed strategy is a probability of kicking (or
+diving) left
+Write σi ∈Σi for the strategy of i
+Write σ ∈Σ = Q
+i∈N Σi for a strategy proﬁle
+• Implicitly assume players randomize independently
+• σ−i ∈Σ−i denotes strategies of other players
+Payoﬀis expected utility:
+ui(σ) =
+Z
+S ui(s)dσ(s)
+Evan Sadler
+Game Theory 2
+6/39
+
+=== [pagina 16] ===
+Mixed Strategy Nash Equilibrium
+Deﬁnition
+A mixed strategy proﬁle σ∗is a Nash Equilibrium if for each
+player i and all σi ∈Σi
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+Evan Sadler
+Game Theory 2
+7/39
+
+=== [pagina 17] ===
+Mixed Strategy Nash Equilibrium
+Deﬁnition
+A mixed strategy proﬁle σ∗is a Nash Equilibrium if for each
+player i and all σi ∈Σi
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+The strategy σ∗
+i is a best response to σ∗
+−i
+• Best response to correct conjecture
+Evan Sadler
+Game Theory 2
+7/39
+
+=== [pagina 18] ===
+Mixed Strategy Nash Equilibrium
+Deﬁnition
+A mixed strategy proﬁle σ∗is a Nash Equilibrium if for each
+player i and all σi ∈Σi
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+The strategy σ∗
+i is a best response to σ∗
+−i
+• Best response to correct conjecture
+Space of lotteries is large, how do we tell we have an equilibrium?
+Evan Sadler
+Game Theory 2
+7/39
+
+=== [pagina 19] ===
+Mixed Strategy Nash Equilibrium
+Proposition
+In a normal form game, the proﬁle σ∗∈Σ is a Nash Equilibrium
+if and only if for each player i, every pure strategy in the support
+of σ∗
+i is a best response to σ∗
+−i.
+Evan Sadler
+Game Theory 2
+8/39
+
+=== [pagina 20] ===
+Mixed Strategy Nash Equilibrium
+Proposition
+In a normal form game, the proﬁle σ∗∈Σ is a Nash Equilibrium
+if and only if for each player i, every pure strategy in the support
+of σ∗
+i is a best response to σ∗
+−i.
+We only need to check pure strategy deviations
+Evan Sadler
+Game Theory 2
+8/39
+
+=== [pagina 21] ===
+Mixed Strategy Nash Equilibrium
+Proposition
+In a normal form game, the proﬁle σ∗∈Σ is a Nash Equilibrium
+if and only if for each player i, every pure strategy in the support
+of σ∗
+i is a best response to σ∗
+−i.
+We only need to check pure strategy deviations
+Proof idea: If we put positive probability on a strategy that is not
+a best response, shifting that probability to a best response
+strictly increases utility.
+Evan Sadler
+Game Theory 2
+8/39
+
+=== [pagina 22] ===
+Mixed Strategy Nash Equilibrium
+Consequence: every action in support of i’s equilibrium mixed
+strategy yields same expected payoﬀ
+Evan Sadler
+Game Theory 2
+9/39
+
+=== [pagina 23] ===
+Mixed Strategy Nash Equilibrium
+Consequence: every action in support of i’s equilibrium mixed
+strategy yields same expected payoﬀ
+Extends to inﬁnite games
+Evan Sadler
+Game Theory 2
+9/39
+
+=== [pagina 24] ===
+Mixed Strategy Nash Equilibrium
+Consequence: every action in support of i’s equilibrium mixed
+strategy yields same expected payoﬀ
+Extends to inﬁnite games
+Matching pennies: unique mixed Nash equilibrium, players put
+probability 1
+2 on heads
+Heads
+Tails
+Heads
+(−1, 1)
+(1, −1)
+Tails
+(1,-1)
+(−1, 1)
+Evan Sadler
+Game Theory 2
+9/39
+
+=== [pagina 25] ===
+Example: Work or Shirk
+Recall the partnership game:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Evan Sadler
+Game Theory 2
+10/39
+
+=== [pagina 26] ===
+Example: Work or Shirk
+Recall the partnership game:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Two pure strategy equilibria
+• Are there mixed equilibria?
+Evan Sadler
+Game Theory 2
+10/39
+
+=== [pagina 27] ===
+Example: Work or Shirk
+Recall the partnership game:
+Work
+Shirk
+Work
+(2, 2)
+(−1, 1)
+Shirk
+(1,-1)
+(0, 0)
+Two pure strategy equilibria
+• Are there mixed equilibria?
+Yes! Both randomize with probability 1
+2
+• Expected payoﬀof 1
+2
+Evan Sadler
+Game Theory 2
+10/39
+
+=== [pagina 28] ===
+Interpretation of Mixed Equilibria
+Deliberate choice to randomize
+• Recall our penalty kicker
+• Bluﬃng in poker
+Evan Sadler
+Game Theory 2
+11/39
+
+=== [pagina 29] ===
+Interpretation of Mixed Equilibria
+Deliberate choice to randomize
+• Recall our penalty kicker
+• Bluﬃng in poker
+Concern: indiﬀerence between strategies in support
+• Continuum of best responses
+Evan Sadler
+Game Theory 2
+11/39
+
+=== [pagina 30] ===
+Interpretation of Mixed Equilibria
+Deliberate choice to randomize
+• Recall our penalty kicker
+• Bluﬃng in poker
+Concern: indiﬀerence between strategies in support
+• Continuum of best responses
+Steady state of a learning process
+Evan Sadler
+Game Theory 2
+11/39
+
+=== [pagina 31] ===
+Interpretation of Mixed Equilibria
+Deliberate choice to randomize
+• Recall our penalty kicker
+• Bluﬃng in poker
+Concern: indiﬀerence between strategies in support
+• Continuum of best responses
+Steady state of a learning process
+Distribution of outcomes in a perturbed game with pure strategy
+best responses
+• “Puriﬁcation”
+Evan Sadler
+Game Theory 2
+11/39
+
+=== [pagina 32] ===
+Nash’s Theorem
+Theorem
+Every ﬁnite game has a mixed strategy Nash equilibrium.
+Evan Sadler
+Game Theory 2
+12/39
+
+=== [pagina 33] ===
+Nash’s Theorem
+Theorem
+Every ﬁnite game has a mixed strategy Nash equilibrium.
+Implication: games like matching pennies always have mixed
+equilibria
+Evan Sadler
+Game Theory 2
+12/39
+
+=== [pagina 34] ===
+Nash’s Theorem
+Theorem
+Every ﬁnite game has a mixed strategy Nash equilibrium.
+Implication: games like matching pennies always have mixed
+equilibria
+Why do we care?
+• Without existence, studying properties of equilibria is diﬃcult
+(maybe meaningless)
+• Knowing existence, we can just try to ﬁnd the equilibria
+Evan Sadler
+Game Theory 2
+12/39
+
+=== [pagina 35] ===
+Tools: Weierstrass’s Theorem
+Theorem (Weierstrass)
+Let A be a nonempty compact subset of a ﬁnite dimensional
+Euclidean space, and let f : A →R be a continuous function.
+The function f attains a maximum and a minimum in A.
+Evan Sadler
+Game Theory 2
+13/39
+
+=== [pagina 36] ===
+Tools: Weierstrass’s Theorem
+Theorem (Weierstrass)
+Let A be a nonempty compact subset of a ﬁnite dimensional
+Euclidean space, and let f : A →R be a continuous function.
+The function f attains a maximum and a minimum in A.
+Recall deﬁnition of compactness: every sequence has a
+convergent subsequence
+• Continuity ensures sup and inf are contained in the image f(A)
+Evan Sadler
+Game Theory 2
+13/39
+
+=== [pagina 37] ===
+Tools: Kakutani’s Fixed Point Theorem
+Theorem (Kakutani)
+Let f : A ⇒A be a correspondence, i.e. x ∈A =⇒f(x) ⊂A,
+satisfying:
+• A is a non-empty compact and convex subset of a ﬁnite
+dimensional Euclidean space
+• f(x) is non-empty for all x ∈A
+• f(x) is convex valued
+• f(x) has a closed graph, i.e. (xn, yn) →(x, y) with
+yn ∈f(xn) implies y ∈f(x)
+Then f has a ﬁxed point: there exists x ∈A such that x ∈f(x)
+Evan Sadler
+Game Theory 2
+14/39
+
+=== [pagina 38] ===
+Deﬁnitions
+A set in Euclidean space is compact iﬀit is bounded and closed
+• Every inﬁnite sequence has a convergent subsequence
+Evan Sadler
+Game Theory 2
+15/39
+
+=== [pagina 39] ===
+Deﬁnitions
+A set in Euclidean space is compact iﬀit is bounded and closed
+• Every inﬁnite sequence has a convergent subsequence
+A set S is convex if for any x, y ∈S and any λ ∈[0, 1], we have
+λx + (1 −λ)y ∈S.
+Evan Sadler
+Game Theory 2
+15/39
+
+=== [pagina 40] ===
+Kakutani’s Fixed Point Theorem, Illustration
+Evan Sadler
+Game Theory 2
+16/39
+
+=== [pagina 41] ===
+Proof of Nash’s Theorem
+Recall σ∗is a mixed strategy Nash Equilibrium if for every player
+i and every σi ∈Σi,
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+Evan Sadler
+Game Theory 2
+17/39
+
+=== [pagina 42] ===
+Proof of Nash’s Theorem
+Recall σ∗is a mixed strategy Nash Equilibrium if for every player
+i and every σi ∈Σi,
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+Deﬁne best response correspondence Bi : Σ−i ⇒Σi for player i:
+Bi(σ−i) = {σ′
+i ∈Σi : ui(σ′
+i, σ−i) ≥ui(ˆσi, σ−i), ∀ˆσi ∈Σi}
+Evan Sadler
+Game Theory 2
+17/39
+
+=== [pagina 43] ===
+Proof of Nash’s Theorem
+Recall σ∗is a mixed strategy Nash Equilibrium if for every player
+i and every σi ∈Σi,
+ui(σ∗
+i , σ∗
+−i) ≥ui(σi, σ∗
+−i)
+Deﬁne best response correspondence Bi : Σ−i ⇒Σi for player i:
+Bi(σ−i) = {σ′
+i ∈Σi : ui(σ′
+i, σ−i) ≥ui(ˆσi, σ−i), ∀ˆσi ∈Σi}
+Set of best response correspondences
+B(σ) = {Bi(σ−i)}i∈N
+Evan Sadler
+Game Theory 2
+17/39
+
+=== [pagina 44] ===
+Proof, continued
+We apply Kakutani’s ﬁxed point theorem to the correspondence
+B : Σ ⇒Σ
+Evan Sadler
+Game Theory 2
+18/39
+
+=== [pagina 45] ===
+Proof, continued
+We apply Kakutani’s ﬁxed point theorem to the correspondence
+B : Σ ⇒Σ
+Need to show:
+• Σ is compact, convex, and non-empty
+• B(σ) is non-empty
+• B(σ) is convex-valued
+• B(σ) has a closed graph
+Evan Sadler
+Game Theory 2
+18/39
+
+=== [pagina 46] ===
+Proof, continued
+We apply Kakutani’s ﬁxed point theorem to the correspondence
+B : Σ ⇒Σ
+Need to show:
+• Σ is compact, convex, and non-empty
+• B(σ) is non-empty
+• B(σ) is convex-valued
+• B(σ) has a closed graph
+Σ = Q
+i∈N Σi is compact, convex, and non-empty by deﬁnition
+• Σi is a simplex of dimension |Si| −1
+Evan Sadler
+Game Theory 2
+18/39
+
+=== [pagina 47] ===
+Proof, continued
+B(σ) is non-empty by Weierstrass’s theorem
+• Σi is non-empty and compact, so ui attains its maximum for
+each i
+Evan Sadler
+Game Theory 2
+19/39
+
+=== [pagina 48] ===
+Proof, continued
+B(σ) is non-empty by Weierstrass’s theorem
+• Σi is non-empty and compact, so ui attains its maximum for
+each i
+B(σ) is convex-valued, meaning Bi(σ−i) is convex for each i
+• Recall proposition on pure strategy deviations
+• If σ′
+i and σ′′
+i both maximize ui, any mixture does as well
+Evan Sadler
+Game Theory 2
+19/39
+
+=== [pagina 49] ===
+Proof, continued
+B(σ) is non-empty by Weierstrass’s theorem
+• Σi is non-empty and compact, so ui attains its maximum for
+each i
+B(σ) is convex-valued, meaning Bi(σ−i) is convex for each i
+• Recall proposition on pure strategy deviations
+• If σ′
+i and σ′′
+i both maximize ui, any mixture does as well
+For any ˆσi, we have
+ui (λσ′
+i + (1 −λ)σ′′
+i , σ−i) = λui(σ′
+i, σ−i) + (1 −λ)ui(σ′′
+i , σ−i)
+≥λui(ˆσi, σ−i) + (1 −λ)ui(ˆσi, σ−i)
+= ui(ˆσi, σ−i)
+Evan Sadler
+Game Theory 2
+19/39
+
+=== [pagina 50] ===
+Proof, continued
+B(σ) has a closed graph
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 51] ===
+Proof, continued
+B(σ) has a closed graph
+• Suppose not
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 52] ===
+Proof, continued
+B(σ) has a closed graph
+• Suppose not
+• Then, there exists (σn, ˆσn) →(σ, ˆσ) with ˆσn ∈B(σn), but
+ˆσ /∈B(σ)
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 53] ===
+Proof, continued
+B(σ) has a closed graph
+• Suppose not
+• Then, there exists (σn, ˆσn) →(σ, ˆσ) with ˆσn ∈B(σn), but
+ˆσ /∈B(σ)
+• That is, there exists i such that ˆσi /∈Bi(σ−i)
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 54] ===
+Proof, continued
+B(σ) has a closed graph
+• Suppose not
+• Then, there exists (σn, ˆσn) →(σ, ˆσ) with ˆσn ∈B(σn), but
+ˆσ /∈B(σ)
+• That is, there exists i such that ˆσi /∈Bi(σ−i)
+• Since ˆσ /∈Bi(σ−i), there exists σ′
+i ∈Σi and ϵ > 0 such that
+ui(σ′
+i, σ−i) > ui(ˆσi, σ−i) + 3ϵ
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 55] ===
+Proof, continued
+B(σ) has a closed graph
+• Suppose not
+• Then, there exists (σn, ˆσn) →(σ, ˆσ) with ˆσn ∈B(σn), but
+ˆσ /∈B(σ)
+• That is, there exists i such that ˆσi /∈Bi(σ−i)
+• Since ˆσ /∈Bi(σ−i), there exists σ′
+i ∈Σi and ϵ > 0 such that
+ui(σ′
+i, σ−i) > ui(ˆσi, σ−i) + 3ϵ
+• By continuity, for suﬃciently large n we have
+ui(σ′
+i, σn
+−i) ≥ui(σ′
+i, σ−i) −ϵ
+Evan Sadler
+Game Theory 2
+20/39
+
+=== [pagina 56] ===
+Proof, continued
+Combining the last two inequalities, we have
+ui(σ′
+i, σn
+−i) > ui(ˆσi, σ−i) + 2ϵ ≥ui(ˆσn
+i , σn
+−i) + ϵ
+Evan Sadler
+Game Theory 2
+21/39
+
+=== [pagina 57] ===
+Proof, continued
+Combining the last two inequalities, we have
+ui(σ′
+i, σn
+−i) > ui(ˆσi, σ−i) + 2ϵ ≥ui(ˆσn
+i , σn
+−i) + ϵ
+This contradicts assumption that ˆσn
+i ∈Bi(σn
+−i)
+• We conclude that B has a closed graph
+Evan Sadler
+Game Theory 2
+21/39
+
+=== [pagina 58] ===
+Proof, continued
+Combining the last two inequalities, we have
+ui(σ′
+i, σn
+−i) > ui(ˆσi, σ−i) + 2ϵ ≥ui(ˆσn
+i , σn
+−i) + ϵ
+This contradicts assumption that ˆσn
+i ∈Bi(σn
+−i)
+• We conclude that B has a closed graph
+By deﬁnition, σ∗is a mixed strategy equilibrium if σ∗∈B(σ∗)
+Evan Sadler
+Game Theory 2
+21/39
+
+=== [pagina 59] ===
+Proof, continued
+Combining the last two inequalities, we have
+ui(σ′
+i, σn
+−i) > ui(ˆσi, σ−i) + 2ϵ ≥ui(ˆσn
+i , σn
+−i) + ϵ
+This contradicts assumption that ˆσn
+i ∈Bi(σn
+−i)
+• We conclude that B has a closed graph
+By deﬁnition, σ∗is a mixed strategy equilibrium if σ∗∈B(σ∗)
+Equilibrium existence follows from Kakutani’s theorem
+Evan Sadler
+Game Theory 2
+21/39
+
+=== [pagina 60] ===
+Equilibrium Existence in Inﬁnite Games
+A similar theorem gives existence of pure strategy equilibria in
+inﬁnite games
+Theorem (Debreu, Glicksburg, Fan)
+Consider an inﬁnite normal form game (N, {Si}i∈N, {ui}i∈N)
+such that for each i ∈N:
+• Si is compact and convex
+• ui(si, s−i) is continuous in s−i
+• ui(si, s−i) is continuous and concave in si
+Then a pure strategy Nash Equilibrium exists.
+Evan Sadler
+Game Theory 2
+22/39
+
+=== [pagina 61] ===
+Equilibrium Existence in Inﬁnite Games
+A similar theorem gives existence of pure strategy equilibria in
+inﬁnite games
+Theorem (Debreu, Glicksburg, Fan)
+Consider an inﬁnite normal form game (N, {Si}i∈N, {ui}i∈N)
+such that for each i ∈N:
+• Si is compact and convex
+• ui(si, s−i) is continuous in s−i
+• ui(si, s−i) is continuous and concave in si
+Then a pure strategy Nash Equilibrium exists.
+Proof left as exercise
+Evan Sadler
+Game Theory 2
+22/39
+
+=== [pagina 62] ===
+Deﬁnitions
+Suppose S is a convex set. Then a function f : S →R is
+concave if for any x, y ∈S and λ ∈[0, 1] we have
+f (λx + (1 −λ)y) ≥λf(x) + (1 −λ)f(y)
+Evan Sadler
+Game Theory 2
+23/39
+
+=== [pagina 63] ===
+More Existence Questions
+Can we relax concavity?
+Evan Sadler
+Game Theory 2
+24/39
+
+=== [pagina 64] ===
+More Existence Questions
+Can we relax concavity?
+Example:
+• Two players simultaneously pick locations s1, s2 ∈R2 on the
+unit circle
+• Player 1’s payoﬀstrictly increasing function of distance
+between players
+• Player 2’s payoﬀstrictly decreasing function of distance
+between players
+Evan Sadler
+Game Theory 2
+24/39
+
+=== [pagina 65] ===
+More Existence Questions
+Can we relax concavity?
+Example:
+• Two players simultaneously pick locations s1, s2 ∈R2 on the
+unit circle
+• Player 1’s payoﬀstrictly increasing function of distance
+between players
+• Player 2’s payoﬀstrictly decreasing function of distance
+between players
+No pure strategy Nash Equilibrium
+• Can express strategies as a compact convex set, but payoﬀs
+are not concave
+Evan Sadler
+Game Theory 2
+24/39
+
+=== [pagina 66] ===
+More Existence Questions
+Can we relax concavity?
+Example:
+• Two players simultaneously pick locations s1, s2 ∈R2 on the
+unit circle
+• Player 1’s payoﬀstrictly increasing function of distance
+between players
+• Player 2’s payoﬀstrictly decreasing function of distance
+between players
+No pure strategy Nash Equilibrium
+• Can express strategies as a compact convex set, but payoﬀs
+are not concave
+There are mixed strategy equilibria...
+Evan Sadler
+Game Theory 2
+24/39
+
+=== [pagina 67] ===
+A Stronger Theorem
+Theorem (Glicksberg)
+Consider an inﬁnite normal form game such that
+• Si is compact and convex for each i
+• ui(si, s−i) is continuous in both arguments
+Then a mixed strategy Nash Equilibrium exists.
+Proof is beyond scope of this class
+Evan Sadler
+Game Theory 2
+25/39
+
+=== [pagina 68] ===
+Extensive Form Games
+Up to now, we have ignored dynamics
+Evan Sadler
+Game Theory 2
+26/39
+
+=== [pagina 69] ===
+Extensive Form Games
+Up to now, we have ignored dynamics
+Extensive form games capture strategic situations with multiple
+actions in sequence
+• For now, focus on games with observable actions
+Evan Sadler
+Game Theory 2
+26/39
+
+=== [pagina 70] ===
+Extensive Form Games
+Up to now, we have ignored dynamics
+Extensive form games capture strategic situations with multiple
+actions in sequence
+• For now, focus on games with observable actions
+Represent extensive form using a game tree
+• Keep track of possible histories
+Evan Sadler
+Game Theory 2
+26/39
+
+=== [pagina 71] ===
+Deﬁnitions
+Extensive form game is a collection (N, H, Z, {Ah
+i }i∈N
+h∈H, {ui}i∈N)
+• Set of players N
+• Set of non-terminal histories H
+• Set of terminal histories Z
+• Actions Ah
+i for each player i at each non-terminal history h
+• Payoﬀfunction ui giving payoﬀto i at each terminal history
+Evan Sadler
+Game Theory 2
+27/39
+
+=== [pagina 72] ===
+Deﬁnitions
+Extensive form game is a collection (N, H, Z, {Ah
+i }i∈N
+h∈H, {ui}i∈N)
+• Set of players N
+• Set of non-terminal histories H
+• Set of terminal histories Z
+• Actions Ah
+i for each player i at each non-terminal history h
+• Payoﬀfunction ui giving payoﬀto i at each terminal history
+Evan Sadler
+Game Theory 2
+27/39
+
+=== [pagina 73] ===
+Strategies in Extensive Form Games
+A strategy for player i is a map si giving an action for each
+non-terminal history h ∈H
+• Strategy is a complete contingent plan
+Evan Sadler
+Game Theory 2
+28/39
+
+=== [pagina 74] ===
+Strategies in Extensive Form Games
+A strategy for player i is a map si giving an action for each
+non-terminal history h ∈H
+• Strategy is a complete contingent plan
+In example, player 1 has two strategies, H and T
+Evan Sadler
+Game Theory 2
+28/39
+
+=== [pagina 75] ===
+Strategies in Extensive Form Games
+A strategy for player i is a map si giving an action for each
+non-terminal history h ∈H
+• Strategy is a complete contingent plan
+In example, player 1 has two strategies, H and T
+How many does player 2 have?
+Evan Sadler
+Game Theory 2
+28/39
+
+=== [pagina 76] ===
+Strategies in Extensive Form Games
+A strategy for player i is a map si giving an action for each
+non-terminal history h ∈H
+• Strategy is a complete contingent plan
+In example, player 1 has two strategies, H and T
+How many does player 2 have?
+• Four: HH, HT, TH, TT
+Evan Sadler
+Game Theory 2
+28/39
+
+=== [pagina 77] ===
+Strategies in Extensive Form Games
+Can use strategies to express extensive form game in normal form
+• Action in normal form game is choice of a complete contingent
+plan
+Evan Sadler
+Game Theory 2
+29/39
+
+=== [pagina 78] ===
+Strategies in Extensive Form Games
+Can use strategies to express extensive form game in normal form
+• Action in normal form game is choice of a complete contingent
+plan
+Normal form of two-stage matching pennies:
+Player 1 / Player 2
+HH
+HT
+TH
+TT
+Heads
+(−1, 1)
+(−1, 1)
+(1, −1)
+(1, −1)
+Tails
+(1, −1)
+(−1, 1)
+(1, −1)
+(−1, 1)
+Evan Sadler
+Game Theory 2
+29/39
+
+=== [pagina 79] ===
+Sidebar: Normal Form to Extensive Form
+Recall the original matching pennies example: players choose
+heads/tails simultaneously
+Evan Sadler
+Game Theory 2
+30/39
+
+=== [pagina 80] ===
+Sidebar: Normal Form to Extensive Form
+Recall the original matching pennies example: players choose
+heads/tails simultaneously
+Can represent using a game tree by adding information sets
+• Player cannot distinguish two decision nodes in same
+information set
+Evan Sadler
+Game Theory 2
+30/39
+
+=== [pagina 81] ===
+Example: Entry Deterrence
+Evan Sadler
+Game Theory 2
+31/39
+
+=== [pagina 82] ===
+Example: Entry Deterrence
+Normal form representation:
+Entrant / Incumbent
+Accommodate
+Fight
+In
+(2, 1)
+(0, 0)
+Out
+(1, 2)
+(1, 2)
+Evan Sadler
+Game Theory 2
+31/39
+
+=== [pagina 83] ===
+Example: Entry Deterrence
+Normal form representation:
+Entrant / Incumbent
+Accommodate
+Fight
+In
+(2, 1)
+(0, 0)
+Out
+(1, 2)
+(1, 2)
+Two pure Nash equilibria: (In, A) and (Out, F).
+Evan Sadler
+Game Theory 2
+31/39
+
+=== [pagina 84] ===
+Are Both Equilibria Reasonable?
+Equilibrium (Out, F) sustained by noncredible threat
+• After observing entry, best response is to accommodate
+Evan Sadler
+Game Theory 2
+32/39
+
+=== [pagina 85] ===
+Are Both Equilibria Reasonable?
+Equilibrium (Out, F) sustained by noncredible threat
+• After observing entry, best response is to accommodate
+Reﬁnement by “subgame perfection”
+• Strategy must be optimal going forward from any history
+• Solve game via backward induction
+Evan Sadler
+Game Theory 2
+32/39
+
+=== [pagina 86] ===
+Are Both Equilibria Reasonable?
+Equilibrium (Out, F) sustained by noncredible threat
+• After observing entry, best response is to accommodate
+Reﬁnement by “subgame perfection”
+• Strategy must be optimal going forward from any history
+• Solve game via backward induction
+Need to formally deﬁne a subgame
+Evan Sadler
+Game Theory 2
+32/39
+
+=== [pagina 87] ===
+Subgame Perfect Equilibrium
+Recall an extensive form game is expressed as a game tree
+• Let VG denote the set of nodes
+Evan Sadler
+Game Theory 2
+33/39
+
+=== [pagina 88] ===
+Subgame Perfect Equilibrium
+Recall an extensive form game is expressed as a game tree
+• Let VG denote the set of nodes
+An information set X ⊆VG is a successor of node y (written
+X ≻y) if we can reach X through y
+Evan Sadler
+Game Theory 2
+33/39
+
+=== [pagina 89] ===
+Subgame Perfect Equilibrium
+Recall an extensive form game is expressed as a game tree
+• Let VG denote the set of nodes
+An information set X ⊆VG is a successor of node y (written
+X ≻y) if we can reach X through y
+Deﬁnition
+Let x denote a node and let Gx denote x and all its successors.
+The set Gx is a subgame if
+• Node x is alone in its information set
+• If y ∈Gx is a successor of z /∈Gx, then x ≻z
+Evan Sadler
+Game Theory 2
+33/39
+
+=== [pagina 90] ===
+Subgame Perfect Equilibrium
+A restriction of a strategy proﬁle σ to the subgame Gx, written
+σ|Gx is the proﬁle implied by σ in the subgame Gx
+Evan Sadler
+Game Theory 2
+34/39
+
+=== [pagina 91] ===
+Subgame Perfect Equilibrium
+A restriction of a strategy proﬁle σ to the subgame Gx, written
+σ|Gx is the proﬁle implied by σ in the subgame Gx
+Deﬁnition
+A strategy proﬁle σ∗is a subgame perfect Nash equilibrium of G
+if for any subgame Gx of G, σ∗
+|Gx is a Nash equilibrium of Gx.
+Rules out non-credible threats
+Evan Sadler
+Game Theory 2
+34/39
+
+=== [pagina 92] ===
+Subgame Perfect Equilibrium
+A restriction of a strategy proﬁle σ to the subgame Gx, written
+σ|Gx is the proﬁle implied by σ in the subgame Gx
+Deﬁnition
+A strategy proﬁle σ∗is a subgame perfect Nash equilibrium of G
+if for any subgame Gx of G, σ∗
+|Gx is a Nash equilibrium of Gx.
+Rules out non-credible threats
+How to ﬁnd subgame perfect equilibria?
+Evan Sadler
+Game Theory 2
+34/39
+
+=== [pagina 93] ===
+Backward Induction
+Backward induction: start from the last subgames, ﬁnd Nash
+equilibria of those, then work backwards towards the beginning of
+the game
+Evan Sadler
+Game Theory 2
+35/39
+
+=== [pagina 94] ===
+Existence of Subgame Perfect Equilibria
+Theorem
+Every ﬁnite perfect information extensive form game G has a
+pure strategy SPE
+Note: perfect information means all information sets contain
+exactly one node
+Evan Sadler
+Game Theory 2
+36/39
+
+=== [pagina 95] ===
+Existence of Subgame Perfect Equilibria
+Theorem
+Every ﬁnite perfect information extensive form game G has a
+pure strategy SPE
+Note: perfect information means all information sets contain
+exactly one node
+Theorem
+Every ﬁnite extensive form game G has a SPE
+Follow’s from Nash’s theorem
+Evan Sadler
+Game Theory 2
+36/39
+
+=== [pagina 96] ===
+Value of Commitment
+What if the incumbent ﬁrm could commit to ﬁght?
+Evan Sadler
+Game Theory 2
+37/39
+
+=== [pagina 97] ===
+Value of Commitment
+What if the incumbent ﬁrm could commit to ﬁght?
+Could adjust the game tree to allow this
+• Now the unique SPE is (Out, F)
+• Incumbent is better oﬀ
+Evan Sadler
+Game Theory 2
+37/39
+
+=== [pagina 98] ===
+Value of Commitment
+What if the incumbent ﬁrm could commit to ﬁght?
+Could adjust the game tree to allow this
+• Now the unique SPE is (Out, F)
+• Incumbent is better oﬀ
+Consider a dynamic version of Cournot competition
+• Firm 1 commits to a quantity of output ﬁrst
+• Only after this does ﬁrm 2 choose a quantity
+Evan Sadler
+Game Theory 2
+37/39
+
+=== [pagina 99] ===
+Stackleberg Competition
+Recall the two ﬁrms will face a market price p = 1 −q1 −q2
+• Firm i earns qi(p −c)
+Evan Sadler
+Game Theory 2
+38/39
+
+=== [pagina 100] ===
+Stackleberg Competition
+Recall the two ﬁrms will face a market price p = 1 −q1 −q2
+• Firm i earns qi(p −c)
+Backward induction: solve ﬁrm 2’s problem
+• First order condition implies q2 = 1−q1−c
+2
+as before
+Evan Sadler
+Game Theory 2
+38/39
+
+=== [pagina 101] ===
+Stackleberg Competition
+Recall the two ﬁrms will face a market price p = 1 −q1 −q2
+• Firm i earns qi(p −c)
+Backward induction: solve ﬁrm 2’s problem
+• First order condition implies q2 = 1−q1−c
+2
+as before
+Firm 1 chooses q1 to maximize
+q1(p −c) = q1
+
+1 −q1 −1 −q1 −c
+2
+−c
+
+= q1
+1 −q1 −c
+2
+
+giving q1 = 1−c
+2 .
+• Total output is higher in the Stackleberg equilibrium (why?)
+Evan Sadler
+Game Theory 2
+38/39
+
+=== [pagina 102] ===
+Recap
+Nash equilibrium will be our workhorse solution concept
+• Can essentially always guarantee existence of a (mixed
+strategy) equilibrium
+Will employ reﬁnements, especially in dynamic games, where
+appropriate
+Next time: a network application of basic game theory
+• Traﬃc routing
+Evan Sadler
+Game Theory 2
+39/39

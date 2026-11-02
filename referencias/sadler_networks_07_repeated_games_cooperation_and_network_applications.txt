@@ -1,0 +1,1404 @@
+# Fonte: Networks 07 - Repeated Games, Cooperation, and Network Applications.pdf
+# Paginas: 98
+
+=== [pagina 1] ===
+Economics of Networks
+Repeated Games, Cooperation, and Network
+Applications
+Evan Sadler
+Massachusetts Institute of Technology
+April 24, 2018
+Evan Sadler
+Repeated Games
+1/33
+
+=== [pagina 2] ===
+Agenda
+• Game theory review
+• Problem of cooperation
+• Finitely repeated Prisoner’s Dilemma
+• Inﬁnitely repeated Prisoner’s Dilemma
+• Folk theorems
+• Prisoner’s Dilemma in a network
+Reading: Osborne Chapters 14 and 15
+Evan Sadler
+Repeated Games
+2/33
+
+=== [pagina 3] ===
+Game Theory Review
+Elements of a game:
+• Players
+• Actions (or Strategies)
+• Payoﬀs
+Evan Sadler
+Repeated Games
+3/33
+
+=== [pagina 4] ===
+Game Theory Review
+Elements of a game:
+• Players
+• Actions (or Strategies)
+• Payoﬀs
+Key solution concept: Nash Equilibrium
+• Everyone plays a best reply to others’ strategies
+• Pure vs. Mixed strategies
+Evan Sadler
+Repeated Games
+3/33
+
+=== [pagina 5] ===
+Game Theory Review
+Elements of a game:
+• Players
+• Actions (or Strategies)
+• Payoﬀs
+Key solution concept: Nash Equilibrium
+• Everyone plays a best reply to others’ strategies
+• Pure vs. Mixed strategies
+Normal vs. Extensive form
+• Subgame perfection
+Evan Sadler
+Repeated Games
+3/33
+
+=== [pagina 6] ===
+Prisoner’s Dilemma
+How to sustain cooperation?
+Evan Sadler
+Repeated Games
+4/33
+
+=== [pagina 7] ===
+Prisoner’s Dilemma
+How to sustain cooperation?
+Recall the Prisoner’s dilemma, our workhorse model for this
+lecture:
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(-4,0)
+(−1, −1)
+Evan Sadler
+Repeated Games
+4/33
+
+=== [pagina 8] ===
+Prisoner’s Dilemma
+How to sustain cooperation?
+Recall the Prisoner’s dilemma, our workhorse model for this
+lecture:
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(-4,0)
+(−1, −1)
+Recall (D, D) is the unique Nash Equilibrium
+• Defecting is a dominant strategy for both players
+Evan Sadler
+Repeated Games
+4/33
+
+=== [pagina 9] ===
+Repeated Games
+Many situations like this where we observe cooperation
+• Why?
+Evan Sadler
+Repeated Games
+5/33
+
+=== [pagina 10] ===
+Repeated Games
+Many situations like this where we observe cooperation
+• Why?
+One idea: players interact repeatedly over time
+• Threat of bad future consequences might induce cooperation
+now
+Evan Sadler
+Repeated Games
+5/33
+
+=== [pagina 11] ===
+Repeated Games
+Many situations like this where we observe cooperation
+• Why?
+One idea: players interact repeatedly over time
+• Threat of bad future consequences might induce cooperation
+now
+Study a repeated game
+• Play the same stage game over and over
+• Can express formally as an extensive form game
+Evan Sadler
+Repeated Games
+5/33
+
+=== [pagina 12] ===
+Discounting
+Key new concept: discounting
+Evan Sadler
+Repeated Games
+6/33
+
+=== [pagina 13] ===
+Discounting
+Key new concept: discounting
+A dollar tomorrow is worth less than a dollar today
+• Opportunity cost of investment (e.g. interest rates)
+• Future consumption less valuable, time preference
+Evan Sadler
+Repeated Games
+6/33
+
+=== [pagina 14] ===
+Discounting
+Key new concept: discounting
+A dollar tomorrow is worth less than a dollar today
+• Opportunity cost of investment (e.g. interest rates)
+• Future consumption less valuable, time preference
+The standard approach: exponential discounting
+• Discount factor δ ∈[0, 1)
+• Value of payoﬀt periods from now multiplied by δt
+Evan Sadler
+Repeated Games
+6/33
+
+=== [pagina 15] ===
+Discounting
+Key new concept: discounting
+A dollar tomorrow is worth less than a dollar today
+• Opportunity cost of investment (e.g. interest rates)
+• Future consumption less valuable, time preference
+The standard approach: exponential discounting
+• Discount factor δ ∈[0, 1)
+• Value of payoﬀt periods from now multiplied by δt
+Under interest rate interpretation have δ =
+1
+1+r
+• In ﬁnance, often use the term “net present value”
+Evan Sadler
+Repeated Games
+6/33
+
+=== [pagina 16] ===
+A Repeated Game, Formally
+Start with a normal form game G = (N, {Si}i∈N, {ui}i∈N)
+(Stage game)
+• Play the game in each of T discrete periods
+• Observe outcome of play in all prior periods
+• T ﬁnite or inﬁnite
+Evan Sadler
+Repeated Games
+7/33
+
+=== [pagina 17] ===
+A Repeated Game, Formally
+Start with a normal form game G = (N, {Si}i∈N, {ui}i∈N)
+(Stage game)
+• Play the game in each of T discrete periods
+• Observe outcome of play in all prior periods
+• T ﬁnite or inﬁnite
+Use notation s = {st}T
+t=0 for sequence of action proﬁles
+• σ = {σt}T
+t=0 for mixed strategies
+Evan Sadler
+Repeated Games
+7/33
+
+=== [pagina 18] ===
+A Repeated Game, Formally
+Start with a normal form game G = (N, {Si}i∈N, {ui}i∈N)
+(Stage game)
+• Play the game in each of T discrete periods
+• Observe outcome of play in all prior periods
+• T ﬁnite or inﬁnite
+Use notation s = {st}T
+t=0 for sequence of action proﬁles
+• σ = {σt}T
+t=0 for mixed strategies
+Payoﬀto player i
+Ui(s) =
+T
+X
+t=0
+δtui(st
+i, st
+−i)
+Denote T-period repeated game with discount factor δ by GT(δ)
+Evan Sadler
+Repeated Games
+7/33
+
+=== [pagina 19] ===
+Finitely Repeated Prisoner’s Dilemma
+What if we play the Prisoner’s Dilemma T < ∞times?
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+Evan Sadler
+Repeated Games
+8/33
+
+=== [pagina 20] ===
+Finitely Repeated Prisoner’s Dilemma
+What if we play the Prisoner’s Dilemma T < ∞times?
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+First need to decide on solution concept
+• Natural choice: subgame perfect Nash equilibrium
+Evan Sadler
+Repeated Games
+8/33
+
+=== [pagina 21] ===
+Finitely Repeated Prisoner’s Dilemma
+What if we play the Prisoner’s Dilemma T < ∞times?
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+First need to decide on solution concept
+• Natural choice: subgame perfect Nash equilibrium
+Solve via backward induction
+• What happends at time T?
+Evan Sadler
+Repeated Games
+8/33
+
+=== [pagina 22] ===
+Finitely Repeated Prisoner’s Dilemma
+Defect is a dominant strategy in the last period, so players play
+(D, D)
+Evan Sadler
+Repeated Games
+9/33
+
+=== [pagina 23] ===
+Finitely Repeated Prisoner’s Dilemma
+Defect is a dominant strategy in the last period, so players play
+(D, D)
+Given this, the subgame at T −1 has a dominant strategy: defect
+Evan Sadler
+Repeated Games
+9/33
+
+=== [pagina 24] ===
+Finitely Repeated Prisoner’s Dilemma
+Defect is a dominant strategy in the last period, so players play
+(D, D)
+Given this, the subgame at T −1 has a dominant strategy: defect
+Iterating this argument, we ﬁnd the unique SPE is to defect in
+every period
+Evan Sadler
+Repeated Games
+9/33
+
+=== [pagina 25] ===
+Finitely Repeated Prisoner’s Dilemma
+Defect is a dominant strategy in the last period, so players play
+(D, D)
+Given this, the subgame at T −1 has a dominant strategy: defect
+Iterating this argument, we ﬁnd the unique SPE is to defect in
+every period
+This is a special case of a more general result...
+Evan Sadler
+Repeated Games
+9/33
+
+=== [pagina 26] ===
+Equilibria of Finitely-Repeated Games
+Theorem
+Consider the repeated game GT(δ) for T < ∞. If the stage
+game G has a unique pure strategy equilibrium σ∗, then GT has
+a unique SPE in which σ∗is played every period.
+The proof follows the same logic as in the Prisoners’ Dilemma
+example
+By backward induction, at time T the unique outcome is σ∗, and
+taking this as given, we can iterate to construct the unique SPE
+Evan Sadler
+Repeated Games
+10/33
+
+=== [pagina 27] ===
+Inﬁnitely Repeated Games
+Now consider the inﬁnitely repeated game G∞(δ)
+Evan Sadler
+Repeated Games
+11/33
+
+=== [pagina 28] ===
+Inﬁnitely Repeated Games
+Now consider the inﬁnitely repeated game G∞(δ)
+A pure strategy proﬁle s is now an inﬁnite sequence of action
+proﬁles
+Evan Sadler
+Repeated Games
+11/33
+
+=== [pagina 29] ===
+Inﬁnitely Repeated Games
+Now consider the inﬁnitely repeated game G∞(δ)
+A pure strategy proﬁle s is now an inﬁnite sequence of action
+proﬁles
+Payoﬀto player i is
+Ui(s) =
+∞
+X
+t=0
+δtui(st
+i, st
+−i)
+Evan Sadler
+Repeated Games
+11/33
+
+=== [pagina 30] ===
+Inﬁnitely Repeated Games
+Now consider the inﬁnitely repeated game G∞(δ)
+A pure strategy proﬁle s is now an inﬁnite sequence of action
+proﬁles
+Payoﬀto player i is
+Ui(s) =
+∞
+X
+t=0
+δtui(st
+i, st
+−i)
+Note summation is well deﬁned since δ < 1
+∞
+X
+t=0
+δt =
+1
+1 −δ
+Evan Sadler
+Repeated Games
+11/33
+
+=== [pagina 31] ===
+Trigger Strategies
+Trigger strategies are one way to sustain cooperation in an
+inﬁnitely repeated game
+Evan Sadler
+Repeated Games
+12/33
+
+=== [pagina 32] ===
+Trigger Strategies
+Trigger strategies are one way to sustain cooperation in an
+inﬁnitely repeated game
+Idea: we have an agreed upon action proﬁle; if you deviate, I will
+play a “punishment” action
+• Inﬁnite repetition ensures we can always punish
+Evan Sadler
+Repeated Games
+12/33
+
+=== [pagina 33] ===
+Trigger Strategies
+Trigger strategies are one way to sustain cooperation in an
+inﬁnitely repeated game
+Idea: we have an agreed upon action proﬁle; if you deviate, I will
+play a “punishment” action
+• Inﬁnite repetition ensures we can always punish
+Grim trigger strategy: punishment lasts forever after deviation
+• Ability to cooperate depends on worst available punishment
+Evan Sadler
+Repeated Games
+12/33
+
+=== [pagina 34] ===
+Trigger Strategies
+Trigger strategies are one way to sustain cooperation in an
+inﬁnitely repeated game
+Idea: we have an agreed upon action proﬁle; if you deviate, I will
+play a “punishment” action
+• Inﬁnite repetition ensures we can always punish
+Grim trigger strategy: punishment lasts forever after deviation
+• Ability to cooperate depends on worst available punishment
+Formally, if s is the agreed upon proﬁle and si is the punishment
+action, the grim trigger strategy is:
+st
+i =
+
+
+
+si
+if sτ = s for all τ < t
+si
+if sτ ̸= s for some τ < t
+Evan Sadler
+Repeated Games
+12/33
+
+=== [pagina 35] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Recall
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+Evan Sadler
+Repeated Games
+13/33
+
+=== [pagina 36] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Recall
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+Suppose both players adopt the grim trigger strategy
+• Cooperate as long as no one has defected
+Evan Sadler
+Repeated Games
+13/33
+
+=== [pagina 37] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Recall
+Defect
+Cooperate
+Defect
+(−3, −3)
+(0, −4)
+Cooperate
+(−4, 0)
+(−1, −1)
+Suppose both players adopt the grim trigger strategy
+• Cooperate as long as no one has defected
+Can this be a subgame perfect Nash equilibrium?
+• Will show it is as long as δ > 1
+3
+Evan Sadler
+Repeated Games
+13/33
+
+=== [pagina 38] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 1: Cooperation is a best response to cooperation
+• Suppose at current history there have been no defections
+Evan Sadler
+Repeated Games
+14/33
+
+=== [pagina 39] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 1: Cooperation is a best response to cooperation
+• Suppose at current history there have been no defections
+Payoﬀfrom cooperation:
+−
+
+1 + δ + δ2 + ...
+
+=
+−1
+1 −δ
+Evan Sadler
+Repeated Games
+14/33
+
+=== [pagina 40] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 1: Cooperation is a best response to cooperation
+• Suppose at current history there have been no defections
+Payoﬀfrom cooperation:
+−
+
+1 + δ + δ2 + ...
+
+=
+−1
+1 −δ
+Payoﬀfrom defection:
+0 −3
+
+δ + δ2 + δ3 + ...
+
+= −3δ
+1 −δ
+Evan Sadler
+Repeated Games
+14/33
+
+=== [pagina 41] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 1: Cooperation is a best response to cooperation
+• Suppose at current history there have been no defections
+Payoﬀfrom cooperation:
+−
+
+1 + δ + δ2 + ...
+
+=
+−1
+1 −δ
+Payoﬀfrom defection:
+0 −3
+
+δ + δ2 + δ3 + ...
+
+= −3δ
+1 −δ
+Cooperation is better if 3δ > 1 or δ > 1
+3
+Evan Sadler
+Repeated Games
+14/33
+
+=== [pagina 42] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 2: Defection is a best response to defection
+• Suppose someone has defected
+• Expect other player to always defect going forward
+Evan Sadler
+Repeated Games
+15/33
+
+=== [pagina 43] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 2: Defection is a best response to defection
+• Suppose someone has defected
+• Expect other player to always defect going forward
+Defection is unique best response, so grim trigger is subgame
+perfect
+Evan Sadler
+Repeated Games
+15/33
+
+=== [pagina 44] ===
+Cooperation in the Repeated Prisoner’s Dilemma
+Step 2: Defection is a best response to defection
+• Suppose someone has defected
+• Expect other player to always defect going forward
+Defection is unique best response, so grim trigger is subgame
+perfect
+Note: always cooperating is a best response to the grim trigger
+strategy, but equilibrium requires both players to threaten
+punishment for defection
+• If my opponent always cooperates, I should defect
+Evan Sadler
+Repeated Games
+15/33
+
+=== [pagina 45] ===
+Multiplicity
+Cooperation is an equilibrium, but in general there are many,
+many subgame perfect equilibria
+Evan Sadler
+Repeated Games
+16/33
+
+=== [pagina 46] ===
+Multiplicity
+Cooperation is an equilibrium, but in general there are many,
+many subgame perfect equilibria
+Another possibility: switching oﬀ
+• Have one player cooperate and one player defect each period
+• Switch roles each period
+• If someone deviates from the plan, defect forever (punishment)
+Evan Sadler
+Repeated Games
+16/33
+
+=== [pagina 47] ===
+Multiplicity
+Cooperation is an equilibrium, but in general there are many,
+many subgame perfect equilibria
+Another possibility: switching oﬀ
+• Have one player cooperate and one player defect each period
+• Switch roles each period
+• If someone deviates from the plan, defect forever (punishment)
+In fact, there is a continuum of equilibria
+• Very diﬀerent from case with ﬁnite T
+Evan Sadler
+Repeated Games
+16/33
+
+=== [pagina 48] ===
+Repetition can Support Worse Outcomes
+Consider
+A
+B
+C
+A
+(2, 2)
+(2, 1)
+(0, 0)
+B
+(1, 2)
+(1, 1)
+(−1, 0)
+C
+(0, 0)
+(0, −1)
+(−1, −1)
+Evan Sadler
+Repeated Games
+17/33
+
+=== [pagina 49] ===
+Repetition can Support Worse Outcomes
+Consider
+A
+B
+C
+A
+(2, 2)
+(2, 1)
+(0, 0)
+B
+(1, 2)
+(1, 1)
+(−1, 0)
+C
+(0, 0)
+(0, −1)
+(−1, −1)
+(A, A) is a dominant strategy equilibrium
+Evan Sadler
+Repeated Games
+17/33
+
+=== [pagina 50] ===
+Repetition can Support Worse Outcomes
+Consider
+A
+B
+C
+A
+(2, 2)
+(2, 1)
+(0, 0)
+B
+(1, 2)
+(1, 1)
+(−1, 0)
+C
+(0, 0)
+(0, −1)
+(−1, −1)
+(A, A) is a dominant strategy equilibrium
+If δ > 1
+2, there is a SPE in which (B, B) is played every period
+• How can the players support this?
+Evan Sadler
+Repeated Games
+17/33
+
+=== [pagina 51] ===
+Folk Theorems
+In general, can sustain cooperation in essentially any
+inﬁnitely-repeated game with a suﬃciently high discount factor
+Evan Sadler
+Repeated Games
+18/33
+
+=== [pagina 52] ===
+Folk Theorems
+In general, can sustain cooperation in essentially any
+inﬁnitely-repeated game with a suﬃciently high discount factor
+Results of this type often referred to as “folk theorems”
+• Widely believed true before formally proved
+Evan Sadler
+Repeated Games
+18/33
+
+=== [pagina 53] ===
+Folk Theorems
+In general, can sustain cooperation in essentially any
+inﬁnitely-repeated game with a suﬃciently high discount factor
+Results of this type often referred to as “folk theorems”
+• Widely believed true before formally proved
+Stage game G = (N, {Si}i∈N, {ui}i∈N), repeated game G∞(δ)
+Evan Sadler
+Repeated Games
+18/33
+
+=== [pagina 54] ===
+Folk Theorems
+In general, can sustain cooperation in essentially any
+inﬁnitely-repeated game with a suﬃciently high discount factor
+Results of this type often referred to as “folk theorems”
+• Widely believed true before formally proved
+Stage game G = (N, {Si}i∈N, {ui}i∈N), repeated game G∞(δ)
+Feasible payoﬀs
+V = Conv {v ∈Rn | ∃s ∈S s.t. (1 −δ)U(s) = v}
+Convexity obtained through randomization, normalization by
+1 −δ
+Evan Sadler
+Repeated Games
+18/33
+
+=== [pagina 55] ===
+Minimax Payoﬀs
+Minimax payoﬀof player i: worst payoﬀopponents can
+guarantee for i:
+vi = min
+s−i
+
+max
+si
+ui(si, s−i)
+
+Evan Sadler
+Repeated Games
+19/33
+
+=== [pagina 56] ===
+Minimax Payoﬀs
+Minimax payoﬀof player i: worst payoﬀopponents can
+guarantee for i:
+vi = min
+s−i
+
+max
+si
+ui(si, s−i)
+
+Player i can never receive less in any period
+Evan Sadler
+Repeated Games
+19/33
+
+=== [pagina 57] ===
+Minimax Payoﬀs
+Minimax payoﬀof player i: worst payoﬀopponents can
+guarantee for i:
+vi = min
+s−i
+
+max
+si
+ui(si, s−i)
+
+Player i can never receive less in any period
+Write mi
+−i for a proﬁle of others’ strategies that forces i to
+obtain vi
+Evan Sadler
+Repeated Games
+19/33
+
+=== [pagina 58] ===
+Example
+L
+R
+U
+(−2, −2)
+(1, −2)
+M
+(1, −1)
+(−2, 2)
+D
+(0, 1)
+(0, 1)
+We compute v1; write q for probability player 2 plays L
+Evan Sadler
+Repeated Games
+20/33
+
+=== [pagina 59] ===
+Example
+L
+R
+U
+(−2, −2)
+(1, −2)
+M
+(1, −1)
+(−2, 2)
+D
+(0, 1)
+(0, 1)
+We compute v1; write q for probability player 2 plays L
+Player 1 earns:
+• 1 −3q from U
+• −2 + 3q from M
+• 0 from L
+Evan Sadler
+Repeated Games
+20/33
+
+=== [pagina 60] ===
+Example
+L
+R
+U
+(−2, −2)
+(1, −2)
+M
+(1, −1)
+(−2, 2)
+D
+(0, 1)
+(0, 1)
+We compute v1; write q for probability player 2 plays L
+Player 1 earns:
+• 1 −3q from U
+• −2 + 3q from M
+• 0 from L
+Therefore
+v1 = min
+0≤q≤1 max{1 −3q, −2 + 3q, 0} = 0
+Evan Sadler
+Repeated Games
+20/33
+
+=== [pagina 61] ===
+PayoﬀLower Bounds
+Theorem
+If σ is a Nash equilibrium of G, then the payoﬀto i satisﬁes
+ui(σ) ≥vi
+If σ is a Nash equilibrium of G∞(δ), then the payoﬀto i satisﬁes
+(1 −δ)Ui(σ) ≥vi
+Proof: No matter what others do, player i can guarantee a payoﬀ
+of vi in each stage game
+Evan Sadler
+Repeated Games
+21/33
+
+=== [pagina 62] ===
+Folk Theorems
+Theorem (Nash Folk Theorem)
+If v is feasible and vi > vi for all i, then there exists some δ < 1
+such that for all δ > δ, there is a Nash equilibrium of G∞(δ) with
+payoﬀs (1 −δ)v.
+To simplify the argument suppose there is a pure strategy proﬁle
+s that delivers the value vector v
+Evan Sadler
+Repeated Games
+22/33
+
+=== [pagina 63] ===
+Folk Theorems
+Theorem (Nash Folk Theorem)
+If v is feasible and vi > vi for all i, then there exists some δ < 1
+such that for all δ > δ, there is a Nash equilibrium of G∞(δ) with
+payoﬀs (1 −δ)v.
+To simplify the argument suppose there is a pure strategy proﬁle
+s that delivers the value vector v
+Consider the grim trigger strategy for each player i:
+• Play si as long as no one deviates
+• If j deviates, play mj
+i forever
+Evan Sadler
+Repeated Games
+22/33
+
+=== [pagina 64] ===
+Proof Continued
+Can i gain from deviating in period t?
+Evan Sadler
+Repeated Games
+23/33
+
+=== [pagina 65] ===
+Proof Continued
+Can i gain from deviating in period t?
+Write vi for i’s maximum one period payoﬀ, deviation payoﬀis
+bounded by
+vi + δvi + ...δt−1vi + δtvi + δt+1vi + δt+2vi + ...
+Evan Sadler
+Repeated Games
+23/33
+
+=== [pagina 66] ===
+Proof Continued
+Can i gain from deviating in period t?
+Write vi for i’s maximum one period payoﬀ, deviation payoﬀis
+bounded by
+vi + δvi + ...δt−1vi + δtvi + δt+1vi + δt+2vi + ...
+Equilibrium strategy is optimal if
+vi
+1 −δ ≥1 −δt
+1 −δ vi + δtvi + δt+1
+1 −δvi
+which is equivalent to
+vi ≥(1 −δ)vi + δvi
+Evan Sadler
+Repeated Games
+23/33
+
+=== [pagina 67] ===
+Proof Continued
+Can i gain from deviating in period t?
+Write vi for i’s maximum one period payoﬀ, deviation payoﬀis
+bounded by
+vi + δvi + ...δt−1vi + δtvi + δt+1vi + δt+2vi + ...
+Equilibrium strategy is optimal if
+vi
+1 −δ ≥1 −δt
+1 −δ vi + δtvi + δt+1
+1 −δvi
+which is equivalent to
+vi ≥(1 −δ)vi + δvi
+The proﬁle is an equilibrium if δ > δ = maxi
+vi−vi
+vi−vi
+Evan Sadler
+Repeated Games
+23/33
+
+=== [pagina 68] ===
+Some Issues
+Can obtain essentially any payoﬀas a Nash equilibrium with
+patient players, but punishments can be very costly
+• Might not be credible (lack subgame perfection)
+Evan Sadler
+Repeated Games
+24/33
+
+=== [pagina 69] ===
+Some Issues
+Can obtain essentially any payoﬀas a Nash equilibrium with
+patient players, but punishments can be very costly
+• Might not be credible (lack subgame perfection)
+L
+R
+U
+(6, 6)
+(0, −100)
+D
+(7, 1)
+(0, −100)
+Unique NE is (D, L), minimax payoﬀs are v1 = 0 and v2 = 1
+Evan Sadler
+Repeated Games
+24/33
+
+=== [pagina 70] ===
+Some Issues
+Can obtain essentially any payoﬀas a Nash equilibrium with
+patient players, but punishments can be very costly
+• Might not be credible (lack subgame perfection)
+L
+R
+U
+(6, 6)
+(0, −100)
+D
+(7, 1)
+(0, −100)
+Unique NE is (D, L), minimax payoﬀs are v1 = 0 and v2 = 1
+Can get (U, L) as NE, but punishing player 1 for deviations is
+very costly
+Evan Sadler
+Repeated Games
+24/33
+
+=== [pagina 71] ===
+Subgame Perfect Folk Theorem
+Theorem
+Let σ∗be a static equilibrium of the stage game with payoﬀs e.
+For any feasible payoﬀv > e, there exists δ < 1 such that for all
+δ > δ, there exists a subgame perfect Nash equilibrium of G∞(δ)
+with payoﬀs v
+Proof: Same idea as before using σ∗as the grim trigger
+punishment
+Evan Sadler
+Repeated Games
+25/33
+
+=== [pagina 72] ===
+Community Enforcement
+Intuition: cooperation is easier to sustain if we can enlist others
+to punish defectors
+Evan Sadler
+Repeated Games
+26/33
+
+=== [pagina 73] ===
+Community Enforcement
+Intuition: cooperation is easier to sustain if we can enlist others
+to punish defectors
+Example based on Ali and Miller (2016), “Ostracism and
+Forgiveness”
+Evan Sadler
+Repeated Games
+26/33
+
+=== [pagina 74] ===
+Community Enforcement
+Intuition: cooperation is easier to sustain if we can enlist others
+to punish defectors
+Example based on Ali and Miller (2016), “Ostracism and
+Forgiveness”
+Suppose we have three players: Ann, Bob, and Carol
+• Time is continuous
+• Each pair has an interaction at Poisson arrival times with
+intensity λ
+Evan Sadler
+Repeated Games
+26/33
+
+=== [pagina 75] ===
+Community Enforcement
+Intuition: cooperation is easier to sustain if we can enlist others
+to punish defectors
+Example based on Ali and Miller (2016), “Ostracism and
+Forgiveness”
+Suppose we have three players: Ann, Bob, and Carol
+• Time is continuous
+• Each pair has an interaction at Poisson arrival times with
+intensity λ
+At each interaction, play a version of the work/shirk game
+• Simultaneous choose eﬀort levels ai ≥0
+• Eﬀort costs a2, beneﬁt to other player a2 + a
+• Discount future at interest rate r
+Evan Sadler
+Repeated Games
+26/33
+
+=== [pagina 76] ===
+Community Enforcement
+In any given interaction, there is a clear myopic motive to shirk
+• Own eﬀort only beneﬁts the other player
+Evan Sadler
+Repeated Games
+27/33
+
+=== [pagina 77] ===
+Community Enforcement
+In any given interaction, there is a clear myopic motive to shirk
+• Own eﬀort only beneﬁts the other player
+Bilateral enforcement
+• Players observe the outcome of their own interactions
+• Can sustain positive a with a given partner through future
+threats
+Evan Sadler
+Repeated Games
+27/33
+
+=== [pagina 78] ===
+Community Enforcement
+In any given interaction, there is a clear myopic motive to shirk
+• Own eﬀort only beneﬁts the other player
+Bilateral enforcement
+• Players observe the outcome of their own interactions
+• Can sustain positive a with a given partner through future
+threats
+Community enforcement
+• At each interaction, players can reveal what happened in
+interactions with others
+• If Ann defects on Bob, Bob can tell Carol the next time he
+sees her
+• Then, both Bob and Carol can punish Ann
+Evan Sadler
+Repeated Games
+27/33
+
+=== [pagina 79] ===
+Bilateral Enforcement
+Baseline: each partnership behaves independently
+• How much eﬀort and Ann and Bob sustain on their own?
+Evan Sadler
+Repeated Games
+28/33
+
+=== [pagina 80] ===
+Bilateral Enforcement
+Baseline: each partnership behaves independently
+• How much eﬀort and Ann and Bob sustain on their own?
+Grim trigger strategy: both exert a as long as other does so,
+exert 0 forever after a deviation
+Evan Sadler
+Repeated Games
+28/33
+
+=== [pagina 81] ===
+Bilateral Enforcement
+Baseline: each partnership behaves independently
+• How much eﬀort and Ann and Bob sustain on their own?
+Grim trigger strategy: both exert a as long as other does so,
+exert 0 forever after a deviation
+Incentive constraint:
+a + a2 ≤a +
+Z ∞
+0
+e−rtλadt
+One time gain from shirking is less than equilibrium payoﬀ
+Evan Sadler
+Repeated Games
+28/33
+
+=== [pagina 82] ===
+Bilateral Enforcement
+Baseline: each partnership behaves independently
+• How much eﬀort and Ann and Bob sustain on their own?
+Grim trigger strategy: both exert a as long as other does so,
+exert 0 forever after a deviation
+Incentive constraint:
+a + a2 ≤a +
+Z ∞
+0
+e−rtλadt
+One time gain from shirking is less than equilibrium payoﬀ
+Binding at level a = λ
+r
+Evan Sadler
+Repeated Games
+28/33
+
+=== [pagina 83] ===
+Permanent Ostracism with Mechanical
+Communication
+Suppose players automatically reveal details of all prior
+interactions to each partner
+Evan Sadler
+Repeated Games
+29/33
+
+=== [pagina 84] ===
+Permanent Ostracism with Mechanical
+Communication
+Suppose players automatically reveal details of all prior
+interactions to each partner
+Modiﬁed grim trigger
+• All players exert a as long as no one deviates
+• If any player deviates, the victim will report to third player
+• Victim and third player permanently exert 0 with guilty player
+• Victim and third player cooperate at level a going forward
+Evan Sadler
+Repeated Games
+29/33
+
+=== [pagina 85] ===
+Permanent Ostracism with Mechanical
+Communication
+Suppose players automatically reveal details of all prior
+interactions to each partner
+Modiﬁed grim trigger
+• All players exert a as long as no one deviates
+• If any player deviates, the victim will report to third player
+• Victim and third player permanently exert 0 with guilty player
+• Victim and third player cooperate at level a going forward
+Incentive constraint:
+a + a2 ≤a + 2
+Z ∞
+0
+e−rtλadt
+Guilty player cannot conceal deviation, stronger punishment
+supports higher equilibrium eﬀort 2a
+Evan Sadler
+Repeated Games
+29/33
+
+=== [pagina 86] ===
+Permanent Ostracism with Strategic
+Communication
+What if individuals choose which interactions to reveal?
+Evan Sadler
+Repeated Games
+30/33
+
+=== [pagina 87] ===
+Permanent Ostracism with Strategic
+Communication
+What if individuals choose which interactions to reveal?
+Ann considers shirking on Bob, anticipates he will tell Carol
+• Ann can still shirk on Carol if she meets Carol before Bob does
+Evan Sadler
+Repeated Games
+30/33
+
+=== [pagina 88] ===
+Permanent Ostracism with Strategic
+Communication
+What if individuals choose which interactions to reveal?
+Ann considers shirking on Bob, anticipates he will tell Carol
+• Ann can still shirk on Carol if she meets Carol before Bob does
+Incentive constraint in a permanent ostracism strategy proﬁle:
+a + a2 +
+Z ∞
+0
+e−rte−2λtλ(a + a2)dt ≤a + 2
+Z ∞
+0
+e−rtλadt
+Payoﬀfrom shirking on Carol discounted by e−2λt, probability
+that no one else has met Carol by time t
+Evan Sadler
+Repeated Games
+30/33
+
+=== [pagina 89] ===
+Permanent Ostracism with Strategic
+Communication
+What if individuals choose which interactions to reveal?
+Ann considers shirking on Bob, anticipates he will tell Carol
+• Ann can still shirk on Carol if she meets Carol before Bob does
+Incentive constraint in a permanent ostracism strategy proﬁle:
+a + a2 +
+Z ∞
+0
+e−rte−2λtλ(a + a2)dt ≤a + 2
+Z ∞
+0
+e−rtλadt
+Payoﬀfrom shirking on Carol discounted by e−2λt, probability
+that no one else has met Carol by time t
+Constraint binds at
+
+r+4λ
+r+3λ
+
+a
+Evan Sadler
+Repeated Games
+30/33
+
+=== [pagina 90] ===
+Strategic Communication Continued
+But will Bob tell Carol about Ann’s defection?
+Evan Sadler
+Repeated Games
+31/33
+
+=== [pagina 91] ===
+Strategic Communication Continued
+But will Bob tell Carol about Ann’s defection?
+No! At a =
+
+r+4λ
+r+3λ
+
+, Bob prefers to conceal Ann’s guilt
+Evan Sadler
+Repeated Games
+31/33
+
+=== [pagina 92] ===
+Strategic Communication Continued
+But will Bob tell Carol about Ann’s defection?
+No! At a =
+
+r+4λ
+r+3λ
+
+, Bob prefers to conceal Ann’s guilt
+Key insight: telling Carol forces Bob and Carol to revert to
+cooperation level a
+• Bob loses from partnership with Carol because they can’t
+sustain the same level of cooperation anymore
+• Instead, Bob can proﬁt from his private information and defect
+on Carol himself (no threat of third-party punishment)
+Evan Sadler
+Repeated Games
+31/33
+
+=== [pagina 93] ===
+Strategic Communication Continued
+But will Bob tell Carol about Ann’s defection?
+No! At a =
+
+r+4λ
+r+3λ
+
+, Bob prefers to conceal Ann’s guilt
+Key insight: telling Carol forces Bob and Carol to revert to
+cooperation level a
+• Bob loses from partnership with Carol because they can’t
+sustain the same level of cooperation anymore
+• Instead, Bob can proﬁt from his private information and defect
+on Carol himself (no threat of third-party punishment)
+Incentive constraint:
+a + a2 ≤a +
+Z ∞
+0
+e−rtλadt = a + a2
+Bob reports on Ann only if equilibrium eﬀort a is less than a
+Evan Sadler
+Repeated Games
+31/33
+
+=== [pagina 94] ===
+A General Result
+Suppose there are n players who each interact in pairs, engage in
+strategic communication
+Evan Sadler
+Repeated Games
+32/33
+
+=== [pagina 95] ===
+A General Result
+Suppose there are n players who each interact in pairs, engage in
+strategic communication
+Theorem
+In every permanent ostracism equilibrium, each player’s expected
+equilibrium payoﬀnever exceeds that of bilateral enforcement (a)
+Evan Sadler
+Repeated Games
+32/33
+
+=== [pagina 96] ===
+A General Result
+Suppose there are n players who each interact in pairs, engage in
+strategic communication
+Theorem
+In every permanent ostracism equilibrium, each player’s expected
+equilibrium payoﬀnever exceeds that of bilateral enforcement (a)
+Proof: See Ali and Miller (2016)
+Evan Sadler
+Repeated Games
+32/33
+
+=== [pagina 97] ===
+Temporary Ostracism
+Forgiveness facilitates communication and cooperation
+• If Bob knows Ann will eventually be forgiven, he looks forward
+to working with her
+• Concealing information from Carol postpones this prospect
+• Communication among innocent players may be incentive
+compatible
+Evan Sadler
+Repeated Games
+33/33
+
+=== [pagina 98] ===
+Temporary Ostracism
+Forgiveness facilitates communication and cooperation
+• If Bob knows Ann will eventually be forgiven, he looks forward
+to working with her
+• Concealing information from Carol postpones this prospect
+• Communication among innocent players may be incentive
+compatible
+Theorem (Ali and Miller)
+If r < 2λ(n −3), then there exists a temporary ostracism
+equilibrium that yields payoﬀs strictly higher than permanent
+ostracism.
+Evan Sadler
+Repeated Games
+33/33

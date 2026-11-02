@@ -1,0 +1,140 @@
+# Fonte: C:\Users\felip\AppData\Local\Temp/claude/C--Users-felip/d4730d45-ce36-40ce-8f0d-f510726f8bce/scratchpad/pib\EX_PIB_SP\Guia_QGIS_PIB_SP.pdf
+# Paginas: 4
+
+=== [pagina 1] ===
+ 
+UNIVERSIDADE DE SÃO PAULO 
+DEPARTAMENTO DE ECONOMIA 
+DISCIPLINA: ECONOMIA REGIONAL E URBANA 
+PROFESSOR: EDUARDO AMARAL HADDAD 
+ 
+Este roteiro detalha todas as etapas para criar um mapa temático dos municípios de São 
+Paulo por PIB no QGIS, usando o shapefile fornecido e seu CSV de PIB. 
+1) Pré‑requisitos e organização 
+Software: QGIS (versão 3.x). Baixe em https://qgis.org/pt_BR/site/ 
+Dados:  
+• Shapefile de municípios de SP: SP_Municipios_2022.shp (+ .shx, .dbf, .prj, .cpg). 
+• Tabela CSV com PIB municipal: PIB_Municipal_SP_2020.csv (colunas: COD_MUN, 
+NM_MUN, PIB, PIBPC). 
+Crie uma pasta do projeto (ex.: QGIS_SP_PIB_2020/) e salve nela: o shapefile completo 
+e o CSV. 
+2) Criar o projeto e definir o SRC (CRS) 
+1. Abra o QGIS → Project → Save As… → salve o projeto (.qgz) dentro da pasta do 
+projeto. 
+2. No canto inferior direito, clique no EPSG do projeto e defina: EPSG:4674 — SIRGAS 
+2000 (padrão IBGE). 
+3) Adicionar o shapefile de municípios (SP_Municipios_2022.shp) 
+1. Menu Layer → Add Layer → Add Vector Layer… 
+2. Selecione SP_Municipios_2022.shp e clique em Add. 
+3. Clique com o botão direito na camada → Open Attribute Table para conferir os 
+campos: 
+   • CD_MUN (código IBGE do município, 7 dígitos) 
+   • NM_MUN (nome do município) 
+   • SIGLA_UF (SP) 
+   • AREA_KM2 (área do município) 
+
+=== [pagina 2] ===
+4) Adicionar a tabela CSV do PIB (PIB_Municipal_SP_2020.csv) 
+1. Menu Layer → Add Layer → Add Delimited Text Layer… 
+2. File name: selecione PIB_Municipal_SP_2020.csv. 
+3. File format: CSV. Se usar “;” como separador, marque Custom delimiters e selecione 
+“;”. 
+4. Encoding: UTF‑8 (evita problemas com acentos). 
+5. Geometry definition: escolha No geometry (attribute only table). 
+6. Clique em Add. 
+Estrutura esperada do CSV: 
+   • COD_MUN (código IBGE do município, 7 dígitos) 
+   • NM_MUN (nome do município) 
+   • PIB (valor do PIB; use ponto como decimal ou veja a conversão abaixo) 
+   • PIBPC (PIB per capita; idem) 
+5) Padronizar as chaves do *join* (CD_MUN ↔ COD_MUN) 
+As chaves precisam ter o mesmo tipo (texto) e formato (7 dígitos). Se for necessário, crie 
+campos virtuais com 7 dígitos (zeros à esquerda): 
+No SHP (municípios): 
+   • Abra a tabela de atributos → Field Calculator (calculadora) → marque Create virtual 
+field. 
+   • Name: COD7 | Output type: Text (string) | Expression: 
+     lpad(to_string("CD_MUN"), 7, '0') 
+No CSV (PIB): 
+   • Abra a tabela → Field Calculator → Create virtual field. 
+   • Name: COD7 | Output type: Text (string) | Expression: 
+     lpad(to_string("COD_MUN"), 7, '0') 
+6) Realizar o *join* da tabela de PIB aos municípios 
+1. Botão direito na camada de municípios → Properties → aba Joins → clique em “+”. 
+2. Join layer: escolha a tabela CSV. 
+3. Join field: COD_MUN (ou COD7, se você criou o campo virtual no CSV). 
+4. Target field: CD_MUN (ou COD7 do shapefile, se você criou o campo virtual). 
+5. (Opcional) Desmarque “Joined field prefix” para não poluir os nomes dos campos. 
+6. OK → Apply. Abra a Attribute Table dos municípios e verifique se os campos PIB e 
+PIBPC apareceram. 
+7) Converter PIB/PIBPC para número (se vierem como texto) 
+Se os valores vierem como texto (ex.: “1.234,56”), crie campos virtuais numéricos: 
+• Campo PIB_num: 
+
+=== [pagina 3] ===
+  Name: PIB_num | Output type: Decimal (real) | Expression: 
+  to_real(replace("PIB", ',', '.')) 
+• Campo PIBPC_num: 
+  Name: PIBPC_num | Output type: Decimal (real) | Expression: 
+  to_real(replace("PIBPC", ',', '.')) 
+ 
+7) Criar a média e o índice 
+7) Média do PIBPC 
+   Calculadora de Campos → Criar campo 
+   Nome: media_pib   Tipo: Decimal 
+   Expressão: 
+     aggregate( 
+       @layer, 'median', 
+       "PIBPC", 
+       "COD7" = attribute($currentfeature, 'COD7') 
+     ) 
+ 
+Crie o campo “ÍNDICE_SP”: 
+   • Calculadora de Campos → Criar campo 
+     - Nome: “ÍNDICE_SP” • Tipo: Decimal 
+     - Expressão:  ("PIBPC" / "media_pib") * 100 
+      
+8) Criar o mapa temático (PIB por município) 
+1. Botão direito na camada de municípios → Properties → aba Symbology. 
+2. Render type: Graduated. 
+3. Value: selecione PIB (ou PIB_num, se você criou o campo numérico). 
+4. Mode: Natural Breaks (Jenks) (boa opção para dados concentrados) ou Quantile. 
+5. Classes: 5 (ou 6). 
+6. Escolha uma rampa de cores (ex.: Blues ou YlOrRd) e clique em Classify → Apply. 
+Dica de legenda: formate rótulos com separador de milhar (se sua versão permitir), ou 
+edite os rótulos manualmente. 
+9) (Opcional) Rótulos e pop-ups 
+• Labels: Properties → Labels → Single labels → Value: NM_MUN. 
+• Para evitar poluição visual, rotule apenas municípios acima de um limiar: use uma 
+expressão em “Data‑defined override” de “Show labels”. 
+
+=== [pagina 4] ===
+• Use format_number("PIB_num", 0) em expressões/rotulagem quando quiser exibir 
+números formatados. 
+10) Montar o layout e exportar 
+1. Project → New Print Layout → dê um nome ao layout. 
+2. Add Map (arraste um retângulo) para inserir o mapa. 
+3. Add Label para o título (ex.: “PIB Municipal — São Paulo (2020)”). 
+4. Add Legend → ajuste nomes/campos. 
+5. Add Scale Bar (km) e Add North Arrow. 
+6. (Opcional) Adicione créditos: “Fonte: IBGE (malhas 2022); PIB CSV do autor; CRS: 
+SIRGAS 2000 (EPSG:4674)”. 
+7. Layout → Export as PDF (ou Export as Image → PNG/JPEG). 
+11) Salvar e reabrir o projeto 
+• Project → Save. O arquivo .qgz salva joins, simbologia e camadas. 
+• Para compartilhar, compacte a pasta com o .qgz, o shapefile completo e o CSV. 
+12) Problemas comuns (e soluções rápidas) 
+• Join sem efeito (campos nulos): tipos/formato diferentes nas chaves. Padronize com 
+campos virtuais (lpad/to_string). 
+• Acentos/números confusos no CSV: reabra como UTF‑8; converta decimais com 
+to_real(replace(...)). 
+• Mapa “sem cor”: confira se a coluna de Value na Symbology é numérica e se o join está 
+ok. 
+• Classes ruins para dados concentrados: teste Natural Breaks (Jenks) e ajuste nº de 
+classes. 
+• Nada aparece ao filtrar: confirme nomes de campos/valores na tabela de atributos. 
+Apêndice — Expressões úteis no QGIS 
+• Padronizar código com 7 dígitos: lpad(to_string("CD_MUN"), 7, '0') 
+• Converter texto para número: to_real("PIB")  ou  to_real(replace("PIB", ',', '.')) 
+• Formatar número: format_number("PIB_num", 0) 
+• Condição para rótulos: "PIB_num" > 1000000 (exemplo) 

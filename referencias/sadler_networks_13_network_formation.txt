@@ -1,0 +1,1341 @@
+# Fonte: Networks 13 - Network Formation.pdf
+# Paginas: 87
+
+=== [pagina 1] ===
+Economics of Networks
+Network Formation
+Evan Sadler
+Massachusetts Institute of Technology
+May 15, 2018
+Evan Sadler
+Network Formation
+1/31
+
+=== [pagina 2] ===
+Agenda
+• Strategic network formation
+• Pairwise stability
+• One-sided link formation
+• A game played on an endogenous network
+Reading: Jackson, chapters 6 and 11
+Evan Sadler
+Network Formation
+2/31
+
+=== [pagina 3] ===
+Motivation
+First half of course covered several models for generating random
+networks, capture observed features
+Evan Sadler
+Network Formation
+3/31
+
+=== [pagina 4] ===
+Motivation
+First half of course covered several models for generating random
+networks, capture observed features
+Why do networks form? What determines their structure?
+• Coauthor networks
+• Firm R&D networks
+• Financial networks
+Evan Sadler
+Network Formation
+3/31
+
+=== [pagina 5] ===
+Motivation
+First half of course covered several models for generating random
+networks, capture observed features
+Why do networks form? What determines their structure?
+• Coauthor networks
+• Firm R&D networks
+• Financial networks
+Introduce ideas from cooperative game theory to study strategic
+choices about link formation
+Evan Sadler
+Network Formation
+3/31
+
+=== [pagina 6] ===
+A Network Formation Game
+Set of players N, set of possible graphs G (undirected)
+Evan Sadler
+Network Formation
+4/31
+
+=== [pagina 7] ===
+A Network Formation Game
+Set of players N, set of possible graphs G (undirected)
+Payoﬀfor player i:
+ui : G →R
+Utility for every possible network
+Evan Sadler
+Network Formation
+4/31
+
+=== [pagina 8] ===
+A Network Formation Game
+Set of players N, set of possible graphs G (undirected)
+Payoﬀfor player i:
+ui : G →R
+Utility for every possible network
+Will consider diﬀerent speciﬁc payoﬀfunctions, diﬀerent
+protocols for forming links
+Evan Sadler
+Network Formation
+4/31
+
+=== [pagina 9] ===
+Pairwise Stability
+Problem with Nash equilibrium in this setting, will apply a
+cooperative solution concept: pairwise stability
+Evan Sadler
+Network Formation
+5/31
+
+=== [pagina 10] ===
+Pairwise Stability
+Problem with Nash equilibrium in this setting, will apply a
+cooperative solution concept: pairwise stability
+Suppose players simultaneously announce with whom they want
+to form links
+• Huge multiplicity if link formation requires both parties to
+announce
+Evan Sadler
+Network Formation
+5/31
+
+=== [pagina 11] ===
+Pairwise Stability
+Problem with Nash equilibrium in this setting, will apply a
+cooperative solution concept: pairwise stability
+Suppose players simultaneously announce with whom they want
+to form links
+• Huge multiplicity if link formation requires both parties to
+announce
+Want to account for strategic incentives, but allow for better
+coordination
+Evan Sadler
+Network Formation
+5/31
+
+=== [pagina 12] ===
+Pairwise Stability
+Problem with Nash equilibrium in this setting, will apply a
+cooperative solution concept: pairwise stability
+Suppose players simultaneously announce with whom they want
+to form links
+• Huge multiplicity if link formation requires both parties to
+announce
+Want to account for strategic incentives, but allow for better
+coordination
+Pairwise stability: a network is stable if no one wants to delete a
+link and no pair wants to form a link
+Evan Sadler
+Network Formation
+5/31
+
+=== [pagina 13] ===
+Pairwise Stability
+Deﬁnition
+A network G is pairwise stable if:
+• For all ij ∈G, we have ui(G) ≥ui(G −ij), and
+• For all ij /∈G, if ui(G + ij) > ui(G), then
+uj(G + ij) < uj(G)
+Evan Sadler
+Network Formation
+6/31
+
+=== [pagina 14] ===
+Pairwise Stability
+Deﬁnition
+A network G is pairwise stable if:
+• For all ij ∈G, we have ui(G) ≥ui(G −ij), and
+• For all ij /∈G, if ui(G + ij) > ui(G), then
+uj(G + ij) < uj(G)
+If a link is present, neither player beneﬁts from its removal
+Evan Sadler
+Network Formation
+6/31
+
+=== [pagina 15] ===
+Pairwise Stability
+Deﬁnition
+A network G is pairwise stable if:
+• For all ij ∈G, we have ui(G) ≥ui(G −ij), and
+• For all ij /∈G, if ui(G + ij) > ui(G), then
+uj(G + ij) < uj(G)
+If a link is present, neither player beneﬁts from its removal
+If a link is not present and one agent beneﬁts from adding it, the
+other is worse oﬀfrom adding it
+Evan Sadler
+Network Formation
+6/31
+
+=== [pagina 16] ===
+Pairwise Stability
+Deﬁnition
+A network G is pairwise stable if:
+• For all ij ∈G, we have ui(G) ≥ui(G −ij), and
+• For all ij /∈G, if ui(G + ij) > ui(G), then
+uj(G + ij) < uj(G)
+If a link is present, neither player beneﬁts from its removal
+If a link is not present and one agent beneﬁts from adding it, the
+other is worse oﬀfrom adding it
+Unilateral deletion, need agreement for addition
+Evan Sadler
+Network Formation
+6/31
+
+=== [pagina 17] ===
+Eﬃciency
+Are stable networks eﬃcient?
+Evan Sadler
+Network Formation
+7/31
+
+=== [pagina 18] ===
+Eﬃciency
+Are stable networks eﬃcient?
+Deﬁnition
+A network G is eﬃcient if
+n
+X
+i=1
+ui(G) ≥
+n
+X
+i=1
+ui(G′)
+∀G′ ∈G
+A network G is Pareto eﬃcient if there is no G′ ∈G such that
+ui(G′) ≥ui(G) for all i, with strict inequality for at least one i.
+Evan Sadler
+Network Formation
+7/31
+
+=== [pagina 19] ===
+Eﬃciency
+Are stable networks eﬃcient?
+Deﬁnition
+A network G is eﬃcient if
+n
+X
+i=1
+ui(G) ≥
+n
+X
+i=1
+ui(G′)
+∀G′ ∈G
+A network G is Pareto eﬃcient if there is no G′ ∈G such that
+ui(G′) ≥ui(G) for all i, with strict inequality for at least one i.
+Eﬃciency implies Pareto eﬃciency
+• Is the reverse true?
+Evan Sadler
+Network Formation
+7/31
+
+=== [pagina 20] ===
+Example: Distance-Based Utility
+Suppose we have
+ui(G) =
+X
+j̸=i
+b(lij(G)) −di(G)c
+• c > 0 is the cost of making a connection
+• di(G) is the number of neighbors i has in G
+• lij(G) is the distance between i and j in G (take lij(G) = ∞
+if i and j are not connected)
+• b : N →R is a beneﬁt function depending on distance,
+assume strictly decreasing and b(∞) = 0
+Evan Sadler
+Network Formation
+8/31
+
+=== [pagina 21] ===
+Example: Distance-Based Utility
+Suppose we have
+ui(G) =
+X
+j̸=i
+b(lij(G)) −di(G)c
+• c > 0 is the cost of making a connection
+• di(G) is the number of neighbors i has in G
+• lij(G) is the distance between i and j in G (take lij(G) = ∞
+if i and j are not connected)
+• b : N →R is a beneﬁt function depending on distance,
+assume strictly decreasing and b(∞) = 0
+An eﬃcient network maximizes
+U =
+n
+X
+i=1
+
+X
+j̸=i
+b(lij(G)) −di(G)c
+
+
+Evan Sadler
+Network Formation
+8/31
+
+=== [pagina 22] ===
+Pairwise Stability and Eﬃciency
+Suppose that
+b(1) < c < b(1) + (n −2)b(2)
+Evan Sadler
+Network Formation
+9/31
+
+=== [pagina 23] ===
+Pairwise Stability and Eﬃciency
+Suppose that
+b(1) < c < b(1) + (n −2)b(2)
+Eﬃcient network is a star network
+• Peripheral players i earn
+ui(G) = b(1) −c + (N −2)b(2)
+• Central player earns (n −1)(b(1) −c)
+Evan Sadler
+Network Formation
+9/31
+
+=== [pagina 24] ===
+Pairwise Stability and Eﬃciency
+Suppose that
+b(1) < c < b(1) + (n −2)b(2)
+Eﬃcient network is a star network
+• Peripheral players i earn
+ui(G) = b(1) −c + (N −2)b(2)
+• Central player earns (n −1)(b(1) −c)
+Total utility
+U = (n −1) [2b(1) −2c + (n −2)b(2)]
+Evan Sadler
+Network Formation
+9/31
+
+=== [pagina 25] ===
+Pairwise Stability and Eﬃciency
+Given symmetry, suﬃcient to check that we cannot increase U by
+adding or subtracting one link
+Evan Sadler
+Network Formation
+10/31
+
+=== [pagina 26] ===
+Pairwise Stability and Eﬃciency
+Given symmetry, suﬃcient to check that we cannot increase U by
+adding or subtracting one link
+Suppose we remove a link, new utlity
+U ′ = (n −2) [2b(1) −2c + (n −3)b(2)]
+Evan Sadler
+Network Formation
+10/31
+
+=== [pagina 27] ===
+Pairwise Stability and Eﬃciency
+Given symmetry, suﬃcient to check that we cannot increase U by
+adding or subtracting one link
+Suppose we remove a link, new utlity
+U ′ = (n −2) [2b(1) −2c + (n −3)b(2)]
+We have
+U ′ −U = −2b(1) + 2c −2(n −2)b(2)
+= −2 (b(1) −c + (n −2)b(2)) < 0
+Since c < b(1) + (n −2)b(2)
+Evan Sadler
+Network Formation
+10/31
+
+=== [pagina 28] ===
+Pairwise Stability and Eﬃciency
+If we add a link, we reduce the distance between just two of the
+players
+Evan Sadler
+Network Formation
+11/31
+
+=== [pagina 29] ===
+Pairwise Stability and Eﬃciency
+If we add a link, we reduce the distance between just two of the
+players
+New utility
+U ′′ = (n −3) [b(1) −c + (n −2)b(2)] + (n −1) [b(1) −c]
++ 2 [2b(1) −2c + (n −3)b(2)]
+Evan Sadler
+Network Formation
+11/31
+
+=== [pagina 30] ===
+Pairwise Stability and Eﬃciency
+If we add a link, we reduce the distance between just two of the
+players
+New utility
+U ′′ = (n −3) [b(1) −c + (n −2)b(2)] + (n −1) [b(1) −c]
++ 2 [2b(1) −2c + (n −3)b(2)]
+Diﬀerence
+U ′′ −U = 2 (b(1) −c) −2b(2) < 0
+since b(1) < c
+Evan Sadler
+Network Formation
+11/31
+
+=== [pagina 31] ===
+Pairwise Stability and Eﬃciency
+However, the star network is not pairwise stable
+Evan Sadler
+Network Formation
+12/31
+
+=== [pagina 32] ===
+Pairwise Stability and Eﬃciency
+However, the star network is not pairwise stable
+Central player earns utility
+u∗(G) = (n −1) (b(1) −c) < 0
+In general, stable networks ̸= eﬃcient networks
+Evan Sadler
+Network Formation
+12/31
+
+=== [pagina 33] ===
+Pairwise Stability and Eﬃciency
+However, the star network is not pairwise stable
+Central player earns utility
+u∗(G) = (n −1) (b(1) −c) < 0
+In general, stable networks ̸= eﬃcient networks
+Intuitively, links to the central player create positive externalities
+for others, reduces distances for all
+• Fails to internalize these beneﬁts
+Evan Sadler
+Network Formation
+12/31
+
+=== [pagina 34] ===
+Pairwise Stability and Eﬃciency
+Theorem
+In the distance-based utility mode, the unique eﬃcient network is
+• The complete network if b(2) < b(1) −c
+• A star on all nodes if b(1) −b(2) < c < b(1) + (n −2)b(2)
+• The empty network if c > b(1) + (n −2)b(2)
+In contrast, stable networks have the following properties
+• There is at most one non-empty component
+• If b(2) < b(1) −c, the complete network is uniquely stable
+• If b(1) −b(2) < c < b(1), the star network is stable
+• If b(1) < c, every node has either no links or at least two links
+Pairwise stable networks are ineﬃcient exactly when
+b(1) < c < b(1) + (n −2)b(2)
+Evan Sadler
+Network Formation
+13/31
+
+=== [pagina 35] ===
+Pairwise Stability and Eﬃciency
+Positive externalities =⇒too few links in equilibrum
+• What about negative externalities?
+Evan Sadler
+Network Formation
+14/31
+
+=== [pagina 36] ===
+Pairwise Stability and Eﬃciency
+Positive externalities =⇒too few links in equilibrum
+• What about negative externalities?
+Look at the “coauthor model” (Jackson and Wolinsky, 1996)
+• If your coauthor has lots of other coauthors, less time to spend
+on your project
+Evan Sadler
+Network Formation
+14/31
+
+=== [pagina 37] ===
+Pairwise Stability and Eﬃciency
+Positive externalities =⇒too few links in equilibrum
+• What about negative externalities?
+Look at the “coauthor model” (Jackson and Wolinsky, 1996)
+• If your coauthor has lots of other coauthors, less time to spend
+on your project
+Payoﬀfor player i
+ui(G) =
+X
+j : ij∈G
+ 
+1
+di(G) +
+1
+dj(G) +
+1
+di(G)dj(G)
+!
+for di(G) > 0. Set ui(G) = 1 if di(G) = 0
+Evan Sadler
+Network Formation
+14/31
+
+=== [pagina 38] ===
+Pairwise Stability and Eﬃciency
+Theorem (Jackson and Wolinsky)
+In the coauthor model, if n is even, the eﬃcient network structure
+consists of n
+2 distinct pairs. If a network is pairwise stable and
+n ≥4, the network is ineﬃcient and can be partitioned into
+cliques, each with a diﬀerent number of members.
+Evan Sadler
+Network Formation
+15/31
+
+=== [pagina 39] ===
+Pairwise Stability and Eﬃciency
+Theorem (Jackson and Wolinsky)
+In the coauthor model, if n is even, the eﬃcient network structure
+consists of n
+2 distinct pairs. If a network is pairwise stable and
+n ≥4, the network is ineﬃcient and can be partitioned into
+cliques, each with a diﬀerent number of members.
+People have too many coauthors
+• Would be eﬃcient to work with one partner, but players form
+larger groups
+Evan Sadler
+Network Formation
+15/31
+
+=== [pagina 40] ===
+Proof
+To maximize eﬃciency, we maximize
+n
+X
+i=1
+ui(G) =
+X
+i : di(G)>0
+X
+j : ij∈G
+ 
+1
+di(G) +
+1
+dj(G) +
+1
+di(G)dj(G)
+!
+Evan Sadler
+Network Formation
+16/31
+
+=== [pagina 41] ===
+Proof
+To maximize eﬃciency, we maximize
+n
+X
+i=1
+ui(G) =
+X
+i : di(G)>0
+X
+j : ij∈G
+ 
+1
+di(G) +
+1
+dj(G) +
+1
+di(G)dj(G)
+!
+Sum over ﬁrst two terms bounded by 2n
+Evan Sadler
+Network Formation
+16/31
+
+=== [pagina 42] ===
+Proof
+To maximize eﬃciency, we maximize
+n
+X
+i=1
+ui(G) =
+X
+i : di(G)>0
+X
+j : ij∈G
+ 
+1
+di(G) +
+1
+dj(G) +
+1
+di(G)dj(G)
+!
+Sum over ﬁrst two terms bounded by 2n
+Sum over last term bounded by n, equality iﬀdi(G) = dj(G) = 1
+for all ij
+• Only happens if every player has one neighbor
+Evan Sadler
+Network Formation
+16/31
+
+=== [pagina 43] ===
+Proof
+Now pairwise stable networks. Suppose ij /∈G. Player i wants to
+create link ij iﬀ
+ui(G + ij) > ui(G)
+which is true if
+X
+k̸=j, ik∈G
+ 
+1
+di(G) + 1 +
+1
+dk(G) +
+1
+(di(G) + 1)dk(G)
+!
++
+1
+di(G) + 1 +
+1
+dj(G) + 1 +
+1
+(di(G) + 1)(dj(G) + 1)
+>
+X
+k̸=j, ik∈G
+ 
+1
+di(G) +
+1
+dk(G) +
+1
+di(G)dk(G)
+!
+Evan Sadler
+Network Formation
+17/31
+
+=== [pagina 44] ===
+Proof
+Simplifying gives
+1
+dj + 1
+
+1 +
+1
+di + 1
+
+>
+ 1
+di
+−
+1
+di + 1
+ 
+
+X
+k̸=j, ik∈G
+1
+dk
+
+
+Evan Sadler
+Network Formation
+18/31
+
+=== [pagina 45] ===
+Proof
+Simplifying gives
+1
+dj + 1
+
+1 +
+1
+di + 1
+
+>
+ 1
+di
+−
+1
+di + 1
+ 
+
+X
+k̸=j, ik∈G
+1
+dk
+
+
+Multiply by di(G) + 1 to obtain
+di(G) + 2
+dj(G) + 1 >
+1
+di(G)
+
+
+X
+k̸=j, ik∈G
+1
+dk(G)
+
+
+(if di(G) = 0, take RHS = 0)
+Evan Sadler
+Network Formation
+18/31
+
+=== [pagina 46] ===
+Proof
+Simplifying gives
+1
+dj + 1
+
+1 +
+1
+di + 1
+
+>
+ 1
+di
+−
+1
+di + 1
+ 
+
+X
+k̸=j, ik∈G
+1
+dk
+
+
+Multiply by di(G) + 1 to obtain
+di(G) + 2
+dj(G) + 1 >
+1
+di(G)
+
+
+X
+k̸=j, ik∈G
+1
+dk(G)
+
+
+(if di(G) = 0, take RHS = 0)
+First show if di(G) = dj(G), then i and j want to form a link
+• If di(G) = dj(G), LHS > 1 for both, RHS < 1 for both
+Evan Sadler
+Network Formation
+18/31
+
+=== [pagina 47] ===
+Proof
+To complete the argument, show if i and j share a neighbor h
+with dh ≥max{di, dj}, then i and j want to connect
+• Implies connected components are cliques
+Evan Sadler
+Network Formation
+19/31
+
+=== [pagina 48] ===
+Proof
+To complete the argument, show if i and j share a neighbor h
+with dh ≥max{di, dj}, then i and j want to connect
+• Implies connected components are cliques
+If di ≥dh −1, then di+2
+dj+1 ≥1
+• If inequality is strict, we are done
+• If not, then dj ≥2 and dh ≥2, implying
+1
+di(G)
+
+
+X
+k̸=j, ik∈G
+1
+dk(G)
+
+< 1
+and we are done
+Evan Sadler
+Network Formation
+19/31
+
+=== [pagina 49] ===
+Proof
+To complete the argument, show if i and j share a neighbor h
+with dh ≥max{di, dj}, then i and j want to connect
+• Implies connected components are cliques
+If di ≥dh −1, then di+2
+dj+1 ≥1
+• If inequality is strict, we are done
+• If not, then dj ≥2 and dh ≥2, implying
+1
+di(G)
+
+
+X
+k̸=j, ik∈G
+1
+dk(G)
+
+< 1
+and we are done
+If di ≥dh −1, then i wants to link to j; proof for di < dh −1
+left as an exercise
+Evan Sadler
+Network Formation
+19/31
+
+=== [pagina 50] ===
+Existence of Pairwise Stable Networks
+Stable networks exist in our examples, is this always the case?
+Evan Sadler
+Network Formation
+20/31
+
+=== [pagina 51] ===
+Existence of Pairwise Stable Networks
+Stable networks exist in our examples, is this always the case?
+No. Suppose there are 4 players and:
+• Forming a link costs 5 to each player
+• Utility from being isolated is 0
+• Utility from being linked in an isolated pair is 12
+• Utility from being connected (diretly or indirectly) to two
+others is 16
+• Utility from being connected to all three others is 18
+Evan Sadler
+Network Formation
+20/31
+
+=== [pagina 52] ===
+Existence of Pairwise Stable Networks
+Stable networks exist in our examples, is this always the case?
+No. Suppose there are 4 players and:
+• Forming a link costs 5 to each player
+• Utility from being isolated is 0
+• Utility from being linked in an isolated pair is 12
+• Utility from being connected (diretly or indirectly) to two
+others is 16
+• Utility from being connected to all three others is 18
+There is no stable network
+Evan Sadler
+Network Formation
+20/31
+
+=== [pagina 53] ===
+Potential Functions
+How to guarantee existence?
+• Think back to potential games
+Evan Sadler
+Network Formation
+21/31
+
+=== [pagina 54] ===
+Potential Functions
+How to guarantee existence?
+• Think back to potential games
+Deﬁnition
+Networks G and G′ are adjacent if either G′ = G + ij or
+G = G′ + ij for some ij. We say that G′ adjacent to G defeats
+G if either
+• G′ = G −ij and ui(G′) > ui
+• G′ = G + ij and both ui(G′) ≥ui(G) and uj(G′) ≥uj(G),
+with at least one strict inequality
+Evan Sadler
+Network Formation
+21/31
+
+=== [pagina 55] ===
+Potential Functions
+How to guarantee existence?
+• Think back to potential games
+Deﬁnition
+Networks G and G′ are adjacent if either G′ = G + ij or
+G = G′ + ij for some ij. We say that G′ adjacent to G defeats
+G if either
+• G′ = G −ij and ui(G′) > ui
+• G′ = G + ij and both ui(G′) ≥ui(G) and uj(G′) ≥uj(G),
+with at least one strict inequality
+A network is pairwise stable iﬀthere is no adjacent network that
+defeats it
+Evan Sadler
+Network Formation
+21/31
+
+=== [pagina 56] ===
+Potential Functions
+A sequence of adjacent networks (G1, G2, ..., GK) is an
+improving path if Gk+1 defeats Gk
+Evan Sadler
+Network Formation
+22/31
+
+=== [pagina 57] ===
+Potential Functions
+A sequence of adjacent networks (G1, G2, ..., GK) is an
+improving path if Gk+1 defeats Gk
+If no pairwise stable network exists, there must be an improving
+cycle: an improving path with G1 = GK
+Evan Sadler
+Network Formation
+22/31
+
+=== [pagina 58] ===
+Potential Functions
+A sequence of adjacent networks (G1, G2, ..., GK) is an
+improving path if Gk+1 defeats Gk
+If no pairwise stable network exists, there must be an improving
+cycle: an improving path with G1 = GK
+Can rule this out if utilities come from a potential function:
+φ : G →R is an ordinal potential if G′ defeats G if and only if
+φ(G′) > φ(G)
+Evan Sadler
+Network Formation
+22/31
+
+=== [pagina 59] ===
+Potential Functions
+A sequence of adjacent networks (G1, G2, ..., GK) is an
+improving path if Gk+1 defeats Gk
+If no pairwise stable network exists, there must be an improving
+cycle: an improving path with G1 = GK
+Can rule this out if utilities come from a potential function:
+φ : G →R is an ordinal potential if G′ defeats G if and only if
+φ(G′) > φ(G)
+Proposition
+If the network formation game has an ordinal potential, there are
+no improving cycles.
+Evan Sadler
+Network Formation
+22/31
+
+=== [pagina 60] ===
+Directed Networks and Nash Stability
+In some applications, links are made unilaterally
+• Paper citation
+• Webpage linking
+• Following on social media
+Evan Sadler
+Network Formation
+23/31
+
+=== [pagina 61] ===
+Directed Networks and Nash Stability
+In some applications, links are made unilaterally
+• Paper citation
+• Webpage linking
+• Following on social media
+A diﬀerent game: let G be the set of directed networks on the set
+of players N
+• Players simultaneously propose sets of directed links
+• If i chooses to form link ij, it gets formed
+Evan Sadler
+Network Formation
+23/31
+
+=== [pagina 62] ===
+Directed Networks and Nash Stability
+In some applications, links are made unilaterally
+• Paper citation
+• Webpage linking
+• Following on social media
+A diﬀerent game: let G be the set of directed networks on the set
+of players N
+• Players simultaneously propose sets of directed links
+• If i chooses to form link ij, it gets formed
+Unilateral formation, look at equilibria
+Evan Sadler
+Network Formation
+23/31
+
+=== [pagina 63] ===
+Directed Networks and Nash Stability
+Set of pure strategies for player i is Si = 2N\{i}
+• Link ij forms if j ∈si
+• Network is G(s) = {ij : j ∈si for some i}
+Evan Sadler
+Network Formation
+24/31
+
+=== [pagina 64] ===
+Directed Networks and Nash Stability
+Set of pure strategies for player i is Si = 2N\{i}
+• Link ij forms if j ∈si
+• Network is G(s) = {ij : j ∈si for some i}
+Deﬁnition
+A directed network G is (strictly) Nash stable if
+ui(G)(>) ≥ui(G′) for each i and all G′ that diﬀer from G only
+on links originating from i.
+Evan Sadler
+Network Formation
+24/31
+
+=== [pagina 65] ===
+Directed Networks and Nash Stability
+A simple example: write Ri(G) for the number of players
+reachable from i through directed paths
+• Assume payoﬀto player i is
+ui(G) = Ri(G) −cdi(G)
+Evan Sadler
+Network Formation
+25/31
+
+=== [pagina 66] ===
+Directed Networks and Nash Stability
+A simple example: write Ri(G) for the number of players
+reachable from i through directed paths
+• Assume payoﬀto player i is
+ui(G) = Ri(G) −cdi(G)
+Theorem (Bala and Goyal, 2000)
+The unique eﬃcient network structure is an n-player wheel if
+c < n −1 and an empty network if c > n −1. Moreover,
+• If c < 1, then n-player wheels are the only strictly Nash stable
+networks
+• If 1 < c < n −1, then n-player wheels and empty networks are
+strictly Nash stable
+• If c > n −1, then the empty network is uniquely Nash stable
+Evan Sadler
+Network Formation
+25/31
+
+=== [pagina 67] ===
+Network Formation and Network Eﬀects
+As discussed in the lectures on network eﬀects, network structure
+can aﬀect our incentives to adopt products or engage in certain
+behaviors (e.g. crime)
+Evan Sadler
+Network Formation
+26/31
+
+=== [pagina 68] ===
+Network Formation and Network Eﬀects
+As discussed in the lectures on network eﬀects, network structure
+can aﬀect our incentives to adopt products or engage in certain
+behaviors (e.g. crime)
+Typically the network is endogenous
+• Choice to form links inﬂuenced by anticipated outcome of
+strategic interactions
+Evan Sadler
+Network Formation
+26/31
+
+=== [pagina 69] ===
+Network Formation and Network Eﬀects
+As discussed in the lectures on network eﬀects, network structure
+can aﬀect our incentives to adopt products or engage in certain
+behaviors (e.g. crime)
+Typically the network is endogenous
+• Choice to form links inﬂuenced by anticipated outcome of
+strategic interactions
+A simple framework to think about this:
+• Unit mass of players
+• Player i invests productive eﬀort ki ∈R+ and social eﬀort
+si ∈R+
+• Write simply k and s for the average productive and social
+eﬀorts of other players
+Evan Sadler
+Network Formation
+26/31
+
+=== [pagina 70] ===
+Network Formation and Network Eﬀects
+Player i earns utility
+ui(si, ki, s, k) = ki −1
+2ck2
+i + αsi
+q
+kik −1
+2s2
+i
+Evan Sadler
+Network Formation
+27/31
+
+=== [pagina 71] ===
+Network Formation and Network Eﬀects
+Player i earns utility
+ui(si, ki, s, k) = ki −1
+2ck2
+i + αsi
+q
+kik −1
+2s2
+i
+• Private beneﬁt ki
+• Cost of productive eﬀort 1
+2ck2
+i
+• Complementarities scale with social eﬀort
+• Cost of social eﬀort 1
+2s2
+i
+Evan Sadler
+Network Formation
+27/31
+
+=== [pagina 72] ===
+Network Formation and Network Eﬀects
+Player i earns utility
+ui(si, ki, s, k) = ki −1
+2ck2
+i + αsi
+q
+kik −1
+2s2
+i
+• Private beneﬁt ki
+• Cost of productive eﬀort 1
+2ck2
+i
+• Complementarities scale with social eﬀort
+• Cost of social eﬀort 1
+2s2
+i
+Players make choices simultaneously, study Nash equilibria
+Evan Sadler
+Network Formation
+27/31
+
+=== [pagina 73] ===
+Network Formation and Network Eﬀects
+Decision problem is symmetric, have si = s and ki = k in
+equilibrium
+Evan Sadler
+Network Formation
+28/31
+
+=== [pagina 74] ===
+Network Formation and Network Eﬀects
+Decision problem is symmetric, have si = s and ki = k in
+equilibrium
+Best response implies
+0 = 1 −cki + αsi
+√
+k
+2√ki
+,
+0 = α
+q
+kik −si
+Evan Sadler
+Network Formation
+28/31
+
+=== [pagina 75] ===
+Network Formation and Network Eﬀects
+Decision problem is symmetric, have si = s and ki = k in
+equilibrium
+Best response implies
+0 = 1 −cki + αsi
+√
+k
+2√ki
+,
+0 = α
+q
+kik −si
+Taking ki = k and si = s gives
+0 = 1 −ck + αs
+2,
+0 = αk −s
+Evan Sadler
+Network Formation
+28/31
+
+=== [pagina 76] ===
+Network Formation and Network Eﬀects
+Decision problem is symmetric, have si = s and ki = k in
+equilibrium
+Best response implies
+0 = 1 −cki + αsi
+√
+k
+2√ki
+,
+0 = α
+q
+kik −si
+Taking ki = k and si = s gives
+0 = 1 −ck + αs
+2,
+0 = αk −s
+In equilibrium
+k =
+2
+2c −α2,
+s =
+2α
+2c −α2
+Evan Sadler
+Network Formation
+28/31
+
+=== [pagina 77] ===
+Equilibrium Welfare
+Equilibrium payoﬀs:
+u = (1 + αs)k −1
+2ck2 −1
+2s2
+= 2c + α2
+2c −α2
+2
+2c −α2 −2c + 2α2
+(2c −α2)2
+=
+2c
+(2c −α2)2
+Evan Sadler
+Network Formation
+29/31
+
+=== [pagina 78] ===
+Equilibrium Welfare
+Equilibrium payoﬀs:
+u = (1 + αs)k −1
+2ck2 −1
+2s2
+= 2c + α2
+2c −α2
+2
+2c −α2 −2c + 2α2
+(2c −α2)2
+=
+2c
+(2c −α2)2
+Naturally decreasing in c, increasing in α (need α <
+√
+2c for this
+to make sense)
+Evan Sadler
+Network Formation
+29/31
+
+=== [pagina 79] ===
+Equilibrium Welfare
+Equilibrium payoﬀs:
+u = (1 + αs)k −1
+2ck2 −1
+2s2
+= 2c + α2
+2c −α2
+2
+2c −α2 −2c + 2α2
+(2c −α2)2
+=
+2c
+(2c −α2)2
+Naturally decreasing in c, increasing in α (need α <
+√
+2c for this
+to make sense)
+Ratio s
+k increasing in α
+Evan Sadler
+Network Formation
+29/31
+
+=== [pagina 80] ===
+Eﬃciency
+What are the eﬃcient eﬀort levels?
+Evan Sadler
+Network Formation
+30/31
+
+=== [pagina 81] ===
+Eﬃciency
+What are the eﬃcient eﬀort levels?
+Maximize
+u = k −1
+2ck2 + αsk −1
+2s2
+Evan Sadler
+Network Formation
+30/31
+
+=== [pagina 82] ===
+Eﬃciency
+What are the eﬃcient eﬀort levels?
+Maximize
+u = k −1
+2ck2 + αsk −1
+2s2
+First order conditions
+0 = 1 + αs −ck,
+0 = αk −s
+Evan Sadler
+Network Formation
+30/31
+
+=== [pagina 83] ===
+Eﬃciency
+What are the eﬃcient eﬀort levels?
+Maximize
+u = k −1
+2ck2 + αsk −1
+2s2
+First order conditions
+0 = 1 + αs −ck,
+0 = αk −s
+Solving yields
+k =
+1
+c −α2,
+s =
+α
+c −α2
+Evan Sadler
+Network Formation
+30/31
+
+=== [pagina 84] ===
+Eﬃciency
+What are the eﬃcient eﬀort levels?
+Maximize
+u = k −1
+2ck2 + αsk −1
+2s2
+First order conditions
+0 = 1 + αs −ck,
+0 = αk −s
+Solving yields
+k =
+1
+c −α2,
+s =
+α
+c −α2
+Underinvestment in equilibrium due to positive externality
+Evan Sadler
+Network Formation
+30/31
+
+=== [pagina 85] ===
+Network Formation and Network Eﬀects
+Generalizations:
+• Heterogeneous types of players
+• Ability to discriminate in linking eﬀort
+Evan Sadler
+Network Formation
+31/31
+
+=== [pagina 86] ===
+Network Formation and Network Eﬀects
+Generalizations:
+• Heterogeneous types of players
+• Ability to discriminate in linking eﬀort
+An important application: academic peer eﬀects
+• Peer eﬀects in the classroom
+• Peer eﬀects from parental investments
+Evan Sadler
+Network Formation
+31/31
+
+=== [pagina 87] ===
+Network Formation and Network Eﬀects
+Generalizations:
+• Heterogeneous types of players
+• Ability to discriminate in linking eﬀort
+An important application: academic peer eﬀects
+• Peer eﬀects in the classroom
+• Peer eﬀects from parental investments
+Carrell et al. (2013), U.S. Airforce study
+Evan Sadler
+Network Formation
+31/31

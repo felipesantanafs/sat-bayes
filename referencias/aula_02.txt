@@ -1,0 +1,568 @@
+# Fonte: 02.pdf
+# Paginas: 34
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Elementos de Redes: Centralidade, Medidas e Métricas
+Leitura(s): N(7)
+Marcos Ross Fernandes
+10 e 12 de Agosto, 2026
+
+=== [pagina 2] ===
+Road Map
+Medidas de Centralidade
+Grupos de Nós
+Reciprocidade
+Balanço Estrutural
+Similaridade
+Homofilia e Mistura Assortativa
+0 / 32
+
+=== [pagina 3] ===
+Medidas de Centralidade
+1 / 32
+
+=== [pagina 4] ===
+Qual Centralidade?
+▶Uma grande quantidade de pesquisas sobre redes aborda a
+questão: “quais são os nós mais importantes ou centrais em
+uma rede?”
+▶Existem muitas definições possíveis de importância e,
+correspondentemente, muitas medidas de centralidade para
+redes.
+2 / 32
+
+=== [pagina 5] ===
+Centralidade de Grau
+▶A medida mais simples de centralidade de um nó em uma
+rede é simplesmente seu grau, isto é, o número de arestas
+conectadas a ele.
+▶O grau é às vezes chamado de centralidade de grau (di) para
+enfatizar seu uso como medida de centralidade.
+▶Simplesmente o grau dividido por (n −1). Usando a notação
+anterior: di =
+1
+(n−1)ki
+▶Crítica: o grau é uma medida bastante rudimentar de
+centralidade, isto é, nem todos os vizinhos são
+necessariamente equivalentes.
+3 / 32
+
+=== [pagina 6] ===
+Centralidade de Autovetor
+▶Em muitas circunstâncias, a importância de um nó em uma
+rede aumenta quando ele possui conexões com outros nós que
+também são importantes.
+▶A centralidade de autovetor atribui a um nó uma pontuação
+proporcional às pontuações de centralidade de seus vizinhos.
+▶Considere uma rede não direcionada com n nós. A
+centralidade de autovetor xi do nó i é definida como sendo
+proporcional à soma das centralidades dos vizinhos de i, de
+modo que
+xi = k−1 X
+j∈Ni
+xj,
+ou
+xi = k−1 X
+j∈Ni
+Aijxj.
+4 / 32
+
+=== [pagina 7] ===
+Centralidade de Autovetor
+▶Essa fórmula também pode ser escrita em notação matricial
+como x = k−1Ax, ou, equivalentemente,
+Ax = kx.
+onde x é o vetor cujos elementos são iguais às pontuações de
+centralidade xi.
+▶Em outras palavras, x é um autovetor da matriz de
+adjacência. Qual deles?
+▶Supondo que as pontuações de centralidade sejam não
+negativas, há apenas uma escolha: x deve ser o autovetor
+principal da matriz de adjacência, isto é, o autovetor
+correspondente ao maior autovalor (mais positivo) (neste
+caso, k).
+▶Assim, a centralidade xi do nó i é o i−ésimo elemento do
+autovetor principal da matriz de adjacência.
+5 / 32
+
+=== [pagina 8] ===
+Centralidade de Katz-Bonacich
+▶Em redes direcionadas, apenas nós que pertencem a um
+componente fortemente conectado com dois ou mais nós, ou
+ao componente de saída de tal componente fortemente
+conectado, podem ter centralidade de autovetor diferente de
+zero.
+▶Uma solução para esse problema é simplesmente atribuir a
+cada nó uma pequena quantidade de centralidade
+”gratuitamente,” independentemente de sua posição na rede
+ou da centralidade de seus vizinhos. Em outras palavras,
+definimos
+xi = α
+X
+j
+Aijxj + β;
+▶Em termos matriciais, isso pode ser escrito como
+x = αAx + β1
+onde 1 é o vetor uniforme (1, 1, . . . , 1). Isolando x e definindo
+β = 1, obtemos
+1
+6 / 32
+
+=== [pagina 9] ===
+Centralidade PageRank
+▶A centralidade de Katz possui uma característica potencialmente
+indesejável: se um nó com alta centralidade de Katz possui arestas
+apontando para muitos outros nós, então todos esses outros nós também
+recebem alta centralidade.
+▶Um nó de alta centralidade apontando para um milhão de outros nós
+atribui alta centralidade a todos esses um milhão de nós.
+▶Uma variante da centralidade de Katz considera que a centralidade que
+obtenho de meus vizinhos é proporcional à centralidade deles dividida por
+seu grau de saída.
+▶Em termos matemáticos, essa centralidade é definida por
+xi = α
+X
+j
+Aij xj
+kout
+j
++ β;
+(definindo artificialmente kout
+j
+= 1 caso existam nós na rede com kout
+j
+= 0)
+7 / 32
+
+=== [pagina 10] ===
+Centralidade PageRank
+▶Em termos matriciais, temos
+x = αAD−1x + β1,
+com 1 sendo novamente o vetor (1, 1, . . . , 1) e D sendo a matriz diagonal
+com elementos Dii = max(ki
+out, 1).
+▶Reorganizando, obtemos x = β
+I −αAD−1−1 1 e, portanto, como
+antes, µ desempenha apenas o papel de um multiplicador geral sem
+importância para a centralidade.
+▶Convencionalmente, definimos β = 1, obtendo
+x =
+
+I −αAD−1−1
+1
+▶Essa medida de centralidade é comumente conhecida como PageRank,
+nome atribuído a ela pela empresa de buscas na web Google.
+8 / 32
+
+=== [pagina 11] ===
+Hubs e Autoridades
+▶Existem dois tipos de nós importantes em redes direcionadas: autoridades
+são nós que contêm informações úteis sobre um tópico de interesse e
+hubs são nós que indicam onde as melhores autoridades podem ser
+encontradas.
+▶Uma autoridade também pode ser um hub e vice-versa.
+▶O algoritmo HITS (Kleinberg) atribui a cada nó i em uma rede
+direcionada duas pontuações de centralidade distintas: a centralidade de
+autoridade xi e a centralidade de hub yi.
+▶A centralidade de autoridade de um nó é definida como sendo
+proporcional à soma das centralidades de hub dos nós que apontam para
+ele:
+xi = α
+X
+j
+Aijyj,
+onde α é uma constante.
+▶A centralidade de hub de um nó é proporcional à soma das centralidades
+de autoridade dos nós para os quais ele aponta:
+yi = β
+X
+j
+Ajixj,
+9 / 32
+
+=== [pagina 12] ===
+Hubs e Autoridades
+▶Em termos matriciais, essas equações podem ser escritas como
+x = αAy,
+y = βATx,
+ou, combinando as duas,
+AATx = λx,
+e
+ATAy = λy,
+onde λ = (αβ)−1. Assim, as centralidades de autoridade e de hub são
+dadas, respectivamente, por autovetores de AAT e ATA associados ao
+mesmo autovalor.
+▶Uma condição crucial para que essa abordagem funcione é que AAT e
+ATA tenham o mesmo autovalor principal. Caso contrário, as duas
+últimas equações não são satisfeitas.
+▶Na abordagem de hubs e autoridades, nós que não são citados por
+nenhum outro possuem centralidade de autoridade igual a zero (o que é
+razoável), mas ainda podem possuir centralidade de hub diferente de zero.
+10 / 32
+
+=== [pagina 13] ===
+Centralidade de Proximidade
+▶A centralidade de proximidade é uma medida baseada em
+caminhos mínimos que mede a distância média de um nó aos
+demais nós.
+▶Suponha que δij seja a menor distância do nó i ao nó j.
+▶Então, a distância mínima média de i a todos os nós da rede é
+ℓi = 1
+n
+X
+j
+δij
+, ou divide-se por (n −1).
+▶Centralidade de proximidade Ci:
+Ci = 1
+ℓi
+.
+▶Limitação: redes direcionadas com mais de um componente.
+▶Possível solução: redefinir a proximidade em termos da média
+harmônica das distâncias entre os nós.
+11 / 32
+
+=== [pagina 14] ===
+Centralidade de Intermediação
+▶A centralidade de intermediação mede em que medida um nó
+se encontra nos caminhos entre outros nós.
+▶Suponha, por enquanto, que temos uma rede não direcionada
+na qual existe no máximo um caminho mínimo entre cada par
+de nós. Pode não existir nenhum caminho caso os nós em
+questão pertençam a componentes diferentes.
+▶Seja ni
+st igual a 1 se o nó i estiver no caminho mínimo de s a
+t, e 0 caso contrário ou caso não exista tal caminho. Então, a
+centralidade de intermediação xi é dada por
+xi =
+X
+s,t
+ni
+st.
+12 / 32
+
+=== [pagina 15] ===
+Centralidade de Intermediação
+▶A extensão padrão da centralidade de intermediação atribui a
+cada caminho entre dois nós um peso igual ao inverso do
+número de caminhos, de modo que, por exemplo, se houver
+dois caminhos mínimos entre um determinado par de nós,
+cada um deles recebe peso 1
+2.
+▶Formalmente, redefinimos ni
+st como o número de caminhos
+mínimos de s a t que passam por i, e definimos gst como o
+número total de caminhos mínimos de s a t. Então, a
+centralidade de intermediação do nó i em uma rede geral é
+dada por
+xi =
+X
+s,t
+ni
+st
+gst
+.
+▶Adotamos a convenção de que ni
+st
+gst = 0 se tanto ni
+st quanto gst
+forem iguais a zero.
+13 / 32
+
+=== [pagina 16] ===
+Grupos de Nós
+14 / 32
+
+=== [pagina 17] ===
+Cliques
+▶Uma clique é um conjunto de nós em uma rede não
+direcionada tal que cada membro do conjunto está conectado
+por uma aresta a todos os demais.
+▶Assim, um conjunto de quatro nós em uma rede será uma
+clique se (e somente se) cada um dos quatro estiver
+diretamente conectado por arestas aos outros três.
+▶Note que cliques podem se sobrepor, isto é, podem
+compartilhar um ou mais nós.
+▶A ocorrência de uma clique em uma rede que, de outra forma,
+é esparsamente conectada normalmente indica a existência de
+um subgrupo altamente coeso.
+▶A projeção unipartida de uma rede bipartida cria uma rede que
+é naturalmente composta por cliques, uma para cada grupo.
+15 / 32
+
+=== [pagina 18] ===
+Cores
+▶Em contraste com uma clique, na qual cada nó está conectado
+a todos os demais, um k-core é um conjunto conectado de nós
+no qual cada nó está conectado a pelo menos k dos demais.
+▶Assim, em um 2-core, por exemplo, cada nó está conectado a
+pelo menos dois outros nós do conjunto.
+3−core
+1−core
+2−core
+▶Os k-cores de uma rede também possuem a propriedade de
+estarem aninhados uns nos outros: os 2-cores são
+subconjuntos dos 1-cores, os 3-cores são subconjuntos dos
+2-cores, e assim por diante.
+16 / 32
+
+=== [pagina 19] ===
+Reciprocidade
+17 / 32
+
+=== [pagina 20] ===
+Reciprocidade
+▶A frequência de ciclos de comprimento dois é medida pela
+reciprocidade, que indica quão provável é que um nó para o qual
+você aponta também aponte de volta para você.
+▶Se existe uma aresta direcionada do nó i para o nó j em uma rede
+direcionada e também existe uma aresta de j para i, então dizemos
+que a aresta de i para j é recíproca.
+▶A reciprocidade r é definida como a fração de arestas que são
+recíprocas.
+▶Observando que o produto dos elementos da matriz de adjacência
+AijAji é 1 se, e somente se, existe uma aresta de i para j e uma
+aresta de j para i, e é zero caso contrário, podemos somar sobre
+todos os pares de nós i, j para obter uma expressão para a
+reciprocidade:
+r = 1
+m
+X
+ij
+AijAji = 1
+mTr(A2),
+onde m é o número total de arestas direcionadas na rede.
+18 / 32
+
+=== [pagina 21] ===
+Balanço Estrutural
+19 / 32
+
+=== [pagina 22] ===
+Arestas com Sinal e Balanço Estrutural
+▶As arestas podem ser “positivas” ou “negativas”. (amigos/inimigos)
+▶Essas redes são às vezes chamadas de redes com sinal e suas arestas são
+chamadas de arestas com sinal.
+▶Possíveis configurações de tríades em uma rede com sinal:
+v
+w
+u
+(a)
+w
+u
+v
+(b)
+w
+u
+v
+(c)
+w
+v
+u
+(d)
+▶Redes que contêm apenas ciclos com um número par de sinais negativos
+são consideradas estruturalmente balanceadas, ou simplesmente
+balanceadas.
+▶As configurações (a) e (b) são balanceadas (estáveis?), enquanto as
+configurações (c) e (d) são desbalanceadas (instáveis?).
+20 / 32
+
+=== [pagina 23] ===
+Similaridade
+21 / 32
+
+=== [pagina 24] ===
+Similaridade
+▶De que maneiras os nós de uma rede são similares, e como podemos
+quantificar essa similaridade?
+▶Em geral, a similaridade pode ser determinada de muitas maneiras
+diferentes, e a maioria delas não tem relação com redes (por exemplo,
+serviços de relacionamento procuram combinar pessoas com outras que
+sejam similares a elas utilizando descrições de seus interesses,
+características, etc.)
+▶Vamos nos concentrar no problema mais específico de determinar a
+similaridade entre os nós de uma rede utilizando as informações contidas
+na estrutura da rede.
+▶Existem duas abordagens fundamentais para construir medidas de
+similaridade em redes, chamadas de equivalência estrutural e equivalência
+regular.
+▶Dois nós em uma rede são estruturalmente equivalentes se compartilham
+muitos dos mesmos vizinhos na rede.
+▶Dois nós regularmente equivalentes não necessariamente compartilham os
+mesmos vizinhos, mas possuem vizinhos que são, eles próprios, similares.
+22 / 32
+
+=== [pagina 25] ===
+Equivalências Estrutural e Regular
+j
+i
+(a) Structural equivalence
+i
+j
+(b) Regular equivalence
+23 / 32
+
+=== [pagina 26] ===
+Medidas de Equivalência Estrutural
+▶A medida mais simples e direta de equivalência estrutural é simplesmente
+a contagem do número de vizinhos em comum entre dois nós.
+▶Em uma rede não direcionada, o número nij de vizinhos em comum dos
+nós i e j é dado por
+nij =
+X
+k
+AikAkj.
+▶No entanto, uma simples contagem dos vizinhos em comum não é, por si
+só, uma medida muito boa de similaridade. Se dois nós possuem três
+vizinhos em comum, isso é muito ou pouco?
+▶Uma estratégia seria dividir pelo número total de nós da rede n (mas
+seria uma normalização excessiva?).
+▶Uma medida melhor levaria em consideração os diferentes graus dos nós.
+Uma dessas medidas é a similaridade de cosseno.
+24 / 32
+
+=== [pagina 27] ===
+Medidas de Equivalência Estrutural
+Similaridade de Cosseno
+▶Em geometria, o produto interno ou produto escalar de dois vetores x e y
+é dado por x · y = ||x|| ||y|| cos(θ), onde |x| e |y| são as magnitudes dos
+dois vetores e θ é o ângulo entre eles. Reorganizando, podemos escrever
+o cosseno do ângulo como
+cos(θ) =
+x · y
+||x|| ||y||.
+▶O produto escalar de duas linhas é simplesmente P
+k AikAkj. Para uma
+rede não direcionada, isso nos fornece uma medida de similaridade
+σij = cos(θ) =
+P
+k AikAkj
+pP
+k A2
+ik
+qP
+k A2
+jk
+.
+▶Supondo que nossa rede seja um grafo simples e não ponderado, os
+elementos da matriz de adjacência assumem apenas os valores 0 e 1, de
+modo que A2
+ij = Aij para todos i e j. Então
+X
+k
+A2
+ik =
+X
+k
+Aik = ki,
+onde ki é o grau do nó i.
+25 / 32
+
+=== [pagina 28] ===
+Medidas de Equivalência Estrutural
+Similaridade de Cosseno
+▶Assim,
+σij =
+P
+k AikAkj
+√ki
+p
+kj
+=
+nij
+p
+kikj
+.
+▶Em outras palavras, a similaridade de cosseno entre i e j é o número de
+vizinhos em comum dos dois nós dividido pela média geométrica de seus
+graus.
+26 / 32
+
+=== [pagina 29] ===
+Medidas de Equivalência Estrutural
+Coeficiente de Jaccard
+▶O coeficiente de Jaccard para os nós i e j é definido como o
+número de vizinhos em comum nij dividido pelo número total
+de vizinhos distintos dos dois nós.
+▶Isto é, o fator de normalização é o número total de vizinhos
+de ambos, mas contando os vizinhos em comum apenas uma
+vez, e não duas, resultando em um total de ki + kj −nij
+vizinhos. Assim, o coeficiente de Jaccard é
+Jij =
+nij
+ki + kj −nij
+.
+▶Quando i e j não possuem vizinhos em comum, de modo que
+nij = 0, temos Jij = 0. Quando todos os seus vizinhos são
+comuns e ki = kj = nij, temos Jij = 1.
+27 / 32
+
+=== [pagina 30] ===
+Medidas de Equivalência Estrutural
+Coeficiente de Correlação de Pearson
+▶O coeficiente de correlação de Pearson entre as linhas da
+matriz de adjacência:
+rij =
+P
+k(Aik −¯Ai)(Ajk −¯Aj)
+qP
+k(Aik −¯Ai)2
+qP
+k(Ajk −¯Aj)2
+,
+onde ¯Ai é a média da i-ésima linha.
+28 / 32
+
+=== [pagina 31] ===
+Medidas de Equivalência Estrutural
+Distância de Hamming (Dissimilaridade)
+▶A distância de Hamming (hij) é o número de vizinhos que dois
+nós não compartilham
+hij =
+X
+k
+(Aik −Ajk)2.
+▶hij é maior para nós com menos vizinhos em comum.
+29 / 32
+
+=== [pagina 32] ===
+Medidas de Equivalência Regular
+▶Novamente: nós regularmente equivalentes são nós que, embora não
+necessariamente compartilhem vizinhos, possuem vizinhos que são, eles
+próprios, similares.
+▶Medidas quantitativas de equivalência regular são menos desenvolvidas do
+que medidas de equivalência estrutural, mas diversas medidas foram
+propostas nos últimos anos e parecem funcionar razoavelmente bem.
+▶Os nós i e j são similares se o nó i possui um vizinho k que é, ele próprio,
+similar a j. Supomos que os nós sejam similares a si mesmos, o que
+podemos representar por uma diagonal δij, e nossa medida de similaridade
+assume então a forma:
+σij = α
+X
+k
+Aikσkj + δij,
+ou
+Σ = αAΣ + I,
+▶Σ = (I −αA)−1 (Centralidade de Katz?)
+▶Essa medida de similaridade também poderia ser definida de uma maneira
+completamente diferente, como uma contagem ponderada de todos os
+caminhos entre os nós i e j, com caminhos de comprimento r recebendo
+peso αr.
+30 / 32
+
+=== [pagina 33] ===
+Homofilia e Mistura Assortativa
+31 / 32
+
+=== [pagina 34] ===
+Homofilia e mistura assortativa
+Uma rede de amizades em uma escola de ensino médio dos Estados Unidos. Os
+nós dessa rede representam 470 estudantes de uma escola de ensino médio dos
+Estados Unidos (com idades entre 14 e 18 anos). Os nós são codificados por
+cores de acordo com a raça, conforme indicado na legenda. Os dados são
+provenientes do National Longitudinal Study of Adolescent Health.
+White
+Black
+Other
+32 / 32

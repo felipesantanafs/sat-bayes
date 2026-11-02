@@ -1,0 +1,19 @@
+# Dados e saidas geradas (reproduziveis a partir do manifesto)
+dados/
+resultados/
+logs/
+_targets/
+
+# Biblioteca local do renv (o renv.lock e versionado)
+renv/library/
+renv/local/
+renv/staging/
+renv/cellar/
+renv/sandbox/
+
+# Livros em texto integral: material protegido, mantido apenas localmente
+referencias/livro_*.txt
+
+.Rhistory
+.RData
+.Rproj.user/

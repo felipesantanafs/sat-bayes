@@ -1,0 +1,1209 @@
+# Fonte: Networks 11 - Diffusion Part 1.pdf
+# Paginas: 100
+
+=== [pagina 1] ===
+Economics of Networks
+Diﬀusion Part 1
+Evan Sadler
+Massachusetts Institute of Technology
+May 8, 2018
+Evan Sadler
+Diﬀusion
+1/32
+
+=== [pagina 2] ===
+Agenda
+• Binary action coordination games
+• Contagion in networks
+• Mean-ﬁeld diﬀusion models
+• Connection to Bayesian games
+Suggested Reading: EK Chapter 19; Morris (2000), “Contagion;”
+Jackson and Yariv (2007), “Diﬀusion of Behavior and Equilibrium
+Properties in Network Games”
+Evan Sadler
+Diﬀusion
+2/32
+
+=== [pagina 3] ===
+A Binary Action Coordination Game
+Consider the payoﬀmatrix
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+for some q ∈(0, 1)
+Evan Sadler
+Diﬀusion
+3/32
+
+=== [pagina 4] ===
+A Binary Action Coordination Game
+Consider the payoﬀmatrix
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+for some q ∈(0, 1)
+Two actions, players earn the same payoﬀ, positive iﬀthey match
+• Action 1 is optimal iﬀother player chooses 1 w.p ≥q
+Evan Sadler
+Diﬀusion
+3/32
+
+=== [pagina 5] ===
+A Binary Action Coordination Game
+Consider the payoﬀmatrix
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+for some q ∈(0, 1)
+Two actions, players earn the same payoﬀ, positive iﬀthey match
+• Action 1 is optimal iﬀother player chooses 1 w.p ≥q
+Coordinating on what?
+• Meeting place, technology standard, behavioral norm
+Evan Sadler
+Diﬀusion
+3/32
+
+=== [pagina 6] ===
+Local Interaction Systems
+We’re going to think about player the coordination game with
+many opponents, not just one
+• Simultaneously play the game with a set of neighbors
+• Earn a payoﬀfrom the interaction with each neighbor
+• Must play same action with all neighbors
+Evan Sadler
+Diﬀusion
+4/32
+
+=== [pagina 7] ===
+Local Interaction Systems
+We’re going to think about player the coordination game with
+many opponents, not just one
+• Simultaneously play the game with a set of neighbors
+• Earn a payoﬀfrom the interaction with each neighbor
+• Must play same action with all neighbors
+Action 1 is optimal iﬀat least a fraction q of my neighbors
+choose action 1
+Evan Sadler
+Diﬀusion
+4/32
+
+=== [pagina 8] ===
+Local Interaction Systems
+We’re going to think about player the coordination game with
+many opponents, not just one
+• Simultaneously play the game with a set of neighbors
+• Earn a payoﬀfrom the interaction with each neighbor
+• Must play same action with all neighbors
+Action 1 is optimal iﬀat least a fraction q of my neighbors
+choose action 1
+Deﬁnition
+A local interaction system is an inﬁnite population X in which
+each agent interacts with a ﬁnite subset of others. Write x ∼y if
+x and y are neighbors. Assume x ∼y =⇒y ∼x, there exists
+M < ∞such that |{y : x ∼y}| ≤M for all x, and there exists
+a path between any pair of players.
+Evan Sadler
+Diﬀusion
+4/32
+
+=== [pagina 9] ===
+Local Interaction Systems
+Write Gx for the set of neighbors of x
+Evan Sadler
+Diﬀusion
+5/32
+
+=== [pagina 10] ===
+Local Interaction Systems
+Write Gx for the set of neighbors of x
+Write X for some set of players and X for its complement
+Evan Sadler
+Diﬀusion
+5/32
+
+=== [pagina 11] ===
+Local Interaction Systems
+Write Gx for the set of neighbors of x
+Write X for some set of players and X for its complement
+Deﬁne π(X, x) as the proportion of x’s neighbors in X:
+π(X, x) = |X ∩Gx|
+|Gx|
+Evan Sadler
+Diﬀusion
+5/32
+
+=== [pagina 12] ===
+Local Interaction Systems
+Write Gx for the set of neighbors of x
+Write X for some set of players and X for its complement
+Deﬁne π(X, x) as the proportion of x’s neighbors in X:
+π(X, x) = |X ∩Gx|
+|Gx|
+Deﬁne Πp(X) as the set of players x for whom π(X, x) ≥p
+Evan Sadler
+Diﬀusion
+5/32
+
+=== [pagina 13] ===
+Local Interaction Systems
+Write Gx for the set of neighbors of x
+Write X for some set of players and X for its complement
+Deﬁne π(X, x) as the proportion of x’s neighbors in X:
+π(X, x) = |X ∩Gx|
+|Gx|
+Deﬁne Πp(X) as the set of players x for whom π(X, x) ≥p
+If set Y chooses action 1, the best response is for players in
+X = Πq(Y ) to choose action 1
+Evan Sadler
+Diﬀusion
+5/32
+
+=== [pagina 14] ===
+Best Response Dynamics
+We will study best response dynamics in local interaction systems
+Evan Sadler
+Diﬀusion
+6/32
+
+=== [pagina 15] ===
+Best Response Dynamics
+We will study best response dynamics in local interaction systems
+Imagine action 1 spreading through the population
+Evan Sadler
+Diﬀusion
+6/32
+
+=== [pagina 16] ===
+Best Response Dynamics
+We will study best response dynamics in local interaction systems
+Imagine action 1 spreading through the population
+Question: Is there a ﬁnite group of players that, if they start out
+playing action 1, can spread action 1 to the entire population?
+Evan Sadler
+Diﬀusion
+6/32
+
+=== [pagina 17] ===
+Best Response Dynamics
+We will study best response dynamics in local interaction systems
+Imagine action 1 spreading through the population
+Question: Is there a ﬁnite group of players that, if they start out
+playing action 1, can spread action 1 to the entire population?
+The contagion threshold ξ is the largest value of q for which this
+is possible
+• Higher threshold =⇒easier to get contagion
+Evan Sadler
+Diﬀusion
+6/32
+
+=== [pagina 18] ===
+Example: Interaction on a Line
+Evan Sadler
+Diﬀusion
+7/32
+
+=== [pagina 19] ===
+Example: Interaction on a Line
+If q < 1
+2, a player switches to action 1 after one neighbor does
+Evan Sadler
+Diﬀusion
+7/32
+
+=== [pagina 20] ===
+Example: Interaction on a Line
+If q < 1
+2, a player switches to action 1 after one neighbor does
+Contagion threshold 1
+2
+Evan Sadler
+Diﬀusion
+7/32
+
+=== [pagina 21] ===
+Example: Interaction on an m-Dimensional Lattice
+Evan Sadler
+Diﬀusion
+8/32
+
+=== [pagina 22] ===
+Example: Interaction on an m-Dimensional Lattice
+Contagion threshold 1
+4
+Evan Sadler
+Diﬀusion
+8/32
+
+=== [pagina 23] ===
+Example: Trees
+Evan Sadler
+Diﬀusion
+9/32
+
+=== [pagina 24] ===
+Example: Trees
+Contagion threshold 1
+3
+Evan Sadler
+Diﬀusion
+9/32
+
+=== [pagina 25] ===
+Group Cohesion
+Use several properties in characterization. First: group cohesion
+Evan Sadler
+Diﬀusion
+10/32
+
+=== [pagina 26] ===
+Group Cohesion
+Use several properties in characterization. First: group cohesion
+A natural measure: relative frequency of in-group links versus
+out-group links
+Evan Sadler
+Diﬀusion
+10/32
+
+=== [pagina 27] ===
+Group Cohesion
+Use several properties in characterization. First: group cohesion
+A natural measure: relative frequency of in-group links versus
+out-group links
+Deﬁne the cohesion of X as
+c(X) = min
+x∈X π(X, x) = max{p : X ⊆Πp(X)}
+Evan Sadler
+Diﬀusion
+10/32
+
+=== [pagina 28] ===
+Group Cohesion
+Use several properties in characterization. First: group cohesion
+A natural measure: relative frequency of in-group links versus
+out-group links
+Deﬁne the cohesion of X as
+c(X) = min
+x∈X π(X, x) = max{p : X ⊆Πp(X)}
+We say X is p-cohesive if c(X) ≥p
+Evan Sadler
+Diﬀusion
+10/32
+
+=== [pagina 29] ===
+Cohesion in our Examples
+Line network: non-trivial group is at most 1
+2-cohesive
+Evan Sadler
+Diﬀusion
+11/32
+
+=== [pagina 30] ===
+Cohesion in our Examples
+Line network: non-trivial group is at most 1
+2-cohesive
+2-dimensional lattice: consider set of players above some
+horizonal line
+• Group is 3
+4-cohesive
+Evan Sadler
+Diﬀusion
+11/32
+
+=== [pagina 31] ===
+Cohesion in our Examples
+Line network: non-trivial group is at most 1
+2-cohesive
+2-dimensional lattice: consider set of players above some
+horizonal line
+• Group is 3
+4-cohesive
+Tree: group consisting of an entire branch is 2
+3 cohesive
+Evan Sadler
+Diﬀusion
+11/32
+
+=== [pagina 32] ===
+Neighbor Growth
+Distance between x and X: length of shortest path between x
+and some player in X
+Evan Sadler
+Diﬀusion
+12/32
+
+=== [pagina 33] ===
+Neighbor Growth
+Distance between x and X: length of shortest path between x
+and some player in X
+Deﬁne Gn(X) as set of players within distance n of X
+Evan Sadler
+Diﬀusion
+12/32
+
+=== [pagina 34] ===
+Neighbor Growth
+Distance between x and X: length of shortest path between x
+and some player in X
+Deﬁne Gn(X) as set of players within distance n of X
+A local interaction system satisﬁes low neighbor growth if for all
+γ > 1, we have
+Gn(X)
+γn
+→0
+i.e. Gn(X) grows subexponentially
+Evan Sadler
+Diﬀusion
+12/32
+
+=== [pagina 35] ===
+Neighbor Growth
+Distance between x and X: length of shortest path between x
+and some player in X
+Deﬁne Gn(X) as set of players within distance n of X
+A local interaction system satisﬁes low neighbor growth if for all
+γ > 1, we have
+Gn(X)
+γn
+→0
+i.e. Gn(X) grows subexponentially
+Intuitively, low neighbor growth correlates with higher cohesion
+Evan Sadler
+Diﬀusion
+12/32
+
+=== [pagina 36] ===
+δ-Uniformity
+A labeling l on the set of players is a bijection with the positive
+integers
+Evan Sadler
+Diﬀusion
+13/32
+
+=== [pagina 37] ===
+δ-Uniformity
+A labeling l on the set of players is a bijection with the positive
+integers
+Write αl(i) for the fraction of neighbors of i with a lower label
+under l
+Evan Sadler
+Diﬀusion
+13/32
+
+=== [pagina 38] ===
+δ-Uniformity
+A labeling l on the set of players is a bijection with the positive
+integers
+Write αl(i) for the fraction of neighbors of i with a lower label
+under l
+A labeling is an Erdös labeling if there is a ﬁnite group X such
+that for all n we have
+i ∈Gn(X) and j /∈Gn(X) =⇒l(i) < l(j)
+Evan Sadler
+Diﬀusion
+13/32
+
+=== [pagina 39] ===
+δ-Uniformity
+A labeling l on the set of players is a bijection with the positive
+integers
+Write αl(i) for the fraction of neighbors of i with a lower label
+under l
+A labeling is an Erdös labeling if there is a ﬁnite group X such
+that for all n we have
+i ∈Gn(X) and j /∈Gn(X) =⇒l(i) < l(j)
+A local interaction system satisﬁes δ-uniformity if there exists an
+Erdös labeling such that for all suﬃciently large K:
+max
+i,j≥K |αl(i) −αl(j)| ≤δ
+Evan Sadler
+Diﬀusion
+13/32
+
+=== [pagina 40] ===
+δ-uniformity
+Intuitive idea: for players suﬃciently far from the reference set,
+fraction of neighbors with lower labels (i.e. closer to reference
+set) tends roughly towards something (within δ)
+Evan Sadler
+Diﬀusion
+14/32
+
+=== [pagina 41] ===
+δ-uniformity
+Intuitive idea: for players suﬃciently far from the reference set,
+fraction of neighbors with lower labels (i.e. closer to reference
+set) tends roughly towards something (within δ)
+Example: 2-dimensional lattice
+• δ-uniformity fails for δ < 1
+4
+Evan Sadler
+Diﬀusion
+14/32
+
+=== [pagina 42] ===
+δ-uniformity
+Intuitive idea: for players suﬃciently far from the reference set,
+fraction of neighbors with lower labels (i.e. closer to reference
+set) tends roughly towards something (within δ)
+Example: 2-dimensional lattice
+• δ-uniformity fails for δ < 1
+4
+For any n, there are 4(n + 1) players in Gn+1({x}) but not in
+Gn({x})
+• Four sides of a square
+Evan Sadler
+Diﬀusion
+14/32
+
+=== [pagina 43] ===
+δ-uniformity
+Intuitive idea: for players suﬃciently far from the reference set,
+fraction of neighbors with lower labels (i.e. closer to reference
+set) tends roughly towards something (within δ)
+Example: 2-dimensional lattice
+• δ-uniformity fails for δ < 1
+4
+For any n, there are 4(n + 1) players in Gn+1({x}) but not in
+Gn({x})
+• Four sides of a square
+Players in the middle of a side have αl(k) = 1
+2, but corners have
+αl(k) = 1
+4.
+Evan Sadler
+Diﬀusion
+14/32
+
+=== [pagina 44] ===
+Characterizing the Contagion Threshold
+Recall the contagion threshold
+ξ = max
+
+
+q :
+[
+k≥1
+[Πq]k(X) = X for some ﬁnite X
+
+
+
+Evan Sadler
+Diﬀusion
+15/32
+
+=== [pagina 45] ===
+Characterizing the Contagion Threshold
+Recall the contagion threshold
+ξ = max
+
+
+q :
+[
+k≥1
+[Πq]k(X) = X for some ﬁnite X
+
+
+
+A group X is co-ﬁnite if its complement X is ﬁnite
+Evan Sadler
+Diﬀusion
+15/32
+
+=== [pagina 46] ===
+Characterizing the Contagion Threshold
+Recall the contagion threshold
+ξ = max
+
+
+q :
+[
+k≥1
+[Πq]k(X) = X for some ﬁnite X
+
+
+
+A group X is co-ﬁnite if its complement X is ﬁnite
+Theorem
+The contagion threshold ξ is the smallest p such that every
+co-ﬁnite group contains an inﬁnite (1 −p)-cohesive subgroup.
+Cohesive groups can act as barriers to contagion
+Evan Sadler
+Diﬀusion
+15/32
+
+=== [pagina 47] ===
+Characterizing the Contagion Threshold
+Theorem
+The contagion threshold is always at most 1
+2.
+If the system satisﬁes low neighbor growth and δ-uniformity, then
+the contagion threshold satisﬁes
+ξ ≥1
+2 −δ
+Evan Sadler
+Diﬀusion
+16/32
+
+=== [pagina 48] ===
+Characterizing the Contagion Threshold
+Theorem
+The contagion threshold is always at most 1
+2.
+If the system satisﬁes low neighbor growth and δ-uniformity, then
+the contagion threshold satisﬁes
+ξ ≥1
+2 −δ
+Intuition: contagion always spreads slowly; if not, eventually too
+few neighbors are choosing action 1
+Evan Sadler
+Diﬀusion
+16/32
+
+=== [pagina 49] ===
+Characterizing the Contagion Threshold
+Theorem
+The contagion threshold is always at most 1
+2.
+If the system satisﬁes low neighbor growth and δ-uniformity, then
+the contagion threshold satisﬁes
+ξ ≥1
+2 −δ
+Intuition: contagion always spreads slowly; if not, eventually too
+few neighbors are choosing action 1
+We need new adopters to have enough interaction with one
+another
+Evan Sadler
+Diﬀusion
+16/32
+
+=== [pagina 50] ===
+Coexistence of Conventions
+An equilibrium of the local interaction game is a best response to
+itself
+• A group X taking action 1 is an equilibrium if everyone in X
+wants to keep choosing 1 and everyone in X wants to keep
+choosing 0
+Evan Sadler
+Diﬀusion
+17/32
+
+=== [pagina 51] ===
+Coexistence of Conventions
+An equilibrium of the local interaction game is a best response to
+itself
+• A group X taking action 1 is an equilibrium if everyone in X
+wants to keep choosing 1 and everyone in X wants to keep
+choosing 0
+A group X is an equilibrium iﬀX is q-cohesive and X is
+(1 −q)-cohesive
+Evan Sadler
+Diﬀusion
+17/32
+
+=== [pagina 52] ===
+Coexistence of Conventions
+An equilibrium of the local interaction game is a best response to
+itself
+• A group X taking action 1 is an equilibrium if everyone in X
+wants to keep choosing 1 and everyone in X wants to keep
+choosing 0
+A group X is an equilibrium iﬀX is q-cohesive and X is
+(1 −q)-cohesive
+Theorem
+Suppose the system satisﬁes low neighbor growth and has
+contagion threshold ξ. For all q ∈[ξ, 1 −ξ], the game has a
+co-existent equilibrium.
+Evan Sadler
+Diﬀusion
+17/32
+
+=== [pagina 53] ===
+Discussion
+Results highlight qualitative features of networks that facilitate
+contagion
+Evan Sadler
+Diﬀusion
+18/32
+
+=== [pagina 54] ===
+Discussion
+Results highlight qualitative features of networks that facilitate
+contagion
+Could derive analogous results for large but ﬁnite networks
+Evan Sadler
+Diﬀusion
+18/32
+
+=== [pagina 55] ===
+Discussion
+Results highlight qualitative features of networks that facilitate
+contagion
+Could derive analogous results for large but ﬁnite networks
+Conditions not always easy to check, doesn’t answer all questions
+we might ask
+Evan Sadler
+Diﬀusion
+18/32
+
+=== [pagina 56] ===
+Discussion
+Results highlight qualitative features of networks that facilitate
+contagion
+Could derive analogous results for large but ﬁnite networks
+Conditions not always easy to check, doesn’t answer all questions
+we might ask
+Next up: a diﬀerent approach based on distributional information
+about the network
+Evan Sadler
+Diﬀusion
+18/32
+
+=== [pagina 57] ===
+A Mean-Field Approximation
+We have a large population (a continuum), characterize network
+via degree distribution D
+• Write pd for probability of degree d
+• Write d = P
+d pdd for the average degree
+Evan Sadler
+Diﬀusion
+19/32
+
+=== [pagina 58] ===
+A Mean-Field Approximation
+We have a large population (a continuum), characterize network
+via degree distribution D
+• Write pd for probability of degree d
+• Write d = P
+d pdd for the average degree
+A random neighbor has degree d with probability
+˜pd = pdd
+d
+Friendship paradox
+Evan Sadler
+Diﬀusion
+19/32
+
+=== [pagina 59] ===
+A Mean-Field Approximation
+We have a large population (a continuum), characterize network
+via degree distribution D
+• Write pd for probability of degree d
+• Write d = P
+d pdd for the average degree
+A random neighbor has degree d with probability
+˜pd = pdd
+d
+Friendship paradox
+Agents choose between two actions, 0 or 1
+• Refer to 0 as the “default”
+• Heterogeneous costs c of choosing 1, continuous distribution F
+Evan Sadler
+Diﬀusion
+19/32
+
+=== [pagina 60] ===
+A Mean-Field Approximation
+Added value of choosing action 1 is v(d, x)
+• Player’s degree d
+• Expects each neighbor to choose 1 w.p. x
+• Assume increasing in x, complementarities
+Evan Sadler
+Diﬀusion
+20/32
+
+=== [pagina 61] ===
+A Mean-Field Approximation
+Added value of choosing action 1 is v(d, x)
+• Player’s degree d
+• Expects each neighbor to choose 1 w.p. x
+• Assume increasing in x, complementarities
+Agent i prefers action 1 if v(di, x) ≥ci
+• Happens with probability F(v(di, x))
+Evan Sadler
+Diﬀusion
+20/32
+
+=== [pagina 62] ===
+A Mean-Field Approximation
+Added value of choosing action 1 is v(d, x)
+• Player’s degree d
+• Expects each neighbor to choose 1 w.p. x
+• Assume increasing in x, complementarities
+Agent i prefers action 1 if v(di, x) ≥ci
+• Happens with probability F(v(di, x))
+Deﬁne Fd,x = F(v(d, x)), probability that degree d player wants
+to adopt, given neighbor adoption probability x
+Evan Sadler
+Diﬀusion
+20/32
+
+=== [pagina 63] ===
+Examples
+Suppose v(d, x) = u(dx) for some increasing concave u
+• Payoﬀs depend on expected number of adopting neighbors
+• Might be reasonable for adoption of a communication
+technology
+Evan Sadler
+Diﬀusion
+21/32
+
+=== [pagina 64] ===
+Examples
+Suppose v(d, x) = u(dx) for some increasing concave u
+• Payoﬀs depend on expected number of adopting neighbors
+• Might be reasonable for adoption of a communication
+technology
+Suppose v(d, x) = u(x) for some increasing concave u
+• Care about average play of neighbors, network has no role
+Evan Sadler
+Diﬀusion
+21/32
+
+=== [pagina 65] ===
+Examples
+Suppose v(d, x) = u(dx) for some increasing concave u
+• Payoﬀs depend on expected number of adopting neighbors
+• Might be reasonable for adoption of a communication
+technology
+Suppose v(d, x) = u(x) for some increasing concave u
+• Care about average play of neighbors, network has no role
+Suppose v(d, x) is a step function:
+v(d, x) =
+
+
+
+a
+if x ≤τ
+b
+if x > τ
+for some τ ∈(0, 1)
+Evan Sadler
+Diﬀusion
+21/32
+
+=== [pagina 66] ===
+Bayesian Equilibrium
+Consider a static game ﬁrst
+Evan Sadler
+Diﬀusion
+22/32
+
+=== [pagina 67] ===
+Bayesian Equilibrium
+Consider a static game ﬁrst
+Look at symmetric Bayes-Nash Equilibria:
+• Agent i observes own degree di and cost ci
+• Neighbors are random draw from the population, degree d
+with probability ˜pd
+Evan Sadler
+Diﬀusion
+22/32
+
+=== [pagina 68] ===
+Bayesian Equilibrium
+Consider a static game ﬁrst
+Look at symmetric Bayes-Nash Equilibria:
+• Agent i observes own degree di and cost ci
+• Neighbors are random draw from the population, degree d
+with probability ˜pd
+Existence follows from standard arguments
+Evan Sadler
+Diﬀusion
+22/32
+
+=== [pagina 69] ===
+Bayesian Equilibrium
+Consider a static game ﬁrst
+Look at symmetric Bayes-Nash Equilibria:
+• Agent i observes own degree di and cost ci
+• Neighbors are random draw from the population, degree d
+with probability ˜pd
+Existence follows from standard arguments
+Equilibrium condition:
+x = φ(x) ≡
+X
+d
+˜pdFd,x
+Evan Sadler
+Diﬀusion
+22/32
+
+=== [pagina 70] ===
+Bayesian Equilibrium
+Can think of φ(x) as a best response map
+• If agents play a best response to neighbor adoption probability
+x, then the new neighbor adoption probability is φ(x)
+Evan Sadler
+Diﬀusion
+23/32
+
+=== [pagina 71] ===
+Bayesian Equilibrium
+Can think of φ(x) as a best response map
+• If agents play a best response to neighbor adoption probability
+x, then the new neighbor adoption probability is φ(x)
+In equilibrium, agent i adopts iﬀci ≤v(di, x)
+Evan Sadler
+Diﬀusion
+23/32
+
+=== [pagina 72] ===
+Bayesian Equilibrium
+Can think of φ(x) as a best response map
+• If agents play a best response to neighbor adoption probability
+x, then the new neighbor adoption probability is φ(x)
+In equilibrium, agent i adopts iﬀci ≤v(di, x)
+Neighbor adoption probability x fully characterizes equilibrium
+behavior
+• Refer to x as an equilibrium
+Evan Sadler
+Diﬀusion
+23/32
+
+=== [pagina 73] ===
+A Diﬀusion Process
+Now look at a diﬀusion process in discrete time
+Evan Sadler
+Diﬀusion
+24/32
+
+=== [pagina 74] ===
+A Diﬀusion Process
+Now look at a diﬀusion process in discrete time
+At t = 0, some fraction of the population exogenously adopts
+action 1
+• Write x0 for corresponding neighbor adoption probability
+Evan Sadler
+Diﬀusion
+24/32
+
+=== [pagina 75] ===
+A Diﬀusion Process
+Now look at a diﬀusion process in discrete time
+At t = 0, some fraction of the population exogenously adopts
+action 1
+• Write x0 for corresponding neighbor adoption probability
+Write xt
+d for fraction of degree d agents adopting at time t
+• Neighbor adoption probability xt = P
+d ˜pdxt
+d
+Evan Sadler
+Diﬀusion
+24/32
+
+=== [pagina 76] ===
+A Diﬀusion Process
+Now look at a diﬀusion process in discrete time
+At t = 0, some fraction of the population exogenously adopts
+action 1
+• Write x0 for corresponding neighbor adoption probability
+Write xt
+d for fraction of degree d agents adopting at time t
+• Neighbor adoption probability xt = P
+d ˜pdxt
+d
+Next period, assume
+xt+1
+d
+= Fd,xt
+Evan Sadler
+Diﬀusion
+24/32
+
+=== [pagina 77] ===
+A Diﬀusion Process
+Best response dynamics
+Evan Sadler
+Diﬀusion
+25/32
+
+=== [pagina 78] ===
+A Diﬀusion Process
+Best response dynamics
+Two key assumptions:
+• Agents are myopic
+• Next period, neighobrs are a new independent random draw
+from the population
+Evan Sadler
+Diﬀusion
+25/32
+
+=== [pagina 79] ===
+A Diﬀusion Process
+Best response dynamics
+Two key assumptions:
+• Agents are myopic
+• Next period, neighobrs are a new independent random draw
+from the population
+Second assumption is what makes this “mean-ﬁeld”
+• Unlike our earlier model, identity of adopting individual
+doesn’t matter
+• Can just keep track of population averages
+Evan Sadler
+Diﬀusion
+25/32
+
+=== [pagina 80] ===
+Equilibrium Structure
+Complementarities ensure monotone convergence of the dynamics
+Evan Sadler
+Diﬀusion
+26/32
+
+=== [pagina 81] ===
+Equilibrium Structure
+Complementarities ensure monotone convergence of the dynamics
+Note, if v is weakly increasing in degree d, then in equilibrium,
+higher degree agents are more likely to adopt
+Evan Sadler
+Diﬀusion
+26/32
+
+=== [pagina 82] ===
+Equilibrium Structure
+Complementarities ensure monotone convergence of the dynamics
+Note, if v is weakly increasing in degree d, then in equilibrium,
+higher degree agents are more likely to adopt
+A point x is a ﬁxed point of the dynamics iﬀ
+x =
+X
+d
+˜pdFd,x = φ(x)
+Fixed points are exactly equilibria of the static game
+Evan Sadler
+Diﬀusion
+26/32
+
+=== [pagina 83] ===
+Stability and Tipping
+An equilibrium x is stable if there exists ϵ′ > 0 such that
+φ(x −ϵ) > x −ϵ and φ(x + ϵ) < x + ϵ for all ϵ′ > ϵ > 0
+Evan Sadler
+Diﬀusion
+27/32
+
+=== [pagina 84] ===
+Stability and Tipping
+An equilibrium x is stable if there exists ϵ′ > 0 such that
+φ(x −ϵ) > x −ϵ and φ(x + ϵ) < x + ϵ for all ϵ′ > ϵ > 0
+Best response dynamics will return to equilibrium after a small
+disturbance
+Evan Sadler
+Diﬀusion
+27/32
+
+=== [pagina 85] ===
+Stability and Tipping
+An equilibrium x is stable if there exists ϵ′ > 0 such that
+φ(x −ϵ) > x −ϵ and φ(x + ϵ) < x + ϵ for all ϵ′ > ϵ > 0
+Best response dynamics will return to equilibrium after a small
+disturbance
+An equilibrium is a tipping point if the inequalities above are
+reversed
+• A small disturbance causes the system to move away from the
+equilibrium
+Evan Sadler
+Diﬀusion
+27/32
+
+=== [pagina 86] ===
+Stability and Tipping
+An equilibrium x is stable if there exists ϵ′ > 0 such that
+φ(x −ϵ) > x −ϵ and φ(x + ϵ) < x + ϵ for all ϵ′ > ϵ > 0
+Best response dynamics will return to equilibrium after a small
+disturbance
+An equilibrium is a tipping point if the inequalities above are
+reversed
+• A small disturbance causes the system to move away from the
+equilibrium
+Let φ and ˆφ denote two best response mappings. We say ˆφ
+generates greater diﬀusion if:
+• For any stable equilibrium in φ, there exists a higher one in ˆφ
+• For any tipping point in φ, there exists a lower one in ˆφ
+Evan Sadler
+Diﬀusion
+27/32
+
+=== [pagina 87] ===
+Stability and Tipping
+If ˆφ is pointwise larger than φ, then ˆφ generates greater diﬀusion
+Evan Sadler
+Diﬀusion
+28/32
+
+=== [pagina 88] ===
+Stability and Tipping
+If ˆφ is pointwise larger than φ, then ˆφ generates greater diﬀusion
+Example:
+• Suppose F is uniform on [0, 1]
+• Assume v(d, x) = 1
+2
+√x for all d
+• Implies Fd,x = φ(x) = 1
+2
+√x
+Evan Sadler
+Diﬀusion
+28/32
+
+=== [pagina 89] ===
+Stability and Tipping
+If ˆφ is pointwise larger than φ, then ˆφ generates greater diﬀusion
+Example:
+• Suppose F is uniform on [0, 1]
+• Assume v(d, x) = 1
+2
+√x for all d
+• Implies Fd,x = φ(x) = 1
+2
+√x
+Equilibrum at x = 0 is unstable, equilibrium at x = 1
+4 is stable
+Evan Sadler
+Diﬀusion
+28/32
+
+=== [pagina 90] ===
+Comparative Statics
+Changes in the cost distribution
+Evan Sadler
+Diﬀusion
+29/32
+
+=== [pagina 91] ===
+Comparative Statics
+Changes in the cost distribution
+Theorem
+If ˆF FOSD F, then we have ˆφ(x) ≤φ(x) for all x, implying F
+generates greater diﬀusion than ˆF.
+Evan Sadler
+Diﬀusion
+29/32
+
+=== [pagina 92] ===
+Comparative Statics
+Changes in the cost distribution
+Theorem
+If ˆF FOSD F, then we have ˆφ(x) ≤φ(x) for all x, implying F
+generates greater diﬀusion than ˆF.
+If adoption is more costly, you get less of it
+Evan Sadler
+Diﬀusion
+29/32
+
+=== [pagina 93] ===
+Comparative Statics
+What about changes in the network structure?
+Evan Sadler
+Diﬀusion
+30/32
+
+=== [pagina 94] ===
+Comparative Statics
+What about changes in the network structure?
+Theorem
+Consider two diﬀerent neighbor degree distributions p and ˆp, and
+suppose Fd,x is non-decreasing in d. If p FOSD ˆp, then
+φ(x) ≥ˆφ(x), and p generates greater diﬀusion than ˆp.
+Evan Sadler
+Diﬀusion
+30/32
+
+=== [pagina 95] ===
+Comparative Statics
+What about changes in the network structure?
+Theorem
+Consider two diﬀerent neighbor degree distributions p and ˆp, and
+suppose Fd,x is non-decreasing in d. If p FOSD ˆp, then
+φ(x) ≥ˆφ(x), and p generates greater diﬀusion than ˆp.
+If high-degree agents are (weakly) more inclined to adopt, then
+increasing density increases diﬀusion
+φ(x) =
+X
+d
+pdd
+P
+k pkkFd,x ≥
+X
+d
+ˆpdd
+P
+k pkkFd,x = ˆφ(x)
+by deﬁnition of FOSD
+Evan Sadler
+Diﬀusion
+30/32
+
+=== [pagina 96] ===
+Comparative Statics
+Something less obvious...
+Evan Sadler
+Diﬀusion
+31/32
+
+=== [pagina 97] ===
+Comparative Statics
+Something less obvious...
+Theorem
+Suppose p is a mean-preserving spread of ˆp, and dFd,x is
+non-decreasing and weakly convex in d. Then φ(x) ≥ˆφ(x), and
+p generates greater diﬀusion than ˆp.
+Evan Sadler
+Diﬀusion
+31/32
+
+=== [pagina 98] ===
+Comparative Statics
+Something less obvious...
+Theorem
+Suppose p is a mean-preserving spread of ˆp, and dFd,x is
+non-decreasing and weakly convex in d. Then φ(x) ≥ˆφ(x), and
+p generates greater diﬀusion than ˆp.
+Can think of MPS as increasing “centralization”
+• Intuition: MPS exacerbates the friendship paradox
+Evan Sadler
+Diﬀusion
+31/32
+
+=== [pagina 99] ===
+Comparative Statics
+Something less obvious...
+Theorem
+Suppose p is a mean-preserving spread of ˆp, and dFd,x is
+non-decreasing and weakly convex in d. Then φ(x) ≥ˆφ(x), and
+p generates greater diﬀusion than ˆp.
+Can think of MPS as increasing “centralization”
+• Intuition: MPS exacerbates the friendship paradox
+Proof left as an exercise
+Evan Sadler
+Diﬀusion
+31/32
+
+=== [pagina 100] ===
+Looking Ahead
+Mean-ﬁeld approach has advantages and disadvantages
+• Tractability
+• Some problematic assumptions
+Next time, an approach based on random graphs
+• Distributional assumptions on the network
+• No reshuﬄing links
+Evan Sadler
+Diﬀusion
+32/32

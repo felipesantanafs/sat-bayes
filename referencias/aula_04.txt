@@ -1,0 +1,519 @@
+# Fonte: 04.pdf
+# Paginas: 29
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Formação de Rede: Modelos Aleatórios
+Leituras: J(4, 5.1, 5.2)
+Marcos Ross Fernandes
+August 27, 2026
+
+=== [pagina 2] ===
+Estrutura
+Modelos Estáticos
+Modelo de Erdös-Renyi
+Modelos Dinâmicos e Ligação Preferencial
+Leis de Potência
+Modelo de Ligação Uniforme
+Barabasi-Albert
+0 / 27
+
+=== [pagina 3] ===
+Modelos Estáticos
+1 / 27
+
+=== [pagina 4] ===
+Modelo de Erdös-Renyi
+▶Modelo de grafo aleatório ER (G(n, p)): dados n nós, cada
+ligação (não direcionada) possível se forma com probabilidade
+independente p ∈(0, 1).
+▶VANTAGENS: (i) Benchmark matemático simples para
+analisar a formação de redes, (ii) Como veremos, este modelo
+será uma ferramenta fundamental para fornecer as bases para
+a compreensão da difusão em uma rede.
+▶DESVANTAGEM: A maioria das redes sociais e econômicas
+apresenta clustering, homofilia e distribuições de grau
+específicas. Portanto, a independência não é uma boa
+hipótese.
+2 / 27
+
+=== [pagina 5] ===
+Modelo de Erdös-Renyi: Elementos
+Abordaremos propriedades básicas dos grafos aleatórios ER:
+▶Número de Ligações
+▶Distribuição de Grau
+▶Clustering
+▶Diâmetro e Comprimento Médio dos Caminhos
+3 / 27
+
+=== [pagina 6] ===
+Modelo de Erdös-Renyi: Elementos
+Número de Ligações
+▶Seja Aij ∈{0, 1} uma variável aleatória de Bernoulli indicando
+a presença de uma ligação entre os nós i e j.
+▶O número esperado de ligações é:
+E
+
+X
+i̸=j
+Aij
+
+= n(n −1)
+2
+p
+▶Pela lei (fraca) dos grandes números, para todo α > 0,
+lim
+n→∞P
+
+X
+i̸=j
+Aij −n(n −1)
+2
+p ≥α
+
+= 0
+4 / 27
+
+=== [pagina 7] ===
+Modelo de Erdös-Renyi: Elementos
+Distribuição de Grau
+▶Seja D uma variável aleatória que representa o grau de um nó.
+▶D é uma variável aleatória Binomial com função de massa
+P (D = d) =
+n −1
+d
+
+pd(1 −p)n−1−d.
+▶O grau esperado é E[D] = (n −1)p.
+▶Se definirmos p =
+λ
+n−1 (isto é, mantivermos E[D] constante e
+igual a λ quando n →∞), então o teorema do limite de
+Poisson estabelece que, quando n →∞, D converge para
+uma variável aleatória de Poisson, com
+P(D = d) = e−λλd
+d!
+▶Por essa razão, o modelo ER também é chamado de modelo
+de grafo aleatório de Poisson.
+▶Essa distribuição de grau decai exponencialmente em d.
+5 / 27
+
+=== [pagina 8] ===
+Modelo de Erdös-Renyi: Elementos
+Clustering Global
+▶CGC =
+3×número de triângulos
+número de triplas conectadas de vértices
+▶Para cada conjunto de três nós, a probabilidade de que as três
+arestas sejam formadas é p3, uma vez que as arestas são
+formadas de maneira independente.
+▶Há 3
+n
+3
+
+p3 triângulos em esperança, e 3
+n
+3
+
+p2 triplas
+conectadas.
+▶O coeficiente de clustering global deve se aproximar da razão
+entre essas quantidades: p
+▶Em geral, consideraremos o caso em que p →0 quando
+n →∞, de modo que o grau esperado seja finito (ou, pelo
+menos, muito menor que n). Nesse caso, o clustering
+esperado converge para 0 quando n →∞.
+6 / 27
+
+=== [pagina 9] ===
+Modelo de Erdös-Renyi: Thresholds e Transições de Fase
+▶Embora possa ser difícil determinar a probabilidade exata de
+que alguma propriedade seja satisfeita para um dado n fixo,
+muitas vezes é muito mais fácil determinar se essa
+probabilidade converge para 1 ou 0 quando fazemos n tender
+ao infinito.
+▶Assim, permitimos que p seja uma função de n e perguntamos
+se a probabilidade de que a rede realizada possua determinada
+propriedade converge para 0 ou 1 quando n →∞.
+▶Representamos a probabilidade de formação de uma ligação
+como uma função de n, denotada por p(n).
+▶É bastante natural que a probabilidade de formação de uma
+ligação entre dois nós varie com o tamanho da população.
+▶Por exemplo: se quisermos manter o grau médio constante à
+medida que o número de nós cresce, precisamos de p(n) ∝1
+n.
+7 / 27
+
+=== [pagina 10] ===
+Modelo de Erdös-Renyi: Funções de Threshold
+▶Para uma dada propriedade A (por exemplo, “a rede é
+conectada”, “a rede contém pelo menos um ciclo”, “a rede
+contém pelo menos uma aresta”), dizemos que uma função
+t(n) é uma função de threshold se
+1. P(A) →0, se limn→∞
+p(n)
+t(n) = 0, e
+2. P(A) →1, se limn→∞
+p(n)
+t(n) = ∞.
+▶Em palavras: a propriedade A quase nunca é satisfeita se a
+probabilidade de ligação for significativamente menor que
+t(n), e a propriedade A quase sempre é satisfeita se a
+probabilidade de ligação for significativamente maior que t(n).
+▶Às vezes escrevemos p(n) ≪t(n) para p(n)/t(n) →0, e
+escrevemos p(n) ≫t(n) para p(n)/t(n) →∞. (propriedade
+monótona)
+8 / 27
+
+=== [pagina 11] ===
+Modelo de Erdös-Renyi: Transições de Fase
+▶Se existe uma função de threshold, dizemos que ocorre uma transição de
+fase nesse threshold.
+▶No que diz respeito ao modelo de rede aleatória de Poisson, há muitos
+resultados conhecidos sobre propriedades e thresholds. Um resumo
+bastante breve é apresentado a seguir.
+▶No threshold de
+1
+n2 , surgem as primeiras ligações, de modo que,
+para p(n) de ordem menor que
+1
+n2 , a rede provavelmente não possui
+ligações no limite, enquanto, para p(n) de ordem maior que
+1
+n2 , a
+rede possui pelo menos uma ligação com probabilidade convergindo
+para um.
+▶Quando p(n) é pelo menos
+1
+n
+3
+2 , a probabilidade de que a rede
+possua pelo menos um componente com pelo menos três nós
+converge para um.
+▶No threshold de 1
+n, observamos o surgimento de ciclos e também o
+surgimento de um “componente gigante”, que é um único maior
+componente contendo uma fração não trivial de todos os nós.
+▶O componente gigante cresce em tamanho até o threshold de log(n)
+n
+,
+no qual a rede se torna conectada.
+9 / 27
+
+=== [pagina 12] ===
+Modelo de Erdös-Renyi
+Diâmetro e Comprimento Médio dos Caminhos
+▶Chung e Lu1 mostram que, quase certamente, o diâmetro do
+grafo aleatório G(n, p) é próximo de
+log n
+log(np) se np →∞.
+▶Além disso, se
+np
+log n = c > 8, então o diâmetro de G(n, p) está
+concentrado em dois valores.
+▶Em geral, se
+np
+log n = c > c0, o diâmetro está concentrado em,
+no máximo, 2⌊1
+c0 ⌋+ 4 valores. Eles também provaram que o
+diâmetro de Gn,p é np > 3.6
+▶Outros estudos mostram que, dentro de cada componente de
+tamanho k, o comprimento médio dos caminhos e o diâmetro
+são ambos aproximadamente log k
+log λ.
+1The Diameter of Sparse Random Graphs. Advances in Applied
+Mathematics 26, 257–279 (2001)
+10 / 27
+
+=== [pagina 13] ===
+Modelo de Erdös-Renyi
+Tamanho do Componente Gigante
+▶Seja λ > 1.
+▶Seja q a fração esperada de nós no componente gigante de uma
+rede com n nós.
+▶Suponha que, para n grande, q também seja aproximadamente a
+fração de nós no componente gigante de uma rede com (n + 1) nós.
+▶A probabilidade de que o nó n + 1 não pertença ao componente
+gigante é dada por 1 −q.
+▶A probabilidade de que o nó n + 1 não pertença ao componente
+gigante é igual à probabilidade de que nenhum de seus vizinhos
+pertença ao componente gigante (da rede com n nós), portanto
+1 −q =
+X
+d
+e−λλd
+d!
+(1 −q)d
+▶q ≈1 −e−λq
+11 / 27
+
+=== [pagina 14] ===
+Modelo de Erdös-Renyi
+Resumo
+▶O modelo ER é o modelo de grafo aleatório mais simples. A
+hipótese fundamental é a formação independente das ligações.
+▶O modelo ER é tratável, mas apresenta algumas características
+pouco realistas, como clustering muito baixo. Ainda assim, é um
+benchmark importante e um ponto de partida.
+▶Uma característica fundamental do modelo ER é a existência de
+fenômenos de threshold, como thresholds para o surgimento de um
+componente gigante ou para o surgimento da conectividade.
+▶No modelo ER, há apenas componentes pequenos ou um
+componente gigante e muitos componentes pequenos.
+▶Compreender o tamanho e a estrutura do componente gigante
+(quando ele existe) é frequentemente importante, por exemplo, para
+estudar difusão ou o comprimento médio dos caminhos.
+12 / 27
+
+=== [pagina 15] ===
+Modelos Dinâmicos e Ligação Preferencial
+13 / 27
+
+=== [pagina 16] ===
+Leis de Potência
+▶Uma característica realista importante que frequentemente
+surge em modelos dinâmicos é a existência de graus
+extremamente desiguais.
+▶Muitos fenômenos sociais e econômicos são bem aproximados
+por leis de potência. (por exemplo, população, tamanho das
+firmas, riqueza etc.)
+14 / 27
+
+=== [pagina 17] ===
+Leis de Potência
+▶Formalmente, uma variável aleatória não negativa X possui
+uma distribuição de lei de potência se sua cauda decai
+polinomialmente com potência α: formalmente,
+P(X ≥x) ∝cx−α
+para constantes c > 0 e α > 0.
+▶Um exemplo de distribuição de lei de potência comumente
+utilizada é a distribuição de Pareto, dada por
+P(X ≥x) =
+ t
+x
+α
+para algum α > 0 e t > 0.
+15 / 27
+
+=== [pagina 18] ===
+Modelo de Ligação Uniforme
+16 / 27
+
+=== [pagina 19] ===
+Modelo de Ligação Uniforme
+▶Antes de estudar o modelo de ligação preferencial, estudamos
+uma variação dinâmica do modelo ER, na qual os nós surgem
+ao longo do tempo e, quando surgem, formam m ligações com
+nós existentes, escolhidos uniformemente ao acaso.
+▶Nós mais antigos possuem graus esperados maiores.
+▶Entretanto, como as ligações são formadas aleatoriamente,
+apenas nós muito antigos possuem graus muito maiores que a
+média.
+▶Assim, o modelo de ligação uniforme é um modelo dinâmico
+de formação de redes, mas não gera uma distribuição de grau
+de lei de potência.
+17 / 27
+
+=== [pagina 20] ===
+Modelo de Ligação Uniforme
+Elementos
+Os nós surgem ao longo do tempo e, quando surgem, formam
+aleatoriamente ligações com nós existentes.
+▶Indexe os nós por sua ordem de nascimento, de modo que o
+nó i surge na data i, para i = 0, 1, . . ..
+▶Ao surgir, um nó forma m ligações não direcionadas com nós
+existentes. Seja di(t) o grau do nó i no tempo t.
+▶Consideramos uma versão conveniente deste modelo em que
+di(t) = m para todo t > m, e, para t ≤m, o novo nó se
+conecta a todos.
+▶Equivalentemente, o primeiro novo nó surge no tempo
+t = m + 1, e a rede preexistente nesse momento é a rede
+completa com m nós.
+18 / 27
+
+=== [pagina 21] ===
+Modelo de Ligação Uniforme
+Aproximação de Campo Médio
+▶Neste modelo, analisar a distribuição das redes realizadas é
+desafiador.
+▶É muito mais fácil acompanhar a evolução dos graus
+esperados ao longo do tempo.
+▶Acompanhar as propriedades esperadas de um processo
+estocástico, em vez das propriedades realizadas, é chamado de
+aproximação de campo médio.
+▶Acompanharemos os graus esperados como se o modelo
+estivesse em tempo contínuo (sem perda de generalidade),
+para caracterizar a evolução dos graus esperados por meio de
+equações diferenciais simples.
+19 / 27
+
+=== [pagina 22] ===
+Modelo de Ligação Uniforme
+Evolução do Grau Esperado
+▶Condição inicial: di(i) = m, para todo t.
+▶A partir do tempo t = m + 1, a variação no grau esperado do
+nó i no tempo t > i é dada por
+ddi(t)
+dt
+= m
+t ,
+uma vez que cada novo nó se conecta aleatoriamente a m dos
+t nós existentes.
+▶A taxa de formação de novas ligações decresce com 1
+t devido
+ao aumento da competição por ligações.
+▶Essa equação diferencial possui uma solução (para t ≥i)
+di(t) = m + m log
+t
+i
+
+.
+▶A seguir, utilizamos essa solução para obter uma aproximação
+da distribuição de grau.
+20 / 27
+
+=== [pagina 23] ===
+Modelo de Ligação Uniforme
+Distribuição dos Graus Esperados
+▶Observe que os graus esperados dos nós aumentam ao longo do tempo.
+▶No tempo t > τ > m, a fração de nós que surgiram no tempo τ ou
+posteriormente é 1 −τ
+t .
+▶Assim, para qualquer grau d e tempo t, seja i(d) um nó tal que di(d) = d.
+▶A CDF resultante é Ft(d) = 1 −i(d)
+t .
+▶Podemos resolver para i(d) de acordo com
+d = m + m log
+ t
+i(d)
+
+⇐⇒i(d)
+t
+= e−d−m
+m ,
+para d < m(1 + log t
+m) (o grau esperado máximo no tempo t).
+▶Portanto, para d < m(1 + log t), a fração de nós com grau esperado
+menor que d é Ft(d) = 1 −e−d−m
+m .
+21 / 27
+
+=== [pagina 24] ===
+Barabasi-Albert
+22 / 27
+
+=== [pagina 25] ===
+Modelo de Ligação Preferencial
+Assim como no modelo de ligação uniforme:
+▶Os nós surgem ao longo do tempo e são indexados por sua
+data de nascimento.
+▶O sistema começa com m nós, todos conectados entre si.
+▶Ao surgir, cada novo nó forma m ligações não direcionadas
+com nós preexistentes.
+▶Entretanto, em vez de se conectar aleatoriamente, o novo nó
+se conecta aos nós preexistentes com probabilidade
+proporcional aos seus graus.
+▶Assim, a probabilidade de que o nó existente i receba uma
+ligação de um novo nó no tempo t é igual a
+m
+di(t)
+Pt
+j=1 dj(t).
+(em vez de m
+t )
+23 / 27
+
+=== [pagina 26] ===
+Modelo de Ligação Preferencial
+Evolução dos Graus Esperados
+▶A partir do tempo t = m + 1, há tm ligações no total no
+sistema no tempo t. (e Pt
+j=1 dj(t) = 2tm)
+▶Portanto, a probabilidade de que o nó i receba uma nova
+ligação no tempo t é igual a
+di(t)
+2t .
+▶Isso implica que a evolução dos graus esperados é dada por
+(sob a aproximação de campo médio)
+ddi(t)
+dt
+= di(t)
+2t
+com condição inicial di(i) = m.
+▶Isso possui como solução
+di(t) = m
+t
+i
+ 1
+2 .
+24 / 27
+
+=== [pagina 27] ===
+Modelo de Ligação Preferencial
+Comparação com Ligação Uniforme
+▶Com ligação preferencial,
+di(t) = m
+t
+i
+ 1
+2
+▶Com ligação uniforme,
+di(t) = m + m log
+t
+i
+
+.
+▶Em ambos os casos, nós mais antigos possuem graus
+esperados maiores, mas o grau esperado aumenta com a idade
+muito mais rapidamente sob ligação preferencial do que sob
+ligação uniforme (√t vs. log t).
+▶Portanto, em qualquer ponto no tempo, a distribuição dos
+graus esperados será muito mais dispersa sob ligação
+preferencial.
+25 / 27
+
+=== [pagina 28] ===
+Modelo de Ligação Preferencial
+Distribuição dos Graus Esperados
+▶Assim como no modelo de ligação uniforme, os graus esperados dos nós
+aumentam ao longo do tempo.
+▶Para encontrar a fração de nós com graus esperados abaixo de d no
+tempo t, basta identificar qual nó i(d) possui grau esperado exatamente
+igual a d no tempo t. Isso é dado por
+d = m
+ t
+i(t)
+ 1
+2
+⇐⇒i(d)
+t
+=
+m
+d
+2
+para d < √mt (o grau esperado máximo no tempo t).
+▶Portanto, para d < √mt, a fração de nós com grau maior que d é
+1 −Ft(d) =
+m
+d
+2
+.
+▶A função densidade correspondente é Pt(d) = 2m2d−3.
+26 / 27
+
+=== [pagina 29] ===
+Modelo de Ligação Preferencial
+Resumo
+▶Modelos dinâmicos de formação de redes acrescentam
+realismo ao modelar como as redes se formam ao longo do
+tempo.
+▶Se novos nós formam ligações uniformemente ao acaso, o
+processo gera redes de cauda fina, semelhantes às redes ER.
+▶Se novos nós se conectam aos nós existentes
+proporcionalmente aos seus graus, o processo gera redes com
+distribuições de grau de lei de potência.
+▶A formação dinâmica de redes com ligação preferencial é uma
+explicação para distribuições de grau de lei de potência, como
+as observadas entre páginas da web, redes de citações e redes
+de amizade.
+27 / 27

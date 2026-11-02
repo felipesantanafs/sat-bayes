@@ -1,0 +1,429 @@
+# Fonte: Networks 01 - Introduction.pdf
+# Paginas: 38
+
+=== [pagina 1] ===
+Economics of Networks
+Introduction
+Evan Sadler
+Massachusetts Institute of Technology
+April 3, 2018
+Evan Sadler
+Networks Introduction
+1/13
+
+=== [pagina 2] ===
+Network Economics
+Second half of the course: economics of networks
+• Apply network models to study human behavior
+Evan Sadler
+Networks Introduction
+2/13
+
+=== [pagina 3] ===
+Network Economics
+Second half of the course: economics of networks
+• Apply network models to study human behavior
+Human interactions are complex, heterogeneity in
+• Geography
+• Trading opportunities
+• Access to information
+• Inﬂuence
+Evan Sadler
+Networks Introduction
+2/13
+
+=== [pagina 4] ===
+Network Economics
+Second half of the course: economics of networks
+• Apply network models to study human behavior
+Human interactions are complex, heterogeneity in
+• Geography
+• Trading opportunities
+• Access to information
+• Inﬂuence
+Network models give us a structured way to study this complexity
+Evan Sadler
+Networks Introduction
+2/13
+
+=== [pagina 5] ===
+Traﬃc Congestion
+Traﬃc congestion is a major problem in many cities
+Evan Sadler
+Networks Introduction
+3/13
+
+=== [pagina 6] ===
+Traﬃc Congestion
+Traﬃc congestion is a major problem in many cities
+Cost of congestion in New York City is estimated at over $20
+billion per year
+• Wasted time
+• Excess fuel consumption
+• Lost business revenue
+Evan Sadler
+Networks Introduction
+3/13
+
+=== [pagina 7] ===
+Traﬃc Congestion
+Traﬃc congestion is a major problem in many cities
+Cost of congestion in New York City is estimated at over $20
+billion per year
+• Wasted time
+• Excess fuel consumption
+• Lost business revenue
+One solution: congestion pricing
+• (See NY Times, “London uses Congestion Pricing. Why
+Doesn’t New York?”)
+Evan Sadler
+Networks Introduction
+3/13
+
+=== [pagina 8] ===
+Traﬃc Congestion
+Traﬃc congestion is a major problem in many cities
+Cost of congestion in New York City is estimated at over $20
+billion per year
+• Wasted time
+• Excess fuel consumption
+• Lost business revenue
+One solution: congestion pricing
+• (See NY Times, “London uses Congestion Pricing. Why
+Doesn’t New York?”)
+How does one evaluate such a plan?
+Evan Sadler
+Networks Introduction
+3/13
+
+=== [pagina 9] ===
+Traﬃc Congestion
+Roads form a resource network, drivers minimize own costs
+Evan Sadler
+Networks Introduction
+4/13
+
+=== [pagina 10] ===
+Traﬃc Congestion
+Roads form a resource network, drivers minimize own costs
+Questions:
+• How will drivers respond to tolls?
+• How will tolls aﬀect travel times?
+• What routes are most crucial?
+• Where should we consider adding new roads?
+• Will a new road always improve traﬃc? (hint: no)
+Evan Sadler
+Networks Introduction
+4/13
+
+=== [pagina 11] ===
+Social Norms: Cooperation and Enforcement
+Why do people cooperate?
+Evan Sadler
+Networks Introduction
+5/13
+
+=== [pagina 12] ===
+Social Norms: Cooperation and Enforcement
+Why do people cooperate?
+Lots of opportunities to “cheat”
+• Dine and dash
+• Slack on the job or inﬂate hours worked
+• Fail to deliver goods as agreed
+Evan Sadler
+Networks Introduction
+5/13
+
+=== [pagina 13] ===
+Social Norms: Cooperation and Enforcement
+Why do people cooperate?
+Lots of opportunities to “cheat”
+• Dine and dash
+• Slack on the job or inﬂate hours worked
+• Fail to deliver goods as agreed
+Many interactions rely on informal enforcement
+Evan Sadler
+Networks Introduction
+5/13
+
+=== [pagina 14] ===
+Social Norms: Cooperation and Enforcement
+Why do people cooperate?
+Lots of opportunities to “cheat”
+• Dine and dash
+• Slack on the job or inﬂate hours worked
+• Fail to deliver goods as agreed
+Many interactions rely on informal enforcement
+Clear why this works in long-term relationships, but this doesn’t
+cover all cases
+Evan Sadler
+Networks Introduction
+5/13
+
+=== [pagina 15] ===
+Social Norms: Cooperation and Enforcement
+One idea: reputation
+• “Word gets around”
+Evan Sadler
+Networks Introduction
+6/13
+
+=== [pagina 16] ===
+Social Norms: Cooperation and Enforcement
+One idea: reputation
+• “Word gets around”
+Literature on “community enforcement”
+Evan Sadler
+Networks Introduction
+6/13
+
+=== [pagina 17] ===
+Social Norms: Cooperation and Enforcement
+One idea: reputation
+• “Word gets around”
+Literature on “community enforcement”
+What social structures best promote cooperation?
+Evan Sadler
+Networks Introduction
+6/13
+
+=== [pagina 18] ===
+Social Norms: Cooperation and Enforcement
+One idea: reputation
+• “Word gets around”
+Literature on “community enforcement”
+What social structures best promote cooperation?
+What’s the best way to punish defectors?
+Evan Sadler
+Networks Introduction
+6/13
+
+=== [pagina 19] ===
+Diﬀusion of Innovations
+People often learn about new products or innovations from a
+friend
+Evan Sadler
+Networks Introduction
+7/13
+
+=== [pagina 20] ===
+Diﬀusion of Innovations
+People often learn about new products or innovations from a
+friend
+Example: the diﬀusion of microﬁnance in rural India
+Evan Sadler
+Networks Introduction
+7/13
+
+=== [pagina 21] ===
+Diﬀusion of Innovations
+People often learn about new products or innovations from a
+friend
+Example: the diﬀusion of microﬁnance in rural India
+In a famous study, Banerjee et al. (2013) disentangle the role of
+several factors:
+• “Pure” information transmission
+• Opinion sharing
+• Peer eﬀects
+Evan Sadler
+Networks Introduction
+7/13
+
+=== [pagina 22] ===
+Diﬀusion of Innovations
+How can we encourage the spread of a helpful product or
+innovation?
+Evan Sadler
+Networks Introduction
+8/13
+
+=== [pagina 23] ===
+Diﬀusion of Innovations
+How can we encourage the spread of a helpful product or
+innovation?
+A couple ideas:
+• Targeted seeding
+• Referral programs
+Evan Sadler
+Networks Introduction
+8/13
+
+=== [pagina 24] ===
+Diﬀusion of Innovations
+How can we encourage the spread of a helpful product or
+innovation?
+A couple ideas:
+• Targeted seeding
+• Referral programs
+How should we design interventions?
+Evan Sadler
+Networks Introduction
+8/13
+
+=== [pagina 25] ===
+Diﬀusion of Innovations
+How can we encourage the spread of a helpful product or
+innovation?
+A couple ideas:
+• Targeted seeding
+• Referral programs
+How should we design interventions?
+How do diﬀerent inﬂuence mechanisms aﬀect our answer?
+Evan Sadler
+Networks Introduction
+8/13
+
+=== [pagina 26] ===
+Social Learning
+People often imitate one another
+• Fashions and fads
+• Financial markets
+Evan Sadler
+Networks Introduction
+9/13
+
+=== [pagina 27] ===
+Social Learning
+People often imitate one another
+• Fashions and fads
+• Financial markets
+Why?
+Evan Sadler
+Networks Introduction
+9/13
+
+=== [pagina 28] ===
+Social Learning
+People often imitate one another
+• Fashions and fads
+• Financial markets
+Why?
+One idea: people learn from the choices of others
+Evan Sadler
+Networks Introduction
+9/13
+
+=== [pagina 29] ===
+Social Learning
+People often imitate one another
+• Fashions and fads
+• Financial markets
+Why?
+One idea: people learn from the choices of others
+Herd behavior can be both individually rational and collectively
+ineﬃcient
+Evan Sadler
+Networks Introduction
+9/13
+
+=== [pagina 30] ===
+Social Learning
+Lots of opportunities to learn from others
+• Social media posts
+• Online reviews
+Evan Sadler
+Networks Introduction
+10/13
+
+=== [pagina 31] ===
+Social Learning
+Lots of opportunities to learn from others
+• Social media posts
+• Online reviews
+Relevant to choices from what we buy to how we vote
+Evan Sadler
+Networks Introduction
+10/13
+
+=== [pagina 32] ===
+Social Learning
+Lots of opportunities to learn from others
+• Social media posts
+• Online reviews
+Relevant to choices from what we buy to how we vote
+Is social learning eﬃcient? When?
+Evan Sadler
+Networks Introduction
+10/13
+
+=== [pagina 33] ===
+Social Learning
+Lots of opportunities to learn from others
+• Social media posts
+• Online reviews
+Relevant to choices from what we buy to how we vote
+Is social learning eﬃcient? When?
+Whose opinions or experiences are most inﬂuential?
+Evan Sadler
+Networks Introduction
+10/13
+
+=== [pagina 34] ===
+Social Learning
+Lots of opportunities to learn from others
+• Social media posts
+• Online reviews
+Relevant to choices from what we buy to how we vote
+Is social learning eﬃcient? When?
+Whose opinions or experiences are most inﬂuential?
+Will people conform or maintain diverse choices?
+Evan Sadler
+Networks Introduction
+10/13
+
+=== [pagina 35] ===
+The Field of Network Economics
+Insights touch on all areas of economic research
+• How do people learn about jobs? (labor)
+• What factors inﬂuence technology adoption decisions?
+(development, healthcare)
+• How do beliefs and opinions spread? (political economy)
+• How do ﬁnancial or productivity shocks propogate? (ﬁnance,
+macroeconomics)
+Evan Sadler
+Networks Introduction
+11/13
+
+=== [pagina 36] ===
+The Field of Network Economics
+Insights touch on all areas of economic research
+• How do people learn about jobs? (labor)
+• What factors inﬂuence technology adoption decisions?
+(development, healthcare)
+• How do beliefs and opinions spread? (political economy)
+• How do ﬁnancial or productivity shocks propogate? (ﬁnance,
+macroeconomics)
+Goals for second half:
+• Understand how networks change our perspective on economic
+problems
+• Identify diﬀerent types of economic networks, characteristic
+phenomena
+• Learn to apply network insights
+Evan Sadler
+Networks Introduction
+11/13
+
+=== [pagina 37] ===
+Lecture Plan
+• Lectures 13 - 14: Intro to Game Theory
+• Lecture 15: Traﬃc and Congestion Games
+• Lectures 16 - 17: Network Eﬀects
+• Lecture 18: Repeated Games and Cooperation
+• Lecture 19: Networked Markets
+• Lectures 20 - 21: Bayesian Games and Social Learning
+• Lectures 22 - 23: Diﬀusion
+• Lecture 24: Network Formation
+My Oﬃce: E19 - 271
+Evan Sadler
+Networks Introduction
+12/13
+
+=== [pagina 38] ===
+Introductions
+• Name?
+• Major?
+• Why are you here?
+• Economics background?
+Evan Sadler
+Networks Introduction
+13/13

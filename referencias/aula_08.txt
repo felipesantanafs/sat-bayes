@@ -1,0 +1,706 @@
+# Fonte: 08.pdf
+# Paginas: 28
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Aprendizado e Redes
+Marcos Ross Fernandes
+Semana 08
+
+=== [pagina 2] ===
+Roteiro
+Motivação
+Modelos Canônicos de Influência Social
+O Modelo de DeGroot
+Consenso e Regras de Atualização Variáveis
+Segregação e Tempo até o Consenso
+0 / 26
+
+=== [pagina 3] ===
+Motivação
+1 / 26
+
+=== [pagina 4] ===
+Motivação
+▶As redes sociais desempenham um papel central no
+compartilhamento de informações e na formação de opiniões.
+▶Isso também ocorre no contexto de assuntos não controversos.
+▶O aprendizado bayesiano em redes é complexo, e as pessoas
+podem recorrer a heurísticas para aprender.
+▶Dado o papel das redes sociais na formação de opiniões e
+crenças e, consequentemente, na determinação de
+comportamentos, é fundamental compreender em
+profundidade como a estrutura das redes sociais afeta o
+aprendizado e a difusão de informações.
+2 / 26
+
+=== [pagina 5] ===
+Modelos Canônicos de Influência Social
+3 / 26
+
+=== [pagina 6] ===
+O Modelo de DeGroot: visão geral
+▶Ideia básica: em cada período, cada agente da rede revisa sua
+opinião calculando uma média ponderada entre sua própria
+opinião e as opiniões de seus vizinhos, utilizando pesos
+constantes ao longo do tempo.
+▶Regra heurística que captura elementos importantes do
+aprendizado social.
+▶Não há funções de utilidade neste modelo.
+▶Comportamento de racionalidade limitada não é sinônimo de
+irracionalidade: o aprendizado bayesiano em redes é complexo.
+▶Fundamentação: função de perda, conformismo etc.
+▶Modelo mais simples e conhecido de aprendizado social não
+bayesiano em redes.
+4 / 26
+
+=== [pagina 7] ===
+O Modelo de DeGroot: elementos
+▶Os indivíduos de uma sociedade partem de opiniões iniciais
+sobre determinado assunto.
+▶Sejam essas opiniões representadas por um n-vetor de
+probabilidades de dimensão, p(0) = (p1(0), . . . , pn(0))T.
+▶Cada pi(0) pertence ao intervalo [0, 1] e pode ser interpretado
+como a probabilidade de determinada afirmação ser
+verdadeira.
+▶Os padrões de interação são representados por uma matriz
+não negativa n × n possivelmente ponderada e direcionada T.
+▶Em particular, seja T uma matriz estocástica por linhas, de
+modo que os elementos de cada linha somem um.
+▶As crenças são atualizadas ao longo do tempo de modo que
+p(t) = Tp(t −1) = T tp(0).
+5 / 26
+
+=== [pagina 8] ===
+O Modelo de DeGroot: Exemplo 1
+▶Suponha que n = 3 e a matriz de atualização seja dada por:
+T =
+
+
+1
+3
+1
+3
+1
+3
+1
+2
+1
+2
+0
+0
+1
+4
+3
+4
+
+
+▶O agente 1 atribui o mesmo peso à opinião de todos.
+▶O agente 2 atribui peso 1
+2 à própria opinião e à opinião do
+agente 1.
+▶O agente 3 atribui peso 3
+4 à própria opinião e peso 1
+4 à opinião
+do agente 1.
+6 / 26
+
+=== [pagina 9] ===
+O Modelo de DeGroot: Exemplo 1
+▶Suponha que o vetor de opiniões iniciais seja:
+p(0) =
+
+
+1
+0
+0
+
+
+▶O agente 1 começa com opinião 1
+▶Os agentes 2 e 3 começam com opinião 0.
+▶Após um período de atualização, as crenças são dadas por:
+p(1) = Tp(0) =
+
+
+1
+3
+1
+3
+1
+3
+1
+2
+1
+2
+0
+0
+1
+4
+3
+4
+
+
+
+
+1
+0
+0
+
+=
+
+
+1
+31
+2
+0
+
+
+7 / 26
+
+=== [pagina 10] ===
+O Modelo de DeGroot: Exemplo 1
+▶Após dois períodos de atualização, as crenças são dadas por:
+p(2) = Tp(1) =
+
+
+1
+3
+1
+3
+1
+3
+1
+2
+1
+2
+0
+0
+1
+4
+3
+4
+
+
+
+
+1
+31
+2
+0
+
+=
+
+
+5
+185
+121
+8
+
+
+▶Para calcular a dinâmica das crenças, continuamos
+multiplicando à esquerda pela matriz T. No longo prazo, as
+crenças convergem para:
+p∗= lim
+t→∞T tp(0) =
+
+
+3/11
+3/11
+3/11
+
+
+▶O vetor de opiniões p(t) convergiu (sem ciclos de opiniões),
+▶O vetor-limite de opiniões é constante (a sociedade alcançou o
+consenso).
+8 / 26
+
+=== [pagina 11] ===
+O Modelo de DeGroot: Exemplo 2 (Ciclos)
+▶Suponha que a matriz de atualização seja:
+T =
+
+
+0
+1
+2
+1
+2
+1
+0
+0
+1
+0
+0
+
+
+▶O agente 1 atribui pesos iguais às opiniões dos outros agentes
+e peso zero à própria opinião.
+▶Os demais agentes atribuem todo o peso ao agente 1.
+▶O vetor de opiniões iniciais é:
+p(0) =
+
+
+1
+0
+0
+
+
+9 / 26
+
+=== [pagina 12] ===
+O Modelo de DeGroot: Exemplo 2 (Ciclos)
+▶Então, após um período de atualização:
+p(1) =
+
+
+0
+1
+2
+1
+2
+1
+0
+0
+1
+0
+0
+
+
+
+
+1
+0
+0
+
+=
+
+
+0
+1
+1
+
+.
+▶Após dois períodos de atualização:
+p(2) =
+
+
+0
+1
+2
+1
+2
+1
+0
+0
+1
+0
+0
+
+
+
+
+0
+1
+1
+
+=
+
+
+1
+0
+0
+
+.
+▶Assim, p(t) alternará entre p(0) e p(1) indefinidamente, e as
+crenças não convergirão.
+10 / 26
+
+=== [pagina 13] ===
+O Modelo de DeGroot: o papel das matrizes aperiódicas
+▶Do ponto de vista matemático, a questão está no
+comportamento cíclico das potências da matriz T, isto é, T
+apresenta periodicidade.
+T =
+
+
+0
+1
+2
+1
+2
+1
+0
+0
+1
+0
+0
+
+
+T 2 =
+
+
+1
+0
+0
+0
+1
+2
+1
+2
+0
+1
+2
+1
+2
+
+
+T 3 =
+
+
+0
+1
+2
+1
+2
+1
+0
+0
+1
+0
+0
+
+
+▶T 2t−1 = T, e T 2t = T 2, ∀t.
+▶Isso mostra que A é periódica com período 2.
+11 / 26
+
+=== [pagina 14] ===
+O Modelo de DeGroot: o papel das matrizes aperiódicas
+▶Uma matriz é aperiódica se o máximo divisor comum dos
+comprimentos de todos os ciclos direcionados é 1, em que
+”ciclos direcionados”1 são definidos na rede em que existe
+uma ligação direcionada de i to j if Tij > 0.
+▶Uma condição suficiente simples para uma matriz ser
+aperiódica é que exista algum agente i tal que Tii > 0.
+▶Se a matriz T é fortemente conexa (também chamada de
+irredutível)2 e aperiódica, então limt→∞T t converge para T ∗.
+Além disso, as linhas da matriz T ∗são todas iguais.
+1Um ciclo direcionado em um grafo direcionado é uma trilha direcionada
+não vazia na qual apenas o primeiro e o último vértices coincidem
+2Um grafo ou subgrafo é considerado fortemente conexo se cada nó pode
+ser alcançado a partir de qualquer outro nó por um caminho direcionado.
+12 / 26
+
+=== [pagina 15] ===
+O Modelo de DeGroot: influência de longo prazo
+▶O peso do agente i na determinação do consenso de longo prazo é
+chamado de sua influência de longo prazo si.
+▶Formalmente, dizemos que um vetor-coluna s ∈[0, 1]n é um vetor de
+influência de longo prazo se P
+i si = 1 e
+p∗
+i = sTp(0) =
+n
+X
+i=1
+sipi(0),
+∀i e para todo vetor de crenças iniciais p(0).
+▶Se s é um vetor de influência de longo prazo, então temos
+sTp(1) = sTTp(0) = sTp(0) ⇒sTT = sT ⇒T Ts = s
+▶Ou seja, s é o autovetor unitário de T T. (centralidades de autovetor)
+▶No modelo de DeGroot, a influência de longo prazo de um agente
+equivale à sua centralidade de autovetor.
+13 / 26
+
+=== [pagina 16] ===
+O Modelo de DeGroot: influência de longo prazo
+▶Retomando nosso primeiro exemplo:
+T =
+
+
+1
+3
+1
+3
+1
+3
+1
+2
+1
+2
+0
+0
+1
+4
+3
+4
+
+
+▶Assim, o vetor de influência de longo prazo s é determinado pelo seguinte
+sistema de equações:
+s1 = 1
+3s1 + 1
+2s2
+s2 = 1
+3s1 + 1
+2s2 + 1
+4s3
+s3 = 1
+3s1 + 3
+4s3
+▶A solução desse sistema de equações fornece: s1 =
+3
+11, s2 =
+4
+11, s3 =
+4
+11.
+▶Consenso de longo prazo: p∗= (3/11, 4/11, 4/11) · (1, 0, 0)T = 3/11
+14 / 26
+
+=== [pagina 17] ===
+O Modelo de DeGroot: Sabedoria das Multidões
+▶Quando redes grandes são “sábias”?
+▶Suponha que pi(0) = θ + ϵi (perturbação de média zero)
+▶Pela lei dos grandes números, P
+i=1 sixi(0) converge em
+probabilidade para θ se, e somente se,
+lim
+n→∞max
+i≤n si(n) = 0
+▶Ou seja, a rede é sábia se, e somente se, a influência de longo
+prazo de cada nó é pequena.
+15 / 26
+
+=== [pagina 18] ===
+Peso variável atribuído às próprias crenças
+▶Considere uma variação do modelo de DeGroot em que a
+regra de atualização é:
+p(t) =
+
+(1 −λt) I + λt T̂
+
+p(t −1),
+em que I é a matriz identidade, λt pertence ao intervalo (0, 1]
+e funciona como fator de ajuste, e T̂ é uma matriz
+estocástica.
+▶Se λt é constante ao longo do tempo, temos o modelo de
+DeGroot. Caso contrário, a atualização pode variar ao longo
+do tempo, permitindo que um agente atribua mais (ou
+menos) peso à própria crença.
+16 / 26
+
+=== [pagina 19] ===
+Atribuindo peso apenas a crenças semelhantes
+▶Permite que um agente preste atenção apenas a outros agentes cujas
+crenças não estejam muito distantes das suas
+T(p(t), t)ij =
+
+1
+ni (p(t))
+se |pi (t) −pj (t)| < d e ni (p(t)) = #{k : |pi (t) −pk (t)| < d}
+0
+caso contrário
+▶Assim, um agente atribui pesos iguais a todas as opiniões que estejam a
+uma distância inferior a d de sua opinião atual.
+▶Suponha que that T(p(t), t) satisfaz as seguintes condições:
+1. Existe δ > 0 tal que T(p(t), t)ij > 0 se, e somente se,
+T(p(t), t)ij > δ, para todos t, i, j, e p(t).
+2. T(p(t), t)ii > 0 para todos i, t, e p(t).
+3. T(p(t), t)ij > 0 se, e somente se, T(p(t), t)ji > 0 para todos t, i, j,
+e p(t).
+Então, a sociedade pode ser particionada em conjuntos de agentes de
+modo que cada grupo alcance um consenso, e quaisquer dois agentes que
+atribuam peso um ao outro infinitas vezes pertençam ao mesmo grupo.
+17 / 26
+
+=== [pagina 20] ===
+Atualização contínua com crenças ”próximas”
+▶Os agentes atribuem peso positivo a todos os demais, mas
+dão maior peso às opiniões mais próximas das suas:
+Tij(p(t), t) =
+e−γij|pi(t)−pj(t)|
+P
+k e−γik|pi(t)−pk(t)|
+em que γij > 0 para todos i e j.
+▶Aqui, os pesos possuem um limite inferior positivo, de modo
+que todos os agentes alcançam consenso a partir de quaisquer
+crenças iniciais.
+18 / 26
+
+=== [pagina 21] ===
+Peso variável atribuído às próprias crenças (1/2)
+▶Considere um modelo no qual a atualização sempre preserva
+algum peso nas crenças iniciais do indivíduo.
+▶Seja D uma matriz n × n cujos únicos elementos positivos
+estão na diagonal, e Dii ∈(0, 1) indica quanto o agente i
+considera as opiniões dos demais.
+▶A evolução das crenças é descrita por:
+p(t) = D T̂ Tp(t −1) + (I −D)p(0)
+▶O consenso pode nunca ser alcançado.
+19 / 26
+
+=== [pagina 22] ===
+Peso variável atribuído às próprias crenças (2/2)
+▶Por exemplo, considere n = 2, Dii = 1
+2, e T̂ T
+12 = 1 = T̂ T
+21.
+▶Então, cada agente sempre calcula a média entre sua crença
+original e a crença mais recente do outro agente, da seguinte
+forma:
+p(t) =
+1
+2
+0
+0
+1
+2
+ p1(t −1)
+p2(t −1)
+
++
+1
+2
+0
+0
+1
+2
+ p1(0)
+p2(0)
+
+de modo que
+pi(t) = pj(t −1)
+2
++ p1(0)
+2
+▶Considere
+p1(0)
+p2(0)
+
+=
+1
+0
+
+, é fácil verificar que as crenças
+convergem para 2
+3 para o agente 1 e 1
+3 para o agente 2.
+20 / 26
+
+=== [pagina 23] ===
+Aprendizado Não Bayesiano
+▶Em vez de incorporar as opiniões dos vizinhos de maneira plenamente
+bayesiana, os agentes utilizam uma regra simples de atualização que
+combina linearmente sua experiência pessoal e as opiniões dos vizinhos.
+▶Mostra-se que, desde que os indivíduos incorporem seus sinais pessoais de
+maneira bayesiana, as interações repetidas permitem agregar informações
+e aprender o verdadeiro parâmetro.
+▶Se denotarmos por µi,t(θ) a crença que o agente i atribui ao estado
+θ ∈Θ no período t, então a equação de atualização das crenças pode ser
+escrita como:
+µi,t+1 = aiiBU(µi,t; ωi,t+1) +
+X
+j∈Ni
+aijµj,t
+em que aij > 0 representa o peso que o agente i atribui à opinião do
+agente j em sua vizinhança, BU(µi,t; ωi,t+1)(·) é a atualização bayesiana
+de µi,t após observar o sinal ωi,t+1, e aii é o peso atribuído à sua posterior
+bayesiana condicionada ao sinal privado, que chamamos de medida de
+autoconfiança do agente i.
+21 / 26
+
+=== [pagina 24] ===
+Aprendizado Não Bayesiano: viés de confirmação
+▶A mesma regra não bayesiana
+µi,t+1 = aiiBU(µi,t; ωi,t+1) +
+X
+j∈Ni
+aijµj,t
+▶Mas BU(·) é afetada pelo viés de confirmação: isto é, pela
+tendência de interpretar sinais de acordo com a distribuição a
+priori.
+▶Diferentemente da literatura de confiança limitada, essa
+abordagem não altera a estrutura da rede.
+▶Sob a hipótese de conectividade forte, há consenso.
+▶É possível haver múltiplos consensos.
+22 / 26
+
+=== [pagina 25] ===
+Segregação e Tempo até o Consenso
+23 / 26
+
+=== [pagina 26] ===
+Segregação e Tempo até o Consenso
+▶Ponderações semelhantes, correspondentes a linhas
+semelhantes de T, produzem convergência rápida.
+▶Por exemplo, se cada agente atribui peso muito elevado à
+própria opinião e pouca atenção ao outro agente, as crenças
+convergem lentamente e demoram a alcançar consenso.
+▶Heuristicamente, para n = 2, esperamos que a velocidade de
+convergência esteja relacionada a alguma medida da diferença
+entre T11 e T21.
+▶Para examinar o comportamento de T t à medida que t
+aumenta, é útil reescrever T utilizando sua decomposição
+diagonal.
+24 / 26
+
+=== [pagina 27] ===
+Segregação e Tempo até o Consenso
+▶Foco: caso fortemente conexo e aperiódico, com n = 2.
+▶Seja u a matriz dos autovetores à esquerda de T. Então, u tem a
+seguinte forma:
+u =
+s1
+s2
+1
+−1
+
+em que (s1, s2) é o autovetor unitário correspondente aos pesos de
+influência social, e (1, −1) é o outro autovetor.
+▶Como u é a matriz cujas linhas são os autovetores, sabemos que
+uT = Λu
+em que Λ é a matriz que contém os dois autovalores λ1 e λ2 (ordenados
+em valor absoluto) em sua diagonal:
+Λ =
+λ1
+0
+0
+λ2
+
+=
+1
+0
+0
+T11 −T21
+
+▶Portanto
+T = u−1Λu
+25 / 26
+
+=== [pagina 28] ===
+Segregação e Tempo até o Consenso
+▶Mais geralmente,
+T t = u−1Λtu
+▶Assim, a convergência de T t está diretamente relacionada à
+convergência de Λt:
+Λt =
+λt
+1
+0
+0
+λt
+2
+
+=
+1
+0
+0
+(T11 −T21)t
+
+▶Dado que λ2 = (T11 −T21) < 1, segue que λt
+2 converge para
+0 e, portanto, a distância entre T t e T 1 é simplesmente um
+fator multiplicado pelo segundo autovalor elevado à potência
+t, ou (T11 −T21)t.
+26 / 26

@@ -1,0 +1,570 @@
+# Fonte: 01.pdf
+# Paginas: 28
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Elementos de Redes
+Leituras: N(6,7)
+Marcos Ross Fernandes
+7 de agosto de 2026
+
+=== [pagina 2] ===
+Roteiro
+Redes e sua Representação: Definições Básicas
+Tipos de Redes
+0 / 26
+
+=== [pagina 3] ===
+Grafos (Vértices e Arestas) vs. Redes (Nós e Ligações)
+▶Grafos: G = (V , E)
+▶Redes: G = (N, A ou g)
+1 / 26
+
+=== [pagina 4] ===
+A Matriz de Adjacência A
+A matriz de adjacência A da rede é definida como a matriz n × n
+com elementos Aij tais que
+Aij =
+(
+1
+se existe uma aresta entre os nós i e j, 0
+caso contrário.
+2 / 26
+
+=== [pagina 5] ===
+Redes Ponderadas
+Redes ponderadas ou valoradas podem ser representadas
+matematicamente por uma matriz de adjacência com os elementos
+Aij (ou Wij) iguais aos pesos das conexões correspondentes.
+O peso da aresta Aij (ou Wij) pode assumir valores não binários,
+representando a intensidade da interação. Exemplo:
+A =
+
+
+0
+2
+1
+2
+0
+0.5
+1
+0.5
+0
+
+
+3 / 26
+
+=== [pagina 6] ===
+Redes Direcionadas
+Uma rede direcionada ou grafo direcionado, também chamado
+simplesmente de dígrafo, é uma rede na qual cada aresta possui
+uma direção, apontando de um nó para outro. Essas arestas são
+chamadas de arestas direcionadas.
+4 / 26
+
+=== [pagina 7] ===
+Vizinhança
+▶A vizinhança de um nó i é o conjunto de nós aos quais i está ligado:
+Ni(A) = Ni = j : Aij = 1.
+▶Também podemos considerar vizinhanças estendidas de um nó, por
+exemplo, todos os nós que podem ser alcançados por caminhos de
+comprimento não superior a 2, etc. A vizinhança de ordem dois de
+um nó i é
+N2
+i (A) = Ni(A) ∪
+∪j∈Ni(A)Nj(A)
+
+5 / 26
+
+=== [pagina 8] ===
+Grau (redes não direcionadas)
+▶O grau de um nó em uma rede não direcionada é o número de arestas
+conectadas a ele.
+▶Denotamos o grau do nó i por ki (ou di). Para uma rede de n nós, o grau
+pode ser escrito em termos da matriz de adjacência como:
+ki =
+n
+X
+j=1
+Aij.
+▶Toda aresta em uma rede não direcionada possui duas extremidades e, se
+há m arestas no total, então há 2m extremidades de arestas:
+2m =
+n
+X
+i=1
+ki =
+X
+i,j
+Aij
+▶O grau médio c de um nó em uma rede não direcionada é
+c = 1
+n
+n
+X
+i=1
+ki.
+▶Portanto: c = 2m
+n .
+6 / 26
+
+=== [pagina 9] ===
+Densidade e esparsidade (redes não direcionadas)
+▶O número máximo possível de arestas em uma rede simples (isto é, sem
+arestas múltiplas ou autoarestas) é n(n−1)
+2
+.
+▶A densidade ρ de uma rede é a fração dessas arestas que estão
+efetivamente presentes:
+ρ = m
+n
+2
+ =
+2m
+n(n −1) =
+c
+n −1 ≈c
+n .
+▶0 ≤ρ ≤1.
+▶Ela pode ser interpretada como a probabilidade de que um par de nós,
+escolhido uniformemente ao acaso em toda a rede, esteja conectado por
+uma aresta.
+▶Considere agora uma sequência de redes de tamanho crescente n. Se a
+densidade ρ permanece diferente de zero à medida que n se torna grande,
+dizemos que as redes são densas. (oposto: esparsas)
+▶c = ρn, portanto, em uma rede densa, na qual ρ é constante quando
+n →∞, o grau médio cresce linearmente com n, enquanto, em redes
+esparsas, o grau médio cresce sublinearmente.
+7 / 26
+
+=== [pagina 10] ===
+Grau (redes direcionadas)
+▶Em uma rede direcionada, cada nó possui dois graus: o grau de entrada
+(kin
+i ) é o número de arestas de entrada conectadas a um nó, e o grau de
+saída é o número de arestas de saída.
+▶Se a matriz de adjacência de uma rede direcionada possui elementos
+Aij = 1 quando existe uma aresta do nó j para o nó i, então os graus de
+entrada e de saída do nó i podem ser escritos como
+kin
+i
+=
+n
+X
+j=1
+Aij,
+kout
+j
+=
+n
+X
+i=1
+Aij
+▶O número de arestas m em uma rede direcionada é igual ao número total
+de extremidades de entrada das arestas em todos os nós ou,
+equivalentemente, ao número total de extremidades de saída das arestas,
+de modo que
+m =
+n
+X
+i=1
+kin
+i
+=
+n
+X
+j=1
+kout
+j
+=
+X
+i,j
+Aij
+▶Assim, o grau médio de entrada cin e o grau médio de saída cout de toda
+rede direcionada são iguais:
+cin = 1
+n
+n
+X
+i=1
+ki
+in = 1
+n
+n
+X
+j=1
+kj
+out = cout = c = m
+n .
+8 / 26
+
+=== [pagina 11] ===
+Distribuições de Grau
+▶A distribuição de grau, P(d), de uma rede descreve a
+proporção de nós que possuem diferentes graus d.
+▶Para um dado grafo, P(·) é um histograma: isto é, P(d) é a
+fração de nós com grau d.
+▶Para um modelo de grafo aleatório (a ser discutido), P(·) é
+uma distribuição de probabilidade: isto é, P(d) é a
+probabilidade de que um nó tenha grau d.
+▶Um grafo é k-regular se todos os nós possuem o mesmo grau
+k.
+▶Se um grafo é k-regular com k ímpar, ele deve possuir um
+número par de nós.
+9 / 26
+
+=== [pagina 12] ===
+Passeios e caminhos (redes direcionadas e não direcionadas)
+▶Um passeio em uma rede é qualquer sequência de nós tal que
+todo par consecutivo de nós na sequência esteja conectado por
+uma aresta.
+▶Em outras palavras, é qualquer percurso que vai de nó em nó
+ao longo das arestas.
+▶Em geral, um passeio pode cruzar a si mesmo, revisitando um
+nó que já tenha sido visitado anteriormente.
+▶Passeios que não cruzam a si mesmos são chamados de
+caminhos.
+▶O comprimento de um passeio em uma rede é o número de
+arestas percorridas ao longo do passeio (e não o número de
+nós).
+10 / 26
+
+=== [pagina 13] ===
+Passeios e caminhos (redes direcionadas e não direcionadas)
+▶Tanto para uma rede simples direcionada quanto para uma não
+direcionada, o elemento Aij é 1 se existe uma aresta do nó j para o nó i, e
+0 caso contrário.
+▶Então, o produto AikAkj é 1 se existe um passeio de comprimento 2 do nó
+j ao nó i via nó k, e 0 caso contrário.
+▶O número total N(2)
+ij
+de passeios de comprimento dois do nó j ao nó i, via
+qualquer nó, é
+N(2)
+ij
+=
+n
+X
+k=1
+AikAkj = (A2)ij.
+▶De forma semelhante, o produto AikAklAlj é 1 se existe um passeio de
+comprimento três do nó j ao nó i via nós l e k, e 0 caso contrário.
+Portanto, o número total de passeios de comprimento três é
+N(3)
+ij
+=
+n
+X
+k,l=1
+AikAklAlj = (A3)ij
+▶Generalizando para passeios de comprimento arbitrário r, é fácil ver que
+N(r)
+ij
+= (Ar)ij
+11 / 26
+
+=== [pagina 14] ===
+Caminhos mais curtos
+▶Um caminho mais curto em uma rede, também chamado às
+vezes de caminho geodésico, é o passeio mais curto entre um
+determinado par de nós, isto é, o passeio que percorre o menor
+número de arestas.
+▶Em termos matemáticos, a menor distância entre os nós i e j
+(δij) é o menor valor de r tal que (Ar)ij > 0.
+▶O diâmetro de uma rede é o comprimento do mais longo entre
+os caminhos mais curtos. Isto é, entre todos os caminhos mais
+curtos entre cada par de nós da rede para os quais um caminho
+de fato existe, o diâmetro é o comprimento do mais longo.
+12 / 26
+
+=== [pagina 15] ===
+Comprimento médio dos caminhos
+▶Seja δij o comprimento do caminho mais curto entre i e j.
+▶O comprimento médio dos caminhos (APL) é a distância
+média entre quaisquer dois nós:
+APL =
+1
+n(n −1)
+X
+i̸=j
+δij
+▶O comprimento médio dos caminhos é limitado superiormente
+pelo diâmetro. Em alguns casos, ele é muito menor que o
+diâmetro.
+▶Se a rede não for conexa, frequentemente se verificam o
+diâmetro e o comprimento médio dos caminhos no maior
+componente (ver a seguir).
+13 / 26
+
+=== [pagina 16] ===
+Componentes (redes não direcionadas)
+▶Muitas redes possuem duas ou mais partes separadas que não estão
+conectadas entre si.
+▶A rede abaixo está dividida em duas partes, a da esquerda com três nós e
+a da direita com quatro. Essas partes são chamadas de componentes.
+A
+B
+▶A matriz de adjacência de uma rede com mais de um componente pode
+ser escrita em forma bloco-diagonal:
+A 
+©­­­­­­­­
+«
+0
+· · ·
+0
+· · ·
+...
+...
+...
+ª®®®®®®®®
+¬
+.
+14 / 26
+
+=== [pagina 17] ===
+Conectividade
+▶Um grafo direcionado é
+▶conectado se o grafo não direcionado subjacente é conexo
+(isto é, ignorando as direções das arestas).
+▶fortemente conectado se cada nó pode alcançar qualquer
+outro nó por meio de um “caminho direcionado”.
+▶Um componente fortemente conectado é um subgrafo
+fortemente conexo maximal. Isto é,
+1. Cada nó do subgrafo pode alcançar qualquer outro nó do
+subgrafo por meio de um caminho direcionado contido no
+subgrafo.
+2. O subgrafo não está contido em nenhum subgrafo maior com
+essa propriedade.
+15 / 26
+
+=== [pagina 18] ===
+Clustering Global
+▶Mede em que medida meus amigos são amigos entre si.
+▶A medida mais simples desse tipo é o coeficiente de clustering global
+C(g), dado por
+C(g) = 3 × número de triângulos na rede
+número de “triângulos potenciais”
+onde um triângulo potencial é uma tripla de nós distintos (i, j, k) tal que
+gij = gik = 1.
+▶Formalmente,
+C(g) =
+P
+i;j̸=i;k̸=i,j gijgikgjk
+P
+i;j̸=i;k̸=i,j gijgik
+▶Note que 0 ≤C(g) ≤1.
+▶Essa medida também é conhecida como transitividade da rede.
+16 / 26
+
+=== [pagina 19] ===
+Clustering Médio
+▶Uma medida diferente de clustering baseia-se em primeiro medir o
+clustering individual para cada nó i e, em seguida, calcular a média entre
+os nós.
+▶O clustering individual do nó i é dado por:
+ci(g) =
+número de triângulos envolvendo i
+número de triângulos potenciais centrados em i =
+P
+j̸=i;k̸=i,j gijgikgjk
+P
+j̸=i;k̸=i,j gijgik
+▶O coeficiente de clustering médio é dado por:
+¯c(g) = 1
+n
+X
+i
+ci(g).
+17 / 26
+
+=== [pagina 20] ===
+Laplaciano do Grafo
+▶A teoria espectral de grafos estuda as propriedades dos grafos por meio
+dos autovalores e autovetores de suas matrizes associadas: a matriz de
+adjacência, o Laplaciano do grafo e suas variantes.
+▶Ambas as matrizes têm sido extensivamente estudadas do ponto de vista
+algébrico.
+▶O Laplaciano do grafo para uma rede simples, não direcionada e não
+ponderada é uma matriz simétrica n × n L com elementos
+Lij =
+(
+ki
+se i = j, −1
+se i ̸= j e existe uma aresta entre os nós i e j, 0
+caso contrário.
+▶Alternativamente, podemos escrever L em forma matricial como:
+L = D −A, onde D é a matriz diagonal com os graus dos nós em sua
+diagonal (isto é, Dii = ki e Dij = 0).
+18 / 26
+
+=== [pagina 21] ===
+Passeios aleatórios
+▶O Laplaciano do grafo surge no estudo de passeios aleatórios
+em redes.
+▶Partindo de qualquer nó inicial, escolhemos uniformemente ao
+acaso uma das arestas conectadas a esse nó e nos movemos ao
+longo da aresta escolhida até o nó em sua outra extremidade;
+então repetimos o processo.
+▶Seja pi(t) a probabilidade de que o passeio esteja no nó i no
+instante t.
+▶Se o passeio está no nó j no instante t −1, a probabilidade de
+dar um passo ao longo de qualquer uma das kj arestas
+conectadas a j é 1
+kj
+.
+19 / 26
+
+=== [pagina 22] ===
+Passeios aleatórios
+▶Em uma rede não direcionada, a probabilidade de estar no nó i no passo
+seguinte é dada por pi(t) = P
+j
+Aij
+kj pj(t −1).
+▶ou p(t) = AD−1p(t −1) em forma matricial, onde p é o vetor com
+elementos pi e, como antes, D é a matriz diagonal com os graus dos nós
+em sua diagonal.
+▶No limite (com t tendendo ao infinito), a distribuição de probabilidade
+sobre os nós é pi(∞) = P
+j Aij
+pj (∞)
+kj
+, ou, em forma matricial:
+p = AD−1p
+▶Reorganizando, isso também pode ser escrito como:
+(I −AD−1)p = (D −A)D−1p = LD−1p = 0.
+▶Assim, D−1p é (qualquer múltiplo de) um autovetor do Laplaciano
+associado ao autovalor 0.
+20 / 26
+
+=== [pagina 23] ===
+Redes clássicas
+▶Linha
+▶Ciclo, círculo ou roda
+▶Estrela
+▶Completa
+▶Pata
+21 / 26
+
+=== [pagina 24] ===
+Redes acíclicas
+▶Um ciclo em uma rede direcionada é um circuito fechado de
+arestas com as setas em cada uma das arestas apontando na
+mesma direção ao redor do circuito.
+▶Algumas redes direcionadas, no entanto, não possuem ciclos e
+são chamadas de redes acíclicas.
+▶Na literatura matemática, frequentemente se utiliza a
+abreviação DAG, que significa grafo acíclico direcionado.
+22 / 26
+
+=== [pagina 25] ===
+Hipergrafo
+▶Em alguns tipos de redes, as arestas conectam mais de dois
+nós ao mesmo tempo.
+▶Por exemplo, podemos querer criar uma rede social
+representando o “pertencimento” dentro de uma comunidade
+maior de pessoas.
+▶Uma aresta desse tipo é chamada de hiperaresta e uma rede
+com hiperarestas é chamada de hipergrafo.
+5
+2
+1
+4
+3
+(a)
+1
+2
+3
+4
+5
+(b)
+23 / 26
+
+=== [pagina 26] ===
+Redes Bipartidas
+▶Uma rede bipartida B é uma rede com dois tipos de nós, e
+arestas que conectam apenas nós de tipos diferentes.
+▶O equivalente à matriz de adjacência para uma rede bipartida
+(não direcionada e não ponderada) é uma matriz retangular
+chamada matriz de incidência. Se n é o número de pessoas e
+g é o número de grupos, então a matriz de incidência B é uma
+matriz g × n com elementos Bij tais que:
+Bij =
+(
+1
+se o item j pertence ao grupo i, 0
+caso contrário.
+▶Por exemplo, a matriz de incidência 4 × 5 da rede mostrada no
+slide anterior é:
+B =
+
+
+1
+0
+0
+1
+0
+1
+1
+1
+1
+0
+0
+1
+1
+0
+1
+0
+0
+1
+1
+1
+
+
+24 / 26
+
+=== [pagina 27] ===
+Redes Bipartidas (representação em um modo)
+▶O produto BkiBkj será igual a 1 se, e somente se, i e j pertencerem
+ambos ao mesmo grupo k na rede bipartida.
+▶Assim, o número total Pij de grupos aos quais tanto i quanto j
+pertencem é
+Pij =
+n
+X
+k=1
+BkiBkj =
+n
+X
+k=1
+BT
+ik Bkj
+▶P = BTB desempenha um papel semelhante ao de uma matriz de
+adjacência para a projeção ponderada em um modo sobre os n nós.
+▶Seus elementos fora da diagonal são iguais aos pesos nessa rede,
+isto é, ao número de grupos em comum compartilhados por cada
+par de nós, enquanto Pii é igual ao número de grupos aos quais o
+nó i pertence.
+▶Para obter a matriz de adjacência da projeção em um modo
+ponderada, calcularíamos a matriz P e definiríamos os elementos da
+diagonal como zero. Para obter a matriz de adjacência da projeção
+não ponderada, tomaríamos a matriz ponderada e substituiríamos
+cada elemento não nulo da matriz por 1.
+25 / 26
+
+=== [pagina 28] ===
+Árvores
+▶Uma árvore é uma rede conexa e não direcionada que não contém
+ciclos.
+▶Por conexa, queremos dizer que todo nó da rede pode ser alcançado
+a partir de qualquer outro por meio de algum caminho na rede.
+▶Árvores são frequentemente representadas de forma enraizada.
+▶Os nós na parte inferior que estão conectados a apenas um outro nó
+são chamados de folhas (nós periféricos).
+▶Uma rede fluvial é um exemplo de árvore que ocorre naturalmente.
+▶Como não possuem ciclos fechados, existe exatamente um caminho
+entre qualquer par de nós. Além disso, uma árvore com n nós
+sempre possui exatamente n −1 arestas.
+(a)
+(b)
+26 / 26

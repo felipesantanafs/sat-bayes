@@ -1,0 +1,523 @@
+# Fonte: 05.pdf
+# Paginas: 29
+
+=== [pagina 1] ===
+Social and Economic Networks
+Network Formation: Strategic Models
+Readings: J(6)
+Marcos Ross Fernandes
+September 24, 2026
+
+=== [pagina 2] ===
+Roteiro
+Motivação
+Formação Estratégica de Redes
+Estabilidade aos Pares
+Redes Eficientes
+Utilidade Baseada em Distância
+Um Modelo de Coautoria e Externalidades Negativas
+Uma Tensão Geral entre Estabilidade e Eficiência
+Transferências: Tributando e Subsidiando Links
+Incompatibilidade entre Estabilidade aos Pares e Eficiência
+0 / 27
+
+=== [pagina 3] ===
+Motivação
+1 / 27
+
+=== [pagina 4] ===
+Motivação
+▶Modelos de redes aleatórias são úteis, mas ainda apresentam limitações em
+algumas dimensões importantes. (Por exemplo, por que teríamos ligação
+preferencial?)
+▶Em muitos ambientes sociais, os agentes têm poder de escolha sobre quais
+relações formam e mantêm.
+▶Exemplos: relações comerciais, alianças políticas, relações entre empregadores e
+empregados, casamentos, colaborações profissionais, citações, e-mails, amizades,
+entre outros.
+▶Há dois aspectos centrais na modelagem de redes sob um ponto de vista
+“estratégico”.
+1. Devemos modelar explicitamente os custos e benefícios associados às
+diferentes redes; e
+2. devemos prever como os incentivos individuais se traduzem em estruturas
+de rede.
+▶Um aspecto importante dos modelos estratégicos de formação de redes é que
+eles fornecem respostas sobre por que as redes assumem determinadas formas, e
+não apenas como elas assumem essas formas. (Por que as pessoas tenderiam à
+ligação preferencial em alguns ambientes e não em outros?)
+2 / 27
+
+=== [pagina 5] ===
+Formação Estratégica de Redes
+3 / 27
+
+=== [pagina 6] ===
+Estabilidade aos Pares
+▶Nós/Jogadores da rede: N = {1, . . . , n}.
+▶A função de utilidade/payoff é ui : G(N) →R, onde ui(g)
+representa o benefício líquido que i recebe quando a rede g
+está formada.
+▶Para capturar o fato de que a formação de uma relação ou
+link entre dois jogadores normalmente exige consentimento
+mútuo, enquanto o rompimento de uma relação requer o
+consentimento de apenas um jogador, precisamos de um
+conceito de equilíbrio ou estabilidade diferente de uma simples
+adaptação de uma solução de teoria dos jogos não
+cooperativos, como o equilíbrio de Nash.
+▶Consentimento mútuo: há dois equilíbrios.
+▶Um conceito bastante simples de estabilidade que captura o
+consentimento mútuo é a estabilidade aos pares, conforme
+definida por Jackson e Wolinsky (JW, 1996/2003).
+4 / 27
+
+=== [pagina 7] ===
+Estabilidade aos Pares
+Definition 1
+Uma rede g é estável aos pares se
+(i) para todo ij ∈g, ui(g) ≥ui(g −ij) e uj(g) ≥uj(g −ij), e
+(ii) para todo ij /∈g, se ui(g + ij) > ui(g), então
+uj(g + ij) < uj(g).
+Em palavras: uma rede é estável aos pares se nenhum jogador
+deseja romper um link e nenhum par de jogadores deseja adicionar
+um link.
+5 / 27
+
+=== [pagina 8] ===
+Estabilidade aos Pares
+Limitações do conceito
+1. Considera apenas desvios envolvendo um único link por vez.
+2. Considera apenas desvios envolvendo, no máximo, um par de
+jogadores por vez.
+Ainda assim, a estabilidade aos pares mostra-se bastante útil e
+frequentemente fornece previsões precisas sobre o conjunto de redes
+estáveis sem a necessidade de considerar desvios mais complexos.
+6 / 27
+
+=== [pagina 9] ===
+Eficiência
+▶Como temos payoffs bem definidos para os jogadores em
+função da rede, existem duas noções óbvias e tradicionais de
+bem-estar que podemos aplicar.
+1. Princípio Utilitarista: a “melhor” rede é aquela que maximiza
+a utilidade total da sociedade (Eficiência Forte, ou
+simplesmente eficiência, em JW).
+Definition 2
+Uma rede g é eficiente em relação a um perfil de funções de utilidade
+(u1, . . . , un) se
+X
+i
+ui(g) ≥
+X
+i
+ui(g ′),
+para todo g ′ ∈G(N).
+2. Princípio da Eficiência de Pareto:
+Definition 3
+Uma rede g é Pareto eficiente em relação a (u1, . . . , un) se não existe nenhuma
+rede g ′ ∈G tal que ui(g ′) ≥ui(g) para todo i, com desigualdade estrita para
+algum i.
+7 / 27
+
+=== [pagina 10] ===
+Eficiência: Exemplo
+Efficient  And 
+Pareto
+P
+t
+3
+3
+3.25
+3.25
+3
+0
+0
+0
+Pareto 
+Efficient
+Pareto 
+Efficient
+4
+2
+3
+1
+4
+2
+3
+1
+4
+2
+3
+1 
+4
+2
+3
+1 
+3
+3
+4
+3
+2
+2
+3
+0
+0
+0
+2.5
+2.5
+2.2
+2
+2
+2
+4
+2
+3
+1
+2.5
+2.5
+4
+2
+3
+1
+2.2
+2
+4
+2
+3
+1
+2
+2
+Pairwise
+Stable
+4
+3
+2.5
+2.5
+4
+3
+2
+2.2
+4
+3
+2
+2
+Figure 1: Um exemplo de redes eficientes, Pareto eficientes e estáveis aos
+pares em uma sociedade com quatro indivíduos (Jackson, 2011)
+Supondo que: qualquer permutação das redes representadas tenha os payoffs dos jogadores correspondentemente
+permutados, e quaisquer redes que não sejam permutações das redes representadas gerem payoff igual a 0 para
+todos os jogadores.
+8 / 27
+
+=== [pagina 11] ===
+Eficiência vs. Eficiência de Pareto
+▶Se g é eficiente em relação a (u1, . . . , un), então ela também
+deve ser Pareto eficiente em relação a (u1, . . . , un).
+Entretanto, a recíproca não é verdadeira.
+▶g é eficiente em relação a (u1, . . . , un) se e somente se é
+Pareto eficiente em relação a todas as funções de payoff
+(û1, . . . , ûn) tais que
+X
+i
+ûi =
+X
+i
+ui.
+▶Assim, eficiência é uma noção mais restritiva e é mais natural
+em situações nas quais existe alguma liberdade para alterar a
+forma como a utilidade é distribuída pela rede (por exemplo,
+impostos e transferências).
+▶A eficiência de Pareto é uma noção muito menos restritiva,
+frequentemente admitindo muitas redes, mas pode ser mais
+razoável em contextos nos quais as funções de payoff são fixas
+e não são possíveis transferências.
+9 / 27
+
+=== [pagina 12] ===
+Utilidade Baseada em Distância
+10 / 27
+
+=== [pagina 13] ===
+Utilidade Baseada em Distância
+▶Os jogadores obtêm utilidade tanto de suas conexões diretas
+quanto de suas conexões indiretas.
+▶A utilidade diminui com a distância entre os indivíduos. A
+taxa dessa redução é capturada por uma função de benefício
+b.
+▶O modelo de utilidade baseada em distância é aquele em que
+a utilidade de um jogador pode ser escrita como
+ui(g) =
+X
+j̸=i : j∈Nn−1(g)
+b (ℓij(g)) −di(g)c;
+onde ℓij(g) é o comprimento do caminho mais curto entre i e
+j. Suponha b(k) > b(k + 1) > 0 para qualquer k e c ≥0.
+11 / 27
+
+=== [pagina 14] ===
+Utilidade Baseada em Distância
+Caso especial
+▶Caso especial de interesse: caso simétrico (δ), com benefícios
+decrescendo exponencialmente com a distância, de modo que
+b(k) = δk.
+t
+t
+t
+ + 2 + 3  c
+2 + 2  2c
+1
+2
+3
+4
+2 + 2  2c
+ + 2 + 3  c
+Figure 2: Utilidades em um modelo de conexões simétricas com
+n = 4 (Jackson, 2011)
+▶Para δ < 1, uma conexão indireta gera um benefício menor do
+que uma conexão direta.
+12 / 27
+
+=== [pagina 15] ===
+Utilidade Baseada em Distância
+Eficiência e Estruturas de Rede
+▶Se o custo c for muito baixo (por exemplo, zero), será
+eficiente incluir todos os links na rede.
+▶De forma mais geral: a estrutura de rede eficiente única no
+modelo de utilidade baseada em distância é
+(i) a rede completa se c < b(1) −b(2),
+(ii) uma estrela contendo todos os nós se
+b(1) −b(2) < c < b(1) + n −2
+2
+b(2),
+e
+(iii) a rede vazia se
+b(1) + n −2
+2
+b(2) < c.
+Intuição: adicionar um link ij não pode reduzir a utilidade de nenhum k /∈{i, j} e,
+portanto, se a utilidade de i e j aumenta como resultado da adição do link, então a
+utilidade total aumenta.
+13 / 27
+
+=== [pagina 16] ===
+Utilidade Baseada em Distância
+Estabilidade e Estruturas de Rede
+(i) Uma rede estável aos pares possui, no máximo, um
+componente não vazio.
+(ii) Para c < b(1) −b(2), a única rede estável aos pares é a rede
+completa.
+(iii) Para b(1) −b(2) < c < b(1), uma estrela contendo todos os
+jogadores é estável aos pares, mas, para alguns valores de n e
+dos parâmetros nesse intervalo, ela não é a única rede estável
+aos pares.
+(iv) Para b(1) < c, em qualquer rede estável aos pares, cada nó
+não possui nenhum link ou possui pelo menos dois links.
+Portanto, toda rede estável aos pares é ineficiente quando
+b(1) < c < b(1) + n −2
+2
+b(2).
+14 / 27
+
+=== [pagina 17] ===
+Utilidade Baseada em Distância
+Eficiência e Estabilidade
+▶Para custos de links altos ou baixos, redes eficientes coincidem
+com redes estáveis aos pares.
+▶As diferenças surgem para custos intermediários dos links em
+relação aos benefícios.
+▶Dependendo do intervalo de custos, existem situações em que
+▶todas as redes estáveis aos pares são Pareto ineficientes.
+▶todas as redes estáveis aos pares são eficientes.
+▶algumas redes estáveis aos pares são eficientes e outras redes
+estáveis aos pares nem sequer são Pareto eficientes.
+15 / 27
+
+=== [pagina 18] ===
+Utilidade Baseada em Distância
+Externalidades
+▶Externalidades referem-se a situações em que a utilidade ou o payoff de
+um indivíduo é afetado pelas ações de outros indivíduos.
+▶Um jogador no modelo de utilidade baseada em distância pode ter um
+aumento em seu payoff quando seus vizinhos formam mais links, ou
+mesmo quando jogadores conectados indiretamente formam mais links.
+▶Formalmente: existem externalidades não negativas sob u = (u1, . . . , un)
+se
+ui(g + jk) ≥ui(g),
+para todo i ∈N, g ∈G(N) e jk tal que j ̸= i ̸= k.
+Existem externalidades positivas sob u = (u1, . . . , un) se existem
+externalidades não negativas sob u = (u1, . . . , un) e a desigualdade acima
+é estrita em alguns casos.
+▶O modelo de utilidade baseada em distância apresenta externalidades
+positivas, pois a adição de links pode apenas aproximar os jogadores.
+16 / 27
+
+=== [pagina 19] ===
+Um Modelo de Coautoria e Externalidades
+Negativas
+17 / 27
+
+=== [pagina 20] ===
+Um Modelo de Coautoria e Externalidades Negativas
+▶Considere uma situação em que existem externalidades
+negativas decorrentes dos links.
+▶Isto é, um indivíduo prefere que seus vizinhos tenham menos
+conexões, em vez de mais conexões.
+▶Isso corresponde a uma situação em que um indivíduo
+compete com outras conexões indiretas pelo acesso aos seus
+vizinhos.
+▶Isso contrasta com o modelo de conexões baseado em
+distância, no qual os indivíduos obtêm benefícios de conexões
+indiretas.
+18 / 27
+
+=== [pagina 21] ===
+Um Modelo de Coautoria e Externalidades Negativas
+▶O payoff do jogador i é representado por
+ui(g) =
+X
+j:ij∈g
+
+1
+di(g) +
+1
+dj(g) +
+1
+di(g)dj(g)
+
+para di(g) > 0, e ui(g) = 1 se di(g) = 0.
+▶O valor gerado por um determinado projeto de pesquisa é
+proporcional à soma do tempo que i dedica ao projeto, do
+tempo que j dedica ao projeto e de uma sinergia que depende
+da interação entre o tempo que os dois pesquisadores dedicam
+ao projeto.
+▶Não há custos de links modelados diretamente. Os custos
+estão implícitos na diluição das sinergias à medida que os
+esforços são distribuídos entre um número maior de coautores.
+19 / 27
+
+=== [pagina 22] ===
+Um Modelo de Coautoria e Externalidades Negativas
+Figure 3: Modelo de Coautoria (Jackson, 2011)
+20 / 27
+
+=== [pagina 23] ===
+Um Modelo de Coautoria e Externalidades Negativas
+Se n é par:
+▶Redes eficientes: n
+2 pares.
+▶Redes estáveis aos pares consistem em componentes
+completamente conectados, cada um de tamanho diferente,
+sendo que um deles possui mais do que o quadrado do
+número de nós do outro.
+▶A adição de um link dilui as sinergias existentes.
+▶Portanto, um novo link só será adicionado se o novo coautor
+trouxer um valor comparável.
+21 / 27
+
+=== [pagina 24] ===
+Uma Tensão Geral entre Estabilidade e Eficiência
+22 / 27
+
+=== [pagina 25] ===
+Transferências: Tributando e Subsidiando Links
+▶Existem ambientes nos quais todas as redes estáveis aos pares
+são ineficientes e, às vezes, todas as redes estáveis aos pares
+são até mesmo Pareto ineficientes.
+▶Uma intervenção externa, como um mecanismo de impostos
+(ou subsídios) e transferências, pode ajudar.
+▶Exemplos: (i) apoio governamental a relações de P&D, (ii)
+barganha entre os indivíduos envolvidos nas relações, (iii)
+favores trocados entre amigos.
+▶Altere as utilidades de ui(g) para ui(g) + ti(g).
+▶Uma regra de transferência é uma função t : G →RN tal que
+X
+i
+ti(g) = 0,
+para todo g.
+▶No modelo de utilidade baseada em distância, os nós
+periféricos podem querer pagar ao centro para manter a
+relação quando o custo é médio-alto ou elevado.
+23 / 27
+
+=== [pagina 26] ===
+Transferências: Tributando e Subsidiando Links
+Transferências no Modelo de Coautoria: Pagamentos Equalizadores
+3
+3
+3
+3
+2.625
+2.625
+2.625
+2.625
+2.5
+2.5
+2.5
+2.5
+3.25  )
+( 3.25
+2 )
+( 2
+Figure 4: Exemplo de um mecanismo de impostos e transferências
+(Jackson, 2011)
+Pergunta: é possível realizar transferências entre os jogadores de
+modo que pelo menos alguma rede eficiente se torne estável?
+24 / 27
+
+=== [pagina 27] ===
+Transferências: Tributando e Subsidiando Links
+Transferências Igualitárias
+▶A regra de transferência igualitária (denotada por te) é tal que
+ui(g) + te
+i (g) =
+P
+j uj(g)
+n
+,
+ou
+te
+i (g) =
+P
+j uj(g)
+n
+−ui(g).
+▶Essa sociedade possui os mesmos incentivos de um Planejador
+Social Utilitarista.
+▶Uma rede eficiente é estável aos pares.
+▶Esse mecanismo pode envolver muitas transferências, ou as
+transferências podem até violar condições (básicas?), como
+balanceamento por componente e tratamento igual dos iguais.
+25 / 27
+
+=== [pagina 28] ===
+Transferências: Tributando e Subsidiando Links
+Transferências Podem Falhar
+6
+6
+6
+6
+6
+6
+4
+4
+4
+5
+4
+4
+value 12
+value 12
+value 13
+efficient
+4
+4
+5
+0
+Figure 5: Exemplo em que transferências podem falhar (JW, 1996)
+26 / 27
+
+=== [pagina 29] ===
+Incompatibilidade entre Estabilidade aos Pares e Eficiência
+▶Redes eficientes e redes estáveis aos pares não
+necessariamente coincidem.
+▶A tensão decorre das externalidades.
+▶Transferências podem ajudar, mas nem sempre sem violar
+algumas condições básicas.
+27 / 27

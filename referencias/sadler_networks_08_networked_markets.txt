@@ -1,0 +1,1294 @@
+# Fonte: Networks 08 - Networked Markets.pdf
+# Paginas: 95
+
+=== [pagina 1] ===
+Economics of Networks
+Networked Markets
+Evan Sadler
+Massachusetts Institute of Technology
+April 26, 2018
+Evan Sadler
+Networked Markets
+1/35
+
+=== [pagina 2] ===
+Agenda
+Perfect matchings
+Bargaining
+Competitive equilibrium in a two-sided market
+Supply networks and aggregate volatility
+Suggested Reading:
+• EK chapters 10 and 11; Jackson chapter 10
+• Manea (2011), “Bargaining in Stationary Networks”
+• Acemoglu et al. (2012), “The Network Origins of Aggregate
+Fluctuations”
+Evan Sadler
+Networked Markets
+2/35
+
+=== [pagina 3] ===
+Buyer-Seller Networks
+Often assume trade is unrestricted: any buyer can costlessly
+interact with any seller
+Evan Sadler
+Networked Markets
+3/35
+
+=== [pagina 4] ===
+Buyer-Seller Networks
+Often assume trade is unrestricted: any buyer can costlessly
+interact with any seller
+Not true in practice:
+• Product heterogeneity
+• Geographic proximity
+• Search costs
+• Reputation
+Evan Sadler
+Networked Markets
+3/35
+
+=== [pagina 5] ===
+Buyer-Seller Networks
+Often assume trade is unrestricted: any buyer can costlessly
+interact with any seller
+Not true in practice:
+• Product heterogeneity
+• Geographic proximity
+• Search costs
+• Reputation
+Develop theory of buyer-seller networks
+• Connections to bargaining, auctions, market-clearing prices
+Evan Sadler
+Networked Markets
+3/35
+
+=== [pagina 6] ===
+Buyer-Seller Networks
+Often assume trade is unrestricted: any buyer can costlessly
+interact with any seller
+Not true in practice:
+• Product heterogeneity
+• Geographic proximity
+• Search costs
+• Reputation
+Develop theory of buyer-seller networks
+• Connections to bargaining, auctions, market-clearing prices
+Questions:
+• Can every buyer (seller) ﬁnd a seller (buyer)?
+• Do market clearing prices exist?
+• Is the outcome of trade eﬃcient?
+Evan Sadler
+Networked Markets
+3/35
+
+=== [pagina 7] ===
+Perfect Matchings
+A simple model:
+• Disjoint sets of buyers and sellers B and S, |B| = |S| = n
+• Bipartite graph G (all edges connect a buyer to a seller)
+• Write N(A) for set of neighbors of agents in A
+• A matching is a subset of edges such that no two share an
+endpoint
+Evan Sadler
+Networked Markets
+4/35
+
+=== [pagina 8] ===
+Perfect Matchings
+A simple model:
+• Disjoint sets of buyers and sellers B and S, |B| = |S| = n
+• Bipartite graph G (all edges connect a buyer to a seller)
+• Write N(A) for set of neighbors of agents in A
+• A matching is a subset of edges such that no two share an
+endpoint
+Say i and j are matched if the matching contains an edge
+between them
+Evan Sadler
+Networked Markets
+4/35
+
+=== [pagina 9] ===
+Perfect Matchings
+A simple model:
+• Disjoint sets of buyers and sellers B and S, |B| = |S| = n
+• Bipartite graph G (all edges connect a buyer to a seller)
+• Write N(A) for set of neighbors of agents in A
+• A matching is a subset of edges such that no two share an
+endpoint
+Say i and j are matched if the matching contains an edge
+between them
+A matching is perfect if every buyer is matched to a seller and
+vice versa
+• Contains n
+2 edges
+Evan Sadler
+Networked Markets
+4/35
+
+=== [pagina 10] ===
+Perfect Matchings
+Theorem
+The bipartite graph G has a matching of size |S| if and only if for
+every A ⊆S we have |N(A)| ≥|A|
+Evan Sadler
+Networked Markets
+5/35
+
+=== [pagina 11] ===
+Perfect Matchings
+Theorem
+The bipartite graph G has a matching of size |S| if and only if for
+every A ⊆S we have |N(A)| ≥|A|
+Clearly necessary (why?), suﬃciency is harder
+Evan Sadler
+Networked Markets
+5/35
+
+=== [pagina 12] ===
+Perfect Matchings
+Theorem
+The bipartite graph G has a matching of size |S| if and only if for
+every A ⊆S we have |N(A)| ≥|A|
+Clearly necessary (why?), suﬃciency is harder
+Call a set A ⊆S with |A| > |N(A)| a constricted set
+Evan Sadler
+Networked Markets
+5/35
+
+=== [pagina 13] ===
+Perfect Matchings
+Theorem
+The bipartite graph G has a matching of size |S| if and only if for
+every A ⊆S we have |N(A)| ≥|A|
+Clearly necessary (why?), suﬃciency is harder
+Call a set A ⊆S with |A| > |N(A)| a constricted set
+Elegant alternating paths algorithm to ﬁnd maximum matching
+and constricted sets (EK, 10.6)
+Evan Sadler
+Networked Markets
+5/35
+
+=== [pagina 14] ===
+Rubinstein Bargaining
+A seemingly unrelated problem...
+Evan Sadler
+Networked Markets
+6/35
+
+=== [pagina 15] ===
+Rubinstein Bargaining
+A seemingly unrelated problem...
+Consider one buyer and one seller
+• Seller has an item the buyer wants
+• Seller values at 0, buyer at 1
+• At time 1, seller proposes a price, buyer accepts or rejects
+• If accept, game ends, realize payoﬀs
+• If reject, proceed to time 2, buyer makes oﬀer
+Evan Sadler
+Networked Markets
+6/35
+
+=== [pagina 16] ===
+Rubinstein Bargaining
+A seemingly unrelated problem...
+Consider one buyer and one seller
+• Seller has an item the buyer wants
+• Seller values at 0, buyer at 1
+• At time 1, seller proposes a price, buyer accepts or rejects
+• If accept, game ends, realize payoﬀs
+• If reject, proceed to time 2, buyer makes oﬀer
+Bargaining with alternating oﬀers
+Evan Sadler
+Networked Markets
+6/35
+
+=== [pagina 17] ===
+Rubinstein Bargaining
+A seemingly unrelated problem...
+Consider one buyer and one seller
+• Seller has an item the buyer wants
+• Seller values at 0, buyer at 1
+• At time 1, seller proposes a price, buyer accepts or rejects
+• If accept, game ends, realize payoﬀs
+• If reject, proceed to time 2, buyer makes oﬀer
+Bargaining with alternating oﬀers
+Players are impatient, discount future at rate δ
+Evan Sadler
+Networked Markets
+6/35
+
+=== [pagina 18] ===
+The One-Shot Deviation Principle
+Game has inﬁnite time horizon, cannot use backward induction
+• Payoﬀis a discounted inﬁnite sum
+Evan Sadler
+Networked Markets
+7/35
+
+=== [pagina 19] ===
+The One-Shot Deviation Principle
+Game has inﬁnite time horizon, cannot use backward induction
+• Payoﬀis a discounted inﬁnite sum
+Useful fact: one-shot deviation principle
+Evan Sadler
+Networked Markets
+7/35
+
+=== [pagina 20] ===
+The One-Shot Deviation Principle
+Game has inﬁnite time horizon, cannot use backward induction
+• Payoﬀis a discounted inﬁnite sum
+Useful fact: one-shot deviation principle
+Theorem (Blackwell, 1965)
+In an inﬁnite horizon game with bounded per-period payoﬀs, a
+strategy proﬁle s is a SPE if and only if for each player i there is
+no proﬁtable deviation s′
+i that agrees with si everywhere except
+at a single time t.
+Evan Sadler
+Networked Markets
+7/35
+
+=== [pagina 21] ===
+The One-Shot Deviation Principle
+Game has inﬁnite time horizon, cannot use backward induction
+• Payoﬀis a discounted inﬁnite sum
+Useful fact: one-shot deviation principle
+Theorem (Blackwell, 1965)
+In an inﬁnite horizon game with bounded per-period payoﬀs, a
+strategy proﬁle s is a SPE if and only if for each player i there is
+no proﬁtable deviation s′
+i that agrees with si everywhere except
+at a single time t.
+HUGE simpliﬁcation: only need to check deviations in a single
+period
+• Proof is beyond our scope
+Evan Sadler
+Networked Markets
+7/35
+
+=== [pagina 22] ===
+Rubinstein Bargaining
+Consider a proﬁle of the following form:
+• There is a pair of prices (ps, pb)
+• The seller always proposes ps and accepts any p ≥pb
+• The buyer always oﬀers pb and accepts any p ≤ps
+Evan Sadler
+Networked Markets
+8/35
+
+=== [pagina 23] ===
+Rubinstein Bargaining
+Consider a proﬁle of the following form:
+• There is a pair of prices (ps, pb)
+• The seller always proposes ps and accepts any p ≥pb
+• The buyer always oﬀers pb and accepts any p ≤ps
+Suppose the seller proposes in the current period
+Evan Sadler
+Networked Markets
+8/35
+
+=== [pagina 24] ===
+Rubinstein Bargaining
+Consider a proﬁle of the following form:
+• There is a pair of prices (ps, pb)
+• The seller always proposes ps and accepts any p ≥pb
+• The buyer always oﬀers pb and accepts any p ≤ps
+Suppose the seller proposes in the current period
+Acceptance earns the buyer 1 −ps, rejection earns δ(1 −pb)
+• Incentive compatible if ps ≤1 −δ + δpb
+Evan Sadler
+Networked Markets
+8/35
+
+=== [pagina 25] ===
+Rubinstein Bargaining
+Consider a proﬁle of the following form:
+• There is a pair of prices (ps, pb)
+• The seller always proposes ps and accepts any p ≥pb
+• The buyer always oﬀers pb and accepts any p ≤ps
+Suppose the seller proposes in the current period
+Acceptance earns the buyer 1 −ps, rejection earns δ(1 −pb)
+• Incentive compatible if ps ≤1 −δ + δpb
+Similarly, when buyer proposes, acceptance is incentive
+compatible if pb ≥δps
+Evan Sadler
+Networked Markets
+8/35
+
+=== [pagina 26] ===
+Rubinstein Bargaining
+In equilibrium, seller proposes highest acceptable price
+• ps = 1 −δ + δpb
+Evan Sadler
+Networked Markets
+9/35
+
+=== [pagina 27] ===
+Rubinstein Bargaining
+In equilibrium, seller proposes highest acceptable price
+• ps = 1 −δ + δpb
+Similarly, buyer oﬀers lowest acceptable price
+• pb = δps
+Evan Sadler
+Networked Markets
+9/35
+
+=== [pagina 28] ===
+Rubinstein Bargaining
+In equilibrium, seller proposes highest acceptable price
+• ps = 1 −δ + δpb
+Similarly, buyer oﬀers lowest acceptable price
+• pb = δps
+Solving yields
+p∗
+s =
+1
+1 + δ,
+p∗
+b =
+δ
+1 + δ
+Evan Sadler
+Networked Markets
+9/35
+
+=== [pagina 29] ===
+Rubinstein Bargaining
+In equilibrium, seller proposes highest acceptable price
+• ps = 1 −δ + δpb
+Similarly, buyer oﬀers lowest acceptable price
+• pb = δps
+Solving yields
+p∗
+s =
+1
+1 + δ,
+p∗
+b =
+δ
+1 + δ
+Theorem (Rubinstein 1982)
+The alternating oﬀers bargaining game has a unique SPE with
+oﬀers (p∗
+s, p∗
+b) that are immediately accepted.
+Evan Sadler
+Networked Markets
+9/35
+
+=== [pagina 30] ===
+Bargaining in a Bipartite Network
+Let’s extend this framework to a bipartite graph G connecting
+sellers S to buyers B
+Evan Sadler
+Networked Markets
+10/35
+
+=== [pagina 31] ===
+Bargaining in a Bipartite Network
+Let’s extend this framework to a bipartite graph G connecting
+sellers S to buyers B
+At time 1, sellers simultaneously announce prices
+• A buyer can accept a single oﬀer from a linked seller
+• All buyers who accept oﬀers are cleared from the market along
+with their sellers
+• In case of ties, social planner chooses trades to maximize total
+number of transactions
+Evan Sadler
+Networked Markets
+10/35
+
+=== [pagina 32] ===
+Bargaining in a Bipartite Network
+Let’s extend this framework to a bipartite graph G connecting
+sellers S to buyers B
+At time 1, sellers simultaneously announce prices
+• A buyer can accept a single oﬀer from a linked seller
+• All buyers who accept oﬀers are cleared from the market along
+with their sellers
+• In case of ties, social planner chooses trades to maximize total
+number of transactions
+Others proceed to time 2, when buyers make oﬀers
+• Alternating oﬀers framework as before
+• Previous model equivalent to a single buyer linked to a single
+seller
+Evan Sadler
+Networked Markets
+10/35
+
+=== [pagina 33] ===
+Example: Two Sellers, One Buyer
+Suppose there are two sellers linked to a single buyer
+Evan Sadler
+Networked Markets
+11/35
+
+=== [pagina 34] ===
+Example: Two Sellers, One Buyer
+Suppose there are two sellers linked to a single buyer
+Buyer will choose seller who oﬀers lowest price
+• If sellers oﬀer same p > 0, buyer randomizes
+• Proﬁtable deviation: oﬀer p −ϵ to ensure a sale
+Evan Sadler
+Networked Markets
+11/35
+
+=== [pagina 35] ===
+Example: Two Sellers, One Buyer
+Suppose there are two sellers linked to a single buyer
+Buyer will choose seller who oﬀers lowest price
+• If sellers oﬀer same p > 0, buyer randomizes
+• Proﬁtable deviation: oﬀer p −ϵ to ensure a sale
+In unique SPE, both sellers oﬀer p = 0
+• Logic is reminiscient of Bertrand competition
+• The “short” side of the market has all the bargaining power
+Evan Sadler
+Networked Markets
+11/35
+
+=== [pagina 36] ===
+Bargaining in Networks
+What if there are two buyers and one seller?
+Evan Sadler
+Networked Markets
+12/35
+
+=== [pagina 37] ===
+Bargaining in Networks
+What if there are two buyers and one seller?
+• Same logic applies, sells at price 1
+Evan Sadler
+Networked Markets
+12/35
+
+=== [pagina 38] ===
+Bargaining in Networks
+What if there are two buyers and one seller?
+• Same logic applies, sells at price 1
+What if there are two buyers, each linked to same two sellers?
+Evan Sadler
+Networked Markets
+12/35
+
+=== [pagina 39] ===
+Bargaining in Networks
+What if there are two buyers and one seller?
+• Same logic applies, sells at price 1
+What if there are two buyers, each linked to same two sellers?
+Work backwards, what happens if one pair trades and exits the
+market?
+• Bargaining power is the same as in the one buyer one seller
+example
+Evan Sadler
+Networked Markets
+12/35
+
+=== [pagina 40] ===
+Bargaining in Networks
+Less clear what happens in more complicated graphs
+Evan Sadler
+Networked Markets
+13/35
+
+=== [pagina 41] ===
+Redundant Links
+Evan Sadler
+Networked Markets
+14/35
+
+=== [pagina 42] ===
+Bargaining in Networks
+Existence of perfect matching ensures near-equal bargaining
+power
+Evan Sadler
+Networked Markets
+15/35
+
+=== [pagina 43] ===
+Bargaining in Networks
+Existence of perfect matching ensures near-equal bargaining
+power
+Once we eliminate redundant links, reduction to three cases
+• Price 0, 1, or close to 1
+2
+Evan Sadler
+Networked Markets
+15/35
+
+=== [pagina 44] ===
+Bargaining in Networks
+Existence of perfect matching ensures near-equal bargaining
+power
+Once we eliminate redundant links, reduction to three cases
+• Price 0, 1, or close to 1
+2
+Decomposition algorithm, three sets GS, GB, GE initially empty
+• First, identify sets of two or more sellers linked to a single
+buyer, remove and add to GS
+• Next, identify remaining sets of two or more buyers linked to a
+single seller, remove and add to GB
+• Repeat: for each k ≥2, look for sets of k + 1 or more sellers
+(buyers) linked to k buyers (sellers); remove and add to the
+corresponding sets
+• Add remaining players to GE
+Evan Sadler
+Networked Markets
+15/35
+
+=== [pagina 45] ===
+Decomposition Example
+Evan Sadler
+Networked Markets
+16/35
+
+=== [pagina 46] ===
+Decomposition Example
+Evan Sadler
+Networked Markets
+17/35
+
+=== [pagina 47] ===
+Decomposition Example
+Evan Sadler
+Networked Markets
+18/35
+
+=== [pagina 48] ===
+Decomposition Example
+Evan Sadler
+Networked Markets
+19/35
+
+=== [pagina 49] ===
+Bargaining in Networks
+This simple algorithm pins down bargaining payoﬀs
+Theorem
+There exists a SPE in which:
+• Sellers in GS get 0, buyers in GS get 1
+• Sellers in GB get 1, sellers in GB get 0
+• Sellers in GE get
+1
+1+δ, buyers in GE get
+δ
+1+δ
+Evan Sadler
+Networked Markets
+20/35
+
+=== [pagina 50] ===
+Bargaining in Networks
+This simple algorithm pins down bargaining payoﬀs
+Theorem
+There exists a SPE in which:
+• Sellers in GS get 0, buyers in GS get 1
+• Sellers in GB get 1, sellers in GB get 0
+• Sellers in GE get
+1
+1+δ, buyers in GE get
+δ
+1+δ
+Prediction matches well with experimental ﬁndings
+Evan Sadler
+Networked Markets
+20/35
+
+=== [pagina 51] ===
+Valuations and Prices
+Suppose now that buyers have heterogeneous values for diﬀerent
+sellers’ products
+• Each seller has an item, values it at zero, wants to maximize
+proﬁts
+• Posted price
+Evan Sadler
+Networked Markets
+21/35
+
+=== [pagina 52] ===
+Valuations and Prices
+Suppose now that buyers have heterogeneous values for diﬀerent
+sellers’ products
+• Each seller has an item, values it at zero, wants to maximize
+proﬁts
+• Posted price
+Buyer i values seller j at vij, wants at most one object
+• Buy from seller j, pay pj ≥0
+• Buyer utility vij −pj, seller utility pj
+Evan Sadler
+Networked Markets
+21/35
+
+=== [pagina 53] ===
+Valuations and Prices
+Suppose now that buyers have heterogeneous values for diﬀerent
+sellers’ products
+• Each seller has an item, values it at zero, wants to maximize
+proﬁts
+• Posted price
+Buyer i values seller j at vij, wants at most one object
+• Buy from seller j, pay pj ≥0
+• Buyer utility vij −pj, seller utility pj
+The transaction generates surplus vij
+Evan Sadler
+Networked Markets
+21/35
+
+=== [pagina 54] ===
+Valuations and Prices
+For a buyer i, set of preferred sellers given prevailing prices p
+Di(p) = {j : vij −pj = max
+k [vik −pk]}
+Preferred seller graph contains edge ij if and only if j ∈Di(p)
+Evan Sadler
+Networked Markets
+22/35
+
+=== [pagina 55] ===
+Valuations and Prices
+For a buyer i, set of preferred sellers given prevailing prices p
+Di(p) = {j : vij −pj = max
+k [vik −pk]}
+Preferred seller graph contains edge ij if and only if j ∈Di(p)
+A perfect matching in the preferred seller graph means we can
+match every buyer to a preferred seller, and no item is allocated
+to more than one buyer
+• Note, whether such a matching exists will depend on the prices
+Evan Sadler
+Networked Markets
+22/35
+
+=== [pagina 56] ===
+Valuations and Prices
+Who sells to whom?
+Evan Sadler
+Networked Markets
+23/35
+
+=== [pagina 57] ===
+Valuations and Prices
+Who sells to whom?
+Deﬁnition
+A price vector p is competitive if there is an assignment
+µ : B →S ∪{∅} such that µ(i) ∈Dip, and if µ(i) = µ(i′) for
+some i ̸= i′, then µ(i) = ∅(i.e. buyer i is unmatched). The pair
+(p, µ) is a competitive equilibrium if p is competitive, and
+additionally if seller j is unmatched in µ, then pj = 0.
+Evan Sadler
+Networked Markets
+23/35
+
+=== [pagina 58] ===
+Valuations and Prices
+Who sells to whom?
+Deﬁnition
+A price vector p is competitive if there is an assignment
+µ : B →S ∪{∅} such that µ(i) ∈Dip, and if µ(i) = µ(i′) for
+some i ̸= i′, then µ(i) = ∅(i.e. buyer i is unmatched). The pair
+(p, µ) is a competitive equilibrium if p is competitive, and
+additionally if seller j is unmatched in µ, then pj = 0.
+Competitive equilibrium prices are market-clearing prices
+• Equate supply and demand
+• Corresponds to perfect matching in preferred seller graph
+Evan Sadler
+Networked Markets
+23/35
+
+=== [pagina 59] ===
+Existence and Eﬃciency
+Theorem (Shapley and Shubik, 1972)
+A competitive equilibrium always exists. Moreover, a competitive
+equilibrium maximizes the total valuation for buyers across all
+matchings (i.e. it maximizes total surplus).
+Evan Sadler
+Networked Markets
+24/35
+
+=== [pagina 60] ===
+Existence and Eﬃciency
+Theorem (Shapley and Shubik, 1972)
+A competitive equilibrium always exists. Moreover, a competitive
+equilibrium maximizes the total valuation for buyers across all
+matchings (i.e. it maximizes total surplus).
+Proof beyond our scope
+More general versions of this result are known as the First
+Fundamental Theorem of Welfare
+Evan Sadler
+Networked Markets
+24/35
+
+=== [pagina 61] ===
+Bargaining in Stationary Networks
+What if there are multiple opportunities to trade over time?
+Evan Sadler
+Networked Markets
+25/35
+
+=== [pagina 62] ===
+Bargaining in Stationary Networks
+What if there are multiple opportunities to trade over time?
+Simplest stationary model:
+• Set of players N = {1, 2, ..., n}
+• Undirected graph G
+• Common discount rate δ
+• No buyer-seller distinction, any pair can generate a unit surplus
+Evan Sadler
+Networked Markets
+25/35
+
+=== [pagina 63] ===
+Bargaining in Stationary Networks
+What if there are multiple opportunities to trade over time?
+Simplest stationary model:
+• Set of players N = {1, 2, ..., n}
+• Undirected graph G
+• Common discount rate δ
+• No buyer-seller distinction, any pair can generate a unit surplus
+In each period, a directed link ij is chosen uniformly at random
+• Player i proposes a division to player j
+• Player j accepts or rejects
+Evan Sadler
+Networked Markets
+25/35
+
+=== [pagina 64] ===
+Bargaining in Stationary Networks
+What if there are multiple opportunities to trade over time?
+Simplest stationary model:
+• Set of players N = {1, 2, ..., n}
+• Undirected graph G
+• Common discount rate δ
+• No buyer-seller distinction, any pair can generate a unit surplus
+In each period, a directed link ij is chosen uniformly at random
+• Player i proposes a division to player j
+• Player j accepts or rejects
+If accept, players exit the game and are replaced by new,
+identical players
+Evan Sadler
+Networked Markets
+25/35
+
+=== [pagina 65] ===
+Bargaining in Stationary Networks
+Theorem
+There exists a unique payoﬀvector v such that in every subgame
+perfect equilibrium, the expected payoﬀto player i in any
+subgame is vi. Whenever i is selected to make an oﬀer to j, we
+have
+• If δ(vi + vj) < 1, then i oﬀers δvj to j, and j accepts
+• If δ(vi + vj) > 1, then i makes an oﬀer that j rejects
+Proof is beyond our scope; for generic δ, always have
+δ(vi + vj) ̸= 1
+Evan Sadler
+Networked Markets
+26/35
+
+=== [pagina 66] ===
+Bargaining in Stationary Networks
+Theorem
+There exists a unique payoﬀvector v such that in every subgame
+perfect equilibrium, the expected payoﬀto player i in any
+subgame is vi. Whenever i is selected to make an oﬀer to j, we
+have
+• If δ(vi + vj) < 1, then i oﬀers δvj to j, and j accepts
+• If δ(vi + vj) > 1, then i makes an oﬀer that j rejects
+Proof is beyond our scope; for generic δ, always have
+δ(vi + vj) ̸= 1
+Intuition for strategies: δ(vi + vj) is the joint outside option
+• Players make a deal if doing so is better than the outside
+option for both
+Evan Sadler
+Networked Markets
+26/35
+
+=== [pagina 67] ===
+Bargaining in Stationary Networks
+Can place bounds on payoﬀs in limit equilibria
+• As δ →1, equilibrium payoﬀvectors converge to a vector v∗
+Evan Sadler
+Networked Markets
+27/35
+
+=== [pagina 68] ===
+Bargaining in Stationary Networks
+Can place bounds on payoﬀs in limit equilibria
+• As δ →1, equilibrium payoﬀvectors converge to a vector v∗
+Let M denote an independent set of players (no two linked)
+• Let L(M) denote set of players linked to those in M
+Evan Sadler
+Networked Markets
+27/35
+
+=== [pagina 69] ===
+Bargaining in Stationary Networks
+Can place bounds on payoﬀs in limit equilibria
+• As δ →1, equilibrium payoﬀvectors converge to a vector v∗
+Let M denote an independent set of players (no two linked)
+• Let L(M) denote set of players linked to those in M
+Theorem
+For any independent set M, we have
+min
+i∈M v∗
+i ≤
+|L(M)|
+|M| + |L(M)|,
+max
+j∈L(M) v∗
+j ≥
+|M|
+|M| + |L(M)|
+Manea (2011) provides an algorithm to compute the payoﬀs
+Evan Sadler
+Networked Markets
+27/35
+
+=== [pagina 70] ===
+Supply Networks
+During the ﬁnancial crises, policy makers feared that ﬁrm failures
+could propagate through the economy
+• The president of Ford lobbied for GM and Chrysler to be
+bailed out
+• Feared that common suppliers would go bankrupt, disrupting
+Ford’s operations
+Evan Sadler
+Networked Markets
+28/35
+
+=== [pagina 71] ===
+Supply Networks
+During the ﬁnancial crises, policy makers feared that ﬁrm failures
+could propagate through the economy
+• The president of Ford lobbied for GM and Chrysler to be
+bailed out
+• Feared that common suppliers would go bankrupt, disrupting
+Ford’s operations
+Such cascade eﬀects are not a feature of standard theory
+• In a perfectly competitive market with many ﬁrms, the eﬀects
+of a shock to one are spread evenly across the others
+• A failure has a small eﬀect on aggregate output
+Evan Sadler
+Networked Markets
+28/35
+
+=== [pagina 72] ===
+Supply Networks
+During the ﬁnancial crises, policy makers feared that ﬁrm failures
+could propagate through the economy
+• The president of Ford lobbied for GM and Chrysler to be
+bailed out
+• Feared that common suppliers would go bankrupt, disrupting
+Ford’s operations
+Such cascade eﬀects are not a feature of standard theory
+• In a perfectly competitive market with many ﬁrms, the eﬀects
+of a shock to one are spread evenly across the others
+• A failure has a small eﬀect on aggregate output
+Structure of supply networks can help tell us when cascade
+eﬀects are possible and how severe they might be
+Evan Sadler
+Networked Markets
+28/35
+
+=== [pagina 73] ===
+Supply Networks: A Model
+Variant of a multisector input-output model
+• Representative household endowed with one unit of labor
+• Household has Cobb-Douglas preferences over n goods:
+u(c1, c2, ..., cn) = A
+n
+Y
+i=1
+(ci)1/n
+• Each good i produced by a competitive sector, can be
+consumed or used as input to other sectors
+• Output of sector i is
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+• li is the labor input, xij is the amount of commodity j used to
+produce commodity i, wij is the input share of commodity j,
+zi is a sector productivity shock (independent across sectors)
+Evan Sadler
+Networked Markets
+29/35
+
+=== [pagina 74] ===
+Supply Networks: A Model
+Output:
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+Evan Sadler
+Networked Markets
+30/35
+
+=== [pagina 75] ===
+Supply Networks: A Model
+Output:
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+Assumption: Pn
+j=1 wij = 1
+• Constant returns to scale
+Evan Sadler
+Networked Markets
+30/35
+
+=== [pagina 76] ===
+Supply Networks: A Model
+Output:
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+Assumption: Pn
+j=1 wij = 1
+• Constant returns to scale
+Input-output matrix W with entries wij captures inter-sector
+relationships
+• Can think of W as a weighted network linking sectors
+Evan Sadler
+Networked Markets
+30/35
+
+=== [pagina 77] ===
+Supply Networks: A Model
+Output:
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+Assumption: Pn
+j=1 wij = 1
+• Constant returns to scale
+Input-output matrix W with entries wij captures inter-sector
+relationships
+• Can think of W as a weighted network linking sectors
+Deﬁne weighted out-degree di =
+Pn
+j=1 wji, and let Fi be the
+distribution of ϵi = log zi
+Evan Sadler
+Networked Markets
+30/35
+
+=== [pagina 78] ===
+Supply Networks: A Model
+Output:
+xi = zα
+i lα
+i
+n
+Y
+j=1
+x
+(1−α)wij
+ij
+Assumption: Pn
+j=1 wij = 1
+• Constant returns to scale
+Input-output matrix W with entries wij captures inter-sector
+relationships
+• Can think of W as a weighted network linking sectors
+Deﬁne weighted out-degree di =
+Pn
+j=1 wji, and let Fi be the
+distribution of ϵi = log zi
+Economy characterized by a set of sectors N, distribution of
+sector shocks {Fi}i∈N, network W
+Evan Sadler
+Networked Markets
+30/35
+
+=== [pagina 79] ===
+Equilibrium Output
+Acemoglu et al (2012) show that the output in equilibrium (i.e.
+when the representative consumer maximizes utility and ﬁrms
+maximize proﬁts) is given by
+y ≡log(GDP) =
+n
+X
+i=1
+viϵi
+where v is the inﬂuence vector
+v = α
+n [I −(1 −α)W ′]−1 1
+Evan Sadler
+Networked Markets
+31/35
+
+=== [pagina 80] ===
+Equilibrium Output
+Acemoglu et al (2012) show that the output in equilibrium (i.e.
+when the representative consumer maximizes utility and ﬁrms
+maximize proﬁts) is given by
+y ≡log(GDP) =
+n
+X
+i=1
+viϵi
+where v is the inﬂuence vector
+v = α
+n [I −(1 −α)W ′]−1 1
+Inﬂuence vector is closely related to Bonacich centrality
+Evan Sadler
+Networked Markets
+31/35
+
+=== [pagina 81] ===
+Equilibrium Output
+Acemoglu et al (2012) show that the output in equilibrium (i.e.
+when the representative consumer maximizes utility and ﬁrms
+maximize proﬁts) is given by
+y ≡log(GDP) =
+n
+X
+i=1
+viϵi
+where v is the inﬂuence vector
+v = α
+n [I −(1 −α)W ′]−1 1
+Inﬂuence vector is closely related to Bonacich centrality
+Shocks to more central sectors have a larger impact on aggregate
+output
+Evan Sadler
+Networked Markets
+31/35
+
+=== [pagina 82] ===
+Aggregate Volatility
+Let σ2
+i denote the variance of ϵi
+Evan Sadler
+Networked Markets
+32/35
+
+=== [pagina 83] ===
+Aggregate Volatility
+Let σ2
+i denote the variance of ϵi
+We can compute the standard deviation of aggregate output as
+q
+var(y) =
+v
+u
+u
+t
+n
+X
+i=1
+σ2
+i v2
+i
+Evan Sadler
+Networked Markets
+32/35
+
+=== [pagina 84] ===
+Aggregate Volatility
+Let σ2
+i denote the variance of ϵi
+We can compute the standard deviation of aggregate output as
+q
+var(y) =
+v
+u
+u
+t
+n
+X
+i=1
+σ2
+i v2
+i
+If we have a lower bound on sector output variances σ, then this
+implies
+q
+var(y) = Θ(∥v∥2)
+Evan Sadler
+Networked Markets
+32/35
+
+=== [pagina 85] ===
+Aggregate Volatility
+Let σ2
+i denote the variance of ϵi
+We can compute the standard deviation of aggregate output as
+q
+var(y) =
+v
+u
+u
+t
+n
+X
+i=1
+σ2
+i v2
+i
+If we have a lower bound on sector output variances σ, then this
+implies
+q
+var(y) = Θ(∥v∥2)
+Volatility scales with the Euclidean norm of the inﬂuence vector
+Evan Sadler
+Networked Markets
+32/35
+
+=== [pagina 86] ===
+Example
+Suppose all sectors supply each other equally
+• wij = 1
+n for all i, j
+Evan Sadler
+Networked Markets
+33/35
+
+=== [pagina 87] ===
+Example
+Suppose all sectors supply each other equally
+• wij = 1
+n for all i, j
+The inﬂuence vector then has vi = c
+n for some c and all i
+Evan Sadler
+Networked Markets
+33/35
+
+=== [pagina 88] ===
+Example
+Suppose all sectors supply each other equally
+• wij = 1
+n for all i, j
+The inﬂuence vector then has vi = c
+n for some c and all i
+Also assume σi = σ for all i
+Evan Sadler
+Networked Markets
+33/35
+
+=== [pagina 89] ===
+Example
+Suppose all sectors supply each other equally
+• wij = 1
+n for all i, j
+The inﬂuence vector then has vi = c
+n for some c and all i
+Also assume σi = σ for all i
+Aggregate volatility is then
+q
+var(y) = σ
+v
+u
+u
+t
+n
+X
+i=1
+v2
+i = σc
+√n
+Goes to zero as number of sectors becomes large
+Evan Sadler
+Networked Markets
+33/35
+
+=== [pagina 90] ===
+Example
+Suppose we have a dominant sector 1 that is the only supplier to
+all others
+• w1j = 1 for all j
+Evan Sadler
+Networked Markets
+34/35
+
+=== [pagina 91] ===
+Example
+Suppose we have a dominant sector 1 that is the only supplier to
+all others
+• w1j = 1 for all j
+This implies v1 = c for some c, independent of n
+Evan Sadler
+Networked Markets
+34/35
+
+=== [pagina 92] ===
+Example
+Suppose we have a dominant sector 1 that is the only supplier to
+all others
+• w1j = 1 for all j
+This implies v1 = c for some c, independent of n
+This implies a lower bound on aggregate volatility
+q
+var(y) ≥σ1c
+Volatility does not shrink with n
+Evan Sadler
+Networked Markets
+34/35
+
+=== [pagina 93] ===
+Asymptotics
+Can interpret economy with large n as more disaggregated
+• Increased specialization
+• Might expect less volatility
+Evan Sadler
+Networked Markets
+35/35
+
+=== [pagina 94] ===
+Asymptotics
+Can interpret economy with large n as more disaggregated
+• Increased specialization
+• Might expect less volatility
+For economy with n sectors, deﬁne the coeﬃcient of variation
+CV (d(n)) = STD(d(n))
+d
+Evan Sadler
+Networked Markets
+35/35
+
+=== [pagina 95] ===
+Asymptotics
+Can interpret economy with large n as more disaggregated
+• Increased specialization
+• Might expect less volatility
+For economy with n sectors, deﬁne the coeﬃcient of variation
+CV (d(n)) = STD(d(n))
+d
+Theorem
+Consider a sequence of economies with increasing n. Aggregate
+volatility satisﬁes
+q
+var(y) ≥c1 + CV (d(n))
+√n
+for some c.
+Evan Sadler
+Networked Markets
+35/35

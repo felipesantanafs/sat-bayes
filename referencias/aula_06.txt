@@ -1,0 +1,472 @@
+# Fonte: 06.pdf
+# Paginas: 27
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Jogos e Jogos em Rede
+Leitura: J (9)
+Marcos Ross Fernandes
+September 24, 2026
+
+=== [pagina 2] ===
+Roteiro
+Motivação
+Introdução à Teoria dos Jogos Não Cooperativos
+Jogos em Redes: Ações Binárias
+Payoffs Quadráticos e Complementaridades Estratégicas: Espaço
+de Ações Mais Rico
+0 / 25
+
+=== [pagina 3] ===
+Motivação
+1 / 25
+
+=== [pagina 4] ===
+Motivação
+▶Os pares exercem enorme influência sobre o comportamento
+humano.
+▶Assim, compreender como a estrutura das redes sociais
+influencia o comportamento é fundamental.
+▶Por exemplo, se alterarmos a rede de interações sociais, como
+o comportamento mudará?
+2 / 25
+
+=== [pagina 5] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+3 / 25
+
+=== [pagina 6] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Elementos
+▶Os elementos básicos para realizar uma análise de teoria dos
+jogos (não cooperativa) são
+1. representar a situação em termos das ações disponíveis aos
+jogadores e de seus payoffs como função dessas ações; e, em
+seguida,
+2. utilizar diferentes conceitos de equilíbrio para realizar previsões
+descritivas ou prescritivas.
+▶Ao estruturar a análise, algumas questões tornam-se
+importantes.
+1. quem são os jogadores?
+2. quais ações estão disponíveis para eles?
+3. qual é o timing da interação?
+4. quais são os payoffs dos diferentes jogadores resultantes da
+interação?
+4 / 25
+
+=== [pagina 7] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Jogos na Forma Normal/Estratégica
+▶O conjunto de jogadores é N = {1, 2, . . . , n}.
+▶O jogador i possui um conjunto de ações disponíveis, Xi.
+Essas ações são geralmente chamadas de estratégias puras.
+Esse conjunto pode ser finito ou infinito.
+▶Seja X = X1 × X2 × . . . × Xn o conjunto de todos os perfis de
+estratégias puras ou ações, com um elemento genérico
+denotado por x = (x1, x2, . . . , xn).
+▶O payoff do jogador i como função do vetor de ações
+escolhidas é descrito por uma função ui : X →R, com a
+interpretação de que ui(x) é o payoff de i se o vetor x for o
+perfil de ações escolhido na sociedade.
+5 / 25
+
+=== [pagina 8] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Jogos na Forma Normal/Estratégica
+▶Jogos na forma normal são frequentemente representados por
+meio de uma tabela.
+▶Exemplo: Dilema dos Prisioneiros
+Jogador 2
+Jogador 1
+C
+D
+C
+(-1, -1)
+(-3, 0)
+D
+(0, -3)
+(-2, -2)
+6 / 25
+
+=== [pagina 9] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Estratégias Dominantes
+▶Estratégia Dominante: Uma estratégia xi ∈Xi é uma
+estratégia dominante (ou fracamente dominante) para o
+jogador i se
+ui(xi, x−i) ≥ui(x′
+i , x−i)
+para todo x′
+i e todo x−i ∈X−i.
+▶Estratégia Estritamente Dominante: Uma estratégia
+xi ∈Xi é uma estratégia estritamente dominante para o
+jogador i se
+ui(xi, x−i) > ui(x′
+i , x−i)
+para todo x′
+i ̸= xi e todo x−i ∈X−i.
+7 / 25
+
+=== [pagina 10] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Equilíbrio de Nash
+▶Melhor Resposta: Uma estratégia xi é uma melhor resposta do
+jogador i a um perfil de estratégias x−i ∈X−i dos demais jogadores
+se
+ui(xi, x−i) ≥ui(x′
+i , x−i)
+para todo x′
+i ∈Xi.
+▶Melhor Resposta Estrita: Uma melhor resposta do jogador i a um
+perfil de estratégias dos demais jogadores é chamada de melhor
+resposta estrita se for a única melhor resposta.
+▶Equilíbrio de Nash em Estratégias Puras: Um perfil de
+estratégias x ∈X é um equilíbrio de Nash em estratégias puras se xi
+é uma melhor resposta a x−i para cada i. Em outras palavras, x é
+um equilíbrio de Nash se
+ui(xi, x−i) ≥ui(x′
+i , x−i)
+para todo i e x′
+i ∈Xi.
+8 / 25
+
+=== [pagina 11] ===
+Introdução à Teoria dos Jogos Não Cooperativos
+Randomização e Estratégias Mistas
+▶Existem jogos nos quais não existe nenhum equilíbrio em estratégias
+puras.
+▶Estratégia Mista: Uma estratégia mista para um jogador i é uma
+distribuição de probabilidade µi sobre Xi, onde µi(xi) representa a
+probabilidade de que a ação xi seja escolhida pelo jogador i. Um
+perfil de estratégias mistas é dado por (µ1, . . . , µn).
+▶Equilíbrio de Nash em Estratégias Mistas: Um perfil de
+estratégias mistas (µ1, . . . , µn) constitui um equilíbrio de Nash em
+estratégias mistas se, para cada jogador i e qualquer estratégia
+x′
+i ∈Xi,
+X
+x∈X
+
+Y
+j
+µj(xj)
+
+ui(x) ≥
+X
+x−i
+
+Y
+j̸=i
+µj(xj)
+
+ui(x′
+i , x−i),
+onde x é um perfil de estratégias em X, e x−i denota o perfil de
+estratégias de todos os jogadores exceto o jogador i.
+9 / 25
+
+=== [pagina 12] ===
+Jogos em Redes: Ações Binárias
+10 / 25
+
+=== [pagina 13] ===
+Jogos em Redes
+▶Considere um conjunto N de jogadores, com cardinalidade n,
+conectados por uma rede (N, g).
+▶Cada jogador i ∈N escolhe uma ação em {0, 1}.
+▶O payoff do jogador i quando o perfil de ações é x = (x1, . . . , xn) é
+dado por:
+ui(xi, xNi(g))
+onde xNi(g) é o perfil de ações escolhido pelos vizinhos do jogador i
+na rede g.
+11 / 25
+
+=== [pagina 14] ===
+Jogos em Redes: Jogos de Complementaridades com
+Threshold
+▶Considere situações em que o benefício para um jogador de escolher
+a ação 1 em vez da ação 0 aumenta (fracamente) com o número de
+vizinhos que escolhem a ação 1, de modo que:
+ui(1, xNi(g)) ≥ui(0, xNi(g)) se e somente se
+X
+j∈Ni(g)
+xj ≥ti
+onde ti é um threshold.
+▶Um caso especial ocorre quando a ação 1 é custosa (por exemplo,
+investir em uma nova tecnologia ou produto), mas o benefício dessa
+ação aumenta à medida que mais vizinhos adotam a ação. Nesse
+caso, podemos representar os payoffs como:
+ui(1, xNi(g)) = ai
+
+X
+j∈Ni(g)
+xj
+
+−ci
+ui(0, xNi(g)) = 0
+onde ai > 0 e ci > 0.
+12 / 25
+
+=== [pagina 15] ===
+Jogos em Redes: Equilíbrio
+0
+0 
+0
+0 
+0 
+0 
+0 
+0
+0 
+0
+0
+Figure 1: Equilíbrio 1 em um Jogo de Complementaridades com
+Threshold 2.
+13 / 25
+
+=== [pagina 16] ===
+Jogos em Redes: Equilíbrio
+0
+1 
+1
+1 
+0 
+0 
+0 
+0
+0 
+0
+0
+Figure 2: Equilíbrio 2 em um Jogo de Complementaridades com
+Threshold 2.
+14 / 25
+
+=== [pagina 17] ===
+Jogos em Redes: Equilíbrio
+0
+1 
+1
+1 
+1 
+0 
+0 
+0
+1 
+1
+0
+Figure 3: Equilíbrio 3 em um Jogo de Complementaridades com
+Threshold 2.
+15 / 25
+
+=== [pagina 18] ===
+Jogos em Redes: Um Jogo de Bem Público “Best-Shot”
+▶Se um jogador ou qualquer um de seus vizinhos escolher a ação 1,
+então o jogador recebe um benefício igual a 1.
+▶Escolher a ação 1 é custoso, e um jogador prefere que um vizinho
+escolha essa ação em vez de ter de escolhê-la ele próprio; no
+entanto, escolher a ação e pagar o custo é melhor do que ninguém
+escolher a ação.
+▶Este é um jogo de bem público “best-shot”:
+ui(1, xNi(g)) = 1 −c
+ui(0, xNi(g)) = 1
+se xj = 1 para algum j ∈Ni(g)
+ui(0, xNi(g)) = 0
+se xj = 0 para todo j ∈Ni(g)
+onde 0 < c < 1.
+16 / 25
+
+=== [pagina 19] ===
+Jogos em Redes: Equilíbrio
+▶Em um jogo em rede, um equilíbrio de Nash em estratégias puras é
+um perfil de estratégias denotado por x = (x1, . . . , xn) tal que:
+ui(1, xNi(g)) ≥ui(0, xNi(g))
+se xi = 1,
+ui(0, xNi(g)) ≥ui(1, xNi(g))
+se xi = 0,
+onde xNi(g) é o perfil de ações escolhido pelos vizinhos do jogador i
+na rede g.
+▶Em outras palavras, um equilíbrio de Nash em estratégias puras
+exige que cada jogador escolha uma ação que proporcione o maior
+payoff dadas as ações de seus vizinhos.
+▶Nenhum jogador deve se arrepender de sua escolha dadas as ações
+escolhidas pelos demais jogadores.
+17 / 25
+
+=== [pagina 20] ===
+Jogos em Redes: Equilíbrio
+0
+0 
+1
+0 
+1 
+1 
+1 
+1
+0 
+0
+0
+Figure 4: Equilíbrio 1 em um Jogo de Bem Público Best-Shot em Rede.
+18 / 25
+
+=== [pagina 21] ===
+Jogos em Redes: Equilíbrio
+1
+0 
+0
+1 
+1 
+1 
+1 
+1
+0 
+0
+1
+Figure 5: Equilíbrio 2 em um Jogo de Bem Público Best-Shot em Rede.
+19 / 25
+
+=== [pagina 22] ===
+Jogos em Redes: Equilíbrio
+0
+1 
+0
+0
+0
+0 
+0
+1 
+0
+0
+0
+0 
+0
+1 
+0
+0
+0
+0 
+1
+0 
+1
+1
+1
+1 
+Figure 6: Adicionando um Link em um Jogo de Bem Público Best-Shot
+em Rede.
+20 / 25
+
+=== [pagina 23] ===
+Jogos em Redes: Equilíbrio
+1
+1
+1
+0
+1
+1
+1
+1
+0
+0
+0
+1
+1
+1
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+Figure 7: Adição de links e multiplicidade de equilíbrios.
+21 / 25
+
+=== [pagina 24] ===
+Payoffs Quadráticos e Complementaridades
+Estratégicas: Espaço de Ações Mais Rico
+22 / 25
+
+=== [pagina 25] ===
+Payoffs Quadráticos e Complementaridades Estratégicas
+▶Cada jogador escolhe uma intensidade com a qual realiza uma
+atividade, denotada por xi ∈R+, onde valores maiores de xi
+correspondem a níveis mais elevados da ação.
+▶O payoff do jogador i é descrito pela seguinte expressão:
+ui(xi, x−i) = aixi −bi
+2 x2
+i +
+X
+j̸=i
+wijxixj,
+onde ai ≥0 e bi > 0 são escalares, e wij representa o peso que o
+jogador i atribui à ação do jogador j.
+▶Se wij > 0, isso implica que as atividades dos jogadores i e j são
+complementos estratégicos.
+▶Se wij < 0, isso implica que as atividades dos jogadores i e j são
+substitutos estratégicos.
+▶O termo bi
+2 x2
+i na expressão representa um custo convexo.
+23 / 25
+
+=== [pagina 26] ===
+Payoffs Quadráticos e Complementaridades Estratégicas
+▶O nível de ação xi que maximiza o payoff do jogador i é determinado
+encontrando-se a solução da equação obtida ao igualar a zero a derivada
+do payoff ui(xi, x−i) em relação a xi:
+xi = ai
+bi +
+X
+j̸=i
+wij
+bi xj
+(1)
+▶Seja gij =
+wij
+bi (e defina gii = 0). Podemos interpretar g como uma rede
+ponderada e direcionada. Essa matriz captura a dependência relativa da
+escolha de ação de i em relação à escolha de ação de j. O vetor de ações
+que satisfaz a Equação (1) é descrito por
+x = α + gx
+(2)
+onde x é o vetor n × 1 dos xi’s e α é o vetor n × 1 dos ai
+bi ’s. Se ai = 0
+para todo i, então a Equação (2) torna-se x = gx, e portanto x é um
+autovetor à direita de g associado ao autovalor unitário. Caso contrário,
+x = (I −g)−1α
+(3)
+onde I é a matriz identidade, desde que I −g seja invertível e a solução
+resultante seja não negativa.
+24 / 25
+
+=== [pagina 27] ===
+Payoffs Quadráticos e Complementaridades Estratégicas
+▶No caso em que ai = a e bi = b para todo i, a única heterogeneidade na
+sociedade decorre dos pesos na rede de interações, os wij’s.
+▶Nesse caso, os níveis de ação de equilíbrio da Equação (3) podem ser
+escritos como
+x =
+
+I −1
+b w
+−1 a
+b 1
+(4)
+▶Essa expressão é muito semelhante às equações de Katz Prestige-2 e da
+centralidade de Bonacich. De fato, podemos escrever
+x = a
+b
+
+1 + PK2
+
+w, 1
+b
+
+(5)
+onde PK2 w, 1
+b
+
+é o Katz Prestige-2.
+25 / 25

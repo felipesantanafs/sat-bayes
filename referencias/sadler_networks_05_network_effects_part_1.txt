@@ -1,0 +1,1042 @@
+# Fonte: Networks 05 - Network Effects Part 1.pdf
+# Paginas: 93
+
+=== [pagina 1] ===
+Economics of Networks
+Network Eﬀects: Part 1
+Evan Sadler
+Massachusetts Institute of Technology
+April 12, 2018
+Evan Sadler
+Network Eﬀects
+1/31
+
+=== [pagina 2] ===
+Agenda
+Externalities
+Network eﬀects and markets
+• Tipping Points
+• Competition and Lock-in
+• Labor markets
+Suggested Reading: EK Chapter 17
+Evan Sadler
+Network Eﬀects
+2/31
+
+=== [pagina 3] ===
+What is an Externality?
+A consequence of economic activity that is not reﬂected in
+market prices
+• Typically spillover eﬀects on third parties
+Evan Sadler
+Network Eﬀects
+3/31
+
+=== [pagina 4] ===
+What is an Externality?
+A consequence of economic activity that is not reﬂected in
+market prices
+• Typically spillover eﬀects on third parties
+Classic Example: Pollution
+• Reﬁnery takes oil, makes ﬁnish petroleum products
+• Generates air pollution
+• Pays for oil, not social cost of pollution
+Evan Sadler
+Network Eﬀects
+3/31
+
+=== [pagina 5] ===
+What is an Externality?
+A consequence of economic activity that is not reﬂected in
+market prices
+• Typically spillover eﬀects on third parties
+Classic Example: Pollution
+• Reﬁnery takes oil, makes ﬁnish petroleum products
+• Generates air pollution
+• Pays for oil, not social cost of pollution
+Absence of pricing is key: Rival goods ̸= externalities
+• If I buy a can of coke, you cannot drink it
+• If I paid what it costs to replace the can, there is no externality
+Evan Sadler
+Network Eﬀects
+3/31
+
+=== [pagina 6] ===
+What is an Externality?
+Another Example: Traﬃc Congestion
+• Equilibrium routing ineﬃcient because players do not
+internalize cost of congestion they produce
+Evan Sadler
+Network Eﬀects
+4/31
+
+=== [pagina 7] ===
+What is an Externality?
+Another Example: Traﬃc Congestion
+• Equilibrium routing ineﬃcient because players do not
+internalize cost of congestion they produce
+Others?
+Evan Sadler
+Network Eﬀects
+4/31
+
+=== [pagina 8] ===
+What is an Externality?
+Another Example: Traﬃc Congestion
+• Equilibrium routing ineﬃcient because players do not
+internalize cost of congestion they produce
+Others?
+What about positive externalities?
+Evan Sadler
+Network Eﬀects
+4/31
+
+=== [pagina 9] ===
+What is an Externality?
+Another Example: Traﬃc Congestion
+• Equilibrium routing ineﬃcient because players do not
+internalize cost of congestion they produce
+Others?
+What about positive externalities?
+• Vaccines
+• Education
+• Research
+Evan Sadler
+Network Eﬀects
+4/31
+
+=== [pagina 10] ===
+Problems with Externalities
+Supply and Demand
+• If not paying full cost, get too much of bad things
+• If not reaping full beneﬁt, get too little of good things
+Evan Sadler
+Network Eﬀects
+5/31
+
+=== [pagina 11] ===
+Problems with Externalities
+Supply and Demand
+• If not paying full cost, get too much of bad things
+• If not reaping full beneﬁt, get too little of good things
+Policy responses:
+• Taxes and subsidies (“internalize” the externality)
+• Direct regulation
+• Selling/auctioning pollution rights (allow secondary market)
+Evan Sadler
+Network Eﬀects
+5/31
+
+=== [pagina 12] ===
+Problems with Externalities
+Supply and Demand
+• If not paying full cost, get too much of bad things
+• If not reaping full beneﬁt, get too little of good things
+Policy responses:
+• Taxes and subsidies (“internalize” the externality)
+• Direct regulation
+• Selling/auctioning pollution rights (allow secondary market)
+Good policy needs to anticipate how people respond
+• Think about congestion pricing plans
+Evan Sadler
+Network Eﬀects
+5/31
+
+=== [pagina 13] ===
+Network Eﬀects
+Some products are more valuable when more people use them
+Evan Sadler
+Network Eﬀects
+6/31
+
+=== [pagina 14] ===
+Network Eﬀects
+Some products are more valuable when more people use them
+Classic examples:
+• Fax machine
+• Telephone
+Evan Sadler
+Network Eﬀects
+6/31
+
+=== [pagina 15] ===
+Network Eﬀects
+Some products are more valuable when more people use them
+Classic examples:
+• Fax machine
+• Telephone
+Contemporary examples:
+• Operating Systems
+• Messaging Apps
+• Social Media
+Evan Sadler
+Network Eﬀects
+6/31
+
+=== [pagina 16] ===
+Network Eﬀects
+Some products are more valuable when more people use them
+Classic examples:
+• Fax machine
+• Telephone
+Contemporary examples:
+• Operating Systems
+• Messaging Apps
+• Social Media
+Others?
+Evan Sadler
+Network Eﬀects
+6/31
+
+=== [pagina 17] ===
+Types of Network Eﬀects
+Direct network eﬀects
+• Communication/collaboration technologies
+Evan Sadler
+Network Eﬀects
+7/31
+
+=== [pagina 18] ===
+Types of Network Eﬀects
+Direct network eﬀects
+• Communication/collaboration technologies
+Two-sided network eﬀects
+• Marketplaces
+Evan Sadler
+Network Eﬀects
+7/31
+
+=== [pagina 19] ===
+Types of Network Eﬀects
+Direct network eﬀects
+• Communication/collaboration technologies
+Two-sided network eﬀects
+• Marketplaces
+Indirect network eﬀects
+• Learning spillovers
+• Research/improvement of existing product
+• Development of complementary goods
+Evan Sadler
+Network Eﬀects
+7/31
+
+=== [pagina 20] ===
+Types of Network Eﬀects
+Direct network eﬀects
+• Communication/collaboration technologies
+Two-sided network eﬀects
+• Marketplaces
+Indirect network eﬀects
+• Learning spillovers
+• Research/improvement of existing product
+• Development of complementary goods
+Artiﬁcial network eﬀects
+• Referral programs
+Evan Sadler
+Network Eﬀects
+7/31
+
+=== [pagina 21] ===
+Markets for Network Goods
+Unit mass of potential customers
+Evan Sadler
+Network Eﬀects
+8/31
+
+=== [pagina 22] ===
+Markets for Network Goods
+Unit mass of potential customers
+Suppose customers have “types” v distributed uniformly on [0, 1]
+• Higher types value the product more
+Evan Sadler
+Network Eﬀects
+8/31
+
+=== [pagina 23] ===
+Markets for Network Goods
+Unit mass of potential customers
+Suppose customers have “types” v distributed uniformly on [0, 1]
+• Higher types value the product more
+If mass q ∈[0, 1] purchase the product, type v values it at qv
+• Network eﬀect: more valuable if more people buy
+• At price p, net beneﬁt qv −p
+Evan Sadler
+Network Eﬀects
+8/31
+
+=== [pagina 24] ===
+Equilibrium Demand
+Unlike standard consumer theory, choice to buy is strategic
+• Value depends on others’ behavior
+Evan Sadler
+Network Eﬀects
+9/31
+
+=== [pagina 25] ===
+Equilibrium Demand
+Unlike standard consumer theory, choice to buy is strategic
+• Value depends on others’ behavior
+If price is p, consumers of type higher than
+v = p
+q
+want to buy
+Evan Sadler
+Network Eﬀects
+9/31
+
+=== [pagina 26] ===
+Equilibrium Demand
+Unlike standard consumer theory, choice to buy is strategic
+• Value depends on others’ behavior
+If price is p, consumers of type higher than
+v = p
+q
+want to buy
+Uniform values imply there is a mass ˆq = 1 −v such consumers
+Evan Sadler
+Network Eﬀects
+9/31
+
+=== [pagina 27] ===
+Equilibrium Demand
+Unlike standard consumer theory, choice to buy is strategic
+• Value depends on others’ behavior
+If price is p, consumers of type higher than
+v = p
+q
+want to buy
+Uniform values imply there is a mass ˆq = 1 −v such consumers
+In equilibrium: 1 −q = p
+q
+Evan Sadler
+Network Eﬀects
+9/31
+
+=== [pagina 28] ===
+Equilibrium Demand
+Evan Sadler
+Network Eﬀects
+10/31
+
+=== [pagina 29] ===
+A Funny Demand Curve
+Initially upward sloping (why?)
+Evan Sadler
+Network Eﬀects
+11/31
+
+=== [pagina 30] ===
+A Funny Demand Curve
+Initially upward sloping (why?)
+Value of more users outweighs decrease in marginal v
+Evan Sadler
+Network Eﬀects
+11/31
+
+=== [pagina 31] ===
+A Funny Demand Curve
+Initially upward sloping (why?)
+Value of more users outweighs decrease in marginal v
+At high q, the curve looks more normal
+Evan Sadler
+Network Eﬀects
+11/31
+
+=== [pagina 32] ===
+A Funny Demand Curve
+Initially upward sloping (why?)
+Value of more users outweighs decrease in marginal v
+At high q, the curve looks more normal
+Implication: multiple equilibria
+Evan Sadler
+Network Eﬀects
+11/31
+
+=== [pagina 33] ===
+Multiple Equilibria
+Evan Sadler
+Network Eﬀects
+12/31
+
+=== [pagina 34] ===
+Multiple Equilibria
+Three distinct equilibria:
+• Non-adoption equilibrium
+• Middle equilibrium on upward sloping part
+• High equilibrium on downward sloping part
+Evan Sadler
+Network Eﬀects
+13/31
+
+=== [pagina 35] ===
+Multiple Equilibria
+Three distinct equilibria:
+• Non-adoption equilibrium
+• Middle equilibrium on upward sloping part
+• High equilibrium on downward sloping part
+Are any of these equilibria more “reaonsable” than others?
+Evan Sadler
+Network Eﬀects
+13/31
+
+=== [pagina 36] ===
+Multiple Equilibria
+Three distinct equilibria:
+• Non-adoption equilibrium
+• Middle equilibrium on upward sloping part
+• High equilibrium on downward sloping part
+Are any of these equilibria more “reaonsable” than others?
+Let’s think about myopic best response dynamics
+• Consumers buy in each of many periods
+• Observe how many bought last period
+• Which equilibria are stable?
+Evan Sadler
+Network Eﬀects
+13/31
+
+=== [pagina 37] ===
+A Dynamic Adjustment Process
+Evan Sadler
+Network Eﬀects
+14/31
+
+=== [pagina 38] ===
+Stable and Unstable Equilibria
+High equilibrium and non-adoption are stable
+• Return to same place after a shock
+• Middle equilibrium is “tipping point”
+Evan Sadler
+Network Eﬀects
+15/31
+
+=== [pagina 39] ===
+Stable and Unstable Equilibria
+High equilibrium and non-adoption are stable
+• Return to same place after a shock
+• Middle equilibrium is “tipping point”
+Pure network goods face barriers to adoption
+• Cold-start problem
+• Examples?
+Evan Sadler
+Network Eﬀects
+15/31
+
+=== [pagina 40] ===
+A Simple Market with Competition
+Two products, A and B, compete for adoption
+Evan Sadler
+Network Eﬀects
+16/31
+
+=== [pagina 41] ===
+A Simple Market with Competition
+Two products, A and B, compete for adoption
+Customers arrive sequentially and choose one of the two
+Evan Sadler
+Network Eﬀects
+16/31
+
+=== [pagina 42] ===
+A Simple Market with Competition
+Two products, A and B, compete for adoption
+Customers arrive sequentially and choose one of the two
+Value to the next customer depends on previous adopters
+Evan Sadler
+Network Eﬀects
+16/31
+
+=== [pagina 43] ===
+A Simple Market with Competition
+Two products, A and B, compete for adoption
+Customers arrive sequentially and choose one of the two
+Value to the next customer depends on previous adopters
+When customer t arrives, NA(t) chose A and NB(t) chose B
+Evan Sadler
+Network Eﬀects
+16/31
+
+=== [pagina 44] ===
+A Simple Market with Competition
+Two types of customers
+• Type a prefer product A
+• Type b prefer product B
+Evan Sadler
+Network Eﬀects
+17/31
+
+=== [pagina 45] ===
+A Simple Market with Competition
+Two types of customers
+• Type a prefer product A
+• Type b prefer product B
+If customer t is type a:
+• Value product A at 1 + cNA(t)
+• Value product B at cNB(t)
+Evan Sadler
+Network Eﬀects
+17/31
+
+=== [pagina 46] ===
+A Simple Market with Competition
+Two types of customers
+• Type a prefer product A
+• Type b prefer product B
+If customer t is type a:
+• Value product A at 1 + cNA(t)
+• Value product B at cNB(t)
+If customer t is type b:
+• Value product A at cNA(t)
+• Value product B at 1 + cNB(t)
+Evan Sadler
+Network Eﬀects
+17/31
+
+=== [pagina 47] ===
+A Simple Market with Competition
+Two types of customers
+• Type a prefer product A
+• Type b prefer product B
+If customer t is type a:
+• Value product A at 1 + cNA(t)
+• Value product B at cNB(t)
+If customer t is type b:
+• Value product A at cNA(t)
+• Value product B at 1 + cNB(t)
+Type of customer t is random
+Evan Sadler
+Network Eﬀects
+17/31
+
+=== [pagina 48] ===
+A Simple Market with Competition
+Suppose the ﬁrst 30 customers happen to be type a...
+Evan Sadler
+Network Eﬀects
+18/31
+
+=== [pagina 49] ===
+A Simple Market with Competition
+Suppose the ﬁrst 30 customers happen to be type a...
+Which product do they choose?
+Evan Sadler
+Network Eﬀects
+18/31
+
+=== [pagina 50] ===
+A Simple Market with Competition
+Suppose the ﬁrst 30 customers happen to be type a...
+Which product do they choose?
+What does the next customer do?
+Evan Sadler
+Network Eﬀects
+18/31
+
+=== [pagina 51] ===
+Lock-In
+Evan Sadler
+Network Eﬀects
+19/31
+
+=== [pagina 52] ===
+Lock-In
+Product A has large lead =⇒both types prefer A
+Evan Sadler
+Network Eﬀects
+20/31
+
+=== [pagina 53] ===
+Lock-In
+Product A has large lead =⇒both types prefer A
+Historical examples:
+• The QWERTY keyboard
+• Microsoft Windows
+• Facebook
+Evan Sadler
+Network Eﬀects
+20/31
+
+=== [pagina 54] ===
+Lock-In
+Product A has large lead =⇒both types prefer A
+Historical examples:
+• The QWERTY keyboard
+• Microsoft Windows
+• Facebook
+Network eﬀects can lead to “winner-take-all” markets
+• Best technology doesn’t always win
+Evan Sadler
+Network Eﬀects
+20/31
+
+=== [pagina 55] ===
+Network Eﬀects in the Labor Market
+Old idea in economics: geographic concentration of ﬁrms related
+to geographic concentration of skills
+• Why would we have a geographic concentration of skills?
+Evan Sadler
+Network Eﬀects
+21/31
+
+=== [pagina 56] ===
+Network Eﬀects in the Labor Market
+Old idea in economics: geographic concentration of ﬁrms related
+to geographic concentration of skills
+• Why would we have a geographic concentration of skills?
+Labor market model based on “Training and Innovation in an
+Imperfect Labor Market,” (Acemoglu, 1997)
+Evan Sadler
+Network Eﬀects
+21/31
+
+=== [pagina 57] ===
+Network Eﬀects in the Labor Market
+Old idea in economics: geographic concentration of ﬁrms related
+to geographic concentration of skills
+• Why would we have a geographic concentration of skills?
+Labor market model based on “Training and Innovation in an
+Imperfect Labor Market,” (Acemoglu, 1997)
+Consider a two-period model with a large population of workers
+and ﬁrms
+• Assume one worker per ﬁrm
+Evan Sadler
+Network Eﬀects
+21/31
+
+=== [pagina 58] ===
+Network Eﬀects in the Labor Market
+Each worker initially matched with a ﬁrm, per period output y
+Evan Sadler
+Network Eﬀects
+22/31
+
+=== [pagina 59] ===
+Network Eﬀects in the Labor Market
+Each worker initially matched with a ﬁrm, per period output y
+At start of game, each ﬁrm can adopt new technology
+• Investment cost k
+• Worker retraining cost c
+• Return α per period
+Evan Sadler
+Network Eﬀects
+22/31
+
+=== [pagina 60] ===
+Network Eﬀects in the Labor Market
+Each worker initially matched with a ﬁrm, per period output y
+At start of game, each ﬁrm can adopt new technology
+• Investment cost k
+• Worker retraining cost c
+• Return α per period
+Wage is ﬁxed fraction β ∈(0, 1) of total output
+Evan Sadler
+Network Eﬀects
+22/31
+
+=== [pagina 61] ===
+Network Eﬀects in the Labor Market
+Each worker initially matched with a ﬁrm, per period output y
+At start of game, each ﬁrm can adopt new technology
+• Investment cost k
+• Worker retraining cost c
+• Return α per period
+Wage is ﬁxed fraction β ∈(0, 1) of total output
+With probability q ∈[0, 1), each worker and ﬁrm separate after
+period 1
+• Separated ﬁrms and workers rematch at random for period 2
+Evan Sadler
+Network Eﬀects
+22/31
+
+=== [pagina 62] ===
+Network Eﬀects in the Labor Market
+First, assume no separation (q = 0)
+Evan Sadler
+Network Eﬀects
+23/31
+
+=== [pagina 63] ===
+Network Eﬀects in the Labor Market
+First, assume no separation (q = 0)
+Unique equilibrium in which all ﬁrms adopt new technology as
+long as
+β < 1 −k + c
+2α
+Evan Sadler
+Network Eﬀects
+23/31
+
+=== [pagina 64] ===
+Network Eﬀects in the Labor Market
+First, assume no separation (q = 0)
+Unique equilibrium in which all ﬁrms adopt new technology as
+long as
+β < 1 −k + c
+2α
+Non-adoption payoﬀover two periods: 2(1 −β)y
+Evan Sadler
+Network Eﬀects
+23/31
+
+=== [pagina 65] ===
+Network Eﬀects in the Labor Market
+First, assume no separation (q = 0)
+Unique equilibrium in which all ﬁrms adopt new technology as
+long as
+β < 1 −k + c
+2α
+Non-adoption payoﬀover two periods: 2(1 −β)y
+Adoption payoﬀover two periods: 2(1 −β)(y + α) −k −c
+Evan Sadler
+Network Eﬀects
+23/31
+
+=== [pagina 66] ===
+Network Eﬀects in the Labor Market
+What if q > 0?
+Evan Sadler
+Network Eﬀects
+24/31
+
+=== [pagina 67] ===
+Network Eﬀects in the Labor Market
+What if q > 0?
+Adoption by other ﬁrms creates spillovers
+• More likely to rematch with qualiﬁed worker
+Evan Sadler
+Network Eﬀects
+24/31
+
+=== [pagina 68] ===
+Network Eﬀects in the Labor Market
+What if q > 0?
+Adoption by other ﬁrms creates spillovers
+• More likely to rematch with qualiﬁed worker
+Non-adoption payoﬀunchanged: 2(1 −β)y
+Evan Sadler
+Network Eﬀects
+24/31
+
+=== [pagina 69] ===
+Network Eﬀects in the Labor Market
+What if q > 0?
+Adoption by other ﬁrms creates spillovers
+• More likely to rematch with qualiﬁed worker
+Non-adoption payoﬀunchanged: 2(1 −β)y
+Adoption payoﬀif no other ﬁrms adopt:
+(1 −β) [2y + (2 −q)α] −k −c
+Evan Sadler
+Network Eﬀects
+24/31
+
+=== [pagina 70] ===
+Network Eﬀects in the Labor Market
+What if q > 0?
+Adoption by other ﬁrms creates spillovers
+• More likely to rematch with qualiﬁed worker
+Non-adoption payoﬀunchanged: 2(1 −β)y
+Adoption payoﬀif no other ﬁrms adopt:
+(1 −β) [2y + (2 −q)α] −k −c
+Adoption payoﬀif all other ﬁrms adopt:
+2(1 −β)(y + α) −k −c
+Evan Sadler
+Network Eﬀects
+24/31
+
+=== [pagina 71] ===
+Network Eﬀects in the Labor Market
+If we have
+1 −
+k + c
+(2 −q)α < β < 1 −k + c
+2α
+then there exist two pure strategy equilibria
+Evan Sadler
+Network Eﬀects
+25/31
+
+=== [pagina 72] ===
+Network Eﬀects in the Labor Market
+If we have
+1 −
+k + c
+(2 −q)α < β < 1 −k + c
+2α
+then there exist two pure strategy equilibria
+Multiplicity driven by ﬁrms’ expectations about whether they can
+ﬁll vacancies with qualiﬁed workers
+• Expectations are self-fulﬁlling
+Evan Sadler
+Network Eﬀects
+25/31
+
+=== [pagina 73] ===
+Network Eﬀects in the Labor Market
+If we have
+1 −
+k + c
+(2 −q)α < β < 1 −k + c
+2α
+then there exist two pure strategy equilibria
+Multiplicity driven by ﬁrms’ expectations about whether they can
+ﬁll vacancies with qualiﬁed workers
+• Expectations are self-fulﬁlling
+Consider an extension with two regions in diﬀerent equilibria
+• A new entrant that wants to use the new technology will
+choose the region with more adopters
+Evan Sadler
+Network Eﬀects
+25/31
+
+=== [pagina 74] ===
+Network Eﬀects in Residential Choices
+Large literature studying the role of network eﬀects on
+neighborhood segregation
+Evan Sadler
+Network Eﬀects
+26/31
+
+=== [pagina 75] ===
+Network Eﬀects in Residential Choices
+Large literature studying the role of network eﬀects on
+neighborhood segregation
+Tipping point phenomena: even with very weak preferences to
+live near own-type individuals, best response dynamics can result
+in strong segregation over time
+• See Thomas Schelling’s work on “neighborhood tipping”
+Evan Sadler
+Network Eﬀects
+26/31
+
+=== [pagina 76] ===
+Network Eﬀects in Residential Choices
+Large literature studying the role of network eﬀects on
+neighborhood segregation
+Tipping point phenomena: even with very weak preferences to
+live near own-type individuals, best response dynamics can result
+in strong segregation over time
+• See Thomas Schelling’s work on “neighborhood tipping”
+Originally studied in the context of black-white racial segregation,
+but the central insight applies along other dimensions too
+Evan Sadler
+Network Eﬀects
+26/31
+
+=== [pagina 77] ===
+Network Eﬀects in Residential Choices
+Large literature studying the role of network eﬀects on
+neighborhood segregation
+Tipping point phenomena: even with very weak preferences to
+live near own-type individuals, best response dynamics can result
+in strong segregation over time
+• See Thomas Schelling’s work on “neighborhood tipping”
+Originally studied in the context of black-white racial segregation,
+but the central insight applies along other dimensions too
+Consider academic peer eﬀects: children’s education is aﬀected
+by their classmates
+• Parents who care about education may move for a more
+desirable peer group
+Evan Sadler
+Network Eﬀects
+26/31
+
+=== [pagina 78] ===
+Network Eﬀects in Residential Choices
+Consider another example, based on Benabou (1992), “The
+Workings of a City”
+Evan Sadler
+Network Eﬀects
+27/31
+
+=== [pagina 79] ===
+Network Eﬀects in Residential Choices
+Consider another example, based on Benabou (1992), “The
+Workings of a City”
+We have a population of ex ante identical agents, each of whom
+can invest in skill
+• End up either high-skill or low-skill
+Evan Sadler
+Network Eﬀects
+27/31
+
+=== [pagina 80] ===
+Network Eﬀects in Residential Choices
+Consider another example, based on Benabou (1992), “The
+Workings of a City”
+We have a population of ex ante identical agents, each of whom
+can invest in skill
+• End up either high-skill or low-skill
+Utility of agent i is Ui = wi −ci −ri
+• Wage wi
+• Cost of education ci
+• Cost of rent in chosen neighborhood ri
+Evan Sadler
+Network Eﬀects
+27/31
+
+=== [pagina 81] ===
+Network Eﬀects in Residential Choices
+Cost of education depends on fraction x of high-skill agents in
+one’s neighborhood
+• Cost cH(x) to become high skill, cost cL(x) to become low
+skill
+• Both are decreasing in x, with cH(x) > cL(x), and
+c′
+H(x) < c′
+L(x)
+Evan Sadler
+Network Eﬀects
+28/31
+
+=== [pagina 82] ===
+Network Eﬀects in Residential Choices
+Cost of education depends on fraction x of high-skill agents in
+one’s neighborhood
+• Cost cH(x) to become high skill, cost cL(x) to become low
+skill
+• Both are decreasing in x, with cH(x) > cL(x), and
+c′
+H(x) < c′
+L(x)
+Last condition means that living near more high skill agents has a
+larger eﬀect on the cost of becoming high-skill
+Evan Sadler
+Network Eﬀects
+28/31
+
+=== [pagina 83] ===
+Network Eﬀects in Residential Choices
+Cost of education depends on fraction x of high-skill agents in
+one’s neighborhood
+• Cost cH(x) to become high skill, cost cL(x) to become low
+skill
+• Both are decreasing in x, with cH(x) > cL(x), and
+c′
+H(x) < c′
+L(x)
+Last condition means that living near more high skill agents has a
+larger eﬀect on the cost of becoming high-skill
+Since agents are ex ante identical, we have the equilibrium
+condition
+Ui(L) = Ui(H)
+Agents are indiﬀerent between becoming high-skill or low-skill
+Evan Sadler
+Network Eﬀects
+28/31
+
+=== [pagina 84] ===
+Network Eﬀects in Residential Choices
+Assume the labor market is city-wide, perfectly competitive, and
+exhibits constant returns to scale
+• If ratio of high to low skill workers H/L is high, then ratio of
+wage rates wH/wL will be low
+• Ensures equilibrum will include a mixture of types
+Evan Sadler
+Network Eﬀects
+29/31
+
+=== [pagina 85] ===
+Network Eﬀects in Residential Choices
+Assume the labor market is city-wide, perfectly competitive, and
+exhibits constant returns to scale
+• If ratio of high to low skill workers H/L is high, then ratio of
+wage rates wH/wL will be low
+• Ensures equilibrum will include a mixture of types
+Assume there are two neighborhoods in the city of equal size
+• Individuals compete in the housing market to locate in one
+neighborhood or another
+Evan Sadler
+Network Eﬀects
+29/31
+
+=== [pagina 86] ===
+Network Eﬀects in Residential Choices
+Two types of equilibria: integrated and segregated
+Evan Sadler
+Network Eﬀects
+30/31
+
+=== [pagina 87] ===
+Network Eﬀects in Residential Choices
+Two types of equilibria: integrated and segregated
+Integrated equilibrium: both neighborhoods contain same
+fraction ˆx of high-skill agents, rents are equal
+• Assuming individuals are small, no incentive to deviate since
+neighborhoods are identical
+Evan Sadler
+Network Eﬀects
+30/31
+
+=== [pagina 88] ===
+Network Eﬀects in Residential Choices
+Two types of equilibria: integrated and segregated
+Integrated equilibrium: both neighborhoods contain same
+fraction ˆx of high-skill agents, rents are equal
+• Assuming individuals are small, no incentive to deviate since
+neighborhoods are identical
+Segregated equlibrium: one neighborhood is homogeneous
+• Could either have x = 1 and ˜x < 1, or x = 0 and ˜x > 0
+Evan Sadler
+Network Eﬀects
+30/31
+
+=== [pagina 89] ===
+Network Eﬀects in Residential Choices
+Two types of equilibria: integrated and segregated
+Integrated equilibrium: both neighborhoods contain same
+fraction ˆx of high-skill agents, rents are equal
+• Assuming individuals are small, no incentive to deviate since
+neighborhoods are identical
+Segregated equlibrium: one neighborhood is homogeneous
+• Could either have x = 1 and ˜x < 1, or x = 0 and ˜x > 0
+Key observation: only segregated equilibrium is stable under
+myopic best response dynamics
+• Starting from an integrated equilibrium, what happens if we
+move a fraction ϵ of high-skill agents from neighborhood 1 to
+neighborhood 2?
+Evan Sadler
+Network Eﬀects
+30/31
+
+=== [pagina 90] ===
+Network Eﬀects in Residential Choices
+The change reduces the cost of education in neighborhood 2
+Evan Sadler
+Network Eﬀects
+31/31
+
+=== [pagina 91] ===
+Network Eﬀects in Residential Choices
+The change reduces the cost of education in neighborhood 2
+Increases incentive of high-skill agents to live in neighborhood 2
+• Will pay higher rents and willing to outbid low-skill agents to
+live there
+Evan Sadler
+Network Eﬀects
+31/31
+
+=== [pagina 92] ===
+Network Eﬀects in Residential Choices
+The change reduces the cost of education in neighborhood 2
+Increases incentive of high-skill agents to live in neighborhood 2
+• Will pay higher rents and willing to outbid low-skill agents to
+live there
+Segregation arises as unique stable equilibrium because of
+complementarities
+• Recall the agents were identical to start
+Evan Sadler
+Network Eﬀects
+31/31
+
+=== [pagina 93] ===
+Network Eﬀects in Residential Choices
+The change reduces the cost of education in neighborhood 2
+Increases incentive of high-skill agents to live in neighborhood 2
+• Will pay higher rents and willing to outbid low-skill agents to
+live there
+Segregation arises as unique stable equilibrium because of
+complementarities
+• Recall the agents were identical to start
+Next time: local network eﬀects
+Evan Sadler
+Network Eﬀects
+31/31

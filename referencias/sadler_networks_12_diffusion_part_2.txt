@@ -1,0 +1,1279 @@
+# Fonte: Networks 12 - Diffusion Part 2.pdf
+# Paginas: 93
+
+=== [pagina 1] ===
+Economics of Networks
+Diﬀusion Part 2
+Evan Sadler
+Massachusetts Institute of Technology
+May 10, 2018
+Evan Sadler
+Diﬀusion
+1/34
+
+=== [pagina 2] ===
+Agenda
+• Recap of last time, contagion and mean-ﬁeld diﬀusion
+• The conﬁguration model
+• Diﬀusion in random graphs
+• Monopoly pricing with word-of-mouth communication
+Material not well-covered in one place. Some suggested reading:
+Jackson Chapter 7.2; “Word-of-Mouth Communication and
+Percolation in Social Networks,” A. Campbell; “Diﬀusion
+Games,” E. Sadler
+Evan Sadler
+Diﬀusion
+2/34
+
+=== [pagina 3] ===
+Binary Coordination with Local Interactions
+Recall our simple game:
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+Evan Sadler
+Diﬀusion
+3/34
+
+=== [pagina 4] ===
+Binary Coordination with Local Interactions
+Recall our simple game:
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+Two pure-strategy equilibria
+Evan Sadler
+Diﬀusion
+3/34
+
+=== [pagina 5] ===
+Binary Coordination with Local Interactions
+Recall our simple game:
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+Two pure-strategy equilibria
+Play simultaneously with many neighbors
+• Choose 1 if at least fraction q of neighbors choose 1
+• Myopic best response, can the action spread?
+Evan Sadler
+Diﬀusion
+3/34
+
+=== [pagina 6] ===
+Binary Coordination with Local Interactions
+Recall our simple game:
+0
+1
+0
+(q, q)
+(0, 0)
+1
+(0, 0)
+(1 −q, 1 −q)
+Two pure-strategy equilibria
+Play simultaneously with many neighbors
+• Choose 1 if at least fraction q of neighbors choose 1
+• Myopic best response, can the action spread?
+Cohesion can block contagion, but neighborhoods can’t grow too
+fast
+Evan Sadler
+Diﬀusion
+3/34
+
+=== [pagina 7] ===
+Mean-Field Diﬀusion
+An alternative framework
+• Distributional knowledge of the network structure
+• Adopt behavior iﬀexpected payoﬀexceeds cost
+Evan Sadler
+Diﬀusion
+4/34
+
+=== [pagina 8] ===
+Mean-Field Diﬀusion
+An alternative framework
+• Distributional knowledge of the network structure
+• Adopt behavior iﬀexpected payoﬀexceeds cost
+Bayes-Nash equilibrium of static game equivalent to steady-state
+of mean-ﬁeld dynamics
+• Draw a new set of neighbors a every time step
+Evan Sadler
+Diﬀusion
+4/34
+
+=== [pagina 9] ===
+Mean-Field Diﬀusion
+An alternative framework
+• Distributional knowledge of the network structure
+• Adopt behavior iﬀexpected payoﬀexceeds cost
+Bayes-Nash equilibrium of static game equivalent to steady-state
+of mean-ﬁeld dynamics
+• Draw a new set of neighbors a every time step
+Key phenomenon: tipping points
+Evan Sadler
+Diﬀusion
+4/34
+
+=== [pagina 10] ===
+Mean-Field Diﬀusion
+An alternative framework
+• Distributional knowledge of the network structure
+• Adopt behavior iﬀexpected payoﬀexceeds cost
+Bayes-Nash equilibrium of static game equivalent to steady-state
+of mean-ﬁeld dynamics
+• Draw a new set of neighbors a every time step
+Key phenomenon: tipping points
+Relate steady state to network degree distribution
+Evan Sadler
+Diﬀusion
+4/34
+
+=== [pagina 11] ===
+Random Graphs
+Today, a third approach
+• Distributional knowledge of the network structure
+• Diﬀusion through a ﬁxed graph
+Evan Sadler
+Diﬀusion
+5/34
+
+=== [pagina 12] ===
+Random Graphs
+Today, a third approach
+• Distributional knowledge of the network structure
+• Diﬀusion through a ﬁxed graph
+People get exposed to something new
+• Behavior, product, information...
+Evan Sadler
+Diﬀusion
+5/34
+
+=== [pagina 13] ===
+Random Graphs
+Today, a third approach
+• Distributional knowledge of the network structure
+• Diﬀusion through a ﬁxed graph
+People get exposed to something new
+• Behavior, product, information...
+Choose whether to adopt or pass it on
+Evan Sadler
+Diﬀusion
+5/34
+
+=== [pagina 14] ===
+Random Graphs
+Today, a third approach
+• Distributional knowledge of the network structure
+• Diﬀusion through a ﬁxed graph
+People get exposed to something new
+• Behavior, product, information...
+Choose whether to adopt or pass it on
+Stochastic outcomes, viral cascades
+Evan Sadler
+Diﬀusion
+5/34
+
+=== [pagina 15] ===
+A Few Examples
+Spread of new products through referral programs
+Evan Sadler
+Diﬀusion
+6/34
+
+=== [pagina 16] ===
+A Few Examples
+Spread of new products through referral programs
+Spread of rumors about Indian demonetization policy (Banerjee
+et al., 2017)
+Evan Sadler
+Diﬀusion
+6/34
+
+=== [pagina 17] ===
+A Few Examples
+Spread of new products through referral programs
+Spread of rumors about Indian demonetization policy (Banerjee
+et al., 2017)
+Spread of news stories on social media
+• Maybe fake ones...
+Evan Sadler
+Diﬀusion
+6/34
+
+=== [pagina 18] ===
+A Few Examples
+Spread of new products through referral programs
+Spread of rumors about Indian demonetization policy (Banerjee
+et al., 2017)
+Spread of news stories on social media
+• Maybe fake ones...
+Spread of microﬁnance participation (Banerjee et al., 2013)
+Evan Sadler
+Diﬀusion
+6/34
+
+=== [pagina 19] ===
+Questions
+Basic:
+• How many people adopt?
+• How quickly does it spread?
+• Who ends up adopting?
+Evan Sadler
+Diﬀusion
+7/34
+
+=== [pagina 20] ===
+Questions
+Basic:
+• How many people adopt?
+• How quickly does it spread?
+• Who ends up adopting?
+Some implications:
+• Targeted seeding
+• Pricing strategies
+Evan Sadler
+Diﬀusion
+7/34
+
+=== [pagina 21] ===
+First: The Conﬁguration Model
+Recall the conﬁguration model from the ﬁrst half of the course
+• This is how we will generate our networks
+Evan Sadler
+Diﬀusion
+8/34
+
+=== [pagina 22] ===
+First: The Conﬁguration Model
+Recall the conﬁguration model from the ﬁrst half of the course
+• This is how we will generate our networks
+Start with n nodes, degree sequence d(n) = (d1, d2, ..., dn)
+• Degree is number of neighbors a node has
+Evan Sadler
+Diﬀusion
+8/34
+
+=== [pagina 23] ===
+First: The Conﬁguration Model
+Recall the conﬁguration model from the ﬁrst half of the course
+• This is how we will generate our networks
+Start with n nodes, degree sequence d(n) = (d1, d2, ..., dn)
+• Degree is number of neighbors a node has
+Take a uniform random draw of graphs with the given degree
+sequence
+Evan Sadler
+Diﬀusion
+8/34
+
+=== [pagina 24] ===
+First: The Conﬁguration Model
+Recall the conﬁguration model from the ﬁrst half of the course
+• This is how we will generate our networks
+Start with n nodes, degree sequence d(n) = (d1, d2, ..., dn)
+• Degree is number of neighbors a node has
+Take a uniform random draw of graphs with the given degree
+sequence
+Look at limits as n →∞, large networks
+• Assume {d(n)} converges in distribution and expectation to D
+Evan Sadler
+Diﬀusion
+8/34
+
+=== [pagina 25] ===
+The Conﬁguration Model
+Can think of D as a histogram
+• P(D = k) is the fraction of nodes with degree k
+Evan Sadler
+Diﬀusion
+9/34
+
+=== [pagina 26] ===
+The Conﬁguration Model
+Can think of D as a histogram
+• P(D = k) is the fraction of nodes with degree k
+Questions about the conﬁguration model:
+• What do the components look like?
+• Is there a “giant” component?
+• How big is it?
+• How far are typical nodes from each other?
+Evan Sadler
+Diﬀusion
+9/34
+
+=== [pagina 27] ===
+The Conﬁguration Model
+Can think of D as a histogram
+• P(D = k) is the fraction of nodes with degree k
+Questions about the conﬁguration model:
+• What do the components look like?
+• Is there a “giant” component?
+• How big is it?
+• How far are typical nodes from each other?
+Key idea: branching process approximation
+Evan Sadler
+Diﬀusion
+9/34
+
+=== [pagina 28] ===
+Branching Process Approximation
+Evan Sadler
+Diﬀusion
+10/34
+
+=== [pagina 29] ===
+Branching Processes
+Let Z ∈∆(N) be a probability distribution
+Evan Sadler
+Diﬀusion
+11/34
+
+=== [pagina 30] ===
+Branching Processes
+Let Z ∈∆(N) be a probability distribution
+Start from a single root note, realize oﬀspring according to Z
+Evan Sadler
+Diﬀusion
+11/34
+
+=== [pagina 31] ===
+Branching Processes
+Let Z ∈∆(N) be a probability distribution
+Start from a single root note, realize oﬀspring according to Z
+Each node in the ﬁrst generation realizes oﬀspring independently
+according to Z
+Evan Sadler
+Diﬀusion
+11/34
+
+=== [pagina 32] ===
+Branching Processes
+Let Z ∈∆(N) be a probability distribution
+Start from a single root note, realize oﬀspring according to Z
+Each node in the ﬁrst generation realizes oﬀspring independently
+according to Z
+And so on...
+Evan Sadler
+Diﬀusion
+11/34
+
+=== [pagina 33] ===
+Branching Processes: Extinction
+What is the probability that the process goes extinct?
+• Total number of oﬀspring is ﬁnite
+Evan Sadler
+Diﬀusion
+12/34
+
+=== [pagina 34] ===
+Branching Processes: Extinction
+What is the probability that the process goes extinct?
+• Total number of oﬀspring is ﬁnite
+Key tool: the generating function
+g(s) =
+∞
+X
+k=0
+P(Z = k)sk
+Well-deﬁned for s ∈[0, 1]
+Evan Sadler
+Diﬀusion
+12/34
+
+=== [pagina 35] ===
+Branching Processes: Extinction
+What is the probability that the process goes extinct?
+• Total number of oﬀspring is ﬁnite
+Key tool: the generating function
+g(s) =
+∞
+X
+k=0
+P(Z = k)sk
+Well-deﬁned for s ∈[0, 1]
+Solve recursion: probability I go extinct is probability all my
+oﬀspring go extinct
+ξ =
+∞
+X
+k=0
+P(Z = k)ξk = g(ξ)
+Evan Sadler
+Diﬀusion
+12/34
+
+=== [pagina 36] ===
+Branching Processes: Extinction
+What is the probability that the process goes extinct?
+• Total number of oﬀspring is ﬁnite
+Key tool: the generating function
+g(s) =
+∞
+X
+k=0
+P(Z = k)sk
+Well-deﬁned for s ∈[0, 1]
+Solve recursion: probability I go extinct is probability all my
+oﬀspring go extinct
+ξ =
+∞
+X
+k=0
+P(Z = k)ξk = g(ξ)
+Extinction probability is unique minimal solution to ξ = g(ξ)
+• Survival probability φ = 1 −ξ
+Evan Sadler
+Diﬀusion
+12/34
+
+=== [pagina 37] ===
+Branching Processes: Growth Rate
+Expected number of oﬀspring E[Z] ≡µ
+• Generation t contains µt nodes in expectation
+Evan Sadler
+Diﬀusion
+13/34
+
+=== [pagina 38] ===
+Branching Processes: Growth Rate
+Expected number of oﬀspring E[Z] ≡µ
+• Generation t contains µt nodes in expectation
+Write Zt for the random number of total oﬀspring in generation t
+• The process Yt ≡Zt
+µt is a martingale
+Evan Sadler
+Diﬀusion
+13/34
+
+=== [pagina 39] ===
+Branching Processes: Growth Rate
+Expected number of oﬀspring E[Z] ≡µ
+• Generation t contains µt nodes in expectation
+Write Zt for the random number of total oﬀspring in generation t
+• The process Yt ≡Zt
+µt is a martingale
+By the martingale convergence theorem:
+• As t →∞, Yt converges almost surely
+• Implication: φ > 0 iﬀµ > 1 (one exception: Z = 1 w.p.1)
+Evan Sadler
+Diﬀusion
+13/34
+
+=== [pagina 40] ===
+Connecting to the Random Graph
+Heuristically, breadth ﬁrst search starting from a random node
+looks like a branching process
+• The “characteristic branching process” T for the graph
+Evan Sadler
+Diﬀusion
+14/34
+
+=== [pagina 41] ===
+Connecting to the Random Graph
+Heuristically, breadth ﬁrst search starting from a random node
+looks like a branching process
+• The “characteristic branching process” T for the graph
+Root realizes oﬀspring according to D
+Evan Sadler
+Diﬀusion
+14/34
+
+=== [pagina 42] ===
+Connecting to the Random Graph
+Heuristically, breadth ﬁrst search starting from a random node
+looks like a branching process
+• The “characteristic branching process” T for the graph
+Root realizes oﬀspring according to D
+After the root, two corrections
+• Friendship paradox
+• Don’t double count the parent
+Evan Sadler
+Diﬀusion
+14/34
+
+=== [pagina 43] ===
+Connecting to the Random Graph
+Heuristically, breadth ﬁrst search starting from a random node
+looks like a branching process
+• The “characteristic branching process” T for the graph
+Root realizes oﬀspring according to D
+After the root, two corrections
+• Friendship paradox
+• Don’t double count the parent
+Subsequent nodes realize oﬀspring according to D′
+P(D′ = d) = P(D = d + 1) · (d + 1)
+E[D]
+Evan Sadler
+Diﬀusion
+14/34
+
+=== [pagina 44] ===
+The Law of Large Networks
+Deﬁne ρk = P(|T | = k), Nk(G) the number of nodes in
+components of size k, Li(G) the ith largest component
+Theorem
+Suppose d(n) →D in distribution and expectation, and G(n) is
+generated from the conﬁguration model with degree sequence
+d(n). For any ϵ > 0, we have
+lim
+n→∞P
+ 
+Nk(G(n))
+n
+−ρk
+ > ϵ
+!
+= 0,
+∀k
+lim
+n→∞P
+ 
+L1(G(n))
+n
+−ρ∞
+ > ϵ
+!
+= 0
+lim
+n→∞P
+ L2(G(n))
+n
+> ϵ
+!
+= 0.
+Evan Sadler
+Diﬀusion
+15/34
+
+=== [pagina 45] ===
+The Law of Large Networks
+For large graphs, network structure completely characterized by
+the branching process
+• Distribution of component sizes
+• Size of giant component
+Evan Sadler
+Diﬀusion
+16/34
+
+=== [pagina 46] ===
+The Law of Large Networks
+For large graphs, network structure completely characterized by
+the branching process
+• Distribution of component sizes
+• Size of giant component
+Note: need D′ non-singular
+Evan Sadler
+Diﬀusion
+16/34
+
+=== [pagina 47] ===
+The Law of Large Networks
+For large graphs, network structure completely characterized by
+the branching process
+• Distribution of component sizes
+• Size of giant component
+Note: need D′ non-singular
+Proof is beyond our scope
+Evan Sadler
+Diﬀusion
+16/34
+
+=== [pagina 48] ===
+Survival Probability of T
+Fun fact: if g(s) is the generating function for D, then g′(s)
+µ
+is
+the generating function for D′:
+g′(s) = d
+dsg(s) = d
+ds
+∞
+X
+k=0
+P(D = k)sk
+=
+∞
+X
+k=1
+kP(D = k)sk−1
+=
+∞
+X
+k=0
+(k + 1)P(D = k + 1)sk
+Evan Sadler
+Diﬀusion
+17/34
+
+=== [pagina 49] ===
+Survival Probability of T
+Fun fact: if g(s) is the generating function for D, then g′(s)
+µ
+is
+the generating function for D′:
+g′(s) = d
+dsg(s) = d
+ds
+∞
+X
+k=0
+P(D = k)sk
+=
+∞
+X
+k=1
+kP(D = k)sk−1
+=
+∞
+X
+k=0
+(k + 1)P(D = k + 1)sk
+If ξ solves µξ = g′(ξ), survival probability of T is φ = 1 −g(ξ)
+• Giant component covers fraction φ of the network
+Evan Sadler
+Diﬀusion
+17/34
+
+=== [pagina 50] ===
+Typical Distances
+Deﬁne ν = E[D′], H(G) distance between two random nodes in
+the largest component of G
+Theorem
+A giant component exists if and only if ν > 1. In this case, for
+any ϵ > 0 we have
+lim
+n→∞P
+ 
+H(G)
+logν n −1
+ > ϵ
+!
+= 0
+Evan Sadler
+Diﬀusion
+18/34
+
+=== [pagina 51] ===
+Typical Distances
+Deﬁne ν = E[D′], H(G) distance between two random nodes in
+the largest component of G
+Theorem
+A giant component exists if and only if ν > 1. In this case, for
+any ϵ > 0 we have
+lim
+n→∞P
+ 
+H(G)
+logν n −1
+ > ϵ
+!
+= 0
+Typical distance between nodes is logν n
+• Relates to growth rate of the branching process T
+Evan Sadler
+Diﬀusion
+18/34
+
+=== [pagina 52] ===
+A Diﬀusion Process
+People learn about a product through word-of-mouth
+• i.i.d private values v distributed uniformly on [0, 1]
+• Price p
+Evan Sadler
+Diﬀusion
+19/34
+
+=== [pagina 53] ===
+A Diﬀusion Process
+People learn about a product through word-of-mouth
+• i.i.d private values v distributed uniformly on [0, 1]
+• Price p
+If I learn about the product, buy if v > p
+• If I buy, my friends hear about it, make their own choices
+Evan Sadler
+Diﬀusion
+19/34
+
+=== [pagina 54] ===
+A Diﬀusion Process
+People learn about a product through word-of-mouth
+• i.i.d private values v distributed uniformly on [0, 1]
+• Price p
+If I learn about the product, buy if v > p
+• If I buy, my friends hear about it, make their own choices
+Suppose n individuals are linked in a conﬁguration model, and
+one random person starts out with the product
+• How many people end up buying?
+• How long does it take to spread?
+Evan Sadler
+Diﬀusion
+19/34
+
+=== [pagina 55] ===
+Outcome Variables
+Let Xn(t) denote the (random) number of purchasers after t
+periods in the n person network
+Evan Sadler
+Diﬀusion
+20/34
+
+=== [pagina 56] ===
+Outcome Variables
+Let Xn(t) denote the (random) number of purchasers after t
+periods in the n person network
+Deﬁne extent of adoption
+αn = lim
+t→∞
+Xn(t)
+n
+Evan Sadler
+Diﬀusion
+20/34
+
+=== [pagina 57] ===
+Outcome Variables
+Let Xn(t) denote the (random) number of purchasers after t
+periods in the n person network
+Deﬁne extent of adoption
+αn = lim
+t→∞
+Xn(t)
+n
+For x ∈(0, 1), diﬀusion times
+τn(x) = min
+(
+t :
+Xn(t)
+Xn(∞) ≥x
+)
+Evan Sadler
+Diﬀusion
+20/34
+
+=== [pagina 58] ===
+Outcome Variables
+Let Xn(t) denote the (random) number of purchasers after t
+periods in the n person network
+Deﬁne extent of adoption
+αn = lim
+t→∞
+Xn(t)
+n
+For x ∈(0, 1), diﬀusion times
+τn(x) = min
+(
+t :
+Xn(t)
+Xn(∞) ≥x
+)
+Will characterize αn and τn for large n
+Evan Sadler
+Diﬀusion
+20/34
+
+=== [pagina 59] ===
+Percolation in the Conﬁguration Model
+If I buy, each neighbor will buy with independent probability
+1 −p
+• Adoption spreads through a subgraph
+• As if we delete each person with independent probability p
+Evan Sadler
+Diﬀusion
+21/34
+
+=== [pagina 60] ===
+Percolation in the Conﬁguration Model
+If I buy, each neighbor will buy with independent probability
+1 −p
+• Adoption spreads through a subgraph
+• As if we delete each person with independent probability p
+The percolated graph is also a conﬁguration model, degree
+distribution Dp
+• Realize degree according to D, delete each link with
+probability p
+• Binomial distribution with D trials and success probability
+1 −p
+Evan Sadler
+Diﬀusion
+21/34
+
+=== [pagina 61] ===
+Percolation in the Conﬁguration Model
+If I buy, each neighbor will buy with independent probability
+1 −p
+• Adoption spreads through a subgraph
+• As if we delete each person with independent probability p
+The percolated graph is also a conﬁguration model, degree
+distribution Dp
+• Realize degree according to D, delete each link with
+probability p
+• Binomial distribution with D trials and success probability
+1 −p
+Generating function for Dp:
+gp(s) = g (p + (1 −p)s)
+Evan Sadler
+Diﬀusion
+21/34
+
+=== [pagina 62] ===
+The Extent of Diﬀusion
+Recall µ = E[D]
+Theorem
+There exist φp and ζp such that αn converges in distribution to a
+random variable α, taking the value φp with probability ζp and
+the value 0 otherwise. To obtain these constants, we can solve
+µξ = g′ (p + (1 −p)ξ)
+If ξ∗is the solution, we have φp = (1 −p) (1 −gp(ξ∗)) and
+ζp = 1 −gp(ξ∗).
+Evan Sadler
+Diﬀusion
+22/34
+
+=== [pagina 63] ===
+The Extent of Diﬀusion
+Recall µ = E[D]
+Theorem
+There exist φp and ζp such that αn converges in distribution to a
+random variable α, taking the value φp with probability ζp and
+the value 0 otherwise. To obtain these constants, we can solve
+µξ = g′ (p + (1 −p)ξ)
+If ξ∗is the solution, we have φp = (1 −p) (1 −gp(ξ∗)) and
+ζp = 1 −gp(ξ∗).
+Intuitively, question is whether the initial seed touches the giant
+component in the percolated graph
+• φp is fraction of nodes in the component, ζp is fraction of
+nodes that link to this component
+Evan Sadler
+Diﬀusion
+22/34
+
+=== [pagina 64] ===
+The Extent of Diﬀusion
+E[Dp] = (1 −p)µ, g′
+p(s) = (1 −p)g′ (p + (1 −p)s)
+• ξ∗is the extinction probability of a non-root node
+• By the law of large networks, this is the probability that, going
+forward, a node does not link to the giant component
+Evan Sadler
+Diﬀusion
+23/34
+
+=== [pagina 65] ===
+The Extent of Diﬀusion
+E[Dp] = (1 −p)µ, g′
+p(s) = (1 −p)g′ (p + (1 −p)s)
+• ξ∗is the extinction probability of a non-root node
+• By the law of large networks, this is the probability that, going
+forward, a node does not link to the giant component
+Probability that I do not link to the giant component:
+∞
+X
+k=1
+P(Dp = k)(ξ∗)k = gp(ξ∗)
+Evan Sadler
+Diﬀusion
+23/34
+
+=== [pagina 66] ===
+The Extent of Diﬀusion
+E[Dp] = (1 −p)µ, g′
+p(s) = (1 −p)g′ (p + (1 −p)s)
+• ξ∗is the extinction probability of a non-root node
+• By the law of large networks, this is the probability that, going
+forward, a node does not link to the giant component
+Probability that I do not link to the giant component:
+∞
+X
+k=1
+P(Dp = k)(ξ∗)k = gp(ξ∗)
+Probability that I purchase: 1 −p
+Evan Sadler
+Diﬀusion
+23/34
+
+=== [pagina 67] ===
+The Rate of Diﬀusion
+Theorem
+Conditional on having a large cascade, for all x ∈(0, 1) we have
+τn(x)
+logpν n →1
+in probability.
+Evan Sadler
+Diﬀusion
+24/34
+
+=== [pagina 68] ===
+The Rate of Diﬀusion
+Theorem
+Conditional on having a large cascade, for all x ∈(0, 1) we have
+τn(x)
+logpν n →1
+in probability.
+The time it takes to reach any positive fraction is roughly logpν n
+Evan Sadler
+Diﬀusion
+24/34
+
+=== [pagina 69] ===
+The Rate of Diﬀusion
+Evan Sadler
+Diﬀusion
+25/34
+
+=== [pagina 70] ===
+Comparative Statics
+How does adoption change with the price and the network?
+Evan Sadler
+Diﬀusion
+26/34
+
+=== [pagina 71] ===
+Comparative Statics
+How does adoption change with the price and the network?
+Theorem
+Suppose ν > 1. There exists a critical price pc ∈(0, 1) such that
+• φp = ζp = 0 for p ≥pc
+• φp > 0 for p < pc, and ∂φp
+∂p < 0
+Suppose D and ˆD are two distributions, withφp and ˆφp the
+corresponding giant component sizes, and ν and ˆν the
+corresponding forward degrees. If D FOSD ˆD, then φp ≥ˆφp and
+ν ≥ˆν. If D is a mean preserving spread of ˆD, then ν ≥ˆν
+Evan Sadler
+Diﬀusion
+26/34
+
+=== [pagina 72] ===
+Comparative Statics
+For suﬃciently high prices, there is no adoption, impossible to
+get viral cascade
+Evan Sadler
+Diﬀusion
+27/34
+
+=== [pagina 73] ===
+Comparative Statics
+For suﬃciently high prices, there is no adoption, impossible to
+get viral cascade
+Below the critical price, adoption is decreasing in price
+• At pc, derivative makes a discontinuous jump
+Evan Sadler
+Diﬀusion
+27/34
+
+=== [pagina 74] ===
+Comparative Statics
+For suﬃciently high prices, there is no adoption, impossible to
+get viral cascade
+Below the critical price, adoption is decreasing in price
+• At pc, derivative makes a discontinuous jump
+Making the network more dense leads to more adoption and
+faster diﬀusion
+• Mean preserving spread makes diﬀusion faster, but may not
+lead to more adoption
+Evan Sadler
+Diﬀusion
+27/34
+
+=== [pagina 75] ===
+Example
+Suppose D takes the value 3 for sure, ˆD takes values 1 or 5 with
+equal probability
+Evan Sadler
+Diﬀusion
+28/34
+
+=== [pagina 76] ===
+Example
+Suppose D takes the value 3 for sure, ˆD takes values 1 or 5 with
+equal probability
+Under D, extinction probability solves
+ξ = (p + (1 −p)ξ)2
+=⇒
+ξ = min
+
+
+1,
+ 
+p
+1 −p
+!2
+
+
+For p close to zero, ξ is close to zero, φp ≈1
+Evan Sadler
+Diﬀusion
+28/34
+
+=== [pagina 77] ===
+Example
+Suppose D takes the value 3 for sure, ˆD takes values 1 or 5 with
+equal probability
+Under D, extinction probability solves
+ξ = (p + (1 −p)ξ)2
+=⇒
+ξ = min
+
+
+1,
+ 
+p
+1 −p
+!2
+
+
+For p close to zero, ξ is close to zero, φp ≈1
+Under ˆD, extinction probability solves
+6ξ = 1 + 5 (p + (1 −p)ξ)4
+For p close to zero, ξ close to 0.17, φp ≈0.83
+Evan Sadler
+Diﬀusion
+28/34
+
+=== [pagina 78] ===
+A Pricing Problem
+Suppose a monopolist is selling this product and wants to choose
+p to maximize proﬁts
+• Constant marginal cost c < 1
+Evan Sadler
+Diﬀusion
+29/34
+
+=== [pagina 79] ===
+A Pricing Problem
+Suppose a monopolist is selling this product and wants to choose
+p to maximize proﬁts
+• Constant marginal cost c < 1
+Assume a fraction ϵ ≈0 of the population gets seeded at random
+• For large networks, guaranteed to hit the giant component
+Evan Sadler
+Diﬀusion
+29/34
+
+=== [pagina 80] ===
+A Pricing Problem
+Suppose a monopolist is selling this product and wants to choose
+p to maximize proﬁts
+• Constant marginal cost c < 1
+Assume a fraction ϵ ≈0 of the population gets seeded at random
+• For large networks, guaranteed to hit the giant component
+Total demand is fraction Q(p) = φp = (1 −p) (1 −gp(ξ∗)) of the
+population
+Evan Sadler
+Diﬀusion
+29/34
+
+=== [pagina 81] ===
+A Pricing Problem
+Suppose a monopolist is selling this product and wants to choose
+p to maximize proﬁts
+• Constant marginal cost c < 1
+Assume a fraction ϵ ≈0 of the population gets seeded at random
+• For large networks, guaranteed to hit the giant component
+Total demand is fraction Q(p) = φp = (1 −p) (1 −gp(ξ∗)) of the
+population
+Choose p to maximize Q(p)(p −c)
+Evan Sadler
+Diﬀusion
+29/34
+
+=== [pagina 82] ===
+A Pricing Problem
+If all consumers were exposed to the product, then Q(p) = 1 −p
+• Maxmizie (1 −p)(p −c)
+• Set p = 1+c
+2 , proﬁt (1−c)2
+4
+• Price elasticity:
+p
+Q(p)
+∂Q
+∂p = −
+p
+1−p
+Evan Sadler
+Diﬀusion
+30/34
+
+=== [pagina 83] ===
+A Pricing Problem
+If all consumers were exposed to the product, then Q(p) = 1 −p
+• Maxmizie (1 −p)(p −c)
+• Set p = 1+c
+2 , proﬁt (1−c)2
+4
+• Price elasticity:
+p
+Q(p)
+∂Q
+∂p = −
+p
+1−p
+With word of mouth, Q(p) = (1 −p) (1 −gp(ξ∗)), strictly less
+• Demand is also more elastic:
+p
+Q(p)
+∂Q
+∂p = −
+p
+1 −p
+ 
+1 + (1 −p)(1 −ξ∗)g′ (p + (1 −p)ξ∗)
+1 −gp(ξ∗)
+!
+Evan Sadler
+Diﬀusion
+30/34
+
+=== [pagina 84] ===
+A Pricing Problem
+If all consumers were exposed to the product, then Q(p) = 1 −p
+• Maxmizie (1 −p)(p −c)
+• Set p = 1+c
+2 , proﬁt (1−c)2
+4
+• Price elasticity:
+p
+Q(p)
+∂Q
+∂p = −
+p
+1−p
+With word of mouth, Q(p) = (1 −p) (1 −gp(ξ∗)), strictly less
+• Demand is also more elastic:
+p
+Q(p)
+∂Q
+∂p = −
+p
+1 −p
+ 
+1 + (1 −p)(1 −ξ∗)g′ (p + (1 −p)ξ∗)
+1 −gp(ξ∗)
+!
+Implies lower optimal price
+Evan Sadler
+Diﬀusion
+30/34
+
+=== [pagina 85] ===
+Price Comparative Statics
+Recall Poisson distribution:
+P(X = k) = λke−λ
+k!
+Mean and variance λ
+Theorem (Campbell, 2013)
+Suppose the degree distribution is Poisson with parameter λ.
+The optimal monopoly price is increasing in λ.
+Evan Sadler
+Diﬀusion
+31/34
+
+=== [pagina 86] ===
+Price Comparative Statics
+Recall Poisson distribution:
+P(X = k) = λke−λ
+k!
+Mean and variance λ
+Theorem (Campbell, 2013)
+Suppose the degree distribution is Poisson with parameter λ.
+The optimal monopoly price is increasing in λ.
+Dense network leads to higher prices
+• Intuition: monopolist less reliant on any individual spreading
+information
+Evan Sadler
+Diﬀusion
+31/34
+
+=== [pagina 87] ===
+Advertising
+Suppose now our monopolist can invest in advertising in addition
+to word-of-mouth
+Evan Sadler
+Diﬀusion
+32/34
+
+=== [pagina 88] ===
+Advertising
+Suppose now our monopolist can invest in advertising in addition
+to word-of-mouth
+Can inform a fraction ω of the population at cost αω for α > 0
+Evan Sadler
+Diﬀusion
+32/34
+
+=== [pagina 89] ===
+Advertising
+Suppose now our monopolist can invest in advertising in addition
+to word-of-mouth
+Can inform a fraction ω of the population at cost αω for α > 0
+New objective, maximize
+Q(p, ω)(p −c) −αω
+Quantity depends now both on price and on advertising ω
+Evan Sadler
+Diﬀusion
+32/34
+
+=== [pagina 90] ===
+Advertising
+Word-of-mouth complements advertising
+• Customers exposed through advertising will inform additional
+people
+Evan Sadler
+Diﬀusion
+33/34
+
+=== [pagina 91] ===
+Advertising
+Word-of-mouth complements advertising
+• Customers exposed through advertising will inform additional
+people
+Hard to jointly solve for optimal p and ω, but...
+Theorem
+Suppose the degree distribution is Poisson with parameter λ.
+Price and advertising are strategic complements.
+Evan Sadler
+Diﬀusion
+33/34
+
+=== [pagina 92] ===
+Advertising
+Word-of-mouth complements advertising
+• Customers exposed through advertising will inform additional
+people
+Hard to jointly solve for optimal p and ω, but...
+Theorem
+Suppose the degree distribution is Poisson with parameter λ.
+Price and advertising are strategic complements.
+All else equal, higher prices tend to go with more advertising
+Evan Sadler
+Diﬀusion
+33/34
+
+=== [pagina 93] ===
+Takeaways
+Discrete network diﬀusion models help us think about viral
+cascades
+• Component sizes in percolation network
+Faster diﬀusion ̸= more diﬀusion
+Word-of-mouth leads to more elastic demand, tends to lower
+prices
+Next time: models of network formation
+Evan Sadler
+Diﬀusion
+34/34

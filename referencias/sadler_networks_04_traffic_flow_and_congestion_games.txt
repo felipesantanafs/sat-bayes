@@ -1,0 +1,1254 @@
+# Fonte: Networks 04 - Traffic Flow and Congestion Games.pdf
+# Paginas: 84
+
+=== [pagina 1] ===
+Economics of Networks
+Traﬃc Flow and Congestion Games
+Evan Sadler
+Massachusetts Institute of Technology
+April 10, 2018
+Evan Sadler
+Environmental Networks
+1/32
+
+=== [pagina 2] ===
+Agenda
+Traﬃc Routing and Equilibrium
+Congestion Games
+Reading: EK Chapter 8; Jackson Chapter 6
+Evan Sadler
+Environmental Networks
+2/32
+
+=== [pagina 3] ===
+Physical Networks
+Many interactions are constrained by physical networks
+Evan Sadler
+Environmental Networks
+3/32
+
+=== [pagina 4] ===
+Physical Networks
+Many interactions are constrained by physical networks
+Roads and bridges
+• Aﬀect transit routing and congestion
+Evan Sadler
+Environmental Networks
+3/32
+
+=== [pagina 5] ===
+Physical Networks
+Many interactions are constrained by physical networks
+Roads and bridges
+• Aﬀect transit routing and congestion
+Fiber-optic cables
+• Ditto
+• Cost-sharing
+Evan Sadler
+Environmental Networks
+3/32
+
+=== [pagina 6] ===
+Physical Networks
+Many interactions are constrained by physical networks
+Roads and bridges
+• Aﬀect transit routing and congestion
+Fiber-optic cables
+• Ditto
+• Cost-sharing
+Geographic and political borders
+• Aﬀect trade, alliances, and conﬂicts
+Evan Sadler
+Environmental Networks
+3/32
+
+=== [pagina 7] ===
+Strategic Traﬃc Routing
+How to get to work in the morning
+• What is the shortest route?
+• Where are other people driving?
+Evan Sadler
+Environmental Networks
+4/32
+
+=== [pagina 8] ===
+Strategic Traﬃc Routing
+How to get to work in the morning
+• What is the shortest route?
+• Where are other people driving?
+Optimal path depends on others’ behavior
+• This is a game
+Evan Sadler
+Environmental Networks
+4/32
+
+=== [pagina 9] ===
+Strategic Traﬃc Routing
+How to get to work in the morning
+• What is the shortest route?
+• Where are other people driving?
+Optimal path depends on others’ behavior
+• This is a game
+Questions:
+• What do traﬃc patterns look like in equilibrium?
+• How does equilibrium routing compare to optimal routing?
+Evan Sadler
+Environmental Networks
+4/32
+
+=== [pagina 10] ===
+A Simple Example
+Two routes from A to B, one unit of traﬃc
+• Route 1, longer but more bandwidth
+• Route 2, short but suﬀers congestion
+Evan Sadler
+Environmental Networks
+5/32
+
+=== [pagina 11] ===
+A Simple Example
+Two routes from A to B, one unit of traﬃc
+• Route 1, longer but more bandwidth
+• Route 2, short but suﬀers congestion
+Fixed latency l1(x) = 1 on long route, latency l2(x) = x on short
+route
+Evan Sadler
+Environmental Networks
+5/32
+
+=== [pagina 12] ===
+A Simple Example: Optimal Routing
+One way to measure welfare: average latency
+Evan Sadler
+Environmental Networks
+6/32
+
+=== [pagina 13] ===
+A Simple Example: Optimal Routing
+One way to measure welfare: average latency
+Traﬃc xi on route i suﬀers delay li(xi)
+Evan Sadler
+Environmental Networks
+6/32
+
+=== [pagina 14] ===
+A Simple Example: Optimal Routing
+One way to measure welfare: average latency
+Traﬃc xi on route i suﬀers delay li(xi)
+Seek to minimize
+X
+i
+xili(xi)
+Evan Sadler
+Environmental Networks
+6/32
+
+=== [pagina 15] ===
+A Simple Example: Optimal Routing
+One way to measure welfare: average latency
+Traﬃc xi on route i suﬀers delay li(xi)
+Seek to minimize
+X
+i
+xili(xi)
+Optimal routing splits traﬃc equally, giving
+1
+2l1
+1
+2
+
++ 1
+2l2
+1
+2
+
+= 1
+2 + 1
+4 = 3
+4
+Evan Sadler
+Environmental Networks
+6/32
+
+=== [pagina 16] ===
+A Simple Example: Equilibrium Routing
+Suppose the unit mass of traﬃc comprises a continuum of
+inﬁnitesimal players
+• Individual deviations don’t aﬀect aggregate congestion
+Evan Sadler
+Environmental Networks
+7/32
+
+=== [pagina 17] ===
+A Simple Example: Equilibrium Routing
+Suppose the unit mass of traﬃc comprises a continuum of
+inﬁnitesimal players
+• Individual deviations don’t aﬀect aggregate congestion
+For any x2 < 1, we have l2(x2) < 1 = l1(1 −x2), so the marginal
+player always chooses route 2
+Evan Sadler
+Environmental Networks
+7/32
+
+=== [pagina 18] ===
+A Simple Example: Equilibrium Routing
+Suppose the unit mass of traﬃc comprises a continuum of
+inﬁnitesimal players
+• Individual deviations don’t aﬀect aggregate congestion
+For any x2 < 1, we have l2(x2) < 1 = l1(1 −x2), so the marginal
+player always chooses route 2
+Aggregate delay in equilibrium is
+l1(0) · 0 + l2(1) · 1 = 0 + 1 = 1 > 3
+4
+Evan Sadler
+Environmental Networks
+7/32
+
+=== [pagina 19] ===
+A Simple Example: Equilibrium Routing
+Suppose the unit mass of traﬃc comprises a continuum of
+inﬁnitesimal players
+• Individual deviations don’t aﬀect aggregate congestion
+For any x2 < 1, we have l2(x2) < 1 = l1(1 −x2), so the marginal
+player always chooses route 2
+Aggregate delay in equilibrium is
+l1(0) · 0 + l2(1) · 1 = 0 + 1 = 1 > 3
+4
+Ineﬃciency in equilibrium
+Evan Sadler
+Environmental Networks
+7/32
+
+=== [pagina 20] ===
+The Social Cost of Traﬃc
+Why are traﬃc patterns ineﬃcient in equilibrium?
+Evan Sadler
+Environmental Networks
+8/32
+
+=== [pagina 21] ===
+The Social Cost of Traﬃc
+Why are traﬃc patterns ineﬃcient in equilibrium?
+Key economic concept: externalities
+Evan Sadler
+Environmental Networks
+8/32
+
+=== [pagina 22] ===
+The Social Cost of Traﬃc
+Why are traﬃc patterns ineﬃcient in equilibrium?
+Key economic concept: externalities
+Driving on a road imposes costs both on the person driving and
+on others
+• Individual optimization fails to account for the eﬀect of a
+decision on others’ welfare
+Evan Sadler
+Environmental Networks
+8/32
+
+=== [pagina 23] ===
+The Social Cost of Traﬃc
+Why are traﬃc patterns ineﬃcient in equilibrium?
+Key economic concept: externalities
+Driving on a road imposes costs both on the person driving and
+on others
+• Individual optimization fails to account for the eﬀect of a
+decision on others’ welfare
+Can potentially get better outcomes by closing roads (example
+later) or by imposing tolls (see homework)
+Evan Sadler
+Environmental Networks
+8/32
+
+=== [pagina 24] ===
+Generalizing the Model
+For now, assume one origin-destination pair
+• Route one unit of traﬃc
+Evan Sadler
+Environmental Networks
+9/32
+
+=== [pagina 25] ===
+Generalizing the Model
+For now, assume one origin-destination pair
+• Route one unit of traﬃc
+Directed network N = (V, E)
+• Origin vertex o, destination vertex d
+Evan Sadler
+Environmental Networks
+9/32
+
+=== [pagina 26] ===
+Generalizing the Model
+For now, assume one origin-destination pair
+• Route one unit of traﬃc
+Directed network N = (V, E)
+• Origin vertex o, destination vertex d
+Set of paths P from origin to destination
+• A path p is a collection of edges i ∈E
+• Flow xp on path p ∈P
+Evan Sadler
+Environmental Networks
+9/32
+
+=== [pagina 27] ===
+Generalizing the Model, continued
+Each edge i ∈E handles traﬃc
+xi =
+X
+{p∈P : i∈p}
+xp
+Evan Sadler
+Environmental Networks
+10/32
+
+=== [pagina 28] ===
+Generalizing the Model, continued
+Each edge i ∈E handles traﬃc
+xi =
+X
+{p∈P : i∈p}
+xp
+Latency function li(xi)
+• Captures congestion
+• Assume li nonnegative, diﬀerentiable, nondecreasing
+Evan Sadler
+Environmental Networks
+10/32
+
+=== [pagina 29] ===
+Generalizing the Model, continued
+Each edge i ∈E handles traﬃc
+xi =
+X
+{p∈P : i∈p}
+xp
+Latency function li(xi)
+• Captures congestion
+• Assume li nonnegative, diﬀerentiable, nondecreasing
+Routing pattern is a nonnegative vector x, elements sum to 1
+• Flow over each possible path
+Evan Sadler
+Environmental Networks
+10/32
+
+=== [pagina 30] ===
+Generalizing the Model, continued
+Each edge i ∈E handles traﬃc
+xi =
+X
+{p∈P : i∈p}
+xp
+Latency function li(xi)
+• Captures congestion
+• Assume li nonnegative, diﬀerentiable, nondecreasing
+Routing pattern is a nonnegative vector x, elements sum to 1
+• Flow over each possible path
+Total latency (cost) of x is
+C(x) =
+X
+i∈E
+xili(xi)
+Evan Sadler
+Environmental Networks
+10/32
+
+=== [pagina 31] ===
+Socially Optimal Routing
+Benchmark: routing pattern that minimizes total cost
+Evan Sadler
+Environmental Networks
+11/32
+
+=== [pagina 32] ===
+Socially Optimal Routing
+Benchmark: routing pattern that minimizes total cost
+Routing pattern xS that solves
+min
+X
+i∈E
+xili(xi)
+s.t.
+X
+p∈P : i∈p
+xp = xi
+∀i ∈E
+X
+p∈P
+xp = 1
+xp ≥0
+∀p ∈P
+Evan Sadler
+Environmental Networks
+11/32
+
+=== [pagina 33] ===
+Equilibrium
+In equilibrium, every motorist chooses best path given what
+others are doing
+Evan Sadler
+Environmental Networks
+12/32
+
+=== [pagina 34] ===
+Equilibrium
+In equilibrium, every motorist chooses best path given what
+others are doing
+If a motorist chooses path p, there cannot exist a path p′ such
+that
+X
+i∈p′
+li(xi) <
+X
+i∈p
+li(xi)
+Evan Sadler
+Environmental Networks
+12/32
+
+=== [pagina 35] ===
+Equilibrium
+In equilibrium, every motorist chooses best path given what
+others are doing
+If a motorist chooses path p, there cannot exist a path p′ such
+that
+X
+i∈p′
+li(xi) <
+X
+i∈p
+li(xi)
+Equilibrium conditions: there exists λ such that
+• For any path p, we have
+P
+i∈p li(xi) ≥λ
+• If xp > 0, then P
+i∈p li(xi) = λ
+Evan Sadler
+Environmental Networks
+12/32
+
+=== [pagina 36] ===
+Equilibrium Characterization
+Theorem
+A feasible routing pattern xE is an equilibrium if and only if it
+solves
+min
+X
+i∈E
+Z xi
+0
+li(z)dz
+s.t.
+X
+{p∈P : i∈p}
+xp = xi
+∀i ∈E
+X
+p∈P
+xp = 1, and xp ≥0
+∀p ∈P
+If each li is strictly increasing, then xE is unique.
+Evan Sadler
+Environmental Networks
+13/32
+
+=== [pagina 37] ===
+Equilibrium Characterization
+Theorem
+A feasible routing pattern xE is an equilibrium if and only if it
+solves
+min
+X
+i∈E
+Z xi
+0
+li(z)dz
+s.t.
+X
+{p∈P : i∈p}
+xp = xi
+∀i ∈E
+X
+p∈P
+xp = 1, and xp ≥0
+∀p ∈P
+If each li is strictly increasing, then xE is unique.
+Note by Weierstrass’s Theorem a solution exists, so an
+equilibrium exists
+Evan Sadler
+Environmental Networks
+13/32
+
+=== [pagina 38] ===
+Proof
+Rewrite the minimization problem as
+min
+X
+i∈E
+Z P
+i∈p xp
+0
+li(z)dz
+s.t.
+X
+p∈P
+xp = 1, and xp ≥0
+∀p ∈P
+Evan Sadler
+Environmental Networks
+14/32
+
+=== [pagina 39] ===
+Proof
+Rewrite the minimization problem as
+min
+X
+i∈E
+Z P
+i∈p xp
+0
+li(z)dz
+s.t.
+X
+p∈P
+xp = 1, and xp ≥0
+∀p ∈P
+Lagrangian
+X
+i∈E
+Z P
+i∈p xp
+0
+li(z)dz −λ
+
+X
+p∈P
+xp −1
+
+−
+X
+p∈P
+µpxp
+Evan Sadler
+Environmental Networks
+14/32
+
+=== [pagina 40] ===
+Proof
+Rewrite the minimization problem as
+min
+X
+i∈E
+Z P
+i∈p xp
+0
+li(z)dz
+s.t.
+X
+p∈P
+xp = 1, and xp ≥0
+∀p ∈P
+Lagrangian
+X
+i∈E
+Z P
+i∈p xp
+0
+li(z)dz −λ
+
+X
+p∈P
+xp −1
+
+−
+X
+p∈P
+µpxp
+Convex problem, FOC is necessary and suﬃcient
+• FOC for xp is
+X
+i∈p
+li(xE
+i ) = λ + µp
+• Complementary slackness: µp ≥0 with equality if xp > 0
+Evan Sadler
+Environmental Networks
+14/32
+
+=== [pagina 41] ===
+Proof, continued
+If xp = 0, FOC implies P
+i∈p li(xE
+i ) = λ + µp ≥λ
+• Recall our ﬁrst equilibrium condition
+Evan Sadler
+Environmental Networks
+15/32
+
+=== [pagina 42] ===
+Proof, continued
+If xp = 0, FOC implies P
+i∈p li(xE
+i ) = λ + µp ≥λ
+• Recall our ﬁrst equilibrium condition
+If xp > 0, FOC implies P
+i∈p li(xE
+i ) = λ
+• Recall our second equilibrium condition
+Evan Sadler
+Environmental Networks
+15/32
+
+=== [pagina 43] ===
+Proof, continued
+If xp = 0, FOC implies P
+i∈p li(xE
+i ) = λ + µp ≥λ
+• Recall our ﬁrst equilibrium condition
+If xp > 0, FOC implies P
+i∈p li(xE
+i ) = λ
+• Recall our second equilibrium condition
+Uniqueness when each li is strictly increasing...left as an exercise
+Evan Sadler
+Environmental Networks
+15/32
+
+=== [pagina 44] ===
+Extent of Ineﬃciency
+Recall our simple example showing that equilibirum fails to
+minimize total cost
+• Equilibrium can be ineﬃcient
+Evan Sadler
+Environmental Networks
+16/32
+
+=== [pagina 45] ===
+Extent of Ineﬃciency
+Recall our simple example showing that equilibirum fails to
+minimize total cost
+• Equilibrium can be ineﬃcient
+Equilibrium can be arbitrarily ineﬃcient
+Evan Sadler
+Environmental Networks
+16/32
+
+=== [pagina 46] ===
+Extent of Ineﬃciency, continued
+Socially optimal routing solves
+min
+x1 + xk+1
+2
+s.t.
+x1 + x2 = 1,
+x1, x2 ≥0
+Evan Sadler
+Environmental Networks
+17/32
+
+=== [pagina 47] ===
+Extent of Ineﬃciency, continued
+Socially optimal routing solves
+min
+x1 + xk+1
+2
+s.t.
+x1 + x2 = 1,
+x1, x2 ≥0
+First order conditions imply
+(k + 1)xk
+2 = 1
+=⇒
+x2 = (k + 1)−1
+k
+Evan Sadler
+Environmental Networks
+17/32
+
+=== [pagina 48] ===
+Extent of Ineﬃciency, continued
+Socially optimal routing solves
+min
+x1 + xk+1
+2
+s.t.
+x1 + x2 = 1,
+x1, x2 ≥0
+First order conditions imply
+(k + 1)xk
+2 = 1
+=⇒
+x2 = (k + 1)−1
+k
+Total cost is then
+C(xS) = 1 −(k + 1)−1
+k + (k + 1)−k+1
+k
+which approaches 0 as k →∞
+Evan Sadler
+Environmental Networks
+17/32
+
+=== [pagina 49] ===
+Extent of Ineﬃciency, continued
+In equilibrium, we again have x1 = 0 and x2 = 1
+• Same argument as before
+Evan Sadler
+Environmental Networks
+18/32
+
+=== [pagina 50] ===
+Extent of Ineﬃciency, continued
+In equilibrium, we again have x1 = 0 and x2 = 1
+• Same argument as before
+Total cost in equilibrium is
+C(xE) = 0 + 1 = 1
+independent of k
+Evan Sadler
+Environmental Networks
+18/32
+
+=== [pagina 51] ===
+Extent of Ineﬃciency, continued
+In equilibrium, we again have x1 = 0 and x2 = 1
+• Same argument as before
+Total cost in equilibrium is
+C(xE) = 0 + 1 = 1
+independent of k
+Ratio C(xS)
+C(xE) tends to zero with k
+• Equilibrium can be arbitrarily ineﬃcient relative to optimum
+Evan Sadler
+Environmental Networks
+18/32
+
+=== [pagina 52] ===
+Braess’s Paradox
+Additional routes can negatively impact network users
+Evan Sadler
+Environmental Networks
+19/32
+
+=== [pagina 53] ===
+Braess’s Paradox
+Additional routes can negatively impact network users
+Parodox because more routes should only help traﬃc
+• Could always leave routing unchanged
+• Social optimum can only get better
+Evan Sadler
+Environmental Networks
+19/32
+
+=== [pagina 54] ===
+Braess’s Paradox
+Additional routes can negatively impact network users
+Parodox because more routes should only help traﬃc
+• Could always leave routing unchanged
+• Social optimum can only get better
+Equilibrium response can change this
+• Explains why closing a road might improve traﬃc in congested
+city
+Evan Sadler
+Environmental Networks
+19/32
+
+=== [pagina 55] ===
+Braess’s Paradox
+In equilibrium, ﬂow 1
+2 on each route, average cost 3
+2
+Evan Sadler
+Environmental Networks
+20/32
+
+=== [pagina 56] ===
+Braess’s Paradox
+In equilibrium, all take highlighted route, average cost 2
+Evan Sadler
+Environmental Networks
+21/32
+
+=== [pagina 57] ===
+Braess’s Paradox
+Studies suggest that closing streets in black will reduce
+congestion.
+• (See Youn et al., “Price of Anarchy in Transportation
+Networks: Eﬃciency and Optimality Control”)
+Evan Sadler
+Environmental Networks
+22/32
+
+=== [pagina 58] ===
+Congestion Games
+Traﬃc routing game belongs to larger class of congestion games
+• Internet traﬃc
+• Airport traﬃc
+• Supermarket checkout lines
+Evan Sadler
+Environmental Networks
+23/32
+
+=== [pagina 59] ===
+Congestion Games
+Traﬃc routing game belongs to larger class of congestion games
+• Internet traﬃc
+• Airport traﬃc
+• Supermarket checkout lines
+Previously assumed players were “small”
+Evan Sadler
+Environmental Networks
+23/32
+
+=== [pagina 60] ===
+Congestion Games
+Traﬃc routing game belongs to larger class of congestion games
+• Internet traﬃc
+• Airport traﬃc
+• Supermarket checkout lines
+Previously assumed players were “small”
+In some cases, one player’s action can signiﬁcantly impact
+congestion
+• e.g. Delta using Atlanta as a hub has a material impact on
+airport congestion in Atlanta
+Evan Sadler
+Environmental Networks
+23/32
+
+=== [pagina 61] ===
+Congestion Games
+Congestion model C = {N, R, (Si)i∈N, (cj)j∈R}
+• Set of players N = {1, 2, ..., n}
+• Set of resources R = {1, 2, ..., r}
+• Resource combinations i can use Si ⊂R
+• Beneﬁt of resource j if k players use it cj(k) (possibly
+negative)
+Evan Sadler
+Environmental Networks
+24/32
+
+=== [pagina 62] ===
+Congestion Games
+Congestion model C = {N, R, (Si)i∈N, (cj)j∈R}
+• Set of players N = {1, 2, ..., n}
+• Set of resources R = {1, 2, ..., r}
+• Resource combinations i can use Si ⊂R
+• Beneﬁt of resource j if k players use it cj(k) (possibly
+negative)
+Congestion game {N, (Si)i∈N, (ui)i∈N} with utilities
+ui(si, s−i) =
+X
+j∈si
+cj(kj)
+Evan Sadler
+Environmental Networks
+24/32
+
+=== [pagina 63] ===
+Congestion Games
+Congestion model C = {N, R, (Si)i∈N, (cj)j∈R}
+• Set of players N = {1, 2, ..., n}
+• Set of resources R = {1, 2, ..., r}
+• Resource combinations i can use Si ⊂R
+• Beneﬁt of resource j if k players use it cj(k) (possibly
+negative)
+Congestion game {N, (Si)i∈N, (ui)i∈N} with utilities
+ui(si, s−i) =
+X
+j∈si
+cj(kj)
+Congestion games have a useful structure...
+Evan Sadler
+Environmental Networks
+24/32
+
+=== [pagina 64] ===
+Potential Games
+A game is a potential game if there exists a potential function
+Φ : S →R that characterizes players’ payoﬀs
+Evan Sadler
+Environmental Networks
+25/32
+
+=== [pagina 65] ===
+Potential Games
+A game is a potential game if there exists a potential function
+Φ : S →R that characterizes players’ payoﬀs
+Ordinal potential function if for all s−i ∈S−i and all x, z ∈Si:
+• ui(x, s−i) −ui(z, s−i) ≥0 iﬀΦ(x, s−i) −Φ(z, s−i) ≥0
+• ui(x, s−i) −ui(z, s−i) > 0 iﬀΦ(x, s−i) −Φ(z, s−i) > 0
+Evan Sadler
+Environmental Networks
+25/32
+
+=== [pagina 66] ===
+Potential Games
+A game is a potential game if there exists a potential function
+Φ : S →R that characterizes players’ payoﬀs
+Ordinal potential function if for all s−i ∈S−i and all x, z ∈Si:
+• ui(x, s−i) −ui(z, s−i) ≥0 iﬀΦ(x, s−i) −Φ(z, s−i) ≥0
+• ui(x, s−i) −ui(z, s−i) > 0 iﬀΦ(x, s−i) −Φ(z, s−i) > 0
+Exact potential function if for all s−i ∈S−i and all x, z ∈Si:
+• ui(x, s−i) −ui(z, s−i) = Φ(x, s−i) −Φ(z, s−i)
+Evan Sadler
+Environmental Networks
+25/32
+
+=== [pagina 67] ===
+Potential Games
+A game is a potential game if there exists a potential function
+Φ : S →R that characterizes players’ payoﬀs
+Ordinal potential function if for all s−i ∈S−i and all x, z ∈Si:
+• ui(x, s−i) −ui(z, s−i) ≥0 iﬀΦ(x, s−i) −Φ(z, s−i) ≥0
+• ui(x, s−i) −ui(z, s−i) > 0 iﬀΦ(x, s−i) −Φ(z, s−i) > 0
+Exact potential function if for all s−i ∈S−i and all x, z ∈Si:
+• ui(x, s−i) −ui(z, s−i) = Φ(x, s−i) −Φ(z, s−i)
+For each player, a best response maximizes the potential function
+given others’ strategies
+Evan Sadler
+Environmental Networks
+25/32
+
+=== [pagina 68] ===
+Pure Strategy Equilibria in Potential Games
+A game G is an ordinal (exact) potential game if it admits an
+ordinal (exact) potential function
+Evan Sadler
+Environmental Networks
+26/32
+
+=== [pagina 69] ===
+Pure Strategy Equilibria in Potential Games
+A game G is an ordinal (exact) potential game if it admits an
+ordinal (exact) potential function
+Theorem
+If G is a potential game with S ﬁnite or compact, then G has at
+least one pure strategy Nash equilibrim
+Evan Sadler
+Environmental Networks
+26/32
+
+=== [pagina 70] ===
+Pure Strategy Equilibria in Potential Games
+A game G is an ordinal (exact) potential game if it admits an
+ordinal (exact) potential function
+Theorem
+If G is a potential game with S ﬁnite or compact, then G has at
+least one pure strategy Nash equilibrim
+Proof: The global maximum of the potential function
+corresponds to a pure strategy Nash equilibrium
+Evan Sadler
+Environmental Networks
+26/32
+
+=== [pagina 71] ===
+Pure Strategy Equilibria in Potential Games
+A game G is an ordinal (exact) potential game if it admits an
+ordinal (exact) potential function
+Theorem
+If G is a potential game with S ﬁnite or compact, then G has at
+least one pure strategy Nash equilibrim
+Proof: The global maximum of the potential function
+corresponds to a pure strategy Nash equilibrium
+Note: result says nothing about uniqueness
+Evan Sadler
+Environmental Networks
+26/32
+
+=== [pagina 72] ===
+Example of Ordinal Potential Game
+Example: Cournot competition
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Payoﬀfor ﬁrm i is ui(qi, q−i) = qi(P(Q) −c)
+Evan Sadler
+Environmental Networks
+27/32
+
+=== [pagina 73] ===
+Example of Ordinal Potential Game
+Example: Cournot competition
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Payoﬀfor ﬁrm i is ui(qi, q−i) = qi(P(Q) −c)
+Deﬁne the function
+Φ(q1, · · · , qN) =
+ N
+Y
+i=1
+qi
+!
+(P(Q) −c)
+For all i and all q−i, we have ui(qi, q−i) −ui(q′
+i, q−i) > 0 iﬀ
+Φ(qi, q−i) −Φ(q′
+i, q−i) > 0 for all qi, q′
+i > 0
+Evan Sadler
+Environmental Networks
+27/32
+
+=== [pagina 74] ===
+Example of Ordinal Potential Game
+Example: Cournot competition
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Payoﬀfor ﬁrm i is ui(qi, q−i) = qi(P(Q) −c)
+Deﬁne the function
+Φ(q1, · · · , qN) =
+ N
+Y
+i=1
+qi
+!
+(P(Q) −c)
+For all i and all q−i, we have ui(qi, q−i) −ui(q′
+i, q−i) > 0 iﬀ
+Φ(qi, q−i) −Φ(q′
+i, q−i) > 0 for all qi, q′
+i > 0
+Φ is an ordinal potential function for this game
+Evan Sadler
+Environmental Networks
+27/32
+
+=== [pagina 75] ===
+Example of Exact Potential Game
+Example: Cournot competition (again)
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Assume linear demand, payoﬀqi (a −b(Q) −c)
+Evan Sadler
+Environmental Networks
+28/32
+
+=== [pagina 76] ===
+Example of Exact Potential Game
+Example: Cournot competition (again)
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Assume linear demand, payoﬀqi (a −b(Q) −c)
+Deﬁne the function
+Φ(q1, · · · , qN) =
+N
+X
+i=1
+(a −c)qi −b
+N
+X
+i=1
+N
+X
+j=i
+qiqj
+Evan Sadler
+Environmental Networks
+28/32
+
+=== [pagina 77] ===
+Example of Exact Potential Game
+Example: Cournot competition (again)
+• Each of N ﬁrms chooses quantity qi, deﬁne Q = PN
+i=1 qi
+• Assume linear demand, payoﬀqi (a −b(Q) −c)
+Deﬁne the function
+Φ(q1, · · · , qN) =
+N
+X
+i=1
+(a −c)qi −b
+N
+X
+i=1
+N
+X
+j=i
+qiqj
+Exercise: show that
+ui(qi, q−i) −ui(q′
+i, q−i) = Φ(qi, q−i) −Φ(q′
+i, q−i)
+for all qi, q′
+i > 0
+Evan Sadler
+Environmental Networks
+28/32
+
+=== [pagina 78] ===
+Congestion Games as Potential Games
+Theorem
+Every congestion game is a potential game and therefore has a
+pure strategy equilibrium
+Evan Sadler
+Environmental Networks
+29/32
+
+=== [pagina 79] ===
+Congestion Games as Potential Games
+Theorem
+Every congestion game is a potential game and therefore has a
+pure strategy equilibrium
+Proof: Fix the strategy proﬁle s. For each resource j, let k
+i
+j
+denote the number of users of j excluding player i
+The utility diﬀerence for player i between si and s′
+i is then
+ui(si, s−i) −ui(s′
+i, s−i) =
+X
+j∈si
+cj(k
+i
+j + 1) −
+X
+j∈s′
+i
+cj(k
+i
+j + 1)
+Evan Sadler
+Environmental Networks
+29/32
+
+=== [pagina 80] ===
+Congestion Games as Potential Games
+Given a proﬁle s, let Js denote the resources used by at least one
+player, and let Js−i denote the resources used by at least one
+player excluding i
+Evan Sadler
+Environmental Networks
+30/32
+
+=== [pagina 81] ===
+Congestion Games as Potential Games
+Given a proﬁle s, let Js denote the resources used by at least one
+player, and let Js−i denote the resources used by at least one
+player excluding i
+Consider the function
+Φ(s) =
+X
+j∈Js
+
+
+kj
+X
+k=1
+cj(k)
+
+
+Evan Sadler
+Environmental Networks
+30/32
+
+=== [pagina 82] ===
+Congestion Games as Potential Games
+Given a proﬁle s, let Js denote the resources used by at least one
+player, and let Js−i denote the resources used by at least one
+player excluding i
+Consider the function
+Φ(s) =
+X
+j∈Js
+
+
+kj
+X
+k=1
+cj(k)
+
+
+Which we can rewrite as
+Φ(si, s−i) =
+X
+j∈Js−i
+
+
+k
+i
+j
+X
+k=1
+cj(k)
+
++
+X
+j∈si
+cj(k
+i
+j + 1)
+Evan Sadler
+Environmental Networks
+30/32
+
+=== [pagina 83] ===
+Congestion Games as Potential Games
+Therefore:
+Φ(si, s−i) −Φ(s′
+i, s−i) =
+X
+j∈Js−i
+
+
+k
+i
+j
+X
+k=1
+cj(k)
+
++
+X
+j∈si
+cj(k
+i
+j + 1)
+−
+X
+j∈Js−i
+
+
+k
+i
+j
+X
+k=1
+cj(k)
+
++
+X
+j∈s′
+i
+cj(k
+i
+j + 1)
+=
+X
+j∈si
+cj(k
+i
+j + 1) −
+X
+j∈s′
+i
+cj(k
+i
+j + 1)
+= ui(si, s−i) −ui(s′
+i, s−i)
+Evan Sadler
+Environmental Networks
+31/32
+
+=== [pagina 84] ===
+Takeaways
+Physical networks constrain many interactions, and the structure
+of these networks therefore guides individual decisions
+Strategic interactions have some non-obvious implications
+• Equilibrium behavior can be much worse than the social
+optimum
+• Closing roads can make everyone better oﬀ
+Next time: more externalities and network eﬀects
+Evan Sadler
+Environmental Networks
+32/32

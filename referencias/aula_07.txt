@@ -1,0 +1,298 @@
+# Fonte: 07.pdf
+# Paginas: 23
+
+=== [pagina 1] ===
+Redes Econômicas e Sociais
+Cascatas Informacionais e Difusão em Redes
+Leituras: EK (16.1, 16.2, 16.3, 16.4, 16.5) e (19.1, 19.2, 19.3)
+Marcos Ross Fernandes
+Semana 07
+
+=== [pagina 2] ===
+Roteiro
+Cascatas informacionais
+Difusão de comportamentos em redes
+0 / 21
+
+=== [pagina 3] ===
+Cascatas informacionais
+1 / 21
+
+=== [pagina 4] ===
+Decisões sequenciais e influência social
+▶Indivíduos observam decisões anteriores, mas não
+necessariamente as informações privadas que as motivaram.
+▶Uma ação observada transmite informação indireta sobre os
+sinais recebidos por quem decidiu antes.
+▶Imitar decisões anteriores pode ser racional, mesmo quando o
+sinal privado aponta na direção oposta.
+▶Uma cascata informacional ocorre quando a decisão deixa
+de depender do sinal privado.
+2 / 21
+
+=== [pagina 5] ===
+Experimento de aprendizagem por imitação
+▶Uma urna é escolhida com probabilidade 1/2 entre duas
+composições: duas bolas vermelhas e uma azul, ou duas azuis
+e uma vermelha.
+▶Cada indivíduo observa, privadamente, uma bola retirada com
+reposição.
+▶Em sequência, anuncia publicamente qual cor acredita ser
+majoritária.
+▶Os demais observam os anúncios, mas não as bolas retiradas.
+3 / 21
+
+=== [pagina 6] ===
+Como surge uma cascata?
+▶O primeiro indivíduo anuncia a cor de seu próprio sinal.
+▶O segundo também revela seu sinal; em caso de empate
+informacional, segue o sinal privado.
+▶Se os dois primeiros anúncios coincidem, o terceiro os
+acompanha mesmo que observe a cor oposta.
+▶A partir daí, os anúncios seguintes deixam de revelar novos
+sinais: a cascata se perpetua.
+4 / 21
+
+=== [pagina 7] ===
+Propriedades das cascatas informacionais
+▶Uma sequência longa de escolhas idênticas não implica uma
+sequência longa de sinais idênticos.
+▶A decisão coletiva pode estar errada mesmo quando todos os
+agentes são racionais.
+▶Se a urna é majoritariamente vermelha, a probabilidade de os
+dois primeiros sinais serem azuis é 1/9: uma cascata incorreta
+pode começar.
+▶Cascatas são frágeis porque podem se apoiar em pouca
+informação independente.
+5 / 21
+
+=== [pagina 8] ===
+Probabilidade condicional e regra de Bayes
+▶Para eventos A e B com Pr(B) > 0,
+▶
+Pr(A | B) = Pr(B | A) Pr(A)
+Pr(B)
+.
+▶Com estados mutuamente exclusivos G e B,
+▶
+Pr(G | H) =
+Pr(H | G) Pr(G)
+Pr(H | G) Pr(G) + Pr(H | B) Pr(B).
+▶Probabilidade a priori →verossimilhança do sinal →
+probabilidade a posteriori.
+6 / 21
+
+=== [pagina 9] ===
+Inferência no experimento da urna
+▶Seja G o estado em que a urna tem maioria azul e H o sinal
+azul.
+▶
+Pr(G) = 1
+2,
+Pr(H | G) = 2
+3,
+Pr(H | B) = 1
+3.
+▶Após um sinal azul:
+▶
+Pr(G | H) =
+(1/2)(2/3)
+(1/2)(2/3) + (1/2)(1/3) = 2
+3.
+▶Após dois sinais azuis independentes:
+▶
+Pr(G | H, H) =
+(2/3)2
+(2/3)2 + (1/3)2 = 4
+5.
+7 / 21
+
+=== [pagina 10] ===
+Modelo geral: estados, ações e retornos
+▶O estado desconhecido é G (opção boa) ou B (opção ruim),
+com Pr(G) = p.
+▶Cada indivíduo escolhe aceitar ou rejeitar; rejeitar gera retorno
+zero.
+▶Aceitar gera vg > 0 no estado G e vb < 0 no estado B.
+▶Normalização: pvg + (1 −p)vb = 0; sem informação, o agente
+é indiferente.
+8 / 21
+
+=== [pagina 11] ===
+Modelo geral: sinais privados
+▶Cada agente recebe um sinal H (alto) ou L (baixo),
+condicionalmente independente dos demais sinais dado o
+estado.
+▶
+Pr(H | G) = Pr(L | B) = q > 1
+2.
+▶
+Pr(L | G) = Pr(H | B) = 1 −q.
+▶Um sinal alto aumenta a crença em G; um sinal baixo a reduz.
+9 / 21
+
+=== [pagina 12] ===
+Atualização bayesiana e escolha
+▶Após observar H, a crença no estado favorável é
+▶
+Pr(G | H) =
+pq
+pq + (1 −p)(1 −q) > p.
+▶Como o retorno esperado de aceitar era zero a priori, um sinal
+alto torna aceitar estritamente preferível.
+▶Analogamente, um sinal baixo favorece rejeitar.
+▶As decisões anteriores entram no conjunto de informações do
+agente, mas precisam ser interpretadas estrategicamente.
+10 / 21
+
+=== [pagina 13] ===
+Vários sinais e início da cascata
+▶Considere a sinais altos e b sinais baixos independentes,
+condicionalmente ao estado.
+▶
+Pr(G | S)
+Pr(B | S) =
+p
+1 −p
+
+q
+1 −q
+a−b
+.
+▶Se a > b, a evidência favorece G; se a < b, favorece B.
+▶Quando as decisões públicas acumulam evidência suficiente,
+um novo sinal privado pode deixar de alterar a ação ótima.
+▶Uma vez iniciada a cascata, novas decisões podem não
+acrescentar informação.
+11 / 21
+
+=== [pagina 14] ===
+Difusão de comportamentos em redes
+12 / 21
+
+=== [pagina 15] ===
+Difusão e interações locais
+▶A adoção de uma tecnologia, prática ou comportamento pode
+depender das escolhas dos vizinhos na rede.
+▶Dois mecanismos: informação revelada por outras escolhas e
+benefícios diretos de coordenação.
+▶A estrutura das conexões determina quem influencia quem e
+quais comunidades são alcançadas.
+▶Adoção local e popularidade agregada não precisam evoluir da
+mesma forma.
+13 / 21
+
+=== [pagina 16] ===
+Jogo de coordenação em cada conexão
+▶Cada nó escolhe o comportamento A ou B e joga com todos
+os seus vizinhos.
+▶Se ambos escolhem A, cada um recebe a > 0; se ambos
+escolhem B, recebem b > 0.
+▶Escolhas diferentes geram retorno zero na conexão.
+▶
+A
+B
+A
+(a, a)
+(0, 0)
+B
+(0, 0)
+(b, b)
+▶O retorno total é a soma dos retornos nas conexões.
+14 / 21
+
+=== [pagina 17] ===
+Regra de adoção por limiar
+▶Se o nó tem grau d e uma fração x dos vizinhos escolhe A,
+então:
+▶
+u(A) = xda,
+u(B) = (1 −x)db.
+▶O nó prefere A quando
+▶
+xda ≥(1 −x)db
+⇐⇒
+x ≥
+b
+a + b
+| {z }
+limiar q
+.
+▶Quanto menor q, menor a fração de vizinhos que precisa
+adotar A para induzir a mudança.
+15 / 21
+
+=== [pagina 18] ===
+Dinâmica de difusão
+▶Inicialmente, todos utilizam B, exceto um conjunto de
+adotantes iniciais que utiliza A.
+▶A cada rodada, os demais nós avaliam a fração de vizinhos
+que já utiliza A.
+▶Um nó adota A quando essa fração alcança o limiar q
+(empates favorecem A).
+▶As novas adoções podem provocar outras, formando uma
+cascata.
+▶Uma cascata completa ocorre quando todos os nós acabam
+adotando A.
+16 / 21
+
+=== [pagina 19] ===
+Exemplo de propagação por limiar
+▶Considere a = 3 e b = 2: o limiar de adoção é q = 2/5.
+▶Um nó com cinco vizinhos adota A quando ao menos dois
+vizinhos utilizam A.
+▶Se somente um vizinho adota A, a adoção não é ótima para
+esse nó.
+▶A difusão depende tanto do limiar quanto da posição dos
+adotantes iniciais.
+17 / 21
+
+=== [pagina 20] ===
+Comunidades densas como barreiras
+▶Uma comunidade pode permanecer em B mesmo quando A se
+espalha pelo restante da rede.
+▶Uma comunidade (cluster) de densidade ρ é um conjunto
+C tal que cada nó de C possui ao menos uma fração ρ de
+seus vizinhos em C.
+▶
+∀i ∈C :
+|Ni ∩C|
+|Ni|
+≥ρ.
+▶A coesão interna limita a exposição dos membros a
+comportamentos externos.
+18 / 21
+
+=== [pagina 21] ===
+Quando uma cascata é bloqueada?
+▶Considere os nós que não pertencem ao conjunto de adotantes
+iniciais.
+▶Se esses nós contêm um cluster de densidade ρ > 1 −q, a
+cascata não alcança toda a rede.
+▶Nenhum nó desse cluster pode ser o primeiro a adotar A: a
+fração de seus vizinhos fora do cluster é inferior a q.
+▶Portanto, a difusão é bloqueada por uma barreira estrutural.
+19 / 21
+
+=== [pagina 22] ===
+Caracterização das cascatas incompletas
+▶No modelo de limiar, a presença de um cluster de densidade
+superior a 1 −q entre os não adotantes iniciais é condição
+necessária e suficiente para impedir uma cascata completa.
+▶Se a cascata para, o conjunto de nós que permanece em B
+constitui um cluster suficientemente denso.
+▶Logo, comunidades internamente coesas são precisamente os
+obstáculos estruturais à difusão completa neste modelo.
+20 / 21
+
+=== [pagina 23] ===
+Comparando os dois mecanismos
+▶Cascata informacional: decisões observadas funcionam
+como sinais sobre um estado desconhecido.
+▶Cascata de adoção em redes: a ação dos vizinhos altera
+diretamente os retornos de coordenação.
+▶No primeiro caso, pode haver imitação mesmo sem benefício
+direto de agir como os outros.
+▶No segundo, limiares e clusters determinam a extensão da
+difusão.
+21 / 21

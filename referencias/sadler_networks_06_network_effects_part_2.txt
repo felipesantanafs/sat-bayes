@@ -1,0 +1,1623 @@
+# Fonte: Networks 06 - Network Effects Part 2.pdf
+# Paginas: 77
+
+=== [pagina 1] ===
+Economics of Networks
+Network Eﬀects: Part 2
+Evan Sadler
+Massachusetts Institute of Technology
+April 19, 2018
+Evan Sadler
+Networks Introduction
+1/30
+
+=== [pagina 2] ===
+Agenda
+Local network eﬀects
+Evan Sadler
+Networks Introduction
+2/30
+
+=== [pagina 3] ===
+Agenda
+Local network eﬀects
+No textbook covers this material yet, three good papers:
+• Bramoullé, Kranton, and D’Amours (2014), “Strategic
+Interaction and Networks,” American Economic Review
+• Ballester, Calvó-Armengol, and Zenou (2006), “Who’s Who in
+Networks. Wanted: The Key Player,” Econometrica
+• Candogan, Bimpikis, and Ozdaglar (2012), “Optimal Pricing
+in Networks with Externalities,” Operations Research
+Evan Sadler
+Networks Introduction
+2/30
+
+=== [pagina 4] ===
+Local Network Eﬀects
+So far, focus on homogeneous externalities
+Evan Sadler
+Networks Introduction
+3/30
+
+=== [pagina 5] ===
+Local Network Eﬀects
+So far, focus on homogeneous externalities
+Spillovers often depend on individual identities and relationships
+• Searching for job opportunities
+• Academic peer eﬀects
+• Learning spillovers
+• Crime
+• Oligopoly
+Evan Sadler
+Networks Introduction
+3/30
+
+=== [pagina 6] ===
+Local Network Eﬀects
+So far, focus on homogeneous externalities
+Spillovers often depend on individual identities and relationships
+• Searching for job opportunities
+• Academic peer eﬀects
+• Learning spillovers
+• Crime
+• Oligopoly
+Can study network games to gain insight into how relationship
+patterns aﬀect eﬀort incentives
+Evan Sadler
+Networks Introduction
+3/30
+
+=== [pagina 7] ===
+General Framework
+Set of players N = {1, 2, ..., n}
+Evan Sadler
+Networks Introduction
+4/30
+
+=== [pagina 8] ===
+General Framework
+Set of players N = {1, 2, ..., n}
+Each player chooses an action xi ≥0
+• Action proﬁle x = (x1, x2, ..., xn)
+Evan Sadler
+Networks Introduction
+4/30
+
+=== [pagina 9] ===
+General Framework
+Set of players N = {1, 2, ..., n}
+Each player chooses an action xi ≥0
+• Action proﬁle x = (x1, x2, ..., xn)
+Players in an undirected interaction network
+• Adjacency matrix G with entries gij ∈{0, 1}
+Evan Sadler
+Networks Introduction
+4/30
+
+=== [pagina 10] ===
+General Framework
+Set of players N = {1, 2, ..., n}
+Each player chooses an action xi ≥0
+• Action proﬁle x = (x1, x2, ..., xn)
+Players in an undirected interaction network
+• Adjacency matrix G with entries gij ∈{0, 1}
+Player i’s payoﬀUi(xi, x−i, δ, G)
+• Parameter δ ≥0 captures role of interactions
+Evan Sadler
+Networks Introduction
+4/30
+
+=== [pagina 11] ===
+Strategic Substitutes
+Deﬁne the payoﬀs as
+Ui(xi, x−i, δ, G) = bi
+
+xi + δ
+X
+j̸=i
+gijxj
+
+−kixi
+where bi is diﬀerentiable, strictly increasing, and concave in xi
+• Assume b′
+i(∞) < ki < b′
+i(0)
+• Strategic substitutes
+Evan Sadler
+Networks Introduction
+5/30
+
+=== [pagina 12] ===
+Strategic Substitutes
+Deﬁne the payoﬀs as
+Ui(xi, x−i, δ, G) = bi
+
+xi + δ
+X
+j̸=i
+gijxj
+
+−kixi
+where bi is diﬀerentiable, strictly increasing, and concave in xi
+• Assume b′
+i(∞) < ki < b′
+i(0)
+• Strategic substitutes
+First order condition:
+b′
+i
+
+xi + δ
+X
+j̸=i
+gijxj
+
+−ki ≤0
+Write xi for solution to b′
+i(x) = ki
+Evan Sadler
+Networks Introduction
+5/30
+
+=== [pagina 13] ===
+Strategic Substitutes
+Deﬁne the payoﬀs as
+Ui(xi, x−i, δ, G) = bi
+
+xi + δ
+X
+j̸=i
+gijxj
+
+−kixi
+where bi is diﬀerentiable, strictly increasing, and concave in xi
+• Assume b′
+i(∞) < ki < b′
+i(0)
+• Strategic substitutes
+First order condition:
+b′
+i
+
+xi + δ
+X
+j̸=i
+gijxj
+
+−ki ≤0
+Write xi for solution to b′
+i(x) = ki
+Best reply is xi = max
+n
+0, xi −δ P
+j̸=i gijxj
+o
+Evan Sadler
+Networks Introduction
+5/30
+
+=== [pagina 14] ===
+Example: A Cournot Game
+Set of N ﬁrms produce heterogeneous goods
+• Edge between two ﬁrms indicates products are substitutes
+• Parameter δ indicates degree of substitutability
+Evan Sadler
+Networks Introduction
+6/30
+
+=== [pagina 15] ===
+Example: A Cournot Game
+Set of N ﬁrms produce heterogeneous goods
+• Edge between two ﬁrms indicates products are substitutes
+• Parameter δ indicates degree of substitutability
+Firm i faces inverse demand
+pi(q) = a −
+
+qi + δ
+X
+j̸=i
+gijqj
+
+
+where a > 0
+Evan Sadler
+Networks Introduction
+6/30
+
+=== [pagina 16] ===
+Example: A Cournot Game
+Set of N ﬁrms produce heterogeneous goods
+• Edge between two ﬁrms indicates products are substitutes
+• Parameter δ indicates degree of substitutability
+Firm i faces inverse demand
+pi(q) = a −
+
+qi + δ
+X
+j̸=i
+gijqj
+
+
+where a > 0
+If marginal cost is c, proﬁt is
+Ui(q, δ, G) = qi
+
+a −
+
+qi + δ
+X
+j̸=i
+gijqj
+
+
+
+−cqi
+Evan Sadler
+Networks Introduction
+6/30
+
+=== [pagina 17] ===
+Example: A Cournot Game
+First order condition:
+∂Ui
+∂qi
+= a −
+
+qi + δ
+X
+j̸=i
+gijqj
+
+−qi −c = 0,
+implying
+qi = a −c −δ P
+j̸=i gijqj
+2
+Evan Sadler
+Networks Introduction
+7/30
+
+=== [pagina 18] ===
+Example: A Cournot Game
+First order condition:
+∂Ui
+∂qi
+= a −
+
+qi + δ
+X
+j̸=i
+gijqj
+
+−qi −c = 0,
+implying
+qi = a −c −δ P
+j̸=i gijqj
+2
+Note: we recover the classic model by taking δ = gij = 1 for all j
+Evan Sadler
+Networks Introduction
+7/30
+
+=== [pagina 19] ===
+Strategic Substitutes
+If xi > 0, say i is active, else inactive
+Evan Sadler
+Networks Introduction
+8/30
+
+=== [pagina 20] ===
+Strategic Substitutes
+If xi > 0, say i is active, else inactive
+For simplicitly, assume function bi is such that xi = 1
+• xi = max
+n
+0, 1 −δ P
+j̸=i gijxj
+o
+• Brouwer’s ﬁxed point theorem guarantees equilibrium existence
+Evan Sadler
+Networks Introduction
+8/30
+
+=== [pagina 21] ===
+Strategic Substitutes
+If xi > 0, say i is active, else inactive
+For simplicitly, assume function bi is such that xi = 1
+• xi = max
+n
+0, 1 −δ P
+j̸=i gijxj
+o
+• Brouwer’s ﬁxed point theorem guarantees equilibrium existence
+• Set of active agents A
+• Active agent action proﬁle xA
+• Links between active agents GA
+• Links connecting active agents to inactive ones GN−A,A
+Evan Sadler
+Networks Introduction
+8/30
+
+=== [pagina 22] ===
+Equilibrium Structure
+Proposition
+In any Nash equilibrium, the action proﬁle of active agents xA
+satisﬁes:
+(I + δGA)xA = 1
+δGN−A,AxA ≥1
+Evan Sadler
+Networks Introduction
+9/30
+
+=== [pagina 23] ===
+Equilibrium Structure
+Proposition
+In any Nash equilibrium, the action proﬁle of active agents xA
+satisﬁes:
+(I + δGA)xA = 1
+δGN−A,AxA ≥1
+First condition ensures active players are best-responding
+• Compute equilibrium actions as xA = (I + δGA)−1 · 1
+• Follows from ﬁrst order condition
+Evan Sadler
+Networks Introduction
+9/30
+
+=== [pagina 24] ===
+Equilibrium Structure
+Proposition
+In any Nash equilibrium, the action proﬁle of active agents xA
+satisﬁes:
+(I + δGA)xA = 1
+δGN−A,AxA ≥1
+First condition ensures active players are best-responding
+• Compute equilibrium actions as xA = (I + δGA)−1 · 1
+• Follows from ﬁrst order condition
+Second condition ensures inactive players are best-responding
+Evan Sadler
+Networks Introduction
+9/30
+
+=== [pagina 25] ===
+Computing Equilibria
+How can we ﬁnd the equilibria?
+Evan Sadler
+Networks Introduction
+10/30
+
+=== [pagina 26] ===
+Computing Equilibria
+How can we ﬁnd the equilibria?
+• Guess and check
+Evan Sadler
+Networks Introduction
+10/30
+
+=== [pagina 27] ===
+Computing Equilibria
+How can we ﬁnd the equilibria?
+• Guess and check
+Fix a subset of the players S ⊆N and compute
+xS = (I + δGS)−11
+Evan Sadler
+Networks Introduction
+10/30
+
+=== [pagina 28] ===
+Computing Equilibria
+How can we ﬁnd the equilibria?
+• Guess and check
+Fix a subset of the players S ⊆N and compute
+xS = (I + δGS)−11
+Then check whether δGN−S,SxS ≥1
+Evan Sadler
+Networks Introduction
+10/30
+
+=== [pagina 29] ===
+Computing Equilibria
+How can we ﬁnd the equilibria?
+• Guess and check
+Fix a subset of the players S ⊆N and compute
+xS = (I + δGS)−11
+Then check whether δGN−S,SxS ≥1
+If yes, then we have found an equilibrium with S as the set of
+active players
+Evan Sadler
+Networks Introduction
+10/30
+
+=== [pagina 30] ===
+Example: Computing Equilibria
+Consider four players in a line graph:
+G =
+
+
+
+
+
+
+
+
+
+
+0
+1
+0
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+0
+1
+0
+
+
+
+
+
+
+
+
+
+
+Evan Sadler
+Networks Introduction
+11/30
+
+=== [pagina 31] ===
+Example: Computing Equilibria
+Consider four players in a line graph:
+G =
+
+
+
+
+
+
+
+
+
+
+0
+1
+0
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+0
+1
+0
+
+
+
+
+
+
+
+
+
+
+Suppose all players are active:
+(I + δG)−1 =
+1
+δ4 −3δ2 + 1
+
+
+
+
+
+
+
+
+
+
+1 −2δ2
+δ3 −δ
+δ2
+−δ3
+δ3 −δ
+1 −δ2
+−δ
+δ2
+δ2
+−δ
+1 −δ2
+δ3 −δ
+−δ3
+δ2
+δ3 −δ
+1 −2δ2
+
+
+
+
+
+
+
+
+
+
+Evan Sadler
+Networks Introduction
+11/30
+
+=== [pagina 32] ===
+Example: Computing Equilibria
+(I+δG)−11 =
+1
+δ4 −3δ2 + 1
+
+
+
+
+
+
+
+
+
+
+1 −δ −δ2
+1 −2δ + δ3
+1 −2δ + δ3
+1 −δ −δ2
+
+
+
+
+
+
+
+
+
+
+=
+1
+1 + δ −δ2
+
+
+
+
+
+
+
+
+
+
+1
+1 −δ
+1 −δ
+1
+
+
+
+
+
+
+
+
+
+
+Evan Sadler
+Networks Introduction
+12/30
+
+=== [pagina 33] ===
+Example: Computing Equilibria
+(I+δG)−11 =
+1
+δ4 −3δ2 + 1
+
+
+
+
+
+
+
+
+
+
+1 −δ −δ2
+1 −2δ + δ3
+1 −2δ + δ3
+1 −δ −δ2
+
+
+
+
+
+
+
+
+
+
+=
+1
+1 + δ −δ2
+
+
+
+
+
+
+
+
+
+
+1
+1 −δ
+1 −δ
+1
+
+
+
+
+
+
+
+
+
+
+Actions must be non-negative, so we have an equilibrium with all
+players active if and only if δ < 1.
+Evan Sadler
+Networks Introduction
+12/30
+
+=== [pagina 34] ===
+Example: Computing Equilibria
+Suppose one of the center players is inactive (S = {1, 3, 4})
+Evan Sadler
+Networks Introduction
+13/30
+
+=== [pagina 35] ===
+Example: Computing Equilibria
+Suppose one of the center players is inactive (S = {1, 3, 4})
+Only two linked active players (one end is isolated), gives
+GS =
+
+
+
+0
+1
+1
+0
+
+
+
+(I + δGS)−1 =
+1
+δ2 −1
+
+
+
+−1
+δ
+δ
+−1
+
+
+
+Evan Sadler
+Networks Introduction
+13/30
+
+=== [pagina 36] ===
+Example: Computing Equilibria
+Suppose one of the center players is inactive (S = {1, 3, 4})
+Only two linked active players (one end is isolated), gives
+GS =
+
+
+
+0
+1
+1
+0
+
+
+
+(I + δGS)−1 =
+1
+δ2 −1
+
+
+
+−1
+δ
+δ
+−1
+
+
+
+As long as δ ̸= 1, we have
+(I + δGS)−11 =
+1
+δ2 −1
+
+
+
+δ −1
+δ −1
+
+
+=
+
+
+
+1
+1+δ
+1
+1+δ
+
+
+
+Evan Sadler
+Networks Introduction
+13/30
+
+=== [pagina 37] ===
+Example: Computing Equilibria
+The isolated active player 1 chooses x1 = 1, so
+xS =
+
+
+
+
+
+
+
+1
+1
+1+δ
+1
+1+δ
+
+
+
+
+
+
+
+≥0
+Evan Sadler
+Networks Introduction
+14/30
+
+=== [pagina 38] ===
+Example: Computing Equilibria
+The isolated active player 1 chooses x1 = 1, so
+xS =
+
+
+
+
+
+
+
+1
+1
+1+δ
+1
+1+δ
+
+
+
+
+
+
+
+≥0
+Need to check for the inactive player 2 that δGN−S,SxS ≥1:
+δGN−S,SxS = δ
+
+1
+1
+0
+
+
+
+
+
+
+
+
+1
+1
+1+δ
+1
+1+δ
+
+
+
+
+
+
+
+= δ
+
+1 +
+1
+1 + δ
+
+Evan Sadler
+Networks Introduction
+14/30
+
+=== [pagina 39] ===
+Example: Computing Equilibria
+The isolated active player 1 chooses x1 = 1, so
+xS =
+
+
+
+
+
+
+
+1
+1
+1+δ
+1
+1+δ
+
+
+
+
+
+
+
+≥0
+Need to check for the inactive player 2 that δGN−S,SxS ≥1:
+δGN−S,SxS = δ
+
+1
+1
+0
+
+
+
+
+
+
+
+
+1
+1
+1+δ
+1
+1+δ
+
+
+
+
+
+
+
+= δ
+
+1 +
+1
+1 + δ
+
+Proﬁle is an equilibrium if 1 > δ ≥
+√
+5−1
+2
+Evan Sadler
+Networks Introduction
+14/30
+
+=== [pagina 40] ===
+The Potential Function
+Deﬁne the potential
+Φ (x, δ, G) = xT1 −1
+2xT(I + δG)x
+=
+n
+X
+i=1
+
+xi −1
+2x2
+i
+
+−1
+2δ
+n
+X
+i,j=1
+gijxixj.
+Evan Sadler
+Networks Introduction
+15/30
+
+=== [pagina 41] ===
+The Potential Function
+Deﬁne the potential
+Φ (x, δ, G) = xT1 −1
+2xT(I + δG)x
+=
+n
+X
+i=1
+
+xi −1
+2x2
+i
+
+−1
+2δ
+n
+X
+i,j=1
+gijxixj.
+First order conditions for maximizing Φ are same as ﬁrst order
+condition for each player’s optimization
+• Need 1 −xi −δ P
+j̸=i gijxj ≤0
+Evan Sadler
+Networks Introduction
+15/30
+
+=== [pagina 42] ===
+The Potential Function
+Deﬁne the potential
+Φ (x, δ, G) = xT1 −1
+2xT(I + δG)x
+=
+n
+X
+i=1
+
+xi −1
+2x2
+i
+
+−1
+2δ
+n
+X
+i,j=1
+gijxixj.
+First order conditions for maximizing Φ are same as ﬁrst order
+condition for each player’s optimization
+• Need 1 −xi −δ P
+j̸=i gijxj ≤0
+This is a potential game
+Evan Sadler
+Networks Introduction
+15/30
+
+=== [pagina 43] ===
+Uniqueness of Equilibrium
+Theorem (Bramoullé et al., 2014)
+The set of Nash equilibria given G and δ is the set of local
+maxima and saddle points of the potential Φ(x, δ, G)
+If |λmin(G)| < 1
+δ, there is a unique Nash equilibrium.
+Evan Sadler
+Networks Introduction
+16/30
+
+=== [pagina 44] ===
+Uniqueness of Equilibrium
+Theorem (Bramoullé et al., 2014)
+The set of Nash equilibria given G and δ is the set of local
+maxima and saddle points of the potential Φ(x, δ, G)
+If |λmin(G)| < 1
+δ, there is a unique Nash equilibrium.
+The KKT conditions for maximizing Φ are exactly the best
+response conditions for each player
+• For each i, we need 0 = 1 −xi −δ P
+j̸=i gijxj + µi
+• Complementary slackness implies µi > 0 only if xi = 0
+Evan Sadler
+Networks Introduction
+16/30
+
+=== [pagina 45] ===
+Uniqueness of Equilibrium
+Theorem (Bramoullé et al., 2014)
+The set of Nash equilibria given G and δ is the set of local
+maxima and saddle points of the potential Φ(x, δ, G)
+If |λmin(G)| < 1
+δ, there is a unique Nash equilibrium.
+The KKT conditions for maximizing Φ are exactly the best
+response conditions for each player
+• For each i, we need 0 = 1 −xi −δ P
+j̸=i gijxj + µi
+• Complementary slackness implies µi > 0 only if xi = 0
+If Φ is strictly concave, the KKT conditions are necessary and
+suﬃcient, so there is a unique solution
+Evan Sadler
+Networks Introduction
+16/30
+
+=== [pagina 46] ===
+Uniqueness Continued
+We have ∇2Φ = −(I + δG), so Φ is strictly concave iﬀI + δG is
+positive deﬁnite
+I + δG is positive deﬁnite iﬀλmin(I + δG) > 0
+λmin(I + δG) > 0 iﬀ|λmin(G)| < 1
+δ
+Evan Sadler
+Networks Introduction
+17/30
+
+=== [pagina 47] ===
+Uniqueness Continued
+Proposition
+For any graph G, if |λmin(G)| ≥1
+δ, there exists at least one Nash
+equilibrium with inactive agents.
+Evan Sadler
+Networks Introduction
+18/30
+
+=== [pagina 48] ===
+Uniqueness Continued
+Proposition
+For any graph G, if |λmin(G)| ≥1
+δ, there exists at least one Nash
+equilibrium with inactive agents.
+In the line graph with four players, we have
+|λmin(G)| =
+√
+5 + 1
+2
+=
+2
+√
+5 −1
+Recall the equilibrium with an inactive center player required
+δ ≥
+√
+5 −1
+2
+⇐⇒1
+δ ≤
+2
+√
+5 −1
+Evan Sadler
+Networks Introduction
+18/30
+
+=== [pagina 49] ===
+Comparative Statics
+How do equilibria change when we add links or increase δ?
+Partial answer...
+Evan Sadler
+Networks Introduction
+19/30
+
+=== [pagina 50] ===
+Comparative Statics
+How do equilibria change when we add links or increase δ?
+Partial answer...
+Theorem
+Consider the highest aggregate play equilibrium x∗(δ, G) for δ
+and G. Suppose δ′ ≥δ and G′ ⊇G. Then for any equilibrium
+vector x(δ′, G′), we have
+n
+X
+i=1
+xi(δ′, G′) ≤
+n
+X
+i=1
+x∗
+i (δ, G)
+Evan Sadler
+Networks Introduction
+19/30
+
+=== [pagina 51] ===
+Comparative Statics
+How do equilibria change when we add links or increase δ?
+Partial answer...
+Theorem
+Consider the highest aggregate play equilibrium x∗(δ, G) for δ
+and G. Suppose δ′ ≥δ and G′ ⊇G. Then for any equilibrium
+vector x(δ′, G′), we have
+n
+X
+i=1
+xi(δ′, G′) ≤
+n
+X
+i=1
+x∗
+i (δ, G)
+Adding links or increasing substitutability typically reduces
+equilibrium play
+• Homework problem adds link to line network to make ring,
+compare
+Evan Sadler
+Networks Introduction
+19/30
+
+=== [pagina 52] ===
+Strategic Complements
+Strategic substitutes capture examples like public goods provision
+and Cournot competition
+Evan Sadler
+Networks Introduction
+20/30
+
+=== [pagina 53] ===
+Strategic Complements
+Strategic substitutes capture examples like public goods provision
+and Cournot competition
+In other cases, actions are complements
+• Learning spillovers
+• Bank runs
+• Criminal activity
+Evan Sadler
+Networks Introduction
+20/30
+
+=== [pagina 54] ===
+Strategic Complements
+Strategic substitutes capture examples like public goods provision
+and Cournot competition
+In other cases, actions are complements
+• Learning spillovers
+• Bank runs
+• Criminal activity
+Suppose payoﬀs are
+Ui(xi, x−i, δ, G) = xi −1
+2x2
+i + δ
+X
+j̸=i
+gijxixj
+Evan Sadler
+Networks Introduction
+20/30
+
+=== [pagina 55] ===
+Strategic Complements
+First order conditions imply
+xi = 1 + δ
+X
+j̸=i
+gijxj
+Evan Sadler
+Networks Introduction
+21/30
+
+=== [pagina 56] ===
+Strategic Complements
+First order conditions imply
+xi = 1 + δ
+X
+j̸=i
+gijxj
+Theorem
+If λmax(G) < 1
+δ, there is a unique Nash equilibrium with actions
+x = (I −δG)−11.
+Evan Sadler
+Networks Introduction
+21/30
+
+=== [pagina 57] ===
+Strategic Complements
+First order conditions imply
+xi = 1 + δ
+X
+j̸=i
+gijxj
+Theorem
+If λmax(G) < 1
+δ, there is a unique Nash equilibrium with actions
+x = (I −δG)−11.
+The vector (I −δG)−11 ≡K(δ, G) gives the Katz-Bonacich
+centralities of the players
+Evan Sadler
+Networks Introduction
+21/30
+
+=== [pagina 58] ===
+Strategic Complements
+First order conditions imply
+xi = 1 + δ
+X
+j̸=i
+gijxj
+Theorem
+If λmax(G) < 1
+δ, there is a unique Nash equilibrium with actions
+x = (I −δG)−11.
+The vector (I −δG)−11 ≡K(δ, G) gives the Katz-Bonacich
+centralities of the players
+If λmax(G) > 1
+δ, there is no equilibrium
+Evan Sadler
+Networks Introduction
+21/30
+
+=== [pagina 59] ===
+Key Players
+Each player contributes to aggregate activity in proportion to
+centrality
+x∗
+i (δ, G)
+Pn
+j=1 x∗
+j(δ, G) =
+Ki(δ, G)
+Pn
+j=1 Kj(δ, G)
+Evan Sadler
+Networks Introduction
+22/30
+
+=== [pagina 60] ===
+Key Players
+Each player contributes to aggregate activity in proportion to
+centrality
+x∗
+i (δ, G)
+Pn
+j=1 x∗
+j(δ, G) =
+Ki(δ, G)
+Pn
+j=1 Kj(δ, G)
+Suppose this is a model of criminal activity, and we want to
+reduce aggregate crime by targeting key individuals
+• Who do we target?
+Evan Sadler
+Networks Introduction
+22/30
+
+=== [pagina 61] ===
+Key Players
+Each player contributes to aggregate activity in proportion to
+centrality
+x∗
+i (δ, G)
+Pn
+j=1 x∗
+j(δ, G) =
+Ki(δ, G)
+Pn
+j=1 Kj(δ, G)
+Suppose this is a model of criminal activity, and we want to
+reduce aggregate crime by targeting key individuals
+• Who do we target?
+Write G−i for the network without player i, solve
+min
+
+
+
+X
+j̸=i
+x∗
+j(δ, G−i) | i = 1, 2, ..., n
+
+
+
+We call the solution i∗the key player
+Evan Sadler
+Networks Introduction
+22/30
+
+=== [pagina 62] ===
+Key Players
+Theorem
+If λmax < 1
+δ, the key player i∗has the highest intercentrality
+ci(δ, G)Ki(δ, G)2
+mii(δ, G)
+where M(δ, G) = (I −δG)−1
+Intercentrality is diﬀerent from Katz-Bonacich centrality
+Intuitively, need to capture not only a player’s activity level
+(proportional to Katz-Bonacich centrality), but the player’s
+contribution to others’ centralities as well
+Evan Sadler
+Networks Introduction
+23/30
+
+=== [pagina 63] ===
+Key Players: Proof
+When M(δ, G) is well deﬁned, we have
+mji(δ, G)mik(δ, G) = mii(δ, G)
+
+mjk(δ, G) −mjk(δ, G−i)
+
+X
+j
+Kj(δ, G) −
+X
+j
+Kj(δ, G−i)
+= Ki(δ, G) +
+X
+j̸=i
+Kj(δ, G) −Kj(δ, G−i)
+= Ki(δ, G) +
+X
+j̸=i
+N
+X
+k=1
+
+mjk(δ, G) −mjk(δ, G−i)
+
+= Ki(δ, G) +
+X
+j̸=i
+N
+X
+k=1
+mji(δ, G)mik(δ, G)
+mii(δ, G)
+= Ki(δ, G)
+mii(δ, G)
+
+mii(δ, G) +
+X
+j̸=i
+mji(δ, G)
+
+
+Evan Sadler
+Networks Introduction
+24/30
+
+=== [pagina 64] ===
+Pricing-Consumption Model
+Now suppose we want to price a good that entails local
+externalities
+• How should we set prices?
+• How much is information about the network worth?
+Set of agents N = {1, 2, ..., n}, weighted network G
+• Interpret gij as inﬂuence of j on i
+• Assume gij ≥0, gii = 0
+• Do not need gij = gji
+Evan Sadler
+Networks Introduction
+25/30
+
+=== [pagina 65] ===
+Pricing-Consumption Model
+Now suppose we want to price a good that entails local
+externalities
+• How should we set prices?
+• How much is information about the network worth?
+Set of agents N = {1, 2, ..., n}, weighted network G
+• Interpret gij as inﬂuence of j on i
+• Assume gij ≥0, gii = 0
+• Do not need gij = gji
+Monopolist produces a good, chooses vector p of prices
+• Perfect price discrimination: charge pi to agent i
+Evan Sadler
+Networks Introduction
+25/30
+
+=== [pagina 66] ===
+Pricing-Consumption Model
+Agent’s utility:
+ui(xi, x−i, pi) = aixi −bix2
+i + xi
+X
+j̸=i
+gijxj −pixi
+• Direct beneﬁt aixi −bix2
+i
+• Social beneﬁt
+• Price
+Evan Sadler
+Networks Introduction
+26/30
+
+=== [pagina 67] ===
+Pricing-Consumption Model
+Agent’s utility:
+ui(xi, x−i, pi) = aixi −bix2
+i + xi
+X
+j̸=i
+gijxj −pixi
+• Direct beneﬁt aixi −bix2
+i
+• Social beneﬁt
+• Price
+Two stage game
+• Monopolist chooses prices p to maximize P
+i pixi −cxi
+• Agents choose usages xi to maximize utilities ui(x, pi)
+• Look at subgame perfect equilibria
+Evan Sadler
+Networks Introduction
+26/30
+
+=== [pagina 68] ===
+Consumption Equilibrium
+Work backwards, taking prices as given
+Evan Sadler
+Networks Introduction
+27/30
+
+=== [pagina 69] ===
+Consumption Equilibrium
+Work backwards, taking prices as given
+Deﬁne diagonal matrix Λ with Λii = 2bi, let S ⊆N be a subset
+of the agents
+Evan Sadler
+Networks Introduction
+27/30
+
+=== [pagina 70] ===
+Consumption Equilibrium
+Work backwards, taking prices as given
+Deﬁne diagonal matrix Λ with Λii = 2bi, let S ⊆N be a subset
+of the agents
+Theorem
+Assume 2bi >
+P
+j∈N gij for all i. For any p, there is a unique
+consumption equilibrium of the form
+xS = (ΛS −GS)−1(aS −pS)
+xN−S = 0
+for some subset S ⊆N
+Evan Sadler
+Networks Introduction
+27/30
+
+=== [pagina 71] ===
+Optimal Pricing
+Theorem
+Assume ai > c for all i ∈N. The optimal prices are given by
+p = a −(Λ −G)
+ 
+Λ −G + GT
+2
+!−1 a −c1
+2
+Note, under optimal prices, all agents purchase a postiive amount
+Evan Sadler
+Networks Introduction
+28/30
+
+=== [pagina 72] ===
+Optimal Pricing
+Theorem
+Assume ai > c for all i ∈N. The optimal prices are given by
+p = a −(Λ −G)
+ 
+Λ −G + GT
+2
+!−1 a −c1
+2
+Note, under optimal prices, all agents purchase a postiive amount
+Immediate corollary: If G is symmetric, optimal prices are
+p = a + c1
+2
+,
+independent of the network structure
+Evan Sadler
+Networks Introduction
+28/30
+
+=== [pagina 73] ===
+Optimal Pricing
+Recall the Katz-Bonacich centralities K(G, α) = (I −αG)−11
+Evan Sadler
+Networks Introduction
+29/30
+
+=== [pagina 74] ===
+Optimal Pricing
+Recall the Katz-Bonacich centralities K(G, α) = (I −αG)−11
+Theorem
+Assume consumers are symmetric, ai = a and bi = b for all i.
+The optimal prices are
+p = a + c
+2
+1+a −c
+8b
+"
+GK
+ G + GT
+2
+, 1
+2b
+!
+−GTK
+ G + GT
+2
+, 1
+2b
+!#
+Base price plus markup (inﬂuence by others) minus discount
+(inﬂuence to others)
+Evan Sadler
+Networks Introduction
+29/30
+
+=== [pagina 75] ===
+Importance of Knowing the Network
+Compare optimal prices ignoring the network to optimal prices
+with perfect information
+• Π0 proﬁt assuming gij ≡0
+• ΠN optimal proﬁt with network information
+Evan Sadler
+Networks Introduction
+30/30
+
+=== [pagina 76] ===
+Importance of Knowing the Network
+Compare optimal prices ignoring the network to optimal prices
+with perfect information
+• Π0 proﬁt assuming gij ≡0
+• ΠN optimal proﬁt with network information
+Theorem
+Assume players are symmetric, and deﬁne M = Λ −G and
+˜
+M = MM−T +MT M−1
+4
+. Then,
+1
+2 + λmin
+ ˜
+M
+
+≤Π0
+ΠN
+≤1
+2 + λmax
+ ˜
+M
+
+Evan Sadler
+Networks Introduction
+30/30
+
+=== [pagina 77] ===
+Importance of Knowing the Network
+Compare optimal prices ignoring the network to optimal prices
+with perfect information
+• Π0 proﬁt assuming gij ≡0
+• ΠN optimal proﬁt with network information
+Theorem
+Assume players are symmetric, and deﬁne M = Λ −G and
+˜
+M = MM−T +MT M−1
+4
+. Then,
+1
+2 + λmin
+ ˜
+M
+
+≤Π0
+ΠN
+≤1
+2 + λmax
+ ˜
+M
+
+From corollary, we know if G = GT, then Π0 = ΠN; value of
+network information increases with asymmetry of interactions
+Evan Sadler
+Networks Introduction
+30/30

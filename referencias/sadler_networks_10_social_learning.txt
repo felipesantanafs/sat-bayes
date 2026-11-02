@@ -1,0 +1,1317 @@
+# Fonte: Networks 10 - Social Learning.pdf
+# Paginas: 107
+
+=== [pagina 1] ===
+Economics of Networks
+Social Learning
+Evan Sadler
+Massachusetts Institute of Technology
+May 3, 2018
+Evan Sadler
+Social Learning
+1/38
+
+=== [pagina 2] ===
+Agenda
+• Recap of rational herding
+• Observational learning in a network
+• DeGroot learning
+Reading: Golub and Sadler (2016), “Learning in Social Networks”
+Supplement: Acemoglu et al., (2011), “Bayesian Learning in
+Social Networks;” Golub and Jackson (2010), “Naïve Learning in
+Social Networks and the Wisdom of Crowds”
+Evan Sadler
+Social Learning
+2/38
+
+=== [pagina 3] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Evan Sadler
+Social Learning
+3/38
+
+=== [pagina 4] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Evan Sadler
+Social Learning
+3/38
+
+=== [pagina 5] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Evan Sadler
+Social Learning
+3/38
+
+=== [pagina 6] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Each agent receives a binary signal sn ∈{0, 1}, observes history
+of actions
+Evan Sadler
+Social Learning
+3/38
+
+=== [pagina 7] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Each agent receives a binary signal sn ∈{0, 1}, observes history
+of actions
+Signals i.i.d. conditional on the state:
+P(sn = 0 | θ = 0) = P(sn = 1 | θ = 1) = g > 1
+2
+Evan Sadler
+Social Learning
+3/38
+
+=== [pagina 8] ===
+Rational Herding
+Last time we showed in any PBE of the social learning game, we
+get herd behavior
+• All agents after some time t choose the same action
+Evan Sadler
+Social Learning
+4/38
+
+=== [pagina 9] ===
+Rational Herding
+Last time we showed in any PBE of the social learning game, we
+get herd behavior
+• All agents after some time t choose the same action
+With positive probability, agents herd on the wrong action
+Evan Sadler
+Social Learning
+4/38
+
+=== [pagina 10] ===
+Rational Herding
+Last time we showed in any PBE of the social learning game, we
+get herd behavior
+• All agents after some time t choose the same action
+With positive probability, agents herd on the wrong action
+Ineﬃciency reﬂects an informational externality
+• Agents fail to internalize the value of their information to
+others
+Evan Sadler
+Social Learning
+4/38
+
+=== [pagina 11] ===
+Observational Learning: A Modern Perspective
+Evan Sadler
+Social Learning
+5/38
+
+=== [pagina 12] ===
+Observational Learning: A Modern Perspective
+We observe more of what other people do...
+Evan Sadler
+Social Learning
+6/38
+
+=== [pagina 13] ===
+Observational Learning: A Modern Perspective
+We observe more of what other people do...
+...but observing entire history is less reasonable
+Evan Sadler
+Social Learning
+6/38
+
+=== [pagina 14] ===
+Observational Learning: A Modern Perspective
+We observe more of what other people do...
+...but observing entire history is less reasonable
+How does the observation structure aﬀect learning?
+Evan Sadler
+Social Learning
+6/38
+
+=== [pagina 15] ===
+A Souped-up Model
+Two states of the world θ ∈{0, 1}, common prior q0 = P(θ = 1)
+Evan Sadler
+Social Learning
+7/38
+
+=== [pagina 16] ===
+A Souped-up Model
+Two states of the world θ ∈{0, 1}, common prior q0 = P(θ = 1)
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Evan Sadler
+Social Learning
+7/38
+
+=== [pagina 17] ===
+A Souped-up Model
+Two states of the world θ ∈{0, 1}, common prior q0 = P(θ = 1)
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀu(xn, θ), arbitrary function satisfying
+u(1, 1) > u(0, 1),
+u(0, 0) > u(1, 0)
+Evan Sadler
+Social Learning
+7/38
+
+=== [pagina 18] ===
+A Souped-up Model
+Two states of the world θ ∈{0, 1}, common prior q0 = P(θ = 1)
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀu(xn, θ), arbitrary function satisfying
+u(1, 1) > u(0, 1),
+u(0, 0) > u(1, 0)
+Each agent receives a signal sn ∈S in an arbitrary metric space
+Evan Sadler
+Social Learning
+7/38
+
+=== [pagina 19] ===
+A Souped-up Model
+Two states of the world θ ∈{0, 1}, common prior q0 = P(θ = 1)
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀu(xn, θ), arbitrary function satisfying
+u(1, 1) > u(0, 1),
+u(0, 0) > u(1, 0)
+Each agent receives a signal sn ∈S in an arbitrary metric space
+Signals are conditionally i.i.d. with distributions Fθ
+Evan Sadler
+Social Learning
+7/38
+
+=== [pagina 20] ===
+The Observation Structure
+Agent n has a neighborhood B(n) ⊆{1, 2, ..., n −1}, observes
+xk for k ∈B(n)
+Evan Sadler
+Social Learning
+8/38
+
+=== [pagina 21] ===
+The Observation Structure
+Agent n has a neighborhood B(n) ⊆{1, 2, ..., n −1}, observes
+xk for k ∈B(n)
+Information set In = {sn, B(n), xk ∀k ∈B(n)}
+Evan Sadler
+Social Learning
+8/38
+
+=== [pagina 22] ===
+The Observation Structure
+Agent n has a neighborhood B(n) ⊆{1, 2, ..., n −1}, observes
+xk for k ∈B(n)
+Information set In = {sn, B(n), xk ∀k ∈B(n)}
+Neighborhoods drawn from a joint distribution Q that we call the
+network topology
+• Q is common knowledge
+• For this class, assume {B(n)}n∈N are mutually independent
+Evan Sadler
+Social Learning
+8/38
+
+=== [pagina 23] ===
+The Observation Structure
+Agent n has a neighborhood B(n) ⊆{1, 2, ..., n −1}, observes
+xk for k ∈B(n)
+Information set In = {sn, B(n), xk ∀k ∈B(n)}
+Neighborhoods drawn from a joint distribution Q that we call the
+network topology
+• Q is common knowledge
+• For this class, assume {B(n)}n∈N are mutually independent
+Study perfect Bayesian equilibria σ of the learning game:
+σn = arg max Eσ [u(x, θ) | In]
+Evan Sadler
+Social Learning
+8/38
+
+=== [pagina 24] ===
+A Complex Inference Problem
+1
+x1 =?
+2
+x2 = 0
+3
+x3 = 1
+4
+x4 =?
+5
+Evan Sadler
+Social Learning
+9/38
+
+=== [pagina 25] ===
+Learning Principles
+Cannot fully characterize decisions, focus on asymptotic
+outcomes
+Evan Sadler
+Social Learning
+10/38
+
+=== [pagina 26] ===
+Learning Principles
+Cannot fully characterize decisions, focus on asymptotic
+outcomes
+Two learning principles:
+• The improvement principle
+• The large-sample principle
+Evan Sadler
+Social Learning
+10/38
+
+=== [pagina 27] ===
+Learning Principles
+Cannot fully characterize decisions, focus on asymptotic
+outcomes
+Two learning principles:
+• The improvement principle
+• The large-sample principle
+Corresponding learning metrics: diﬀusion vs. aggregation
+Evan Sadler
+Social Learning
+10/38
+
+=== [pagina 28] ===
+Private and Social Beliefs
+Deﬁne the private belief pn = P(θ = 1 | sn), distribution Gθ
+Evan Sadler
+Social Learning
+11/38
+
+=== [pagina 29] ===
+Private and Social Beliefs
+Deﬁne the private belief pn = P(θ = 1 | sn), distribution Gθ
+Social belief qn = P (θ = 1 | B(n), xk, k ∈B(n))
+Evan Sadler
+Social Learning
+11/38
+
+=== [pagina 30] ===
+Private and Social Beliefs
+Deﬁne the private belief pn = P(θ = 1 | sn), distribution Gθ
+Social belief qn = P (θ = 1 | B(n), xk, k ∈B(n))
+Support of private beliefs [β, β]
+β = inf{r ∈[0, 1] : P(p1 ≤r) > 0}
+β = sup{r ∈[0, 1] : P(p1 ≤r) < 1}
+Evan Sadler
+Social Learning
+11/38
+
+=== [pagina 31] ===
+Private and Social Beliefs
+Deﬁne the private belief pn = P(θ = 1 | sn), distribution Gθ
+Social belief qn = P (θ = 1 | B(n), xk, k ∈B(n))
+Support of private beliefs [β, β]
+β = inf{r ∈[0, 1] : P(p1 ≤r) > 0}
+β = sup{r ∈[0, 1] : P(p1 ≤r) < 1}
+The expert signal ˜s, binary with
+P(θ = 1 | ˜s = 0) = β,
+P(θ = 1 | ˜s = 1) = β
+Evan Sadler
+Social Learning
+11/38
+
+=== [pagina 32] ===
+Learning Metrics
+Information diﬀuses if
+lim inf
+n→∞Eσ [u(xn, θ)] ≥E[u(˜s, θ)] ≡u∗
+Evan Sadler
+Social Learning
+12/38
+
+=== [pagina 33] ===
+Learning Metrics
+Information diﬀuses if
+lim inf
+n→∞Eσ [u(xn, θ)] ≥E[u(˜s, θ)] ≡u∗
+Information aggregates if
+lim
+n→∞Pσ(xn = θ) = 1
+Evan Sadler
+Social Learning
+12/38
+
+=== [pagina 34] ===
+Learning Metrics
+Information diﬀuses if
+lim inf
+n→∞Eσ [u(xn, θ)] ≥E[u(˜s, θ)] ≡u∗
+Information aggregates if
+lim
+n→∞Pσ(xn = θ) = 1
+A network topology Q diﬀuses (aggregates) information if
+diﬀusion (aggregation) occurs for every signal structure and every
+equilibrium strategy proﬁle
+Evan Sadler
+Social Learning
+12/38
+
+=== [pagina 35] ===
+Diﬀusion vs. Aggregation
+If 1 −β = β = 1, the two metrics coincide
+• We say private beliefs are unbounded
+Evan Sadler
+Social Learning
+13/38
+
+=== [pagina 36] ===
+Diﬀusion vs. Aggregation
+If 1 −β = β = 1, the two metrics coincide
+• We say private beliefs are unbounded
+If β > 0 and β < 1, private beliefs are bounded
+• Diﬀusion is weaker condition than aggregation
+Evan Sadler
+Social Learning
+13/38
+
+=== [pagina 37] ===
+Diﬀusion vs. Aggregation
+If 1 −β = β = 1, the two metrics coincide
+• We say private beliefs are unbounded
+If β > 0 and β < 1, private beliefs are bounded
+• Diﬀusion is weaker condition than aggregation
+In complete network, aggregation iﬀunbounded private beliefs
+(Smith and Sorensen, 2000)
+Evan Sadler
+Social Learning
+13/38
+
+=== [pagina 38] ===
+Diﬀusion vs. Aggregation
+If 1 −β = β = 1, the two metrics coincide
+• We say private beliefs are unbounded
+If β > 0 and β < 1, private beliefs are bounded
+• Diﬀusion is weaker condition than aggregation
+In complete network, aggregation iﬀunbounded private beliefs
+(Smith and Sorensen, 2000)
+Our deﬁnition emphasizes role of network
+• Complete network diﬀuses, does not aggregate, information
+Evan Sadler
+Social Learning
+13/38
+
+=== [pagina 39] ===
+Necessary Conditions for Learning
+Basic requirement: suﬃcient connectivity
+Evan Sadler
+Social Learning
+14/38
+
+=== [pagina 40] ===
+Necessary Conditions for Learning
+Basic requirement: suﬃcient connectivity
+An agent’s personal subnetwork ˆB(n) includes all m < n with a
+directed path to n
+Evan Sadler
+Social Learning
+14/38
+
+=== [pagina 41] ===
+Necessary Conditions for Learning
+Basic requirement: suﬃcient connectivity
+An agent’s personal subnetwork ˆB(n) includes all m < n with a
+directed path to n
+Theorem
+If Q diﬀuses information, we must have expanding subnetworks:
+lim
+n→∞P(| ˆB(n)| < K) = 0
+for all K ∈N
+Evan Sadler
+Social Learning
+14/38
+
+=== [pagina 42] ===
+The Improvement Principle
+Intuition: I can always pick a neighbor to copy
+• Whom do I imitate?
+• Can I improve?
+Evan Sadler
+Social Learning
+15/38
+
+=== [pagina 43] ===
+The Improvement Principle
+Intuition: I can always pick a neighbor to copy
+• Whom do I imitate?
+• Can I improve?
+A heuristic approach: look at neighbor with largest index B(n)
+• If we have expanding subnetworks, then P(B(n) < K) →0 as
+n →∞for any ﬁxed K
+• Key idea: imitate this neighbor if my signal is weak, follow my
+signal if it is strong
+Evan Sadler
+Social Learning
+15/38
+
+=== [pagina 44] ===
+The Improvement Principle
+Intuition: I can always pick a neighbor to copy
+• Whom do I imitate?
+• Can I improve?
+A heuristic approach: look at neighbor with largest index B(n)
+• If we have expanding subnetworks, then P(B(n) < K) →0 as
+n →∞for any ﬁxed K
+• Key idea: imitate this neighbor if my signal is weak, follow my
+signal if it is strong
+Suboptimal rule, but it gives a lower bound on performance
+• Rational agents must do (weakly) better
+Evan Sadler
+Social Learning
+15/38
+
+=== [pagina 45] ===
+Two Lemmas
+Lemma
+Suppose Q has expanding subnetworks, and there exists a
+continuous increasing Z such that Z(u) > u for all u < u∗, and
+Eσ[u(xn, θ)] ≥Z(Eσ[u(xB(n), θ)])
+Then Q diﬀuses information.
+Lemma
+There exists a continuous increasing Z with Z(u) > u for all
+u < u∗such that
+Eσ[u(xn, θ)] ≥Z(Eσ[u(xm, θ)])
+for any m ∈B(n).
+Evan Sadler
+Social Learning
+16/38
+
+=== [pagina 46] ===
+A Key Assumption: Independent Neighborhoods
+Our two lemmas imply that information diﬀuses in any
+suﬃciently connected network
+• Relies on independence of neighborhoods
+Evan Sadler
+Social Learning
+17/38
+
+=== [pagina 47] ===
+A Key Assumption: Independent Neighborhoods
+Our two lemmas imply that information diﬀuses in any
+suﬃciently connected network
+• Relies on independence of neighborhoods
+If neighborhoods are correlated, the fact that I observe someone
+is related to how informative their choice is
+Evan Sadler
+Social Learning
+17/38
+
+=== [pagina 48] ===
+Failure to Aggregate
+Proposition (Acemoglu et al., 2011, Theorem 3)
+The topology Q fails to aggregate information if any of the
+following conditions hold:
+• B(n) = {1, 2, ..., n −1}
+• |B(n)| ≤1 for all n
+• |B(n)| ≤M for all n and some M ∈N, and
+lim
+n→∞max
+m∈B(n) m = ∞
+almost surely
+Evan Sadler
+Social Learning
+18/38
+
+=== [pagina 49] ===
+The Large-Sample Principle
+Intuition: I can always learn from many independent observations
+Evan Sadler
+Social Learning
+19/38
+
+=== [pagina 50] ===
+The Large-Sample Principle
+Intuition: I can always learn from many independent observations
+Limiting connectively can create “sacriﬁcial lambs:” B(m) = ∅
+Evan Sadler
+Social Learning
+19/38
+
+=== [pagina 51] ===
+The Large-Sample Principle
+Intuition: I can always learn from many independent observations
+Limiting connectively can create “sacriﬁcial lambs:” B(m) = ∅
+Proposition
+Suppose there exists a subsequence {mi} such that
+X
+i∈N
+P(B(mi) = ∅) = ∞, and lim
+n→∞P(mi ∈B(n)) = 1
+for all i. Then Q aggregates information.
+Follows from a martingale convergence argument
+Evan Sadler
+Social Learning
+19/38
+
+=== [pagina 52] ===
+Heterogeneous Preferences
+Key limitation so far: everyone has the same preferences
+Evan Sadler
+Social Learning
+20/38
+
+=== [pagina 53] ===
+Heterogeneous Preferences
+Key limitation so far: everyone has the same preferences
+Give each agent n a type tn ∈(0, 1)
+Evan Sadler
+Social Learning
+20/38
+
+=== [pagina 54] ===
+Heterogeneous Preferences
+Key limitation so far: everyone has the same preferences
+Give each agent n a type tn ∈(0, 1)
+Payoﬀs
+u(x, θ, t) =
+
+
+
+1 −θ + t
+if x = 0
+θ + 1 −t
+if x = 1
+Evan Sadler
+Social Learning
+20/38
+
+=== [pagina 55] ===
+Heterogeneous Preferences
+Key limitation so far: everyone has the same preferences
+Give each agent n a type tn ∈(0, 1)
+Payoﬀs
+u(x, θ, t) =
+
+
+
+1 −θ + t
+if x = 0
+θ + 1 −t
+if x = 1
+The type t parameterizes the relative cost of error in each state
+Evan Sadler
+Social Learning
+20/38
+
+=== [pagina 56] ===
+Failure of the Improvement Principle
+Copying a neighbor no longer guarantees same utility
+• Copying works better when neighbor’s preferences are close to
+own
+Evan Sadler
+Social Learning
+21/38
+
+=== [pagina 57] ===
+Failure of the Improvement Principle
+Copying a neighbor no longer guarantees same utility
+• Copying works better when neighbor’s preferences are close to
+own
+Assume
+• B(n) = {n −1} for all n
+• Odds have type 1
+5, evens have type 4
+5
+• G0(r) = 2r −r2 and G1(r) = r2
+Evan Sadler
+Social Learning
+21/38
+
+=== [pagina 58] ===
+Failure of the Improvement Principle
+Copying a neighbor no longer guarantees same utility
+• Copying works better when neighbor’s preferences are close to
+own
+Assume
+• B(n) = {n −1} for all n
+• Odds have type 1
+5, evens have type 4
+5
+• G0(r) = 2r −r2 and G1(r) = r2
+Can show inductively that all odds (evens) err in state 0 (state 1)
+with probability at least 1
+4 (homework problem)
+Evan Sadler
+Social Learning
+21/38
+
+=== [pagina 59] ===
+Robust Large-Sample Principle
+With full support in preference distribution, preferences can
+counterbalance social information
+• Some agents will act on signals
+• No need for sacriﬁcial lambs
+Evan Sadler
+Social Learning
+22/38
+
+=== [pagina 60] ===
+Robust Large-Sample Principle
+With full support in preference distribution, preferences can
+counterbalance social information
+• Some agents will act on signals
+• No need for sacriﬁcial lambs
+Proposition
+Suppose preference types are i.i.d. with full support on (0, 1),
+and there exists an inﬁnite sequence {mi} such that
+lim
+n→∞P(mi ∈B(n)) = 1
+for all i. Then information aggregates.
+Evan Sadler
+Social Learning
+22/38
+
+=== [pagina 61] ===
+Remarks on the SSLM
+Clear understanding of learning mechanisms
+• Improvement vs. Large samples
+• Diﬀerent eﬀects of preference heterogeneity
+Evan Sadler
+Social Learning
+23/38
+
+=== [pagina 62] ===
+Remarks on the SSLM
+Clear understanding of learning mechanisms
+• Improvement vs. Large samples
+• Diﬀerent eﬀects of preference heterogeneity
+Rationality is a very strong assumption...
+• but proofs are based on heuristic benchmarks
+Evan Sadler
+Social Learning
+23/38
+
+=== [pagina 63] ===
+Remarks on the SSLM
+Clear understanding of learning mechanisms
+• Improvement vs. Large samples
+• Diﬀerent eﬀects of preference heterogeneity
+Rationality is a very strong assumption...
+• but proofs are based on heuristic benchmarks
+Can’t say much about rate of learning, inﬂuence
+Evan Sadler
+Social Learning
+23/38
+
+=== [pagina 64] ===
+A Diﬀerent Approach
+Look at a model of heuristic learning based on DeGroot (1974)
+Evan Sadler
+Social Learning
+24/38
+
+=== [pagina 65] ===
+A Diﬀerent Approach
+Look at a model of heuristic learning based on DeGroot (1974)
+Finite set N of agents, time is discrete
+Evan Sadler
+Social Learning
+24/38
+
+=== [pagina 66] ===
+A Diﬀerent Approach
+Look at a model of heuristic learning based on DeGroot (1974)
+Finite set N of agents, time is discrete
+At time t, agent i has a belief or opinion xi(t) ∈[0, 1]
+• How likely is it the state is 1?
+• How good is politician X?
+Evan Sadler
+Social Learning
+24/38
+
+=== [pagina 67] ===
+A Diﬀerent Approach
+Look at a model of heuristic learning based on DeGroot (1974)
+Finite set N of agents, time is discrete
+At time t, agent i has a belief or opinion xi(t) ∈[0, 1]
+• How likely is it the state is 1?
+• How good is politician X?
+A simple update rule:
+xi(t) =
+X
+j∈N
+Wijxj(t −1)
+Think of W as a weighted graph
+Evan Sadler
+Social Learning
+24/38
+
+=== [pagina 68] ===
+DeGroot Updating
+Assumptions:
+• The xi(0) are given exogenously
+• The matrix W is an n × n matrix with non-negative entries
+• For each i we have P
+j∈N Wij = 1
+Evan Sadler
+Social Learning
+25/38
+
+=== [pagina 69] ===
+DeGroot Updating
+Assumptions:
+• The xi(0) are given exogenously
+• The matrix W is an n × n matrix with non-negative entries
+• For each i we have P
+j∈N Wij = 1
+Take a weighted average of friends’ opinions
+Evan Sadler
+Social Learning
+25/38
+
+=== [pagina 70] ===
+DeGroot Updating
+Assumptions:
+• The xi(0) are given exogenously
+• The matrix W is an n × n matrix with non-negative entries
+• For each i we have P
+j∈N Wij = 1
+Take a weighted average of friends’ opinions
+Simple example:
+• Consider an unweighted graph G, agent i has degree di
+• Wij = 1
+di for each neighbor j of i, and Wij = 0 for each
+non-neighbor
+Evan Sadler
+Social Learning
+25/38
+
+=== [pagina 71] ===
+Matrix Powers and Markov Chains
+Can rewrite the update rule as
+x(t) = Wx(t −1)
+=⇒
+x(t) = W tx(0)
+Evan Sadler
+Social Learning
+26/38
+
+=== [pagina 72] ===
+Matrix Powers and Markov Chains
+Can rewrite the update rule as
+x(t) = Wx(t −1)
+=⇒
+x(t) = W tx(0)
+Reduction to dynamics of matrix powers
+Evan Sadler
+Social Learning
+26/38
+
+=== [pagina 73] ===
+Matrix Powers and Markov Chains
+Can rewrite the update rule as
+x(t) = Wx(t −1)
+=⇒
+x(t) = W tx(0)
+Reduction to dynamics of matrix powers
+Entries in each row sum to 1, so this is a row-stochastic matrix
+• Correspond to transition probabilities for an n-state Markov
+chain
+Evan Sadler
+Social Learning
+26/38
+
+=== [pagina 74] ===
+Matrix Powers and Markov Chains
+Can rewrite the update rule as
+x(t) = Wx(t −1)
+=⇒
+x(t) = W tx(0)
+Reduction to dynamics of matrix powers
+Entries in each row sum to 1, so this is a row-stochastic matrix
+• Correspond to transition probabilities for an n-state Markov
+chain
+How to think about W t
+ij
+•
+∂xi(t)
+∂xj(0) = W t
+ij: inﬂuence of j on i’s time t opinion
+• W t
+ij sums over all paths of indirect inﬂuence
+Evan Sadler
+Social Learning
+26/38
+
+=== [pagina 75] ===
+The Long-Run Limit
+Does each individual’s estimate settle down to a long-run limit?
+• Does limt→∞xi(t) exist?
+Evan Sadler
+Social Learning
+27/38
+
+=== [pagina 76] ===
+The Long-Run Limit
+Does each individual’s estimate settle down to a long-run limit?
+• Does limt→∞xi(t) exist?
+Do agents reach a consensus? If so, what does it look like?
+• How do long-run beliefs depend on W and the initial estimates
+x(0)?
+Evan Sadler
+Social Learning
+27/38
+
+=== [pagina 77] ===
+The Long-Run Limit
+Does each individual’s estimate settle down to a long-run limit?
+• Does limt→∞xi(t) exist?
+Do agents reach a consensus? If so, what does it look like?
+• How do long-run beliefs depend on W and the initial estimates
+x(0)?
+Start with strongly connected networks
+• The network W is strongly connected if there is a directed
+path from i to j for every i, j ∈N
+Evan Sadler
+Social Learning
+27/38
+
+=== [pagina 78] ===
+The Long-Run Limit
+Does each individual’s estimate settle down to a long-run limit?
+• Does limt→∞xi(t) exist?
+Do agents reach a consensus? If so, what does it look like?
+• How do long-run beliefs depend on W and the initial estimates
+x(0)?
+Start with strongly connected networks
+• The network W is strongly connected if there is a directed
+path from i to j for every i, j ∈N
+Call W primitive if there exists q such that every entry of W q is
+strictly positive
+• Equivalent to aperiodicity in the network
+Evan Sadler
+Social Learning
+27/38
+
+=== [pagina 79] ===
+The Long-Run Limit
+Theorem
+Suppose W is strongly connected and aperiodic. The limit
+limt→∞xi(t) exists and is the same for each i.
+Evan Sadler
+Social Learning
+28/38
+
+=== [pagina 80] ===
+The Long-Run Limit
+Theorem
+Suppose W is strongly connected and aperiodic. The limit
+limt→∞xi(t) exists and is the same for each i.
+Proof:
+• The sequence maxi xi(t) is monotonically decreasing
+• The sequence mini xi(t) is monotonically increasing
+• Primitivity ensures the two extreme agents put at least weight
+w > 0 on each other after q steps
+• Distance between max and min decreases by factor at least
+1 −w after every q steps
+Evan Sadler
+Social Learning
+28/38
+
+=== [pagina 81] ===
+Inﬂuence on the Consensus
+lim
+t→∞x(t) = lim
+t→∞W tx(0)
+The matrix powers must converge
+Evan Sadler
+Social Learning
+29/38
+
+=== [pagina 82] ===
+Inﬂuence on the Consensus
+lim
+t→∞x(t) = lim
+t→∞W tx(0)
+The matrix powers must converge
+Moreover, since agents reach consensus, it must be that all rows
+of W t converge to the same vector π
+x(∞) = πTx(0) =
+X
+i∈N
+πixi(0)
+Evan Sadler
+Social Learning
+29/38
+
+=== [pagina 83] ===
+Inﬂuence on the Consensus
+lim
+t→∞x(t) = lim
+t→∞W tx(0)
+The matrix powers must converge
+Moreover, since agents reach consensus, it must be that all rows
+of W t converge to the same vector π
+x(∞) = πTx(0) =
+X
+i∈N
+πixi(0)
+The coeﬃcient πi gives the inﬂuence of agent i on the consensus
+• Depends only on the network W, not on initial estimates x(0)
+Evan Sadler
+Social Learning
+29/38
+
+=== [pagina 84] ===
+Inﬂuence on the Consensus
+lim
+t→∞x(t) = lim
+t→∞W tx(0)
+The matrix powers must converge
+Moreover, since agents reach consensus, it must be that all rows
+of W t converge to the same vector π
+x(∞) = πTx(0) =
+X
+i∈N
+πixi(0)
+The coeﬃcient πi gives the inﬂuence of agent i on the consensus
+• Depends only on the network W, not on initial estimates x(0)
+Vector π must satisfy
+πTW = π
+Left eigenvector with eigenvalue 1
+Evan Sadler
+Social Learning
+29/38
+
+=== [pagina 85] ===
+Inﬂuence on the Consensus
+Theorem
+If W is strongly connected and primitive, then for all i
+lim
+t→∞xi(t) =
+X
+i∈N
+πixi(0)
+where πi is the left eigenvector centrality of i in W
+Evan Sadler
+Social Learning
+30/38
+
+=== [pagina 86] ===
+Inﬂuence on the Consensus
+Theorem
+If W is strongly connected and primitive, then for all i
+lim
+t→∞xi(t) =
+X
+i∈N
+πixi(0)
+where πi is the left eigenvector centrality of i in W
+Note vector π is also the unique stationary distribution of the
+Markov chain with transition probabilities given by W
+Can also be seen as a consequence of the Perron-Frobenius
+Theorem from linear algebra
+Evan Sadler
+Social Learning
+30/38
+
+=== [pagina 87] ===
+Beyond Strong Connectedness
+If network not strongly connected, can decompose into strongly
+connected subgraphs
+• Equivalent to reduction of a Markov chain to closed
+communicating classes
+• Analyze each subgraph separately using earlier result
+Evan Sadler
+Social Learning
+31/38
+
+=== [pagina 88] ===
+Beyond Strong Connectedness
+If network not strongly connected, can decompose into strongly
+connected subgraphs
+• Equivalent to reduction of a Markov chain to closed
+communicating classes
+• Analyze each subgraph separately using earlier result
+Agents i and j are is same communicating class if there is a
+directed path from i to j and vice versa
+Evan Sadler
+Social Learning
+31/38
+
+=== [pagina 89] ===
+Beyond Strong Connectedness
+If network not strongly connected, can decompose into strongly
+connected subgraphs
+• Equivalent to reduction of a Markov chain to closed
+communicating classes
+• Analyze each subgraph separately using earlier result
+Agents i and j are is same communicating class if there is a
+directed path from i to j and vice versa
+No longer guarantee consensus
+• Consensus within communicating classes, not necessarily
+across
+Evan Sadler
+Social Learning
+31/38
+
+=== [pagina 90] ===
+Beyond Strong Connectedness
+If network not strongly connected, can decompose into strongly
+connected subgraphs
+• Equivalent to reduction of a Markov chain to closed
+communicating classes
+• Analyze each subgraph separately using earlier result
+Agents i and j are is same communicating class if there is a
+directed path from i to j and vice versa
+No longer guarantee consensus
+• Consensus within communicating classes, not necessarily
+across
+Small amount of communcation across classes makes large
+(discontinuous) diﬀerence in asymptotic outcomes
+Evan Sadler
+Social Learning
+31/38
+
+=== [pagina 91] ===
+When is Consensus Correct?
+Are large populations able to aggregate information?
+Evan Sadler
+Social Learning
+32/38
+
+=== [pagina 92] ===
+When is Consensus Correct?
+Are large populations able to aggregate information?
+Suppose there is some true state µ ∈[0, 1], and agents begin
+with noisy estimates of µ
+• Suppose the xi(0) are i.i.d. random variables with mean µ,
+variance σ2
+Evan Sadler
+Social Learning
+32/38
+
+=== [pagina 93] ===
+When is Consensus Correct?
+Are large populations able to aggregate information?
+Suppose there is some true state µ ∈[0, 1], and agents begin
+with noisy estimates of µ
+• Suppose the xi(0) are i.i.d. random variables with mean µ,
+variance σ2
+Consider an inﬁnite sequence of networks {W (n)}∞
+n=1, population
+getting larger
+Evan Sadler
+Social Learning
+32/38
+
+=== [pagina 94] ===
+When is Consensus Correct?
+Are large populations able to aggregate information?
+Suppose there is some true state µ ∈[0, 1], and agents begin
+with noisy estimates of µ
+• Suppose the xi(0) are i.i.d. random variables with mean µ,
+variance σ2
+Consider an inﬁnite sequence of networks {W (n)}∞
+n=1, population
+getting larger
+If x(n)(∞) is the consensus estimate in network n, do these
+estimates converge to µ as n →∞?
+Evan Sadler
+Social Learning
+32/38
+
+=== [pagina 95] ===
+When is Consensus Correct?
+Theorem (Golub and Jackson, 2010)
+The consensus beliefs x(n)(∞) converge in probability to µ if and
+only if
+lim
+n→∞max
+i
+π(n)
+i
+= 0.
+The inﬂuence of the most central agent in the network converges
+to zero
+Evan Sadler
+Social Learning
+33/38
+
+=== [pagina 96] ===
+When is Consensus Correct?
+Theorem (Golub and Jackson, 2010)
+The consensus beliefs x(n)(∞) converge in probability to µ if and
+only if
+lim
+n→∞max
+i
+π(n)
+i
+= 0.
+The inﬂuence of the most central agent in the network converges
+to zero
+Proof:
+• We have V ar
+h
+x(n)(∞) −µ
+i
+=
+Pn
+i=1(π(n)
+i
+)2σ2
+• Converges to zero if and only if maxi π(n)
+i
+→0
+• If not, no convergence in probability
+• If it does, Chebyshev’s inequality implies convergence in
+probability
+Evan Sadler
+Social Learning
+33/38
+
+=== [pagina 97] ===
+Speed of Convergence
+Consensus might be irrelevant if it takes too long to get there
+• How long does it take for diﬀerences to get “small”?
+• What network properties lead to fast or slow convergence?
+Evan Sadler
+Social Learning
+34/38
+
+=== [pagina 98] ===
+Speed of Convergence
+Consensus might be irrelevant if it takes too long to get there
+• How long does it take for diﬀerences to get “small”?
+• What network properties lead to fast or slow convergence?
+Note, ﬁrst question depends both on network and initial
+estimates
+• If we start at consensus, we stay there
+Evan Sadler
+Social Learning
+34/38
+
+=== [pagina 99] ===
+Speed of Convergence
+Consensus might be irrelevant if it takes too long to get there
+• How long does it take for diﬀerences to get “small”?
+• What network properties lead to fast or slow convergence?
+Note, ﬁrst question depends both on network and initial
+estimates
+• If we start at consensus, we stay there
+Focus on worst-case convergence time, highlight role of network
+Evan Sadler
+Social Learning
+34/38
+
+=== [pagina 100] ===
+A Spectral Decomposition
+Lemma
+For “generic” W, we may write
+W t =
+n
+X
+l=1
+λt
+lPl
+where
+• 1 = λ1, λ2, ..., λn are n distinct eigenvalues of W
+• Pl is a projection onto the eigenspace of λl
+• P1 = W ∞and P1x(0) = x(∞)
+• Pl1 = 0 for all l > 1, where 1 is a vector of all ones
+All other eigenvalues strictly smaller in absolute value than
+λ1 = 1
+Evan Sadler
+Social Learning
+35/38
+
+=== [pagina 101] ===
+Speed of Convergence
+Theorem
+For generic W,
+1
+2|λ2|t −(n −2)|λ3|t ≤
+sup
+x(0)∈[0,1]n ∥x(t) −x(∞)∥∞≤(n −1)|λ2|t.
+Evan Sadler
+Social Learning
+36/38
+
+=== [pagina 102] ===
+Speed of Convergence
+Theorem
+For generic W,
+1
+2|λ2|t −(n −2)|λ3|t ≤
+sup
+x(0)∈[0,1]n ∥x(t) −x(∞)∥∞≤(n −1)|λ2|t.
+Note ∥· ∥∞denotes the supremum norm, largest deviation from
+consensus among all agents
+Evan Sadler
+Social Learning
+36/38
+
+=== [pagina 103] ===
+Speed of Convergence
+Theorem
+For generic W,
+1
+2|λ2|t −(n −2)|λ3|t ≤
+sup
+x(0)∈[0,1]n ∥x(t) −x(∞)∥∞≤(n −1)|λ2|t.
+Note ∥· ∥∞denotes the supremum norm, largest deviation from
+consensus among all agents
+Clear answer to ﬁrst question: rate of convergence depends on
+second largest eigenvalue
+• Larger λ2 (i.e. smaller spectral gap) implies slower convergence
+Evan Sadler
+Social Learning
+36/38
+
+=== [pagina 104] ===
+Segregation and Slow Convergence
+What network features correspond to large |λ2|?
+Evan Sadler
+Social Learning
+37/38
+
+=== [pagina 105] ===
+Segregation and Slow Convergence
+What network features correspond to large |λ2|?
+On an intuitive level, we get slow convergence in highly
+“segregated” networks
+Evan Sadler
+Social Learning
+37/38
+
+=== [pagina 106] ===
+Segregation and Slow Convergence
+What network features correspond to large |λ2|?
+On an intuitive level, we get slow convergence in highly
+“segregated” networks
+Deﬁne the bottleneck ratio
+Φ(W) =
+min
+M⊆N
+π(M)≥1
+2
+P
+i∈M,j /∈M πiWij
+P
+i∈M πi
+Small when some inﬂuential group pays little attention to those
+outside itself
+• Can use to bound size of |λ2|
+Evan Sadler
+Social Learning
+37/38
+
+=== [pagina 107] ===
+Wrap Up
+Limited ability to learn through observation
+• Information externality creates ineﬃciency
+• Heterogeneity may help or hurt depending on network
+properties
+Naïve learning model gives measures of inﬂuence, learning rate
+Next time: moving on to models of diﬀusion, diﬀerent inﬂuence
+mechanism
+Evan Sadler
+Social Learning
+38/38

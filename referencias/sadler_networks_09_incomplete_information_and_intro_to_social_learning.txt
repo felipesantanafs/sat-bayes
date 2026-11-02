@@ -1,0 +1,1201 @@
+# Fonte: Networks 09 - Incomplete Information and Intro to Social Learning.pdf
+# Paginas: 93
+
+=== [pagina 1] ===
+Economics of Networks
+Incomplete Information and Introduction to
+Social Learning
+Evan Sadler
+Massachusetts Institute of Technology
+May 1, 2018
+Evan Sadler
+Incomplete Information
+1/33
+
+=== [pagina 2] ===
+Agenda
+• Games with incomplete information
+• Bayes-Nash Equilibrium
+• Extensive form games
+• Perfect Bayesian Equilibrium
+• Rational Herding
+Reading: Osborne Chapter 9; EK Chapter 16
+Evan Sadler
+Incomplete Information
+2/33
+
+=== [pagina 3] ===
+Incomplete Information
+Strategic situations often involve uncertainty
+• Uncertainty about others’ preferences
+• Uncertainty about others’ availabe strategies
+• Uncertainty about others’ information
+Evan Sadler
+Incomplete Information
+3/33
+
+=== [pagina 4] ===
+Incomplete Information
+Strategic situations often involve uncertainty
+• Uncertainty about others’ preferences
+• Uncertainty about others’ availabe strategies
+• Uncertainty about others’ information
+Possibility of learning aﬀects incentives
+Evan Sadler
+Incomplete Information
+3/33
+
+=== [pagina 5] ===
+Incomplete Information
+Strategic situations often involve uncertainty
+• Uncertainty about others’ preferences
+• Uncertainty about others’ availabe strategies
+• Uncertainty about others’ information
+Possibility of learning aﬀects incentives
+Examples:
+• Bargaining (how much is opponent willing to pay?)
+• Auctions (how much do others value the object?)
+• Market competition (what costs do my competitors face?)
+• Social learning (What can I infer from others’ choices?)
+Evan Sadler
+Incomplete Information
+3/33
+
+=== [pagina 6] ===
+An Example
+You (player 1) and a friend are trying to coordinate a meeting
+place (say, the mall or the library)
+• Diﬀerent preferences over the two options
+M
+L
+M
+(2, 1)
+(0, 0)
+L
+(0, 0)
+(1, 2)
+Evan Sadler
+Incomplete Information
+4/33
+
+=== [pagina 7] ===
+An Example
+You (player 1) and a friend are trying to coordinate a meeting
+place (say, the mall or the library)
+• Diﬀerent preferences over the two options
+M
+L
+M
+(2, 1)
+(0, 0)
+L
+(0, 0)
+(1, 2)
+Two pure strategy equilibria, one mixed
+Evan Sadler
+Incomplete Information
+4/33
+
+=== [pagina 8] ===
+An Example
+You (player 1) and a friend are trying to coordinate a meeting
+place (say, the mall or the library)
+• Diﬀerent preferences over the two options
+M
+L
+M
+(2, 1)
+(0, 0)
+L
+(0, 0)
+(1, 2)
+Two pure strategy equilibria, one mixed
+Now, suppose you are unsure whether your friend wants to meet
+or avoid you
+Evan Sadler
+Incomplete Information
+4/33
+
+=== [pagina 9] ===
+Example, continued
+To model this, we assume your friend (player 2) has one of two
+possible types
+• One type wants to meet, the other wants to avoid
+Evan Sadler
+Incomplete Information
+5/33
+
+=== [pagina 10] ===
+Example, continued
+To model this, we assume your friend (player 2) has one of two
+possible types
+• One type wants to meet, the other wants to avoid
+Suppose the two types are equally likely, two possible payoﬀ
+matrices
+M
+L
+M
+(2, 1)
+(0, 0)
+L
+(0, 0)
+(1, 2)
+M
+L
+M
+(2, 0)
+(0, 2)
+L
+(0, 1)
+(1, 0)
+Evan Sadler
+Incomplete Information
+5/33
+
+=== [pagina 11] ===
+Example, continued
+To model this, we assume your friend (player 2) has one of two
+possible types
+• One type wants to meet, the other wants to avoid
+Suppose the two types are equally likely, two possible payoﬀ
+matrices
+M
+L
+M
+(2, 1)
+(0, 0)
+L
+(0, 0)
+(1, 2)
+M
+L
+M
+(2, 0)
+(0, 2)
+L
+(0, 1)
+(1, 0)
+Your friend knows which game is played, but you do not
+• What are the strategies?
+Evan Sadler
+Incomplete Information
+5/33
+
+=== [pagina 12] ===
+Example, continued
+Idea: Use Nash Equilibrium in an expanded game
+• Think of each type of player 2 as a separate player
+Evan Sadler
+Incomplete Information
+6/33
+
+=== [pagina 13] ===
+Example, continued
+Idea: Use Nash Equilibrium in an expanded game
+• Think of each type of player 2 as a separate player
+Equivalently, form conjecture about behavior in each possible
+state, and maximize expected utility given the conjecture
+Evan Sadler
+Incomplete Information
+6/33
+
+=== [pagina 14] ===
+Example, continued
+Idea: Use Nash Equilibrium in an expanded game
+• Think of each type of player 2 as a separate player
+Equivalently, form conjecture about behavior in each possible
+state, and maximize expected utility given the conjecture
+Consider the proﬁle (M, (M, L))
+• Player 1 goes to the mall
+• Player 2 goes to the mall in state 1 and the library in state 2
+Evan Sadler
+Incomplete Information
+6/33
+
+=== [pagina 15] ===
+Example, continued
+Idea: Use Nash Equilibrium in an expanded game
+• Think of each type of player 2 as a separate player
+Equivalently, form conjecture about behavior in each possible
+state, and maximize expected utility given the conjecture
+Consider the proﬁle (M, (M, L))
+• Player 1 goes to the mall
+• Player 2 goes to the mall in state 1 and the library in state 2
+Clearly a best response for player 2
+Evan Sadler
+Incomplete Information
+6/33
+
+=== [pagina 16] ===
+Example, continued
+Now check for player 1
+Evan Sadler
+Incomplete Information
+7/33
+
+=== [pagina 17] ===
+Example, continued
+Now check for player 1
+Since both states are equally likey,
+E[u1(M, (M, L))] = 1
+2 · 2 + 1
+2 · 0 = 1
+Evan Sadler
+Incomplete Information
+7/33
+
+=== [pagina 18] ===
+Example, continued
+Now check for player 1
+Since both states are equally likey,
+E[u1(M, (M, L))] = 1
+2 · 2 + 1
+2 · 0 = 1
+If player 1 chose L instead, the expected payoﬀis
+E[u1(L, (M, L))] = 1
+2 · 0 + 1
+2 · 1 = 1
+2
+Evan Sadler
+Incomplete Information
+7/33
+
+=== [pagina 19] ===
+Example, continued
+Now check for player 1
+Since both states are equally likey,
+E[u1(M, (M, L))] = 1
+2 · 2 + 1
+2 · 0 = 1
+If player 1 chose L instead, the expected payoﬀis
+E[u1(L, (M, L))] = 1
+2 · 0 + 1
+2 · 1 = 1
+2
+Hence, the proﬁle (M, (M, L)) is a (Bayes) Nash Equilibrium
+Evan Sadler
+Incomplete Information
+7/33
+
+=== [pagina 20] ===
+Example, continued
+Note meeting at the library, player 2’s preferred outcome, is no
+longer part of an equilibrium
+• Consider the proﬁle (L, (L, M))
+Evan Sadler
+Incomplete Information
+8/33
+
+=== [pagina 21] ===
+Example, continued
+Note meeting at the library, player 2’s preferred outcome, is no
+longer part of an equilibrium
+• Consider the proﬁle (L, (L, M))
+Again, clearly a best response for player 2
+Evan Sadler
+Incomplete Information
+8/33
+
+=== [pagina 22] ===
+Example, continued
+Note meeting at the library, player 2’s preferred outcome, is no
+longer part of an equilibrium
+• Consider the proﬁle (L, (L, M))
+Again, clearly a best response for player 2
+A similar calculation shows player 1 earns 1
+2 by playing L, but
+earns 1 by deviating to M
+Evan Sadler
+Incomplete Information
+8/33
+
+=== [pagina 23] ===
+Example, continued
+Note meeting at the library, player 2’s preferred outcome, is no
+longer part of an equilibrium
+• Consider the proﬁle (L, (L, M))
+Again, clearly a best response for player 2
+A similar calculation shows player 1 earns 1
+2 by playing L, but
+earns 1 by deviating to M
+The proﬁle (L, (L, M)) is not a Bayes Nash Equilibrium
+Evan Sadler
+Incomplete Information
+8/33
+
+=== [pagina 24] ===
+Bayesian Games
+More formally...
+Deﬁnition
+A Bayesian game consists of
+• A set of players N
+• A set of actions (pure strategies) Si for each player i
+• A set of types Θi for each player i
+• A payoﬀfunction ui(s, θ) for each player i
+• A (joint) probability distribution p(θ1, θ2, ..., θn) over types
+Evan Sadler
+Incomplete Information
+9/33
+
+=== [pagina 25] ===
+Bayesian Games
+More formally...
+Deﬁnition
+A Bayesian game consists of
+• A set of players N
+• A set of actions (pure strategies) Si for each player i
+• A set of types Θi for each player i
+• A payoﬀfunction ui(s, θ) for each player i
+• A (joint) probability distribution p(θ1, θ2, ..., θn) over types
+Note payoﬀs depend on vector of actions and vector of types
+Evan Sadler
+Incomplete Information
+9/33
+
+=== [pagina 26] ===
+Bayesian Games, continued
+We maintain the assumption that the probability distribution p is
+common knowledge
+• Players agree on the prior probability of diﬀerent type vectors
+Evan Sadler
+Incomplete Information
+10/33
+
+=== [pagina 27] ===
+Bayesian Games, continued
+We maintain the assumption that the probability distribution p is
+common knowledge
+• Players agree on the prior probability of diﬀerent type vectors
+Very strong assumption, but very convenient
+• Avoid having to deal with hierarchies of beliefs
+Evan Sadler
+Incomplete Information
+10/33
+
+=== [pagina 28] ===
+Bayesian Games, continued
+We maintain the assumption that the probability distribution p is
+common knowledge
+• Players agree on the prior probability of diﬀerent type vectors
+Very strong assumption, but very convenient
+• Avoid having to deal with hierarchies of beliefs
+Deﬁnition
+A pure strategy for player i is a map si : Θi →Si prescribing an
+action for each type of player i.
+Evan Sadler
+Incomplete Information
+10/33
+
+=== [pagina 29] ===
+Bayes’ Rule
+Recall types are drawn from the prior distribution p(θ1, θ2, ..., θn)
+Evan Sadler
+Incomplete Information
+11/33
+
+=== [pagina 30] ===
+Bayes’ Rule
+Recall types are drawn from the prior distribution p(θ1, θ2, ..., θn)
+On observing one’s own type θi, can compute conditional
+distribution p(θ−i | θi) via Bayes’ rule
+Evan Sadler
+Incomplete Information
+11/33
+
+=== [pagina 31] ===
+Bayes’ Rule
+Recall types are drawn from the prior distribution p(θ1, θ2, ..., θn)
+On observing one’s own type θi, can compute conditional
+distribution p(θ−i | θi) via Bayes’ rule
+Player i evaluates expected payoﬀaccording to the conditional
+distribution:
+Ui(s′
+i, s−i, θi) =
+Z
+Θ−i
+ui(s′
+i, s−i(θ−i), θi, θ−i)dp(θ−i | θi)
+Evan Sadler
+Incomplete Information
+11/33
+
+=== [pagina 32] ===
+Bayes’ Rule, continued
+Quick review, basic deﬁnitions, events A and B:
+• Probability of events P(A) and P(B)
+• Conditional probabilities P(A | B) and P(B | A)
+• Joint probability P(A ∩B)
+Evan Sadler
+Incomplete Information
+12/33
+
+=== [pagina 33] ===
+Bayes’ Rule, continued
+Quick review, basic deﬁnitions, events A and B:
+• Probability of events P(A) and P(B)
+• Conditional probabilities P(A | B) and P(B | A)
+• Joint probability P(A ∩B)
+Deﬁnition of conditional probability:
+P(A | B) = P(A ∩B)
+P(B)
+Probability that A is true given B
+Evan Sadler
+Incomplete Information
+12/33
+
+=== [pagina 34] ===
+Bayes’ Rule, continued
+Quick review, basic deﬁnitions, events A and B:
+• Probability of events P(A) and P(B)
+• Conditional probabilities P(A | B) and P(B | A)
+• Joint probability P(A ∩B)
+Deﬁnition of conditional probability:
+P(A | B) = P(A ∩B)
+P(B)
+Probability that A is true given B
+If events are independent, then P(A ∩B) = P(A) · P(B) and
+P(A | B) = P(A)
+Evan Sadler
+Incomplete Information
+12/33
+
+=== [pagina 35] ===
+Bayes’ Rule, continued
+Can also express conditional probabilities in terms of one another
+• Write Ac for the complement of A
+• Have P(Ac) = 1 −P(A)
+Evan Sadler
+Incomplete Information
+13/33
+
+=== [pagina 36] ===
+Bayes’ Rule, continued
+Can also express conditional probabilities in terms of one another
+• Write Ac for the complement of A
+• Have P(Ac) = 1 −P(A)
+Using P(B) = P(A) · P(B | A) + P(Ac) · P(B | Ac), we have
+P(A | B) =
+P(A) · P(B | A)
+P(A) · P(B | A) + P(Ac) · P(B | Ac)
+Evan Sadler
+Incomplete Information
+13/33
+
+=== [pagina 37] ===
+Bayes’ Rule, continued
+Can also express conditional probabilities in terms of one another
+• Write Ac for the complement of A
+• Have P(Ac) = 1 −P(A)
+Using P(B) = P(A) · P(B | A) + P(Ac) · P(B | Ac), we have
+P(A | B) =
+P(A) · P(B | A)
+P(A) · P(B | A) + P(Ac) · P(B | Ac)
+More generally, for any countable partition {Ai}n
+i=1, we have
+P(Ai | B) =
+P(Ai) · P(B | Ai)
+Pn
+j=1 P(Aj) · P(B | Aj)
+Evan Sadler
+Incomplete Information
+13/33
+
+=== [pagina 38] ===
+Bayes Nash Equilibrium
+Deﬁnition (Bayes Nash Equilibrium)
+The proﬁle σ is a pure strategy Bayes Nash Equilibrium if for all
+i ∈N and all θi ∈Θi, we have
+σi(θi) ∈arg max
+s′
+i∈Si
+Z
+Θ−i
+ui(s′
+i, s−i(θ−i), θi, θ−i)dp(θ−i | θi)
+Evan Sadler
+Incomplete Information
+14/33
+
+=== [pagina 39] ===
+Bayes Nash Equilibrium
+Deﬁnition (Bayes Nash Equilibrium)
+The proﬁle σ is a pure strategy Bayes Nash Equilibrium if for all
+i ∈N and all θi ∈Θi, we have
+σi(θi) ∈arg max
+s′
+i∈Si
+Z
+Θ−i
+ui(s′
+i, s−i(θ−i), θi, θ−i)dp(θ−i | θi)
+Bayes Nash equilibrium is a Nash equilibrum of the expanded
+game in which player i’s pure strategies are maps from Θi to Si
+Evan Sadler
+Incomplete Information
+14/33
+
+=== [pagina 40] ===
+Existence of Bayes-Nash Equilibrium
+Theorem
+In any ﬁnite Bayesian game, a mixed strategy Bayes Nash
+equilibrium exists
+Theorem
+Consider a Bayesian game with continuous strategy spaces and
+types. If the strategy and type sets are compact, and payoﬀ
+functions are continuous and concave in own strategies, then a
+pure strategy Bayes Nash equilibrium exists.
+Proofs based on Kakutani’s ﬁxed point theorem are essentially
+identical to what we did a few weeks ago.
+Evan Sadler
+Incomplete Information
+15/33
+
+=== [pagina 41] ===
+Example: Incomplete Information Cournot
+Two ﬁrms produce an identical good at constant marginal cost
+Evan Sadler
+Incomplete Information
+16/33
+
+=== [pagina 42] ===
+Example: Incomplete Information Cournot
+Two ﬁrms produce an identical good at constant marginal cost
+Inverse demand is P(Q), where Q is the total quantity
+Evan Sadler
+Incomplete Information
+16/33
+
+=== [pagina 43] ===
+Example: Incomplete Information Cournot
+Two ﬁrms produce an identical good at constant marginal cost
+Inverse demand is P(Q), where Q is the total quantity
+Firm 1 has marginal cost c that is common knowledge
+Evan Sadler
+Incomplete Information
+16/33
+
+=== [pagina 44] ===
+Example: Incomplete Information Cournot
+Two ﬁrms produce an identical good at constant marginal cost
+Inverse demand is P(Q), where Q is the total quantity
+Firm 1 has marginal cost c that is common knowledge
+Firm 2’s marginal cost is private information
+• Cost cl with probability θ and ch with probability 1 −θ, cl < ch
+Evan Sadler
+Incomplete Information
+16/33
+
+=== [pagina 45] ===
+Example: Incomplete Information Cournot
+Two ﬁrms produce an identical good at constant marginal cost
+Inverse demand is P(Q), where Q is the total quantity
+Firm 1 has marginal cost c that is common knowledge
+Firm 2’s marginal cost is private information
+• Cost cl with probability θ and ch with probability 1 −θ, cl < ch
+Game has two players and two states (l and h), actions
+qi ∈[0, ∞)
+Evan Sadler
+Incomplete Information
+16/33
+
+=== [pagina 46] ===
+Example: Incomplete Information Cournot
+Payoﬀs for the two players are
+u1(q1, q2, t) = q1(P(q1 + q2) −c)
+u2(q1, q2, t) = q2(P(q1 + q2) −ct),
+where t ∈{l, h} is ﬁrm 2’s type
+Evan Sadler
+Incomplete Information
+17/33
+
+=== [pagina 47] ===
+Example: Incomplete Information Cournot
+Payoﬀs for the two players are
+u1(q1, q2, t) = q1(P(q1 + q2) −c)
+u2(q1, q2, t) = q2(P(q1 + q2) −ct),
+where t ∈{l, h} is ﬁrm 2’s type
+Can think of strategy proﬁle as a triple (q∗
+1, q∗
+l , q∗
+h)
+Evan Sadler
+Incomplete Information
+17/33
+
+=== [pagina 48] ===
+Example: Incomplete Information Cournot
+Payoﬀs for the two players are
+u1(q1, q2, t) = q1(P(q1 + q2) −c)
+u2(q1, q2, t) = q2(P(q1 + q2) −ct),
+where t ∈{l, h} is ﬁrm 2’s type
+Can think of strategy proﬁle as a triple (q∗
+1, q∗
+l , q∗
+h)
+Three best response functions
+B1(ql, qh) = arg max
+q1≥0 q1 (θP(q1 + ql) + (1 −θ)P(q1 + ql) −c)
+Bl(q1) = arg max
+ql≥0 ql (P(q1 + ql) −cl)
+Bh(q1) = arg max
+qh≥0 qh (P(q1 + qh) −ch)
+Evan Sadler
+Incomplete Information
+17/33
+
+=== [pagina 49] ===
+Example: Incomplete Information Cournot
+Bayes Nash equilibria are triples (q∗
+1, q∗
+l , q∗
+h) such that
+B1(q∗
+l , q∗
+h) = q∗
+1,
+Bl(q∗
+1) −q∗
+l ,
+Bh(q∗
+1) = q∗
+h
+Evan Sadler
+Incomplete Information
+18/33
+
+=== [pagina 50] ===
+Example: Incomplete Information Cournot
+Bayes Nash equilibria are triples (q∗
+1, q∗
+l , q∗
+h) such that
+B1(q∗
+l , q∗
+h) = q∗
+1,
+Bl(q∗
+1) −q∗
+l ,
+Bh(q∗
+1) = q∗
+h
+If we take P(Q) = α −Q, then the solution is
+q∗
+1 = 1
+3 (α −2c + θcl + (1 −θ)ch)
+q∗
+l = 1
+3 (α −2cl + c) −1 −θ
+6
+(ch −cl)
+q∗
+h = 1
+3 (α −2ch + c) + θ
+6(ch −cl)
+Note q∗
+l > q∗
+h, type with lower cost produces more
+Evan Sadler
+Incomplete Information
+18/33
+
+=== [pagina 51] ===
+Example: Incomplete Information Cournot
+In the game with complete information, the Nash equilibrium
+involves players producing
+qi = 1
+3(α −2ci + cj)
+Evan Sadler
+Incomplete Information
+19/33
+
+=== [pagina 52] ===
+Example: Incomplete Information Cournot
+In the game with complete information, the Nash equilibrium
+involves players producing
+qi = 1
+3(α −2ci + cj)
+With incomplete information, ﬁrm 2 produces more than this
+when its cost is ch and less when its cost is cl
+Evan Sadler
+Incomplete Information
+19/33
+
+=== [pagina 53] ===
+Example: Incomplete Information Cournot
+In the game with complete information, the Nash equilibrium
+involves players producing
+qi = 1
+3(α −2ci + cj)
+With incomplete information, ﬁrm 2 produces more than this
+when its cost is ch and less when its cost is cl
+This is because ﬁrm 1 produces a moderated output
+• When ﬁrm 2 has cost ch, ﬁrm 1 produces less than it would if
+it knew ch, so ﬁrm 2 gets to produce a bit more
+• When ﬁrm 2 has cost cl, ﬁrm 1 produces more than it would if
+it knew cl, so ﬁrm 2 gets to produce a bit less
+Evan Sadler
+Incomplete Information
+19/33
+
+=== [pagina 54] ===
+Dynamic Games with Incomplete Information
+We often need to think about information in dynamic settings in
+which players learn about the environment over time
+• Look at extensive form games, explicit order of moves
+Evan Sadler
+Incomplete Information
+20/33
+
+=== [pagina 55] ===
+Dynamic Games with Incomplete Information
+We often need to think about information in dynamic settings in
+which players learn about the environment over time
+• Look at extensive form games, explicit order of moves
+As before, we use information sets to represent what players
+know at each stage
+Evan Sadler
+Incomplete Information
+20/33
+
+=== [pagina 56] ===
+Dynamic Games with Incomplete Information
+We often need to think about information in dynamic settings in
+which players learn about the environment over time
+• Look at extensive form games, explicit order of moves
+As before, we use information sets to represent what players
+know at each stage
+Will also reﬁne away non-credible threats, as in subgame perfect
+equilibria
+• New solution concept: Perfect Bayesian Equilibrium
+Evan Sadler
+Incomplete Information
+20/33
+
+=== [pagina 57] ===
+Example
+Selten’s Horse:
+Evan Sadler
+Incomplete Information
+21/33
+
+=== [pagina 58] ===
+Dynamic Games with Incomplete Information
+Deﬁnition
+A dynamic game of incomplete information consists of
+• A set of players N
+• A sequence of histories {ht}, each assigned to a player or
+nature
+• An information partition (which histories are in an information
+set)
+• A set of pure strategies Si for each player i (must include
+action for each information set)
+• A set of types Θi for each player i
+• A payoﬀfunction ui(s, θ) for each player i
+• A joint probability distribution p(θ1, ..., θn) over types
+Evan Sadler
+Incomplete Information
+22/33
+
+=== [pagina 59] ===
+Strategies and Beliefs
+A belief system µ gives a probability distribution over nodes in
+each information set
+• In Selten’s horse, player 3 needs beliefs about whether the left
+or right node was reached
+Evan Sadler
+Incomplete Information
+23/33
+
+=== [pagina 60] ===
+Strategies and Beliefs
+A belief system µ gives a probability distribution over nodes in
+each information set
+• In Selten’s horse, player 3 needs beliefs about whether the left
+or right node was reached
+A strategy is sequentially rational if, given beliefs, no player can
+improve her payoﬀby deviating at any stage of the game
+Evan Sadler
+Incomplete Information
+23/33
+
+=== [pagina 61] ===
+Strategies and Beliefs
+A belief system µ gives a probability distribution over nodes in
+each information set
+• In Selten’s horse, player 3 needs beliefs about whether the left
+or right node was reached
+A strategy is sequentially rational if, given beliefs, no player can
+improve her payoﬀby deviating at any stage of the game
+A belief system is consistent if it is derived from equilibrium
+strategies using Bayes’ rule
+Evan Sadler
+Incomplete Information
+23/33
+
+=== [pagina 62] ===
+Strategies and Beliefs
+For instance, in Selten’s horse, if player 1’s strategy is D, then
+we must have µ3(left) = 1
+Evan Sadler
+Incomplete Information
+24/33
+
+=== [pagina 63] ===
+Strategies and Beliefs
+For instance, in Selten’s horse, if player 1’s strategy is D, then
+we must have µ3(left) = 1
+If player 1 chooses D with probability p and player 2 chooses d
+with probability q, then Bayes’ rule implies
+µ3(left) =
+p
+p + (1 −p)q
+Evan Sadler
+Incomplete Information
+24/33
+
+=== [pagina 64] ===
+Strategies and Beliefs
+For instance, in Selten’s horse, if player 1’s strategy is D, then
+we must have µ3(left) = 1
+If player 1 chooses D with probability p and player 2 chooses d
+with probability q, then Bayes’ rule implies
+µ3(left) =
+p
+p + (1 −p)q
+What if p = q = 0? The consistency requirement has no bite,
+any belief is valid
+• If an information set is not reached on the equilibrum path,
+beliefs are unrestricted
+Evan Sadler
+Incomplete Information
+24/33
+
+=== [pagina 65] ===
+Perfect Bayesian Equilibrium
+Deﬁnition
+In a dynamic game of incomplete information, a perfect Bayesian
+equilibrium is a strategy proﬁle σ and a belief system µ such that
+• The proﬁle σ is sequentially rational given µ
+• The belief system µ is consistent given σ
+Relatively weak solution concept, often reﬁned by restricting
+oﬀ-path beliefs
+Evan Sadler
+Incomplete Information
+25/33
+
+=== [pagina 66] ===
+Perfect Bayesian Equilibrium
+Deﬁnition
+In a dynamic game of incomplete information, a perfect Bayesian
+equilibrium is a strategy proﬁle σ and a belief system µ such that
+• The proﬁle σ is sequentially rational given µ
+• The belief system µ is consistent given σ
+Relatively weak solution concept, often reﬁned by restricting
+oﬀ-path beliefs
+Theorem
+In any ﬁnite dynamic game of incomplete information, a (possibly
+mixed) perfect Bayesian equilibrium exists.
+Evan Sadler
+Incomplete Information
+25/33
+
+=== [pagina 67] ===
+Social Learning
+An important set of questions in network economics:
+• How much do people learn from social connections?
+• Can interactions aggregate dispersed information?
+• How does network structure inﬂuence what people learn?
+Evan Sadler
+Incomplete Information
+26/33
+
+=== [pagina 68] ===
+Social Learning
+An important set of questions in network economics:
+• How much do people learn from social connections?
+• Can interactions aggregate dispersed information?
+• How does network structure inﬂuence what people learn?
+One approach: observational learning
+• Often observe choices that other people make
+• People base choices on information
+• We might infer information from these choices
+Evan Sadler
+Incomplete Information
+26/33
+
+=== [pagina 69] ===
+Social Learning
+An important set of questions in network economics:
+• How much do people learn from social connections?
+• Can interactions aggregate dispersed information?
+• How does network structure inﬂuence what people learn?
+One approach: observational learning
+• Often observe choices that other people make
+• People base choices on information
+• We might infer information from these choices
+A simple Bayesian model gives rise to rational herding
+Evan Sadler
+Incomplete Information
+26/33
+
+=== [pagina 70] ===
+Observational Learning
+Evan Sadler
+Incomplete Information
+27/33
+
+=== [pagina 71] ===
+Observational Learning
+What can we infer about the deli?
+Evan Sadler
+Incomplete Information
+27/33
+
+=== [pagina 72] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Evan Sadler
+Incomplete Information
+28/33
+
+=== [pagina 73] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Evan Sadler
+Incomplete Information
+28/33
+
+=== [pagina 74] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Evan Sadler
+Incomplete Information
+28/33
+
+=== [pagina 75] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Each agent receives a binary signal sn ∈{0, 1}
+Evan Sadler
+Incomplete Information
+28/33
+
+=== [pagina 76] ===
+The Classic Herding Model
+Two equally likely states of the world θ ∈{0, 1}
+Agents n = 1, 2, ... sequentially make binary decisions xn ∈{0, 1}
+Earn payoﬀ1 for matching the state, payoﬀ0 otherwise
+Each agent receives a binary signal sn ∈{0, 1}
+Signals i.i.d. conditional on the state:
+P(sn = 0 | θ = 0) = P(sn = 1 | θ = 1) = g > 1
+2
+Evan Sadler
+Incomplete Information
+28/33
+
+=== [pagina 77] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 78] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+First agent chooses x1 = s1
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 79] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+First agent chooses x1 = s1
+Second agent can always justify following signal
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 80] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+First agent chooses x1 = s1
+Second agent can always justify following signal
+If ﬁrst two match, third agent copies...
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 81] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+First agent chooses x1 = s1
+Second agent can always justify following signal
+If ﬁrst two match, third agent copies...
+• ...and so does everyone else
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 82] ===
+How a Herd Forms
+Suppose agents observe the actions of all who move earlier
+First agent chooses x1 = s1
+Second agent can always justify following signal
+If ﬁrst two match, third agent copies...
+• ...and so does everyone else
+We end up in a herd
+Evan Sadler
+Incomplete Information
+29/33
+
+=== [pagina 83] ===
+Some Observations
+Action produces an informational externality
+• Agents do not internalize the value of the information they
+provide to others
+Evan Sadler
+Incomplete Information
+30/33
+
+=== [pagina 84] ===
+Some Observations
+Action produces an informational externality
+• Agents do not internalize the value of the information they
+provide to others
+Coarse information is key
+• Observing beliefs instead of actions leads to very diﬀerent
+result
+Evan Sadler
+Incomplete Information
+30/33
+
+=== [pagina 85] ===
+Some Observations
+Action produces an informational externality
+• Agents do not internalize the value of the information they
+provide to others
+Coarse information is key
+• Observing beliefs instead of actions leads to very diﬀerent
+result
+Herding is not sensitive to the signal structure
+• Deﬁne public belief qn = Pσ(θ = 1 | x1, x2, ..., xn−1)
+• The public belief is a martingale and must converge
+Evan Sadler
+Incomplete Information
+30/33
+
+=== [pagina 86] ===
+Rational Herding
+Theorem
+In any PBE of the social learning game, a herd forms with
+probability one. The herd is incorrect with strictly positive
+probability.
+Evan Sadler
+Incomplete Information
+31/33
+
+=== [pagina 87] ===
+Rational Herding
+Theorem
+In any PBE of the social learning game, a herd forms with
+probability one. The herd is incorrect with strictly positive
+probability.
+We require some basic results on martingales
+• A martingale is a stochastic process X1, X2, ...Xt, ... such that
+E[Xt | X1, ..., Xt−1] = Xt−1
+• Belief processes are always martingales
+Evan Sadler
+Incomplete Information
+31/33
+
+=== [pagina 88] ===
+Rational Herding
+Theorem
+In any PBE of the social learning game, a herd forms with
+probability one. The herd is incorrect with strictly positive
+probability.
+We require some basic results on martingales
+• A martingale is a stochastic process X1, X2, ...Xt, ... such that
+E[Xt | X1, ..., Xt−1] = Xt−1
+• Belief processes are always martingales
+Theorem (Martingale Convergence Theorem)
+Suppose {Xt}t∈N is a real-valued martingale and there exists a, b
+such that a ≤Xt ≤b for all t. Then limt→∞Xt exists almost
+surely.
+Evan Sadler
+Incomplete Information
+31/33
+
+=== [pagina 89] ===
+Proof of Theorem
+Recall the public belief process qn = Pσ(θ = 1 | x1, x2, ..., xn−1)
+• This is a martingale
+Evan Sadler
+Incomplete Information
+32/33
+
+=== [pagina 90] ===
+Proof of Theorem
+Recall the public belief process qn = Pσ(θ = 1 | x1, x2, ..., xn−1)
+• This is a martingale
+By the martingale convergence theorem, limn→∞qn exists almost
+surely
+Evan Sadler
+Incomplete Information
+32/33
+
+=== [pagina 91] ===
+Proof of Theorem
+Recall the public belief process qn = Pσ(θ = 1 | x1, x2, ..., xn−1)
+• This is a martingale
+By the martingale convergence theorem, limn→∞qn exists almost
+surely
+If player n chooses 1 (0), then qn ≥(≤)1
+2
+• If there are inﬁnitely many switches, only possible limit point is
+1
+2
+Evan Sadler
+Incomplete Information
+32/33
+
+=== [pagina 92] ===
+Proof of Theorem
+Recall the public belief process qn = Pσ(θ = 1 | x1, x2, ..., xn−1)
+• This is a martingale
+By the martingale convergence theorem, limn→∞qn exists almost
+surely
+If player n chooses 1 (0), then qn ≥(≤)1
+2
+• If there are inﬁnitely many switches, only possible limit point is
+1
+2
+If qn−1 is close to 1
+2, then n will follow private signal
+• This implies qn will reﬂect a new signal
+• Inconsistent with convergence to 1
+2
+Evan Sadler
+Incomplete Information
+32/33
+
+=== [pagina 93] ===
+Next Time
+Next time we will enrich the model
+• Instead of observing entire history, player n observes some
+neighborhood B(n)
+• Generalize the signal structure
+Will also look at a non-Bayesian approach to learning and opinion
+dynamics
+• Based on belief-averaging procedure from DeGroot (1974)
+Evan Sadler
+Incomplete Information
+33/33

@@ -1,0 +1,313 @@
+A combinação seria particularmente interessante porque a teoria de redes explicaria os mecanismos de propagação dos choques, enquanto o Naive Bayes estimaria a probabilidade de cada criptomoeda ser afetada.
+Projeto de Pesquisa
+Título: Confiança no Bitcoin, Contágio Financeiro e Risco Sistêmico no Mercado de Criptoativos: uma Abordagem de Economia de Redes com Classificação Bayesiana.
+1. Objetivo
+Investigar como alterações na confiança no Bitcoin se propagam pela rede de criptomoedas e verificar se a posição de cada ativo na rede contribui para prever a probabilidade de queda de seu preço.
+
+O estudo utilizará dados históricos de negociação da Binance e poderá analisar episódios de instabilidade da corretora como choques externos de confiança, desde que devidamente documentados.
+2. Modelo de Economia de Redes
+Representaremos o mercado por um grafo ponderado:
+\[
+G=(V,E,W)
+\]
+
+Em que cada nó representa uma criptomoeda, as arestas representam conexões econômicas e os pesos medem a intensidade dessas relações.
+
+A propagação de confiança será representada por:
+\[
+\mathbf c=(I-\beta W)^{-1}\boldsymbol\alpha
+\]
+
+Em que:
+- \(\mathbf c\): vetor de confiança dos criptoativos;
+- \(\boldsymbol\alpha\): confiança determinada por fatores próprios de cada ativo;
+- \(\beta\): intensidade da transmissão;
+- \(W\): matriz de conexões econômicas.
+A matriz \(W\) poderá ser estimada utilizando relações de negociação, correlações dinâmicas e dependências de retornos. Para o modelo de difusão, serão utilizados pesos não negativos e uma condição de estabilidade, como \(\beta\rho(W)<1\).
+3. Aplicação do Naive Bayes
+O Naive Bayes será utilizado para classificar a ocorrência de contágio em cada criptomoeda.
+
+A variável dependente será:
+\[
+Y_{i,t+24h}=
+\begin{cases}
+1,&\text{se a criptomoeda }i\text{ cair mais de 5\%}\\
+0,&\text{caso contrário}
+\end{cases}
+\]
+
+O limiar de 5% será uma especificação inicial, sujeita a testes de robustez.
+
+A probabilidade de queda será estimada por:
+\[
+P(Y=1\mid X_1,\ldots,X_k)
+=
+\frac{
+P(Y=1)\prod_{j=1}^{k}P(X_j\mid Y=1)
+}{
+\sum_{y\in\{0,1\}}P(Y=y)\prod_{j=1}^{k}P(X_j\mid Y=y)
+}
+\]
+
+As variáveis explicativas serão:
+Variável	Interpretação
+Choque de confiança no Bitcoin	Variação negativa do índice de confiança
+Centralidade de Katz-Bonacich	Exposição direta e indireta na rede
+Centralidade de intermediação	Importância do ativo como conexão entre grupos
+Grau ponderado	Intensidade das conexões
+Volatilidade histórica	Risco individual
+Liquidez	Capacidade de absorver ordens de negociação
+Indicador de estresse da Binance	Condições específicas da corretora
+
+O Gaussian Naive Bayes será uma especificação inicial para variáveis contínuas. Como a hipótese de independência condicional pode ser pouco realista em mercados financeiros, o desempenho será comparado ao de uma regressão logística.
+4. Integração dos modelos
+Arquitetura proposta: a Economia de Redes produz indicadores estruturais que alimentam o classificador Naive Bayes.
+5. Exemplo de resultado esperado
+Os resultados poderiam ser apresentados assim, após a estimação do modelo:
+Criptomoeda	Probabilidade de queda superior a 5%
+Ethereum	72%
+BNB	84%
+Solana	79%
+XRP	56%
+Dogecoin	81%
+
+Valores exclusivamente ilustrativos, não estimativas reais.
+
+O objetivo não seria apenas prever quais moedas cairiam, mas verificar se ativos com maior exposição na rede apresentam probabilidades de queda sistematicamente diferentes.
+6. Avaliação científica
+O projeto comparará três especificações:
+1. Naive Bayes tradicional: apenas preços, retornos, volumes e volatilidade.
+2. Naive Bayes com confiança: acrescentando indicadores de confiança no Bitcoin e na Binance.
+3. Naive Bayes com Economia de Redes: acrescentando centralidade, conectividade e exposição a choques.
+A comparação utilizará ROC-AUC, PR-AUC, Brier Score e F1-score, com treinamento e teste separados cronologicamente.
+
+Isso permitirá avaliar se a Economia de Redes realmente acrescenta capacidade preditiva ao classificador.
+7. Contribuição original
+A contribuição principal será combinar uma interpretação econômica da transmissão de confiança com uma previsão probabilística de contágio.
+
+A pergunta científica central será:
+
+Em que medida a posição de uma criptomoeda na rede de relações econômicas influencia sua probabilidade de sofrer perdas após choques de confiança no Bitcoin ou em uma corretora centralizada como a Binance?
+
+Para um TCC de Economia, considero essa abordagem mais interessante do que utilizar somente o Naive Bayes para prever preços. A teoria econômica permanece como fundamento da pesquisa, enquanto o algoritmo serve para testar empiricamente suas implicações.
+
+Uma extensão especialmente promissora seria comparar o Naive Bayes com um modelo bayesiano de difusão em redes, permitindo estimar não apenas a probabilidade individual de queda, mas também como essa probabilidade muda em função dos ativos vizinhos e dos choques recebidos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vc conseguiria puxar as bases de dados da biannce de todas critpo para fazer esse projeto
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sim. Consigo estruturar a coleta das bases públicas da Binance para desenvolver o projeto completo, incluindo Economia de Redes, transmissão de confiança do Bitcoin e previsão de contágio com Naive Bayes.
+
+Podemos trabalhar com todas as criptomoedas que tenham dados históricos disponíveis na Binance, e não apenas com Bitcoin, Ethereum ou as principais moedas.
+
+Entretanto, há uma distinção importante: a Binance disponibiliza dados por pares de negociação, como BTC/USDT, ETH/USDT e ETH/BTC. Portanto, será necessário consolidar esses pares para construir uma base de criptoativos sem duplicidades.
+1. Dados que podemos coletar
+Dados	Aplicação no projeto
+Preços históricos	Retornos e transmissão de choques
+Volumes negociados	Liquidez e intensidade das negociações
+Quantidade de operações	Atividade de mercado
+Pares de negociação	Construção da rede econômica
+Preços de abertura, máxima, mínima e fechamento	Volatilidade e risco
+Volume comprador agressor	Pressão compradora e vendedora
+Histórico de pares BTC	Relações diretas com o Bitcoin
+Histórico de pares USDT	Comparabilidade entre criptomoedas
+
+A partir desses dados, podemos construir uma rede com centenas de criptomoedas e estimar quais apresentam maior exposição às mudanças de confiança no Bitcoin.
+
+Também poderemos identificar criptomoedas que deixaram de ser negociadas, desde que seus arquivos históricos permaneçam disponíveis.
+2. Confirmei que a Binance disponibiliza os dados
+A documentação oficial confirma que a Binance oferece arquivos históricos diários e mensais para todos os pares disponíveis em seu repositório público, além de uma API de consulta de mercado que não exige chave de autenticação. 
+GitHub+1
+
+
+As principais fontes são:
+- Base histórica oficial da Binance
+- Catálogo de pares de negociação
+- Ferramentas oficiais para baixar as bases
+Não é necessário possuir conta na Binance para acessar esses dados públicos.
+3. Como construiríamos a base completa
+Minha proposta seria trabalhar com o período de 1º de janeiro de 2020 a 31 de outubro de 2026, utilizando dados horários.
+
+O procedimento seria:
+1. Identificar todos os pares disponíveis, incluindo históricos de pares deslistados quando acessíveis.
+2. Baixar os arquivos de preços, volumes e negociações.
+3. Padronizar datas, horários e moedas de cotação.
+4. Construir a rede de relações econômicas entre os criptoativos.
+5. Calcular centralidades, conectividade e exposição ao Bitcoin.
+6. Estimar o Naive Bayes para prever a probabilidade de contágio.
+7. Comparar previsões com resultados observados fora da amostra.
+Uma ressalva importante: os dados de mercado da Binance não medem diretamente a confiança dos investidores. Teremos de construir indicadores indiretos e, idealmente, complementá-los com informações sobre notícias e eventos.
+4. Qual seria o tamanho do projeto?
+O volume dependerá do número efetivo de pares e do histórico disponível. Com centenas ou milhares de pares, sete anos de dados horários podem representar milhões ou dezenas de milhões de observações.
+
+Para isso, recomendo armazenar os dados em Parquet, com processamento em Python e DuckDB, em vez de utilizar exclusivamente Excel.
+
+Consigo preparar o código de coleta, organizar os dados e executar análises sobre os arquivos obtidos. A coleta integral, porém, dependerá do acesso efetivo aos servidores da Binance e dos limites de processamento e armazenamento disponíveis. Ainda não realizei esse download.
+5. Uma decisão importante
+Qual abrangência você deseja para a pesquisa?
+
+Todas as criptomoedas disponíveis na Binance, inclusive histórico de deslistadas
+
+As 500 criptomoedas mais líquidas
+
+As 100 criptomoedas mais líquidas
+
+
+Frequência dos dados
+
+Horária — maior detalhamento do contágio
+
+Diária — menor volume e processamento mais simples
+
+Preparar coleta e modelo econométrico 
+Para a sua proposta de Economia de Redes, eu escolheria todas as criptomoedas com dados disponíveis, incluindo as deslistadas, pois isso permitirá investigar não apenas a transmissão de confiança, mas também se a posição na rede está associada à sobrevivência dos criptoativos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+me de codigo inteiro na tela desde quando a bin ance aeas principais criptomoedas tenha informação
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vou apresentar um código completo em Python, para executar no Windows, que coleta dados históricos da Binance desde a primeira data disponível para cada uma das principais criptomoedas e desenvolve o projeto de Economia de Redes com Naive Bayes.
+
+O programa terá as seguintes funções:
+1. Identificar os pares de negociação das principais criptomoedas.
+2. Baixar os dados históricos desde o início da negociação de cada par na Binance.
+3. Armazenar preços, volumes, número de negociações e pressão compradora.
+4. Construir uma rede de dependência econômica entre as criptomoedas.
+5. Calcular centralidades e indicadores de transmissão de choques.
+6. Construir um indicador observável de estresse do Bitcoin.
+7. Aplicar Naive Bayes para prever quedas superiores a 5% nas próximas 24 horas.
+8. Avaliar o modelo com ROC-AUC, PR-AUC, Brier Score e matriz de confusão.
+9. Exportar resultados em CSV, Parquet e gráficos.
+A Binance disponibiliza arquivos históricos mensais e diários, além de uma API pública sem necessidade de chave. Um detalhe importante: desde janeiro de 2025, os arquivos spot passaram a utilizar timestamps em microssegundos, algo que o código tratará automaticamente. 
+GitHub+1
+
+
+Período: de 17/08/2017, início histórico de referência da Binance, até 31/10/2026, respeitando a primeira data efetivamente disponível para cada par. Nenhuma criptomoeda terá dados anteriores à sua listagem.
+1. Instalação das bibliotecas
+No PowerShell do Windows, execute:
+py -m pip install requests pandas numpy pyarrow networkx scikit-learn matplotlib seaborn tqdm
+
+
+Crie uma pasta para o projeto:
+mkdir C:\Bitcoin_Redes
+cd C:\Bitcoin_Redes
+notepad projeto_bitcoin.py
+
+
+Cole no arquivo projeto_bitcoin.py todo o código abaixo.
+2. Código Python completo
+"""PROJETO: ECONOMIA DE REDES, BITCOIN E NAIVE BAYESFonte: Binance Public DataPeriodo: desde o primeiro arquivo disponivel ate 31/10/2026Frequencia: 1 horaResultados:- Dados historicos Parquet e CSV- Rede de dependencia entre criptomoedas- Centralidade de rede- Indicador de estresse do Bitcoin- Modelo Gaussian Naive Bayes- Previsao de quedas nas proximas 24 horas- Metricas de desempenho- GraficosATENCAO:A rede mede dependencia estatistica entre retornos,nao transferencias reais entre blockchains."""from pathlib import Pathfrom datetime import datetime, timezonefrom io import BytesIOfrom zipfile import ZipFile, BadZipFileimport timeimport jsonimport calendarimport warningsimport requestsimport numpy as npimport pandas as pdimport networkx as nximport matplotlib.pyplot as plt
+
+
+
+3. Como executar
+Depois de salvar o código, execute no PowerShell:
+cd C:\Bitcoin_Redes
+py projeto_bitcoin.py
+
+
+A primeira execução pode demorar bastante, pois o programa procurará arquivos históricos de 30 criptomoedas desde 2017. A duração dependerá da conexão, da disponibilidade dos arquivos e da quantidade de requisições sem resultado.
+
+Os dados de cada par são armazenados em cache após o download, permitindo reutilizá-los em execuções posteriores. A versão apresentada é uma implementação inicial: ela não faz atualização incremental do cache nem garante a recuperação de todos os pares deslistados.
+4. Arquivos produzidos
+C:\Bitcoin_Redes
+
+dados
+
+BTCUSDT_1h.parquet
+
+ETHUSDT_1h.parquet
+
+painel_completo.parquet
+
+rede_dinamica.parquet
+
+resultados
+
+catalogo_historico.csv
+
+centralidade_descritiva.csv
+
+rede_criptomoedas.gexf
+
+rede_criptomoedas.png
+
+comparacao_modelos.csv
+
+comparacao_roc_auc.png
+
+comparacao_brier.png
+
+matriz_confusao.png
+
+previsoes.parquet
+
+probabilidades_finais.csv
+
+
+
+5. Limitações científicas que precisam ser consideradas
+Para um TCC de Economia, há três aspectos importantes.
+
+Primeiro: o indicador construído no código mede estresse financeiro do Bitcoin, e não confiança diretamente. Para sustentar uma interpretação de confiança, será necessário incorporar variáveis adicionais, como sentimento de notícias, fluxos de corretoras ou pesquisas de expectativas.
+
+Segundo: as correlações e a exposição ao Bitcoin são indicadores de dependência estatística. A rede descritiva utiliza toda a amostra e, portanto, não deve ser interpretada como uma rede historicamente conhecida em cada instante. Já a variável de exposição utilizada no Naive Bayes é calculada com informações anteriores ao momento da previsão.
+
+Terceiro: o modelo permite estudar associação e capacidade preditiva, mas não demonstra sozinho que uma perda de confiança no Bitcoin causa quedas nas demais criptomoedas.
+
+Para uma versão final da pesquisa, eu acrescentaria um modelo econométrico de contágio em redes, mantendo o Naive Bayes como instrumento de previsão.
+
+Minha recomendação: execute primeiro esse programa com as 30 criptomoedas. Depois, podemos ampliá-lo para todos os pares históricos disponíveis, incorporar o caso da Binance como estudo de evento e construir uma versão mais rigorosa do modelo de transmissão de confiança, com análise de centralidade de Katz-Bonacich, testes de robustez e estimação econométrica.
