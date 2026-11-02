@@ -6,7 +6,10 @@ if (!file.exists("config/projeto.R")) {
 if (getRversion() < "4.4.1") {
   stop("Este protocolo requer R >= 4.4.1; use uma versao compativel com os pacotes.")
 }
-options(repos = c(CRAN = "https://cloud.r-project.org"))
+# Binarios Windows para R 4.4 vem do Posit Package Manager; o CRAN deixou de
+# publicar binarios atuais para essa versao e a compilacao local falhava.
+options(repos = c(P3M = "https://packagemanager.posit.co/cran/latest",
+                  CRAN = "https://cloud.r-project.org"))
 Sys.setenv(TZ = "UTC")
 source("config/projeto.R", encoding = "UTF-8")
 set.seed(cfg$seed)
@@ -28,9 +31,15 @@ missing_packages <- cfg$packages_core[
 ]
 if (length(missing_packages)) renv::install(missing_packages)
 
-still_missing <- cfg$packages_core[
+nao_carregam <- function() cfg$packages_core[
   !vapply(cfg$packages_core, requireNamespace, logical(1), quietly = TRUE)
 ]
+still_missing <- nao_carregam()
+# Dependencias antigas vindas do cache do renv (ex.: rlang) impedem o carregamento.
+if (length(still_missing)) {
+  renv::update(prompt = FALSE)
+  still_missing <- nao_carregam()
+}
 if (length(still_missing)) {
   stop("Instalacao incompleta: ", paste(still_missing, collapse = ", "))
 }
