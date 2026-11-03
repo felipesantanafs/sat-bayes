@@ -1,4 +1,4 @@
-# Registro de execução do protocolo v1.0.0
+# Registro de execução do protocolo v1.1.0
 
 Execução de 02/11/2026 (UTC), branch `estrutura-pipeline`. Os arquivos de `dados/` e `resultados/` não são versionados; este registro guarda o que foi executado, as decisões tomadas durante a execução e os números que sustentam a leitura dos resultados. Fontes e definições: [plano_execucao_R.md](../contexto/plano_execucao_R.md).
 
@@ -60,8 +60,67 @@ O sinal favorece a rede, mas o intervalo principal inclui zero e o ganho é pequ
 
 Ressalvas: todos os modelos superam pouco a frequência de referência (Brier de 0,0833 contra 0,0879), o que indica baixa previsibilidade do desfecho. Os intervalos condicionam-se à sequência de previsões e não cobrem a incerteza de seleção do projeto. Os resultados são associações preditivas, sem interpretação causal (seções 1.3 e 16 do plano).
 
+## Etapa 11: modelos bayesianos (protocolo 1.1.0)
+
+Revisão antes da execução (commit `f43e239`):
+- A priori HN(0, 3) de `sigma_v` era incompatível com a concentração diária das perdas, e a priori preditiva gerava prevalências implausíveis. A versão adotada usa `mu_a ~ N(−3, 2)`, `sigma_v ~ HN(0, 2)` e coeficientes `N(0, 0,5)`.
+- O estado AR(1) passou a ser não centrado. As cadeias são 4, com 1.000 iterações de aquecimento e 2.000 retidas.
+- Mesmo assim, `phi` mantém ESS abaixo de 400 em parte dos ajustes. Decidi registrar o critério estrito do protocolo e não reajustar nada: `phi` é parâmetro de incômodo, e `gamma`/`xi` (os coeficientes de interesse) têm ESS ≥ 1.150 em todos os ajustes.
+
+Execução: 60 ajustes trimestrais (2022-01 a 2026-10, 3 variantes), de 8 a 21 min cada, concluídos em 03/11/2026.
+
+| Variante | Aprovados no critério estrito | R-hat máximo | ESS mínimo | Divergências |
+| --- | --- | --- | --- | --- |
+| B2 | 12/20 | 1,022 | 238 | 0 |
+| B3 | 13/20 | 1,019 | 268 | 0 |
+| B4 | 13/20 | 1,017 | 334 | 1 (B4 2026-10) |
+
+As reprovações vêm de R-hat entre 1,01 e 1,022 ou de ESS abaixo de 400, concentrados em `phi`. A posteriori de `phi` fica em torno de 0,09, com intervalo de 90% entre −0,22 e 0,42: o estado comum quase não tem persistência entre dias. Já `sigma_v` ≈ 4,05, com intervalo entre 3,3 e 5,2, o que indica grande variação diária comum.
+
+Amostra diária comum (origens às 00h UTC, 8.697 previsões no teste, 669 dias):
+
+| Modelo | Brier desenv. | Brier valid. | Brier teste | AUC teste |
+| --- | --- | --- | --- | --- |
+| B2 | 0,08600 | 0,09045 | 0,07707 | 0,599 |
+| B3 | 0,08619 | 0,09020 | 0,07703 | 0,614 |
+| B4 | 0,08618 | 0,09020 | 0,07705 | 0,614 |
+| M2 ridge | 0,08666 | 0,08935 | 0,07779 | 0,632 |
+| M3 ridge | 0,08668 | 0,08934 | 0,07766 | 0,632 |
+| M4 ridge | 0,08667 | 0,08934 | 0,07767 | 0,632 |
+
+Diferenças no teste (bootstrap estacionário, bloco médio de 7 dias):
+
+| Comparação | ΔBS | IC 95% |
+| --- | --- | --- |
+| B3 − B2 | −0,000037 | [−0,00046; +0,00040] |
+| B4 − B3 | +0,000018 | [−0,00002; +0,00006] |
+| M3 − M2 (ridge, diária) | −0,000130 | [−0,00039; +0,00011] |
+| B3 − M3 ridge | −0,000630 | [−0,00197; +0,00069] |
+
+**H4:** a posteriori dos coeficientes de rede `xi` é centrada perto de zero (médias entre −0,27 e +0,16) e só raramente exclui zero no intervalo de 90%: 1 a 4 ajustes de 20, conforme o atributo. O ganho de B3 sobre B2 é desprezível. No teste, os bayesianos têm Brier menor que a ridge, mas ROC-AUC menor, e na validação ficam piores. O intervalo de B3 − M3 inclui zero, portanto não há evidência de superioridade do modelo bayesiano.
+
+## Etapa 12: robustez (ridge M3 − M2, teste)
+
+| Variante | ΔBS | IC 95% | Δ relativo |
+| --- | --- | --- | --- |
+| Principal (reprodução) | −0,000198 | [−0,00042; +0,000007] | −0,24% |
+| Perda > 3% | +0,000013 | [−0,00023; +0,00025] | +0,01% |
+| Perda > 10% | +0,000045 | [−0,00010; +0,00024] | +0,31% |
+| Janela de 30 dias | −0,000112 | [−0,00029; +0,00005] | −0,13% |
+| Janela de 180 dias | −0,000094 | [−0,00022; +0,00003] | −0,11% |
+| Corte de 0,20 | −0,000207 | [−0,00044; +0,000006] | −0,25% |
+| Corte de 0,50 | −0,000210 | [−0,00047; +0,00001] | −0,25% |
+| κ = 0,25 | −0,000180 | [−0,00038; +0,000002] | −0,22% |
+| κ = 0,75 | −0,000222 | [−0,00050; +0,00003] | −0,27% |
+| Spearman | −0,000126 | [−0,00028; +0,000009] | −0,15% |
+| Rede residual | −0,000045 | [−0,000084; −0,000008] | −0,05% |
+| Sem SUI (12 ativos) | −0,000201 | [−0,00050; +0,00004] | −0,25% |
+| Origens diárias | −0,000245 | [−0,00059; +0,00012] | −0,31% |
+| Atributos com 1h de atraso | −0,000202 | [−0,00042; +0,000001] | −0,24% |
+
+Para as variações de construção da rede (corte, κ, janela, Spearman, composição, atraso), o sinal é o mesmo da especificação principal e a magnitude é parecida. O ganho, porém, desaparece quando o alvo muda para 3% ou 10%. A rede residual tem mediana de 1 aresta e é a única cujo intervalo exclui zero, mas o ganho dela é cerca de 4 vezes menor. A conclusão de H1 não muda: o efeito é pequeno, sensível à definição do desfecho, e o intervalo principal inclui zero.
+
 ## Pendências
 
-- Etapa 11 (bayesiana): o modelo Stan compila e passou no teste de fumaça (`tests/fumaca_stan.R`). Com 300 iterações, o R-hat chegou a 1,44, o que exige examinar a identificação entre `mu_a`, `u` e `v` antes da execução trimestral completa (20 ajustes × 3 variantes; estimativa de várias horas).
-- Etapa 12 (robustez): limiares de 3% e 10%, janelas de 30 e 180 dias, cortes de 0,20 e 0,50, κ de 0,25 e 0,75, rede de Spearman, rede residual, atraso de 1h e comparadores (PAXG).
 - O pacote `tzdb` não está instalado, e o Arrow emite um aviso sobre fusos. As datas são gravadas e lidas como POSIXct UTC, sem impacto observado.
+- A fila `scripts/rodar_pendentes.ps1` executa robustez → B2+B3 → B4 → avaliação e retoma o que faltar. Dentro de `Start-Job` o `Rscript` travava sem console; por isso os processos são lançados diretamente.

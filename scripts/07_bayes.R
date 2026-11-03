@@ -55,7 +55,8 @@ if (modo == "ajustar") {
       aceito = diag$max_rhat < cfg$bayes_rhat_max && diag$min_ess_bulk >= cfg$bayes_ess_min && diag$divergencias == 0,
       minutos = as.numeric(difftime(Sys.time(), inicio, units = "mins")),
       cmdstan = cmdstanr::cmdstan_version()), file.path(var_dir, paste0("diagnostico_", aj$fit_id, ".csv")))
-    draws <- posterior::as_draws_matrix(fit$draws(c("mu_a", "sigma_a", "u", "gamma", "xi", "sigma_v", "phi", "v_ultimo")))
+    draws <- posterior::as_draws_matrix(fit$draws(variaveis_presentes(
+      fit, c("mu_a", "sigma_a", "u", "gamma", "xi", "sigma_v", "phi", "v_ultimo"))))
     p <- prever_bayes(draws, prev, cx, cz, esc, ds$ativos, max(ds$dias), cfg$seed + k)
     arrow::write_parquet(cbind(prev[, .(symbol, t, y, fase)], modelo = nome, fit_id = aj$fit_id, p), destino)
     message("[", agora_utc(), "] ", nome, " ", aj$fit_id, ": rhat max ", round(diag$max_rhat, 3),
