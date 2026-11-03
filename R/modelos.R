@@ -55,11 +55,11 @@ aplicar_escala <- function(x, esc) {
   sweep(sweep(x[, esc$cols, drop = FALSE], 2, esc$centro), 2, esc$escala, "/")
 }
 
-especificacoes <- function(cfg) {
-  b <- names(blocos_modelo())
-  ridge <- data.table::CJ(model_id = setdiff(b, "M0"), lambda = cfg$ridge_lambda_grid, sorted = FALSE)
+especificacoes <- function(cfg, modelos = names(blocos_modelo()), naive_bayes = TRUE) {
+  b <- setdiff(modelos, "M0")
+  ridge <- data.table::CJ(model_id = b, lambda = cfg$ridge_lambda_grid, sorted = FALSE)
   ridge[, algorithm := "ridge_logit"]
-  nb <- data.table::data.table(model_id = setdiff(b, "M0"), lambda = NA_real_, algorithm = "gaussian_nb")
+  nb <- if (naive_bayes) data.table::data.table(model_id = b, lambda = NA_real_, algorithm = "gaussian_nb")
   m0 <- data.table::data.table(model_id = "M0", lambda = NA_real_, algorithm = "frequencia")
   s <- data.table::rbindlist(list(m0, nb, ridge), use.names = TRUE)
   s[, spec := sprintf("%s|%s|%s", model_id, algorithm, ifelse(is.na(lambda), "-", format(lambda)))]
@@ -79,7 +79,7 @@ ajustar_mes <- function(amostra, aj, specs, cfg) {
   freq <- (n1 + 1) / (length(y) + 2)
   P[, specs[model_id == "M0", spec]] <- freq
   fallback_classe <- n1 < cfg$minimum_training_per_class || n0 < cfg$minimum_training_per_class
-  for (b in setdiff(names(blocos_modelo()), "M0")) {
+  for (b in setdiff(unique(specs$model_id), "M0")) {
     s_b <- specs[model_id == b]
     reg <- data.table::data.table(fit_id = aj$fit_id, model_id = b, n_treino = length(tr), n1 = n1,
                                   n_previsao = length(pr), maior_label_usado = if (length(tr))
@@ -96,8 +96,10 @@ ajustar_mes <- function(amostra, aj, specs, cfg) {
     if (!length(esc$cols)) { P[, s_b$spec] <- freq; reg$fallback <- "sem_colunas_M0"; log[[b]] <- reg; next }
     z <- aplicar_escala(x, esc)
     zp <- aplicar_escala(as.matrix(amostra[pr, ..cols]), esc)
-    nb <- naivebayes::gaussian_naive_bayes(z, factor(y, levels = c("0", "1")))
-    P[, s_b[algorithm == "gaussian_nb", spec]] <- predict(nb, zp, type = "prob")[, "1"]
+    if (any(s_b$algorithm == "gaussian_nb")) {
+      nb <- naivebayes::gaussian_naive_bayes(z, factor(y, levels = c("0", "1")))
+      P[, s_b[algorithm == "gaussian_nb", spec]] <- predict(nb, zp, type = "prob")[, "1"]
+    }
     if (ncol(z) >= 2) {
       lam <- sort(cfg$ridge_lambda_grid, decreasing = TRUE)
       fit <- glmnet::glmnet(z, y, family = "binomial", alpha = cfg$ridge_alpha, lambda = lam,
@@ -117,8 +119,8 @@ ajustar_mes <- function(amostra, aj, specs, cfg) {
   list(pr = pr, P = P, log = data.table::rbindlist(log, fill = TRUE))
 }
 
-ajustar_todos <- function(amostra, cfg, ajustes = calendario_ajustes(cfg), progresso = TRUE) {
-  specs <- especificacoes(cfg)
+ajustar_todos <- function(amostra, cfg, ajustes = calendario_ajustes(cfg), progresso = TRUE,
+                          specs = especificacoes(cfg)) {
   P <- matrix(NA_real_, nrow(amostra), nrow(specs), dimnames = list(NULL, specs$spec))
   logs <- list()
   for (k in seq_len(nrow(ajustes))) {

@@ -10,8 +10,31 @@ janela_retornos <- function(lr_wide, d, cfg) {
 
 # Constroi um snapshot a partir da janela. Retorna NULL nos atributos quando
 # o snapshot e invalido, registrando o motivo.
+# Sensibilidade da secao 18: residuos de cada ativo apos BTC e a proxy de
+# mercado dos demais (sem o proprio ativo e sem BTC), estimados so na janela.
+# Para o BTC, usa-se a proxy de todos os demais. Regressao nao identificavel
+# devolve NULL e o snapshot residual fica invalido.
+residualizar_janela <- function(m, btc) {
+  outros <- setdiff(colnames(m), btc)
+  r <- m
+  for (j in colnames(m)) {
+    base <- setdiff(outros, j)
+    mkt <- rowMeans(m[, base, drop = FALSE], na.rm = TRUE)
+    mkt[rowSums(!is.na(m[, base, drop = FALSE])) < 3] <- NA_real_
+    X <- if (j == btc) cbind(1, mkt) else cbind(1, m[, btc], mkt)
+    ok <- stats::complete.cases(X, m[, j])
+    if (sum(ok) <= ncol(X) + 1) return(NULL)
+    qrx <- qr(X[ok, , drop = FALSE])
+    if (qrx$rank < ncol(X)) return(NULL)
+    r[, j] <- NA_real_
+    r[ok, j] <- qr.resid(qrx, m[ok, j])
+  }
+  r
+}
+
 construir_snapshot <- function(janela, d, btc, cfg, kappa = cfg$katz_attenuation,
-                               limiar = cfg$positive_correlation_threshold) {
+                               limiar = cfg$positive_correlation_threshold,
+                               metodo = "pearson", residual = FALSE) {
   n_horas <- cfg$graph_window_days * 24L
   m <- as.matrix(janela[, !"t"])
   cobertura <- colSums(!is.na(m)) / n_horas
@@ -27,9 +50,13 @@ construir_snapshot <- function(janela, d, btc, cfg, kappa = cfg$katz_attenuation
   if (!(btc %in% elegiveis)) { info$motivo <- "btc_ausente"; return(info) }
   if (length(elegiveis) < cfg$minimum_graph_nodes) { info$motivo <- "poucos_nos"; return(info) }
   m <- m[, elegiveis, drop = FALSE]
+  if (residual) {
+    m <- residualizar_janela(m, btc)
+    if (is.null(m)) { info$motivo <- "residuo_nao_identificavel"; return(info) }
+  }
   ok <- !is.na(m)
   pares <- crossprod(ok * 1)
-  rho <- suppressWarnings(stats::cor(m, use = "pairwise.complete.obs"))
+  rho <- suppressWarnings(stats::cor(m, use = "pairwise.complete.obs", method = metodo))
   rho[pares < ceiling(cfg$pair_return_coverage * n_horas) | !is.finite(rho)] <- 0
   B <- rho
   B[B < limiar] <- 0

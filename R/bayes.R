@@ -61,8 +61,15 @@ prever_bayes <- function(draws, prev, cols_x, cols_z, esc, ativos, ultimo_dia, s
                          p_q95 = apply(p, 2, stats::quantile, 0.95))
 }
 
+# Vetores de tamanho zero (xi em B2) nao aparecem na saida do Stan.
+variaveis_presentes <- function(fit, vars) {
+  tamanhos <- fit$metadata()$stan_variable_sizes
+  vars[vapply(vars, function(v) !is.null(tamanhos[[v]]) && prod(tamanhos[[v]]) > 0, logical(1))]
+}
+
 diagnostico_bayes <- function(fit) {
-  s <- posterior::summarise_draws(fit$draws(c("mu_a", "sigma_a", "gamma", "xi", "sigma_v", "phi")),
+  vars <- variaveis_presentes(fit, c("mu_a", "sigma_a", "gamma", "xi", "sigma_v", "phi"))
+  s <- posterior::summarise_draws(fit$draws(vars),
                                   "mean", "sd", ~stats::quantile(.x, c(0.05, 0.95)),
                                   "rhat", "ess_bulk", "ess_tail", "mcse_mean")
   d <- fit$diagnostic_summary(quiet = TRUE)
